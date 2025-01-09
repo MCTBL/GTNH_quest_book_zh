@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="c5f052c0634e42b7b0425014c54dbb02" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_c5f052c0634e42b7b0425014c54dbb02 = echarts.init(
+            document.getElementById('c5f052c0634e42b7b0425014c54dbb02'), 'white', {renderer: 'canvas'});
+        var option_c5f052c0634e42b7b0425014c54dbb02 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "A Backpack for Bees",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u517b\u8702\u5458\u80cc\u5305.png",
+                    "x": 348.0,
+                    "y": 204.0,
+                    "tooltip": "It's exactly what it says. It's also incredibly useful."
+                },
+                {
+                    "name": "A Bag for Butterflies, \u00a7oyawn\u00a7r",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9cde\u7fc5\u76ee\u6606\u866b\u5b66\u5bb6\u80cc\u5305.png",
+                    "x": 204.0,
+                    "y": 204.0,
+                    "tooltip": "I'm not sure this has any utility value since the butterflies<br/>are going to all be in chunkloaded areas, and thus<br/>near your base, but feel free to make it anyway."
+                },
+                {
+                    "name": "A Chest for Bees",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u517b\u8702\u5458\u7bb1\u5b50.png",
+                    "x": 300.0,
+                    "y": 204.0,
+                    "tooltip": "A chest for bees only. It can hold up to 125 different bees in one chest."
+                },
+                {
+                    "name": "A Chest for...Butterflies? Really?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9cde\u7fc5\u76ee\u6606\u866b\u5b66\u5bb6\u7bb1\u5b50.png",
+                    "x": 204.0,
+                    "y": 156.0,
+                    "tooltip": "Store your completely useless butterlies in this."
+                },
+                {
+                    "name": "Advanced Mutatron",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u7ea7\u8bf1\u53d8\u673a.png",
+                    "x": 444.0,
+                    "y": 324.0,
+                    "tooltip": "A more advanced version of the mutatron. It uses more<br/>energy to mutate a drone with a princess, and you can<br/>select which mutation you want to have. This machine<br/>is a must-have for high-tier bees.\n\n[note]You'll need<br/>neutronium bees to make this.[/note]"
+                },
+                {
+                    "name": "Alvearies",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8702\u7bb1\u7ec4.png",
+                    "x": 156.0,
+                    "y": 384.0,
+                    "tooltip": "The alveary is an advanced variant of the apiary. The<br/>alveary allows for combs to be produced faster due<br/>to its natural speed increase to production (as well<br/>as the ability to add up to six frames via the Extra<br/>Bees frame housings) and due to its ability to be modified<br/>by other blocks. \n\nIt is possible to adjust the internal<br/>temperature of the alveary using the alveary heater<br/>or alveary fan in order to accommodate bees that require<br/>hotter or colder climates.\n\nCertain bees will not produce<br/>their specialty items unless they are Jubilant. This<br/>requires matching their preferred Temperature/Humidity,<br/>without any genetic modifiers. Some bees also need<br/>a block of something beneath them as well.\n\nIt is also<br/>possible to use mutators to increase chances of mutation,<br/>alveary lighting and alveary rain shield to allow bees<br/>without the nocturnal and tolerant flyer traits to<br/>work during the night and rain, respectively, and the<br/>swarmer to use excess royal jelly to create princesses<br/>that last for a limited number of generations.\n\n[note]If<br/>you're mutating bees that need a specific block in<br/>it, you need to place the required block under the<br/>middle bottom, and have the one directly above be a<br/>normal alveary block.[/note]<br/>"
+                },
+                {
+                    "name": "Analyser",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5206\u6790\u4eea.png",
+                    "x": 396.0,
+                    "y": 384.0,
+                    "tooltip": "The Analyzer is a machine that acts in an identical<br/>way to the Forestry Analyzer, in that it reveals the<br/>genome of bees, trees, butterflies and flowers. It<br/>can also be used to reveal the gene present on the<br/>DNA Sequence. Unlike the Analyzer, the Analyzer uses<br/>power (RF or EU) and DNA Dye to stain chromosomes and<br/>determine the genome directly. The analyzer takes 15<br/>seconds to analyse a single individual.\n\nInformation<br/>from these quests was taken from Binnie's wiki at [url]https://binnie.mods.wiki/wiki/Tutorial/Genetics[/url]<br/>"
+                },
+                {
+                    "name": "Analyze Them All",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5b9e\u5730\u8003\u5bdf\u5de5\u5177\u5305.png",
+                    "x": 204.0,
+                    "y": 108.0,
+                    "tooltip": "Every bee has multiple properties that define what<br/>the bee does, how it behaves in rain or at night, and<br/>a couple of other aspects. It is mandatory to keep<br/>track of those properties. This kit isn't very good<br/>since it doesn't give you information on their Inactive<br/>attributes, but waste not, want not.\n\nYou'll need to"
+                },
+                {
+                    "name": "And There Shall be Light",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u590d\u5236\u673a.png",
+                    "x": 504.0,
+                    "y": 144.0,
+                    "tooltip": "Out of princesses to inject traits to? Too lazy to<br/>find hives and get more bees? Not a problem. With this<br/>nifty little device, you can use a ton of power, liquid<br/>DNA and protein to create any bee you wish to have.<br/>The only drawback is: All bees will be ignoble, which<br/>means they will die after a random amount of cycles<br/>after 90.\n\nOf course, there's an upgrade for the industrial<br/>apiary to deal with that"
+                },
+                {
+                    "name": "A New Home",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7b80\u6613\u8702\u623f.png",
+                    "x": 156.0,
+                    "y": 108.0,
+                    "tooltip": "Now that you've destroyed the poor bees' homes, you<br/>should build them a new one. The humble Bee House will<br/>not let your bees mutate into new species. But you'll<br/>need the combs anyways for better housing. The production<br/>rate isn't too bad, but they cannot be automated.\n\nOne<br/>tip - Put some vanilla saplings near the Bee Houses.<br/>Bee Houses give a natural boost of 3x to pollination<br/>vs better housing. The bees will pollinate them and<br/>you might get lucky and start getting some Forestry<br/>tree crossbreeding. Stick with Oak and Birch trees,<br/>they'll give you a nice mix of starter Forestry trees.\n\nOf<br/>course, if you do this without taking precautions,<br/>you may find yourself swarmed by laggy butterflies...\n\nYou<br/>may also notice that bees with the 'flower' type flower<br/>spread flowers. This can be used to get, say, lavender,<br/>among others. If you don't like them spreading them<br/>everywhere, replace the dirt/grass blocks, remove the<br/>trait, or reduce the pollination speed/territory.<br/>"
+                },
+                {
+                    "name": "Apiarist's Cloth",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u517b\u8702\u5458\u5e3d\u5b50.png",
+                    "x": 252.0,
+                    "y": 12.0,
+                    "tooltip": "If you have collected 24 woven silk you can make a<br/>complete Apiarist's suit to be protected from bee stings<br/>and other bad bee effects. You can also use the suit<br/>parts to upgrade your EnderIO Dark Steel Armor to have"
+                },
+                {
+                    "name": "A Rather Cruel Disposal",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u63d0\u53d6\u673a.png",
+                    "x": 456.0,
+                    "y": 144.0,
+                    "tooltip": "You'll probably end up with a lot of excess drones<br/>while doing bees. (Or saplings if you do trees). Instead<br/>of throwing them away, you could also turn them into..."
+                },
+                {
+                    "name": "Are the Bees Buzzing, or Screaming?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7075\u9b42\u6846\u67b6.png",
+                    "x": 84.0,
+                    "y": 276.0,
+                    "tooltip": "These frames cause mutations at an increased rate.<br/>They're super useful.\n\nAbout the stats on frames you<br/>see when holding shift, you'll note that some have<br/>a different number in brackets next to them, this means<br/>that this is the maximum they can be stacked. this<br/>only applies to the Extra Bees ones.\n\nThe stats on<br/>the frames are also multiplicative instead of additive,<br/>so after 4 frames in an alveary, soul frames will max<br/>out. On the other hand, accelerated frames will take<br/>9 to get there, but you can just keep on going.\n\nIf<br/>you pile up the multipliers, 5x from stimulator, 3x<br/>from mutator, and 4x1.8x frames, it'll get you to 157x,<br/>getting you those 1% bees in a single generation!"
+                },
+                {
+                    "name": "Arnie's Blender",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u86cb\u767d\u8d28\u6db2\u5316\u673a.png",
+                    "x": 552.0,
+                    "y": 144.0,
+                    "tooltip": "They say breakfast is the most important meal of the<br/>day. This machine turns raw meat into liquid protein,<br/>which is used to create bees from scratch. Which has<br/>\u00a7oabsolutely\u00a7  nothing\u00a7r to do with breakfast."
+                },
+                {
+                    "name": "A Stim a Day Keeps the Doctor Awake",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7535\u523a\u6fc0\u5668.png",
+                    "x": 108.0,
+                    "y": 384.0,
+                    "tooltip": "Supporting circuit boards that can hold 4 electron<br/>tubes, the Electrical Stimulator provides a variety<br/>of functions. All numbers are in percent:\n\nIron ET<br/>- Production: 150 (Max 500)\nDiamantine ET - Production:<br/>250 (Max 1000)\nApatine ET - Pollination: 150 (Max 500)\nObsidian<br/>ET - Lifespan: 80 (Min 20)\nLapis ET - Lifespan: 150<br/>(Max 500)\nBlazing ET - Simulates hellish temperature\nGolden<br/>ET - Mutation rate: 150 (Max 500)\nTin ET - Territory:<br/>40 (Min 10) Prod: 90 (Min 50)\nBronze ET - Territory:<br/>150 (Max 500)\n\nGenetic Decay is also increased by 50%<br/>for all of them. This affects how long until ignoble<br/>bees die off, so don't worry about it if your bees<br/>are pristine."
+                },
+                {
+                    "name": "Bee More Knowledgeable",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u517b\u8702\u5458\u6570\u636e\u5e93.png",
+                    "x": 300.0,
+                    "y": 108.0,
+                    "tooltip": "This database keeps track of everything bee."
+                },
+                {
+                    "name": "Bees Buzzing Beyond the Dark",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6e6e\u706d\u6846\u67b6.png",
+                    "x": 36.0,
+                    "y": 336.0,
+                    "tooltip": "If even the soul frame takes too long for your taste,<br/>the oblivion frame will destroy a bee in a single bee<br/>tick (27s). Be careful using more than one, there are<br/>rumors it might harm your princesses...\n\n[note]You<br/>can find them in Stronghold libraries or make them<br/>from Dragon Eggs. You can also use a Thaumic Restorer<br/>to fix it, and most frames too.[/note]"
+                },
+                {
+                    "name": "Bees By the Millions",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u4e1a\u8702\u7bb1.png",
+                    "x": 156.0,
+                    "y": 432.0,
+                    "tooltip": "If you need endgame high speed production, industrial<br/>apiaries are the way to go. Industrial Apiaries take<br/>upgrade frames that never break. Production frames<br/>can be stacked up to 8 high. It also has many options<br/>for emulation, more pollen retrieval, and others.\n\nThe<br/>Industrial Apiary is now a GT machine. It takes up<br/>to UV voltage and up to 4 amps but the base usage is<br/>just 37 eu/t. You can no longer use a World Accelerator<br/>and there is only the one machine, so no GT overclocking.<br/>Instead, there are new \u00a7oacceleration upgrades\u00a7r that<br/>act similar to a World Accelerator but are directly<br/>integrated into the machine. You will want to use them,<br/>they increase the speed and energy usage by a lot.<br/>The final tier also increases productivity.\n\nBut I<br/>shouldn't drone on too long. Go make one and find out<br/>yourself."
+                },
+                {
+                    "name": "Bee Slurry, the Breakfast of, Well, Weirdos",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8150\u70c2\u6846\u67b6.png",
+                    "x": 36.0,
+                    "y": 216.0,
+                    "tooltip": "Why would you even need this?"
+                },
+                {
+                    "name": "Blank Gene Samples",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7a7a\u767d\u57fa\u56e0\u6837\u672c.png",
+                    "x": 408.0,
+                    "y": 204.0,
+                    "tooltip": "To get the various traits from a bee, you need a lot<br/>of power, labware and an empty gene sample. You don't<br/>need a lot of those, as you can just throw them in<br/>a furnace to remove remaining DNA of traits you don't<br/>need or want. \n\nIn the meantime you can start working<br/>with the Genetics mod, since we all know Gendustry<br/>is too easy... Genetics is used for bees, trees, and<br/>Botany flowers so it gets its own quest tab. Gendustry<br/>is really good for bees, but will require top tier"
+                },
+                {
+                    "name": "Bringing the Biome to You",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u751f\u6001\u4e4b\u4e66.png",
+                    "x": 108.0,
+                    "y": 12.0,
+                    "tooltip": "So maybe you can't find a swamp or tropical forest<br/>for your crops or bees, or maybe they're too far away<br/>so they're inconvenient to get to, or maybe your base<br/>is in a colder climate and you have to deal with the<br/>howls of direwolves constantly. Instead of packing<br/>up all your stuff and moving somewhere else, why not<br/>try changing the biome? There are a couple different<br/>ways to do so in this modpack:\n\nUse the Arcane Terrestrial<br/>Reformer from Witching Gadgets\n-Requires EV Circuits,<br/>Tungstensteel, Rocket Tier III\n-Also requires Infusion,<br/>Void Metal (sufficient warp), Energized Node for CV,<br/>lots of Essentia\n-16 block radius\n-Can only change<br/>to a few specific Vanilla or Thaumcraft biomes\n-Kind<br/>of slow\n\nUse Ritual of Gaia's Transformation from Blood<br/>Magic\n-Requires Void Metal, Infusion, Tungstensteel\n-Requires<br/>getting deep into BM (and the warp that come with it)\n-Requires<br/>1,000,000 LP, Master Blood Orb, Tier 4 Altar and Awakened<br/>Activation Crystal\n-10 block radius, can be exactly<br/>specified with bloodstone bricks (either type)\n-Cannot<br/>specify which biome you get, you can only change the<br/>temperature/humidity within the 0.0 - 2.0 range and<br/>hope\n-Some biomes may be impossible due to limited<br/>range and overlap\n-Adjust temperature/humidity with<br/>items on 8 plinths around the Master Ritual Stone\n-Need<br/>to relog to see changes\n-Very little documentation<br/>or explanation\n-Fast\n\nUse the Brew of Shifting Seasons<br/>from Witchery\n-Small range, depends on the level of<br/>the brew (power, not dispersal extent)\n-Biome can be<br/>exactly specified\n-Crafted using the complicated custom<br/>brew system\n-Can add different ingredients to change<br/>range of the brew\n-At min changes a single block\n-At<br/>max has about a 3 block (circular) radius\n-Instant<br/>(once you use it)\n\nUse the Rite of Shifting Seasons<br/>from Witchery\n-Requires Stainless Steel, Greatwood<br/>Scepter or better for the Distillery\n-You have to do<br/>a bunch of witchery stuff\n-Not hard once you're done<br/>it once\n-Extremely large range, 16/32/48 block (circular)<br/>radius\n-Biome can be exactly specified\n-Sometimes fails<br/>in specific chunks\n-Very Fast\n\nIf you want to know<br/>how to use the Witchery methods, please go to the Look<br/>to the edges tab to continue.\n\nPSA: The IC2&Galacticraft<br/>Terraformers only change the surface, not the biome<br/>itself.<br/><br/>"
+                },
+                {
+                    "name": "Busy Bees Buzzing Boldly",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8702\u7bb1\u7ec4\u65e5\u5149\u706f.png",
+                    "x": 204.0,
+                    "y": 384.0,
+                    "tooltip": "These upgrades can significantly increase your production<br/>rate by keeping your bees from stopping production<br/>due to the environment.\n\nRain Shield - Can work through<br/>the rain\nLighting - Can work day and night\nAlveary<br/>Heater - Increases temperature a flat 20% each (needs<br/>power)\nAlveary Fan - Decreases temperature a flat 20%<br/>each (needs power)\nAlveary Hygroregulator[sic] - Has<br/>two modes, water and lava\nLava - Temp+10%, Humidity-20%\nWater<br/>- Temp-10%, Humidity+20%\n\nUnfortunately, there's no<br/>way to make them like caves with a block."
+                },
+                {
+                    "name": "Death to Bees!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u574f\u6b7b\u6846\u67b6.png",
+                    "x": 84.0,
+                    "y": 336.0,
+                    "tooltip": "These frames will let you kill your bees faster. It's<br/>to breed the next generation sooner, right? Not because"
+                },
+                {
+                    "name": "Diamondware",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u836f\u76bf.png",
+                    "x": 504.0,
+                    "y": 204.0,
+                    "tooltip": "Also known as labware. Be prepared. In order to do<br/>serious bee-work, you need stacks of diamonds. I'm<br/>not joking, stacks! Better start working on that diamond"
+                },
+                {
+                    "name": "Fastest Way to Get There",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8bf1\u53d8\u6846\u67b6.png",
+                    "x": 36.0,
+                    "y": 276.0,
+                    "tooltip": "A GT++ Mutagenic frame will get your bees to their<br/>final destination faster than you can blink. Just remember<br/>to wear your rubber suit while making it!\n\n[note]These<br/>will break in the alveary before they take effect since<br/>their durability is under 6. So you can only get to<br/>125x, but I think that's enough, don't you?[/note]"
+                },
+                {
+                    "name": "Figuring Out Butterflies",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8774\u8776\u5206\u6790\u4eea.png",
+                    "x": 252.0,
+                    "y": 156.0,
+                    "tooltip": "Butterflies don't do much, but this analyzer will give you details on their abilties."
+                },
+                {
+                    "name": "First Things First",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6355\u866b\u7f51.png",
+                    "x": 12.0,
+                    "y": 108.0,
+                    "tooltip": "As usual. In order to get started with bees, you need<br/>a few basic things. Most importantly... a scoop. For<br/>this quest you want to make a GregTech scoop. Later<br/>you can make scoops using magic or even rechargeable"
+                },
+                {
+                    "name": "Fluttering Facts",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9cde\u7fc5\u76ee\u6606\u866b\u5b66\u5bb6\u6570\u636e\u5e93.png",
+                    "x": 300.0,
+                    "y": 156.0,
+                    "tooltip": "This database tracks all your knowledge of butterflies.\n\nBTW, see the BBB tab for the Botany stuff."
+                },
+                {
+                    "name": "Frames",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u672a\u5904\u7406\u6846\u67b6.png",
+                    "x": 108.0,
+                    "y": 108.0,
+                    "tooltip": "Untreated frames are the simplest frames. They do not<br/>work in bee houses, only in apiaries or alvearies.<br/>You will need them to craft bee houses.\n\nThey increase<br/>the bee's performance. Each untreated frame will double"
+                },
+                {
+                    "name": "Gene Database",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6570\u636e\u5e93.png",
+                    "x": 444.0,
+                    "y": 384.0,
+                    "tooltip": "Discovered genes are logged into the Gene Database.<br/>This handheld device lists all genes by the type of<br/>organism they apply to. To add a gene to an Empty Serum<br/>Vial to allow inoculation, the desired gene can be<br/>clicked on while holding the vial. An Empty Serum Array<br/>can be used to hold more than one gene at once."
+                },
+                {
+                    "name": "Genepool",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6c60.png",
+                    "x": 348.0,
+                    "y": 432.0,
+                    "tooltip": "Another important resource is Raw DNA. This can be<br/>obtained from any breedable organism such as bees,<br/>trees or flowers, and is created in the Genepool. The<br/>Genepool requires both Ethanol and Enzyme to digest<br/>the DNA, and will destroy the organism. Note this gives<br/>raw DNA, and does not preserve any genes or alleles"
+                },
+                {
+                    "name": "Genetic Imprinter",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u538b\u5370\u673a.png",
+                    "x": 504.0,
+                    "y": 264.0,
+                    "tooltip": "With this powerful machine, you can inject gene samples,<br/>which allows you to alter any aspect of your bee, tree<br/>or butterfly. The gene sample (or pattern) will not<br/>be destroyed.\n\nThe machine has 30% chance to downgrade<br/>pristine into ignoble and 80% chance to kill ignoble<br/>bees.\n\nOne labware is consumed per operation."
+                },
+                {
+                    "name": "Genetic Sampler",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u91c7\u6837\u673a.png",
+                    "x": 600.0,
+                    "y": 204.0,
+                    "tooltip": "With this machine, you can extract a random trait from<br/>any bee, sapling, butterfly or flower. The bee/sapling/butterfly/flower<br/>will be destroyed in this process. Each process requires<br/>an empty gene sample and some labware.\n\nThe resulting<br/>sample is random, so make sure to recycle the extra<br/>gene samples you don't want."
+                },
+                {
+                    "name": "Genetic Template",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6a21\u677f.png",
+                    "x": 456.0,
+                    "y": 204.0,
+                    "tooltip": "Templates are used to combine multiple gene samples<br/>into one large batch. It can be used to apply multiple<br/>traits at once, but you can also replicate a bee from<br/>liquid DNA and protein, if you manage to fill all 13<br/>traits in one template. These templates can also be<br/>copied, just like the small samples."
+                },
+                {
+                    "name": "Genetic Transposer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u8f6c\u6362\u673a.png",
+                    "x": 552.0,
+                    "y": 264.0,
+                    "tooltip": "DNA samples of species and/or traits are pretty valuable.<br/>You always should keep at least one of each gene sample<br/>you get your hand on in a chest somewhere safe. By<br/>using this machine, you are able to copy any gene sample,<br/>for the cost of an empty serum vial and some labware.\n\n[note]You<br/>don't actually need to keep all of them if you don't<br/>intend to use them of course.[/note]"
+                },
+                {
+                    "name": "Get it Together Bees!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7a33\u5b9a\u6846\u67b6.png",
+                    "x": 84.0,
+                    "y": 216.0,
+                    "tooltip": "These frames help prevent genetic decay."
+                },
+                {
+                    "name": "Ghetto Biome Changing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7075\u6c14\u8282\u70b9.png",
+                    "x": 60.0,
+                    "y": 12.0,
+                    "tooltip": "If you don't want to change the biome to a specific<br/>one, and just want a neutral environment for your bees,<br/>maybe using nodes is for you. You can try planting<br/>a Silverwood Sapling to get one with a pure node, or<br/>use other methods to move one.\n\nKeep in mind a 'bare'<br/>pure node won't change anything unless it has Victus.<br/>You can try use Sinister or Tainted, but...no refunds.<br/>These nodes have a radius of 11. To change the biome<br/>back, use an Ethereal Bloom (radius of 7). Keep in<br/>mind that both Pech and Wisps spawn in 'Magical' type"
+                },
+                {
+                    "name": "Go Find Some Bees",
+                    "symbolSize": 31.200000000000003,
+                    "x": 60.0,
+                    "y": 108.0,
+                    "tooltip": "The next thing to do: Find a few bee hives around the<br/>world. There are 11 mundane bees that can be found,<br/>of which 8 are located in the Overworld. Any kind of"
+                },
+                {
+                    "name": "Go Find Some Tropical Bees",
+                    "symbolSize": 31.200000000000003,
+                    "x": 156.0,
+                    "y": 60.0,
+                    "tooltip": "Next you'll need to find some tropical bees. The hives<br/>can be found in Jungle biomes. Be careful as these<br/>bees are very aggressive and can poison you. Collect<br/>the silky combs and extract some silk wisp from those<br/>in order to make some Apiarist's clothes. Try to get<br/>pristine bees. If you're having trouble finding them,<br/>you can use Nature's Compass to search for a specific"
+                },
+                {
+                    "name": "Highend species: Doctoral",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 600.0,
+                    "y": 324.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only the best traits available."
+                },
+                {
+                    "name": "Highend species: Draconic",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 648.0,
+                    "y": 324.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only the best traits available."
+                },
+                {
+                    "name": "Highend species: Silicon",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 696.0,
+                    "y": 324.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only the best traits available."
+                },
+                {
+                    "name": "Humid and Warm?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6816\u606f\u5730\u5b9a\u4f4d\u4eea.png",
+                    "x": 108.0,
+                    "y": 60.0,
+                    "tooltip": "Stop guessing what the humidity and temperature are<br/>for your biome. Use the habitat locator to get a reading"
+                },
+                {
+                    "name": "IAADDS",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de8\u578b\u5de5\u4e1a\u8702\u7bb1.png",
+                    "x": 156.0,
+                    "y": 480.0,
+                    "tooltip": "Aka the Mega Apiary.\n\nIt has three primary modes (change<br/>with screwdriver) and two operation modes (change with<br/>shift+screwdriver):\n\nINPUT MODE: Does not take power.<br/>Put your queens in the input bus to put them in the<br/>internal buffer.\n\nOUTPUT MODE: Does not take power.<br/>Will give your bees back to the output bus.\n\nOPERATING<br/>MODE - NORMAL: The processing time is 5 seconds. Uses<br/>1 Amp LuV per queen. All bees are affected by 64x acceleration<br/>and 8 Production Upgrades as well as a Genetic Stabilizer<br/>Upgrade. The IAADDS also simulates a perfect environment<br/>for all bees.\n\nYou can provide royal jelly to increase<br/>the outputs. 1 royal jelly grants 5% bonus per bee.<br/>They will be consumed on each start of operation and<br/>be applied to that operation only. The maximum bonus<br/>is 200%. The normal bee stats still apply of course,<br/>though the IAADDS is able to provide a perfect environment<br/>for any bee.\n\nOPERATING MODE - SWARMER: In this mode<br/>you can only insert 1 queen. The IAADDS will then slowly<br/>produce ignoble princesses for 100 royal jelly per<br/>operation. The base processing time is 1 minute but<br/>you can overclock this process. The base usage is 1<br/>Amp IV.\n\n[note]Yes you need thousands of queens, not<br/>princesses.[/note]<br/>"
+                },
+                {
+                    "name": "Impregnated Frames",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6d78\u6e0d\u6846\u67b6.png",
+                    "x": 156.0,
+                    "y": 276.0,
+                    "tooltip": "Impregnated Frames are even better than untreated Frames.<br/>\nEach frame doubles the bee's productivity. It has<br/>a longer durability than the untreated frame, but a<br/>shorter one compared to the proven frame."
+                },
+                {
+                    "name": "Incubator",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6052\u6e29\u7bb1.png",
+                    "x": 300.0,
+                    "y": 432.0,
+                    "tooltip": "This is a crafting machine that heats items and liquids<br/>to a temperature that encourages bacterial growth.<br/>\n\nThe first step of incubation is the creation of Liquid<br/>Growth Medium, which is made from incubating Water<br/>and Growth Medium. This is subsequently incubated with<br/>Wheat to give Bacteria. This solution of bacteria can<br/>then be incubated a third time with Sugar to give Enzyme.<br/>This is an important compound used in other machines.\n\nThe<br/>best way to create enzyme is therefore to chain three<br/>incubators together, for each step of the process."
+                },
+                {
+                    "name": "Inoculator",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6ce8\u5c04\u5668.png",
+                    "x": 540.0,
+                    "y": 432.0,
+                    "tooltip": "The final step is inoculation. Currently the only machine<br/>capable of inserting genes is the Inoculator. This<br/>uses Bacteria Vector, created by incubating Bacteria<br/>and Blaze Powder, to transfer the gene into organisms.\n\nOnly<br/>the young stage of organisms can be injected, which<br/>are larvae (bees), pollen (trees and flowers) and caterpillars<br/>(butterflies). Bee larvae can be converted into drones<br/>by incubating with Liquid Growth Medium."
+                },
+                {
+                    "name": "Isolator",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u5206\u79bb\u5668.png",
+                    "x": 396.0,
+                    "y": 432.0,
+                    "tooltip": "The Isolator acts in a similar way to the Genepool,<br/>but does not completely destroy genes. It instead allows<br/>the isolation of a single gene from an organism, without<br/>destroying it. The exact gene is random, and is written<br/>into an Blank Sequence. Until the sequence is analysed<br/>in an Analyser, it will be unknown what the gene is.<br/>It doesn't however need to be analysed before being<br/>sent to the Sequencer."
+                },
+                {
+                    "name": "Keep Calm and Bee On",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6811\u827a\u6846\u67b6.png",
+                    "x": 36.0,
+                    "y": 156.0,
+                    "tooltip": "This frame will let your bees last longer, and also<br/>increase the territory to help with tree breeding."
+                },
+                {
+                    "name": "Keep Them Around",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de7\u514b\u529b\u6846\u67b6.png",
+                    "x": 84.0,
+                    "y": 156.0,
+                    "tooltip": "These frames will keep your bees buzzing for longer. If you care, that is."
+                },
+                {
+                    "name": "Lab Stand",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5b9e\u9a8c\u53f0.png",
+                    "x": 348.0,
+                    "y": 384.0,
+                    "tooltip": "The Lab Stand is a block on which an Apiarist Database,<br/>Arborist Database, Botanist Database or Gene Database<br/>can be placed by right clicking on the placed stand<br/>with the database, attaching it and allowing the database<br/>to be accessed by right clicking on the stand."
+                },
+                {
+                    "name": "Making Bees More Comfortable",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9002\u5e94\u6027\u8c03\u6574\u5668.png",
+                    "x": 252.0,
+                    "y": 432.0,
+                    "tooltip": "The acclimatiser is a key machine for breeding your<br/>bees. With lots of power and the appropriate ingredients<br/>you can toughen your bees to thrive anywhere. It's<br/>recommend to use an EnderIO capacitor to power this<br/>device. However, even with climate hardiness your bees<br/>still won't produce special items unless they are in<br/>their favorite climate. Along with the bee, put in<br/>these items to adjust the bee's traits:\n\nSnowball -<br/>More cold tolerance\nLava - More heat tolerance\nSand<br/>- More dry tolerance\nWater - More wet tolerance\n\nYou<br/>should know that the acclimatiser doesn't return capsules<br/>or cells. The amount of items needed is pretty random.\n\n[note]A<br/>nice trick is to start with a bee that already has<br/>both. Then you can use either direction to increase<br/>it further! You don't need any lava if you do it like<br/>this. And no cells either. You can just use sand and<br/>snowballs.[/note]"
+                },
+                {
+                    "name": "Master Registry",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5168\u56fe\u9274.png",
+                    "x": 348.0,
+                    "y": 108.0,
+                    "tooltip": "The master beekeeper needs a master registry. Make<br/>sure you don't get any tears in your apiaries as you"
+                },
+                {
+                    "name": "Mutatron",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8bf1\u53d8\u673a.png",
+                    "x": 396.0,
+                    "y": 324.0,
+                    "tooltip": "Mutations can be boring, they can be annoying, and<br/>most times, they are frustrating. With this machine,<br/>you will get a 100 percent pure bred mutation. If the<br/>combination of princess and drone can result in multiple<br/>mutations, the outcome is random. But who cares?\n\n[note]You<br/>can now upgrade your leftover Bees Advanced bags to<br/>Bees Expert in the last quest tab.\n\nIf you missed grabbing<br/>an effect from a species, this is a way to get it again.\n\nYou'll<br/>need naquadah bees to make this, and the other Gendustry<br/>machines.[/note]"
+                },
+                {
+                    "name": "Only the Best: Cave",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 696.0,
+                    "y": 84.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available. Bees with Cave can work<br/>in housing that is covered - by more housing!"
+                },
+                {
+                    "name": "Only the Best: Day and Night",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 600.0,
+                    "y": 84.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available. Bee working day and night,"
+                },
+                {
+                    "name": "Only the Best: Fertility",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 744.0,
+                    "y": 180.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available. Bees bees everywhere!\n\n[note]F4<br/>is great while breeding bees, but F1 is what you want<br/>to use when producing stuff.[/note]"
+                },
+                {
+                    "name": "Only the Best: Humidity",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 744.0,
+                    "y": 132.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available.\n\n[note]None is for testing<br/>jubilant state, while 2 is what you'll have on most<br/>of the time. 3+ don't do anything as the range doesn't"
+                },
+                {
+                    "name": "Only the Best: Rain",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 648.0,
+                    "y": 84.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available. Beekeeping in the rain!"
+                },
+                {
+                    "name": "Only the Best: Speed Blinding",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 744.0,
+                    "y": 228.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available. Buzz buzz buzz, working"
+                },
+                {
+                    "name": "Only the Best: Temperature",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 744.0,
+                    "y": 84.0,
+                    "tooltip": "On your way to awesome bees, you have to collect only<br/>the best traits available.\n\n[note]None is for testing<br/>jubilant state, while 3 is what you'll have on most<br/>of the time. You can hit all temp reqs with 3 if you<br/>work in a normal temp area. You can go up to 5 if you<br/>use the acclimatizer and want nether bees working in<br/>an icy area for some reason.[/note]"
+                },
+                {
+                    "name": "Only the Best: Tree Breeding",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 744.0,
+                    "y": 276.0,
+                    "tooltip": "For those who love Forestry trees."
+                },
+                {
+                    "name": "Only the Worst: Trees Suck!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u6837\u672c.png",
+                    "x": 744.0,
+                    "y": 324.0,
+                    "tooltip": "For those who don't like flowers or trees :(."
+                },
+                {
+                    "name": "Pollen Collection Kit",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u82b1\u7c89\u6536\u96c6\u88c5\u5907.png",
+                    "x": 456.0,
+                    "y": 264.0,
+                    "tooltip": "The easy way to get some pollen, just right-click on<br/>leaves. The Pollen Collection Kits are one-time use"
+                },
+                {
+                    "name": "Polymeriser",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/PCR \u4eea.png",
+                    "x": 492.0,
+                    "y": 432.0,
+                    "tooltip": "Serums and sequences can be placed in a Polymeriser<br/>to increase their strength and amount of DNA held within.<br/>Serums need to be polymerised at least once before<br/>being used in the inoculator. To polymerise, both Raw<br/>DNA and Polymerising Bacteria are required. Raw DNA<br/>is obtained from the Genepool, and Polymerising Bacteria<br/>is made from incubating bacteria with bonemeal. Gold<br/>nuggets can be used as a catalyst to speed up the process."
+                },
+                {
+                    "name": "Production Frames",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u4f5c\u6846\u67b6.png",
+                    "x": 156.0,
+                    "y": 336.0,
+                    "tooltip": "You can make proven frames or purchase them from a<br/>villager. If you can't find a beekeeper, there are<br/>couple of different options to get one. Rescue a zombie<br/>villager, add doors to a village to get them to make<br/>kids, or perhaps use a cupid's bow and arrow...\n\nAbout<br/>magic frames:\nThey're the core of magically endowed<br/>frames. They also have a special ability - no maximum<br/>production chance. Normal frames are ineffective to<br/>get above 16x production (4 frames) but with magic<br/>frames you can keep going - just watch out, above 16x<br/>you'll be working your bees so hard they have a chance<br/>to degenerate into ignoble ones. This can happen any<br/>bee tick, not just when they die. Frames to lower genetic<br/>decay will lower the chances of this happening.\n\nOf<br/>course, with very long lifespans, high production genes,<br/>swarmers, and tons of frames, you may think this is<br/>worth it.\n\nNote that normal products have a cap of<br/>200% produced, and specialties 100%."
+                },
+                {
+                    "name": "Put the Drones in a Jar and Shake it Up",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u871c\u8702\u6536\u96c6\u8005\u7684\u7f50\u5b50.png",
+                    "x": 204.0,
+                    "y": 60.0,
+                    "tooltip": "Once you get good effects from your bees, instead of<br/>just trashing the excess drones, you can put them in<br/>collector's jars to get the effects anywhere in your<br/>base.\n\nHealing? XP? Poison?\n\nThe collector's jars can<br/>even be piped or connected to a conveyor so that drones<br/>last a long time.\n\n[note]PS: Using the regen effect<br/>of Imperial bees while doing Blood Magic may be useful.[/note]"
+                },
+                {
+                    "name": "Registry",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56fe\u9274.png",
+                    "x": 348.0,
+                    "y": 156.0,
+                    "tooltip": "The Registry combines the existing four databases into<br/>a new sleek browser to allow the properties, mutations<br/>and genes of all discovered bees, trees, butterflies"
+                },
+                {
+                    "name": "Sequencer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6d4b\u5e8f\u4eea.png",
+                    "x": 444.0,
+                    "y": 432.0,
+                    "tooltip": "After obtaining a DNA Sequence with the gene that you<br/>wish, it must be placed in the Sequencer. This uses<br/>Fluorescent Dye to determine the correct sequence,<br/>and when completed logs the discovery. The important<br/>thing here is that the discovery goes to the person<br/>who placed the machine.\n\nGenes are sequenced faster<br/>if the sequence has been placed in a Polymeriser first"
+                },
+                {
+                    "name": "Silky Combs and Propoli",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e1d\u6ed1\u8702\u7a9d.png",
+                    "x": 156.0,
+                    "y": 12.0,
+                    "tooltip": "Collect silky combs and extract some silk wisp out<br/>of it in order to make some Apiarist's clothes.\n\nThis<br/>can take a very long time, so parallelize!\n\nUse a GregTech<br/>or Forestry Centrifuge to get Silky Propoli. For higher<br/>tier (and useful) combs you need a GT centrifuge."
+                },
+                {
+                    "name": "Tools for the Geneticist",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7a7a\u8840\u6e05\u74f6.png",
+                    "x": 252.0,
+                    "y": 384.0,
+                    "tooltip": "You'll need various tools and supplies before you start manipulating genetic material."
+                },
+                {
+                    "name": "To Play God",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8bf1\u53d8\u5242\u6876.png",
+                    "x": 348.0,
+                    "y": 324.0,
+                    "tooltip": "In order to continue with bees, to mutate and breed<br/>them as you like, you need mutagen. This greenish,<br/>smelly liquid needs to be refined from bacterial sludge<br/>that seems to be available only on Mars. You will be<br/>able to continue, once you've arrived there.\n\nIn the<br/>meantime you can start working with the Genetics mod,<br/>since we all know Gendustry is too easy... Check out<br/>the recipes and you'll understand why you should look<br/>into the Genetics mod.\n\n[note]Make sure to make more<br/>with the Vat once you can actually make it.[/note]"
+                },
+                {
+                    "name": "Top-Tier Analyser",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u54c1\u79cd\u5206\u6790\u4eea.png",
+                    "x": 300.0,
+                    "y": 60.0,
+                    "tooltip": "The best you can get, for all your scanning and analysing needs."
+                },
+                {
+                    "name": "To Scan or Not to Scan",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u871c\u8702\u5206\u6790\u4eea.png",
+                    "x": 252.0,
+                    "y": 108.0,
+                    "tooltip": "In order to get into bee breeding, you need a way to<br/>see all the traits, active and inactive. You only want<br/>to breed so called \"pure\" bees; For those, both \"Active\"<br/>and \"Inactive\" traits are identical.\n\n[note]BTW, it's<br/>not like the more 'advanced' versions are actually<br/>better, just that they have more functions. Use the"
+                },
+                {
+                    "name": "Upgraded Home",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8702\u7bb1.png",
+                    "x": 300.0,
+                    "y": 276.0,
+                    "tooltip": "The Bee House can be used to stabilize mutations, for<br/>example if you have successfully bred two different<br/>bees, but the passive traits are different from the<br/>active ones. \n\nTo actually breed those together to<br/>get a new species, you'll need something different<br/>- the Apiary. Building them will require a Carpenter<br/>and Impregnated frames, along with Seed Oil and Creosote<br/>- quite a bit of industrialization! Or, if you're lucky,<br/>you can find a beekeeper villager to trade with. Maybe<br/>you can help the villagers \u00a7lget lucky\u00a7r to make more<br/>beekeeper villagers? If only Cupid and his bow were<br/>around...\n\nProduction rates in an empty Apiary are<br/>low - lower than a Bee House by quite a bit, in fact.<br/> But the Apiary has two big advantages - Frames, and<br/>Automation. You can now use your Untreated or Impregnated<br/>frames in here to boost output - and the boost is multiplied.<br/>So 3 x2 frames gives you 2 * 2 * 2 = 8x extra output!<br/>You can also automate I/O for the bees and their products,<br/>though not frames unfortunately.\n\nBees also don't live<br/>as long as in a Bee House, but that's actually a good<br/>thing.\n\nAlso, you should check the Genetics mod for<br/>useful machines. The Acclimatiser can give very picky<br/>bees a much wider temperature or humidity tolerance<br/>without having to breed it into them.<br/>"
+                },
+                {
+                    "name": "Upgrade Your Forestry Backpack",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6316\u6398\u8005\u80cc\u5305.png",
+                    "x": 252.0,
+                    "y": 60.0,
+                    "tooltip": "With your woven silk you can upgrade your Forestry<br/>backpacks. Each Pack has 45 slots.\n\nYou need a carpenter,<br/>your old backpack and a bit of seed oil.\n\nIf the recipe<br/>isn't working, put the bag in a crafting grid to reset<br/>its nbt data. After removing anything in it of course."
+                },
+                {
+                    "name": "Upgrading the Alveary",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6846\u67b6\u680f.png",
+                    "x": 204.0,
+                    "y": 432.0,
+                    "tooltip": "These basic upgrades to the Alveary make it more powerful.<br/>\n\nFrame Housing - Automation-enabled frame slot for<br/>the Alveary. Uses \u00a755 durability\u00a7r every bee tick (27s).<br/>If it runs out on that tick, it has no effect.\nAveary<br/>Stabilizer - Prevents the bees from mutating into another<br/>species. Ideal for breeding traits into a line.\nAlveary<br/>Transmission - Power input for upgrades that use power.\nHatchery<br/>- Hatches larval bees for use in Genetics or to create<br/>additional drones. Not used for Gendustry stuff.\nAlveary<br/>Sieve - Instead of the pollen from a bee fertilizing<br/>a nearby tree, it is stored here and can be manually<br/>applied. Requires manually placing woven silk in the<br/>inventory.\nSwarmer - Creates additional Ignoble queens<br/>in hives around the Alveary. These are genetic copies<br/>of the original. This uses royal jelly or aromatic<br/>lumps. The latter are more effective.\n\n[note]Note that<br/>all upgrade blocks must be in the bottom 2 layers.<br/>The center block also cannot be an upgrade block, though<br/>the bottom center can.[/note]\n\n[warn]When using power,<br/>the transmission block will suck down entire amps to<br/>fill a tiny amount. Use the EIO capacitors or something<br/>similar to prevent this.[/warn]<br/>"
+                },
+                {
+                    "name": "Welcome to Biology Class!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u786c\u5316\u90e8\u4ef6.png",
+                    "x": 300.0,
+                    "y": 384.0,
+                    "tooltip": "Binnie's Genetics mod will allow you to pick and chose<br/>traits for bees, trees and Botany flowers. But not<br/>for free! Doing this comes at a price.\n\nIt's better<br/>to provide power to an Ender IO capacitor and then<br/>power these machines with RF, instead of powering directly<br/>with GT EU, because they don't work well with GT's"
+                },
+                {
+                    "name": "Woven Silk",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e1d\u7ef8.png",
+                    "x": 204.0,
+                    "y": 12.0,
+                    "tooltip": "Centrifuge your silky propoli to get some silk wisp<br/>at a chance of 60 percent. Put 9 silk wisp in the Forestry<br/>carpenter or GregTech assembler to get woven silk.<br/>\n\nThis fine fabric can be used for crafting Apiarist's<br/>Clothes or to upgrade a Forestry Backpacks to 45 slots."
+                },
+                {
+                    "name": "X-Men, or Should I Say X-Bee?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u56e0\u7a81\u53d8\u5668.png",
+                    "x": 108.0,
+                    "y": 432.0,
+                    "tooltip": "The Mutator can vastly accelerate genetic mutations,<br/>even allowing those ultra rare bees to be bred. Items<br/>inserted into the Mutator control how much mutation<br/>it causes.\n\nSoul Sand - 50 percent increase\nEnder Pearl<br/>- 100 percent increase\nEye of Ender - 300 percent increase"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "A Chest for Bees",
+                    "target": "A Backpack for Bees"
+                },
+                {
+                    "source": "A Chest for...Butterflies? Really?",
+                    "target": "A Bag for Butterflies, \u00a7oyawn\u00a7r"
+                },
+                {
+                    "source": "Upgraded Home",
+                    "target": "A Chest for Bees"
+                },
+                {
+                    "source": "Figuring Out Butterflies",
+                    "target": "A Chest for...Butterflies? Really?"
+                },
+                {
+                    "source": "Mutatron",
+                    "target": "Advanced Mutatron"
+                },
+                {
+                    "source": "Upgraded Home",
+                    "target": "Alvearies"
+                },
+                {
+                    "source": "Isolator",
+                    "target": "Analyser"
+                },
+                {
+                    "source": "A New Home",
+                    "target": "Analyze Them All"
+                },
+                {
+                    "source": "A Rather Cruel Disposal",
+                    "target": "And There Shall be Light"
+                },
+                {
+                    "source": "Arnie's Blender",
+                    "target": "And There Shall be Light"
+                },
+                {
+                    "source": "Frames",
+                    "target": "A New Home"
+                },
+                {
+                    "source": "The Carpenter",
+                    "target": "Apiarist's Cloth"
+                },
+                {
+                    "source": "Woven Silk",
+                    "target": "Apiarist's Cloth"
+                },
+                {
+                    "source": "Diamondware",
+                    "target": "A Rather Cruel Disposal"
+                },
+                {
+                    "source": "Impregnated Frames",
+                    "target": "Are the Bees Buzzing, or Screaming?"
+                },
+                {
+                    "source": "Diamondware",
+                    "target": "Arnie's Blender"
+                },
+                {
+                    "source": "Alvearies",
+                    "target": "A Stim a Day Keeps the Doctor Awake"
+                },
+                {
+                    "source": "To Scan or Not to Scan",
+                    "target": "Bee More Knowledgeable"
+                },
+                {
+                    "source": "Death to Bees!",
+                    "target": "Bees Buzzing Beyond the Dark"
+                },
+                {
+                    "source": "Alvearies",
+                    "target": "Bees By the Millions"
+                },
+                {
+                    "source": "Get it Together Bees!",
+                    "target": "Bee Slurry, the Breakfast of, Well, Weirdos"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "Blank Gene Samples"
+                },
+                {
+                    "source": "Upgraded Home",
+                    "target": "Blank Gene Samples"
+                },
+                {
+                    "source": "Unknown Seeds No More",
+                    "target": "Bringing the Biome to You"
+                },
+                {
+                    "source": "Humid and Warm?",
+                    "target": "Bringing the Biome to You"
+                },
+                {
+                    "source": "Alvearies",
+                    "target": "Busy Bees Buzzing Boldly"
+                },
+                {
+                    "source": "Impregnated Frames",
+                    "target": "Death to Bees!"
+                },
+                {
+                    "source": "Genetic Template",
+                    "target": "Diamondware"
+                },
+                {
+                    "source": "Are the Bees Buzzing, or Screaming?",
+                    "target": "Fastest Way to Get There"
+                },
+                {
+                    "source": "To Scan or Not to Scan",
+                    "target": "Figuring Out Butterflies"
+                },
+                {
+                    "source": "\u00a73\u00a7lWiremill v0.2 Alpha",
+                    "target": "First Things First"
+                },
+                {
+                    "source": "Figuring Out Butterflies",
+                    "target": "Fluttering Facts"
+                },
+                {
+                    "source": "Go Find Some Bees",
+                    "target": "Frames"
+                },
+                {
+                    "source": "Sequencer",
+                    "target": "Gene Database"
+                },
+                {
+                    "source": "Incubator",
+                    "target": "Genepool"
+                },
+                {
+                    "source": "Diamondware",
+                    "target": "Genetic Imprinter"
+                },
+                {
+                    "source": "Diamondware",
+                    "target": "Genetic Sampler"
+                },
+                {
+                    "source": "Blank Gene Samples",
+                    "target": "Genetic Template"
+                },
+                {
+                    "source": "Diamondware",
+                    "target": "Genetic Transposer"
+                },
+                {
+                    "source": "Impregnated Frames",
+                    "target": "Get it Together Bees!"
+                },
+                {
+                    "source": "Bringing the Biome to You",
+                    "target": "Ghetto Biome Changing"
+                },
+                {
+                    "source": "First Things First",
+                    "target": "Go Find Some Bees"
+                },
+                {
+                    "source": "A New Home",
+                    "target": "Go Find Some Tropical Bees"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Highend species: Doctoral"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Highend species: Draconic"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Highend species: Silicon"
+                },
+                {
+                    "source": "A New Home",
+                    "target": "Humid and Warm?"
+                },
+                {
+                    "source": "Admit it, You Love This Pt 1 in UV",
+                    "target": "IAADDS"
+                },
+                {
+                    "source": "Bees By the Millions",
+                    "target": "IAADDS"
+                },
+                {
+                    "source": "A New Home",
+                    "target": "Impregnated Frames"
+                },
+                {
+                    "source": "Welcome to Biology Class!",
+                    "target": "Incubator"
+                },
+                {
+                    "source": "Polymeriser",
+                    "target": "Inoculator"
+                },
+                {
+                    "source": "Genepool",
+                    "target": "Isolator"
+                },
+                {
+                    "source": "Keep Them Around",
+                    "target": "Keep Calm and Bee On"
+                },
+                {
+                    "source": "Impregnated Frames",
+                    "target": "Keep Them Around"
+                },
+                {
+                    "source": "Welcome to Biology Class!",
+                    "target": "Lab Stand"
+                },
+                {
+                    "source": "Welcome to Biology Class!",
+                    "target": "Making Bees More Comfortable"
+                },
+                {
+                    "source": "Breed some imperial bees",
+                    "target": "Master Registry"
+                },
+                {
+                    "source": "\u00a7c\u00a7lTier 6 (LuV)",
+                    "target": "Mutatron"
+                },
+                {
+                    "source": "To Play God",
+                    "target": "Mutatron"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Cave"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Day and Night"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Fertility"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Humidity"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Rain"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Speed Blinding"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Temperature"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Best: Tree Breeding"
+                },
+                {
+                    "source": "Genetic Sampler",
+                    "target": "Only the Worst: Trees Suck!"
+                },
+                {
+                    "source": "Diamondware",
+                    "target": "Pollen Collection Kit"
+                },
+                {
+                    "source": "Sequencer",
+                    "target": "Polymeriser"
+                },
+                {
+                    "source": "Impregnated Frames",
+                    "target": "Production Frames"
+                },
+                {
+                    "source": "To Scan or Not to Scan",
+                    "target": "Put the Drones in a Jar and Shake it Up"
+                },
+                {
+                    "source": "Keeping Track of Your Findings (Flowers)",
+                    "target": "Registry"
+                },
+                {
+                    "source": "Keeping Track of All Those Trees",
+                    "target": "Registry"
+                },
+                {
+                    "source": "Bee More Knowledgeable",
+                    "target": "Registry"
+                },
+                {
+                    "source": "Fluttering Facts",
+                    "target": "Registry"
+                },
+                {
+                    "source": "Isolator",
+                    "target": "Sequencer"
+                },
+                {
+                    "source": "Go Find Some Tropical Bees",
+                    "target": "Silky Combs and Propoli"
+                },
+                {
+                    "source": "\u00a75\u00a7lRound and Round and Round...",
+                    "target": "Silky Combs and Propoli"
+                },
+                {
+                    "source": "Welcome to Biology Class!",
+                    "target": "Tools for the Geneticist"
+                },
+                {
+                    "source": "Upgraded Home",
+                    "target": "To Play God"
+                },
+                {
+                    "source": "Such Pretty Leaves...",
+                    "target": "Top-Tier Analyser"
+                },
+                {
+                    "source": "To Scan or Not to Scan",
+                    "target": "Top-Tier Analyser"
+                },
+                {
+                    "source": "Figuring Out Butterflies",
+                    "target": "Top-Tier Analyser"
+                },
+                {
+                    "source": "A New Home",
+                    "target": "To Scan or Not to Scan"
+                },
+                {
+                    "source": "Impregnated Frames",
+                    "target": "Upgraded Home"
+                },
+                {
+                    "source": "Woven Silk",
+                    "target": "Upgrade Your Forestry Backpack"
+                },
+                {
+                    "source": "\u00a72\u00a7lTanned Leather",
+                    "target": "Upgrade Your Forestry Backpack"
+                },
+                {
+                    "source": "Alvearies",
+                    "target": "Upgrading the Alveary"
+                },
+                {
+                    "source": "Upgraded Home",
+                    "target": "Welcome to Biology Class!"
+                },
+                {
+                    "source": "Silky Combs and Propoli",
+                    "target": "Woven Silk"
+                },
+                {
+                    "source": "\u00a75\u00a7lRound and Round and Round...",
+                    "target": "Woven Silk"
+                },
+                {
+                    "source": "Alvearies",
+                    "target": "X-Men, or Should I Say X-Bee?"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_c5f052c0634e42b7b0425014c54dbb02.setOption(option_c5f052c0634e42b7b0425014c54dbb02);
+            window.addEventListener('resize', function(){
+                chart_c5f052c0634e42b7b0425014c54dbb02.resize();
+            })
+    </script>
+</body>
+</html>
+

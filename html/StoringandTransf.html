@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="4e3ed402cdf94d9aaea1914ff4564e04" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_4e3ed402cdf94d9aaea1914ff4564e04 = echarts.init(
+            document.getElementById('4e3ed402cdf94d9aaea1914ff4564e04'), 'white', {renderer: 'canvas'});
+        var option_4e3ed402cdf94d9aaea1914ff4564e04 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "16 Slot LV Battery Buffer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f4e\u538b\u7535\u6c60\u7bb1.png",
+                    "x": 48.0,
+                    "y": 84.0,
+                    "tooltip": "Upgrade your battery buffer to hold 16 batteries for<br/>primary storage. \n\nYou can use different buffers -<br/>probably with fewer batteries - for your EBF, Arc Furnace,"
+                },
+                {
+                    "name": "\u00a76\u00a7lAt last, the final capacitor!",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u592a\u00b7\u7ec8\u6781\u7535\u5bb9(UMV).png",
+                    "x": -144.0,
+                    "y": 624.0,
+                    "tooltip": "This is the last capacitor so we can't get much higher unfortunately."
+                },
+                {
+                    "name": "\u00a75\u00a7lBattery Alloy",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u7535\u6c60\u5916\u58f3.png",
+                    "x": 0.0,
+                    "y": -12.0,
+                    "tooltip": "Mixing antimony and lead in the alloy smelter will<br/>give you battery alloy. Combine it with tin cable and<br/>voila, there's your small battery hull.\n\nSmall = LV,<br/>Medium = MV, Large = HV. It gets weirder after that.\n\nNote<br/>that if you make the battery alloy in the mixer you<br/>need to use dusts, but if you use the alloy smelter<br/>you can use either.\n\nCheck out the quest tab Storing<br/>and Transforming EU for all details about EU power"
+                },
+                {
+                    "name": "Battery Buffer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f4e\u538b\u7535\u6c60\u7bb1.png",
+                    "x": 0.0,
+                    "y": 84.0,
+                    "tooltip": "Batteries work pretty much the same in a battery buffer<br/>as in a regular machine's battery slot. Battery buffers<br/>are used to buffer power to stabilize output.\n\nThey<br/>come in different sizes: 1, 4, 9(!) and 16 slots. They<br/>can draw 2A and output 1A per battery inserted - watch<br/>your wire amperage! Cables come in 1x, 2x, 4x, 8x,<br/>12x, and 16x, with tin transferring 1A per size. Make<br/>sure not to mess up, or your cable will melt, becoming<br/>a fire, and possibly an explosion.\n\nRemember that there's<br/>loss when outputting EU from any GT machine, so putting<br/>4 4-slot ones in a row loses 8 power compared to 2<br/>from 1 16-slot one. And this is for every amp too.\n\n[note]You<br/>can import batteries into one, but ONLY empty acid<br/>batteries can be exported from one. No, you can't get<br/>around this.[/note]"
+                },
+                {
+                    "name": "\u00a75\u00a7lCable Diodes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ebf\u7f06\u4e8c\u6781\u7ba1 4A LV.png",
+                    "x": -72.0,
+                    "y": 84.0,
+                    "tooltip": "Sometimes you just need a Diode, either to prevent<br/>burning up cables when splitting off a main line, or<br/>on a Thermos Server's chunk borders. Make one 4A Diode"
+                },
+                {
+                    "name": "Can we get much higher?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u72c2\u00b7\u7ec8\u6781\u7535\u5bb9(UIV).png",
+                    "x": -144.0,
+                    "y": 564.0,
+                    "tooltip": "With the EU transfer rates!"
+                },
+                {
+                    "name": "\u00a76\u00a7lDon't Put a Finger in That Socket",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ebf\u7f06\u4e8c\u6781\u7ba1 4A MV.png",
+                    "x": -72.0,
+                    "y": 132.0,
+                    "tooltip": "If you want to pass multiple amps through your cleanroom<br/>walls, use a one-way Diode. Also handy to limit power<br/>when branching off a main power line to trunk lines<br/>that normally will not use as many amps, but that you"
+                },
+                {
+                    "name": "Energy Buffers",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u538b\u80fd\u91cf\u7f13\u51b2\u5668.png",
+                    "x": 0.0,
+                    "y": 276.0,
+                    "tooltip": "Your research into energy has lead you to energy buffers<br/>- a single block that can store enormous amounts, and<br/>is also portable. Better than a battery, these devices<br/>can be configured to output 1-16A. Using a high-amp<br/>transformer, that means you can up tier 2 tiers with<br/>these devices. This HV energy buffer can power an HV<br/>machine for several hours, or an EV machine for almost<br/>an hour. Perfect for mining operations in far off dimensions."
+                },
+                {
+                    "name": "Energy Crystals",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u80fd\u91cf\u6c34\u6676.png",
+                    "x": -96.0,
+                    "y": 180.0,
+                    "tooltip": "Make energium out of ruby and redstone dusts in the<br/>MV mixer. Then use the autoclave to make Energy Crystals.<br/>Energy crystals can store 1 million EU and work as"
+                },
+                {
+                    "name": "Engraved Lapotrons",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u523b\u8680\u5170\u6ce2\u987f\u82af\u7247.png",
+                    "x": -48.0,
+                    "y": 276.0,
+                    "tooltip": "IV tier batteries require a large investment. First, you will need to laser engrave 8 Lapotrons."
+                },
+                {
+                    "name": "EU packets flowing everywhere...",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u80fd\u6e90\u7ad9\u63a7\u5236\u8282\u70b9.png",
+                    "x": -192.0,
+                    "y": 228.0,
+                    "tooltip": "...in my dreams. What if instead of having battery<br/>packs on every generator, we could centralize all the<br/>generation in one location? Put it away from the well<br/>traveled parts of the the base? Out in the country<br/>somewhere?  Let the animals deal with the pollution.<br/> Anyways, let's start working on a Power Sub-Station<br/>to store EU and deliver it to our base."
+                },
+                {
+                    "name": "EV Battery Buffer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d85\u9ad8\u538b\u7535\u6c60\u7bb1.png",
+                    "x": 96.0,
+                    "y": 228.0,
+                    "tooltip": "It's EV, ok?\n\n[note]Complete one task.[/note]"
+                },
+                {
+                    "name": "EV GT++ Batteries",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56db\u8054\u9502\u7535\u6c60.png",
+                    "x": 48.0,
+                    "y": 228.0,
+                    "tooltip": "Want cheaper EV batteries? Mash your old ones together, and somehow it works!"
+                },
+                {
+                    "name": "EV Sunnarium Battery",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u9633\u5149\u5316\u5408\u7269\u7535\u6c60.png",
+                    "x": 0.0,
+                    "y": 228.0,
+                    "tooltip": "Small Sunnarium batteries are EV tier. Some might think<br/>they're cheaper than Lapotrons, but it depends on Sunnarium."
+                },
+                {
+                    "name": "Extremely Ultimate and Ultimately Extreme",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6781\u00b7\u7ec8\u6781\u7535\u5bb9(UEV).png",
+                    "x": -144.0,
+                    "y": 516.0,
+                    "tooltip": "An even more expensive capacitor but it has the same<br/>storage? You are reading that right. But it has much<br/>faster transfer rates to your wireless power network!"
+                },
+                {
+                    "name": "Gotta Pump It Up",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c34\u6cf5(MV).png",
+                    "x": 180.0,
+                    "y": 132.0,
+                    "tooltip": "If you made it this far you may already noticed that<br/>you cannot pour vanilla water into the dam. That\u2019s<br/>what a HydroEnergy Pump is for. This multi-block exists<br/>in multiple tiers and will allow you to reach higher<br/>water levels (= more energy capacity). Provide the<br/>pump with vanilla water as input and pipe the fluid<br/>output into the dam. Then the dam will slowly fill<br/>up. If the dam is full or full for a pump\u2019s voltage<br/>tier, it will void the water and energy.\n\nThat's all<br/>folks! Nothing too fancy here.\n\nIf you have any further<br/>questions, missing information or suggestions please<br/>do not hesitate to post on the official GT New Horizons<br/>Discord. Please add '@SinTh0r4s' to your post to make<br/>sure I\u2019ll see it.\n\n"
+                },
+                {
+                    "name": "HV Battery",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u578b\u9502\u7535\u6c60.png",
+                    "x": 48.0,
+                    "y": 180.0,
+                    "tooltip": "Better machines need some better batteries. Lithium<br/>is the best material to use when making batteries,<br/>at least for LV-HV.\n\n[note]You only need to complete"
+                },
+                {
+                    "name": "HV Battery Buffers",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u538b\u7535\u6c60\u7bb1.png",
+                    "x": 96.0,
+                    "y": 180.0,
+                    "tooltip": "You'll probably want HV battery buffers as well.\n\n[note]You only need to complete one task.[/note]"
+                },
+                {
+                    "name": "HV Battery Hulls",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u7535\u6c60\u5916\u58f3.png",
+                    "x": 0.0,
+                    "y": 180.0,
+                    "tooltip": "Better machines need better batteries. Let's make some<br/>HV battery hulls for new batteries.\n\nIt's up to you<br/>what kind of battery to make, but realistically you'll"
+                },
+                {
+                    "name": "Infinite Energy Storage",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c34\u5e93.png",
+                    "x": 144.0,
+                    "y": 132.0,
+                    "tooltip": "You shouldn't click on links from strangers! Although<br/>this sounds like clickbait it is true. From a certain<br/>point of view.\n\nUse the (potential) force! And store<br/>energy that way. Simply construct a dam and flood vast<br/>areas with water. You may add energy to your storage<br/>by pumping more water into it or just drain it back<br/>into energy whenever you need. This works especially<br/>well with fluctuating energy sources like wind, water,<br/>and solar. Or you dump excess energy into it so you<br/>can use it another time. The capacity is huge and the<br/>choice is yours.\n\nSounds great! But...? - Indeed. There<br/>is a catch: Pumps and Turbines will have efficiency<br/>correlated loss. Still interested? Let's get to crafting!\n\nThe<br/>multi-block has an unusual shape: the back is open.<br/>The lake will spawn inside the multi-block and spread<br/>block-by-block as far as it can/is allowed. It will<br/>replace plants like water (make sure to secure your<br/>IC2 Crops!) but not replace any solid blocks. Additionally,<br/>you can specify limits in any direction. The water<br/>will NEVER spread past these limits. You can set those<br/>limits in a second GUI by right clicking the controller<br/>with a screwdriver.\n\nWhen you enter a limit, it will<br/>correct itself to the nearest valid setting. Especially<br/>if you try to spread past the server limits. You may<br/>talk your admin into raising these limits (these limits<br/>are designed to limit griefing). Further, water is<br/>not able to spread into foreign towns.\nYou will also<br/>find 3 magical buttons in the top-right of this GUI.<br/>From left to right: The first will slowly despawn the<br/>lake blocks. You can use this to shrink the lake if<br/>it spread past a barrier for example. The multi-block<br/>will also initialize with this configuration so there<br/>is no accidental flooding. The second and third buttons<br/>will slowly spawn more lake blocks. Additionally, the<br/>second button will render those lake blocks pink so<br/>you see where they are so you may plug holes and such.<br/>In this \"debug\" mode you can walk/breathe/act in the<br/>lake like in air. This should make it easy to create<br/>a sunken village for decoration purposes. The third<br/>button is for normal operations so you can see the<br/>water and enjoy a swim in your energy buffer.\n\nOf course,<br/>there is also a normal GUI (simple right-click). It<br/>shows you the energy stored in the dam. To reach higher<br/>water levels you are required to use stronger pumps.<br/>For this purpose, you may configure the voltage tier<br/>of the GUI with a circuit in the circuit slot. Don't<br/>worry: It is only optical. You cannot void any energy<br/>if you set a low voltage tier. It is only for the player<br/>information. You may give it a try with the reward<br/>you earn...\n\nIf you have any further questions, find<br/>missing information, or have suggestions please do<br/>not hesitate to post on the official GT New Horizons<br/>Discord. Please add '@SinTh0r4s' to your post to make<br/>sure I\u2019ll see it.\n\n[warn]A warning though: there have<br/>been a lot of mentions of bugs and even world corruptions<br/>caused by the Hydro Dam. Use at your own risk. If you<br/>have more detailed information, please report these<br/>problems on the GTNH github.[/warn]<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Lapotron Crystal",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u6c34\u6676.png",
+                    "x": -96.0,
+                    "y": 228.0,
+                    "tooltip": "With your new HV mixer you can make lapotron dust.<br/>Place it in an autoclave to make some raw lapotron<br/>crystals. With an EV assembler and advanced circuits<br/>you can make lapotron crystals which store up to 10"
+                },
+                {
+                    "name": "Lapotronic Capacitor (ZPM)",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u7535\u5bb9(ZPM).png",
+                    "x": -144.0,
+                    "y": 372.0,
+                    "tooltip": "It holds more than the previous tier, other than that<br/>there is no difference. Your LSC can hold between 540B<br/>and 8.1T EU with these.\n\n[note]Requires EV-tier Glass.[/note]"
+                },
+                {
+                    "name": "Lapotronic Capacitor (LuV)",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u7535\u5bb9(LuV).png",
+                    "x": -144.0,
+                    "y": 324.0,
+                    "tooltip": "It holds more than the previous tier, other than that<br/>there is no difference. Your LSC can hold between 54B"
+                },
+                {
+                    "name": "Lapotronic Capacitor (UV)",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u7535\u5bb9(UV).png",
+                    "x": -144.0,
+                    "y": 420.0,
+                    "tooltip": "It holds more than the previous tier, other than that<br/>there is no difference. Your LSC can hold between 5.4T<br/>and 81T EU with these.\n\n[note]Requires IV-tier Glass.\n\nPS:<br/>The last tier is on the Endgame Goals tab.[/note]"
+                },
+                {
+                    "name": "Lapotronic Capacitor (IV)",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u7535\u5bb9(IV).png",
+                    "x": -144.0,
+                    "y": 276.0,
+                    "tooltip": "It holds more than the previous tier, other than that<br/>there is no difference. Your LSC can hold between 5.4B"
+                },
+                {
+                    "name": "Lapotronic Energy Storage Unit",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/LESU.png",
+                    "x": 144.0,
+                    "y": 228.0,
+                    "tooltip": "The L.E.S.U. is one of the oldest machines still available<br/>in GregTech. Its origins are in Minecraft 1.3.X but<br/>has been redone to fit into this modpack. You can add<br/>a nearly infinite number of LESU casings to it and<br/>you'll have a huge Energy Storage. You might also live<br/>inside your Battery.\n\n[note]PS: It sucks, don't make<br/>it. Maybe somebody will rework or buff it some day.[/note]"
+                },
+                {
+                    "name": "Lapotronic Energy Orb",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u80fd\u91cf\u7403.png",
+                    "x": -96.0,
+                    "y": 276.0,
+                    "tooltip": "The Lapotronic Energy Orb is the IV tier battery item.<br/>It can store 100M EU.\n\n[note]Hint: Until IV, use them<br/>to make some PAs. They're very useful.[/note]"
+                },
+                {
+                    "name": "L.E.S.U. Upgrade - EV Tier",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8fdc\u53e4\u9752\u91d1\u77f3\u53f0\u9636.png",
+                    "x": 252.0,
+                    "y": 264.0,
+                    "tooltip": "Close to 8 Stacks of LESU Casings, this upgrade enables<br/>EV Voltage on your LESU. It's easy until now."
+                },
+                {
+                    "name": "L.E.S.U. Upgrade - HV Tier",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9752\u91d1\u77f3\u677f.png",
+                    "x": 252.0,
+                    "y": 228.0,
+                    "tooltip": "The HV Tier upgrade first needs over a Stack of Casings. More Casings, more Energy, more Capacity."
+                },
+                {
+                    "name": "L.E.S.U. Upgrade - IV Tier",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9752\u91d1\u77f3\u5757.png",
+                    "x": 216.0,
+                    "y": 264.0,
+                    "tooltip": "24 Stacks of LESU Casings. These do fit in your Inventory,<br/>but crafting them is another problem.\n\n[note]If you<br/>don't want to clear out your inventory, just check"
+                },
+                {
+                    "name": "L.E.S.U. Upgrade - LuV Tier",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9752\u91d1\u77f3\u5947\u70b9.png",
+                    "x": 180.0,
+                    "y": 264.0,
+                    "tooltip": "To reach the highest Voltage Tier the LESU can offer,<br/>you need to add an additional amount of LESU Casings.<br/>8193 Casings in total (all upgrades below and these<br/>additional) enable the LuV Input Voltage. To submit<br/>these you'll need to use the Submit Station from the<br/>Steam Tab, since your inventory isn't big enough to<br/>hold 96 Stacks.\n\n[note]I mean you could do that, but<br/>maybe just check the box once your autocrafting is"
+                },
+                {
+                    "name": "L.E.S.U. Upgrade - LV Tier",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u64ae\u9752\u91d1\u77f3\u7c89.png",
+                    "x": 180.0,
+                    "y": 228.0,
+                    "tooltip": "Adding this much Cells anywhere to your LESU will upgrade it from ULV to LV."
+                },
+                {
+                    "name": "L.E.S.U. Upgrade - MV Tier",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9752\u91d1\u77f3.png",
+                    "x": 216.0,
+                    "y": 228.0,
+                    "tooltip": "Adding an additional ammount of Cells will not only<br/>cause your storage capacity to rise, but also will"
+                },
+                {
+                    "name": "Let if flow, let it floww ...",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c34\u8f6e\u673a(MV).png",
+                    "x": 216.0,
+                    "y": 132.0,
+                    "tooltip": "... can't hold it back anymore. It is time to collect<br/>the rewards of your hard work. Connect the fluid output<br/>hatch from the dam to the fluid input hatch of this<br/>turbine and finally enjoy the power! You can pause<br/>this multiblock if you cut the fluid input or use a<br/>machine controller. Oh, and you will get your water<br/>back in the fluid output hatch.\n\nCongratulations to<br/>making it this far! Enjoy your ginormous energy buffer!\n\nIf<br/>you have any further questions, missing information<br/>or suggestions please do not hesitate to post on the<br/>official GT New Horizons Discord. Please add '@SinTh0r4s'<br/>to your post to make sure I\u2019ll see it.\n"
+                },
+                {
+                    "name": "Low Voltage Power Transformer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/LV\u9ad8\u80fd\u53d8\u538b\u5668.png",
+                    "x": -288.0,
+                    "y": 84.0,
+                    "tooltip": "If you need even more amps then craft a power transformer.<br/>This one is 16A -> 64A. The soft mallet is still how"
+                },
+                {
+                    "name": "Low Voltage Transformer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/LV\u53d8\u538b\u5668.png",
+                    "x": -192.0,
+                    "y": 84.0,
+                    "tooltip": "It is possible to run MV machines while still in LV<br/>- build a transformer and use 4 power sources 32 eu/t<br/>to power one 128 eu/t machine.\n\nIt transforms power<br/>up or down, depending on the mode, which you can switch<br/>with a soft mallet. Step-up means 4A LV in, 1A MV out,<br/>while step-down means the reverse.\n\nMake sure you understand<br/>the following if you prefer your base not being a crater:\nA<br/>step-down mode is the default one. In this mode, the<br/>large dot is the input. In a step-up mode, it's the<br/>output. Do not mix it up. LV machines that receive<br/>MV power will explode.\n\nIf the transformer is connected<br/>to power, or was in the past, then do not change the<br/>mode with stuff connected. It's better to break and<br/>place it again to get rid of the stored power rather<br/>than rotate it with the wrench and blow things up.<br/>Make sure to also disconnect the nearby wires with<br/>a wire cutter.\n\nAs a reminder, machines don't blow<br/>up if they are given more amps than they can consume.<br/>They blow up from higher voltage tier.<br/>"
+                },
+                {
+                    "name": "LSC = MC^2",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ec8\u6781\u7535\u5bb9(UHV).png",
+                    "x": -144.0,
+                    "y": 468.0,
+                    "tooltip": "This is the final upgrade to the LSC when it comes<br/>to storage. You can use either the Ultimate or Really<br/>Ultimate batteries to craft it, it costs about the"
+                },
+                {
+                    "name": "LV High-Amp Transformer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/LV\u9ad8\u7535\u6d41\u53d8\u538b\u5668.png",
+                    "x": -240.0,
+                    "y": 84.0,
+                    "tooltip": "If you need a transformer with more than 4A you need<br/>a high amp transformer. You can input 4A MV and output<br/>16A LV. Useful for running lots of LV machines. Its<br/>mode can be changed with a soft mallet, just like before."
+                },
+                {
+                    "name": "Manual Transformer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u53d8\u538b\u5668\u7ebf\u5708\u5757.png",
+                    "x": -240.0,
+                    "y": 228.0,
+                    "tooltip": "Annoyed by building chains of transformers? Don't want<br/>an Explosion Risk at your base? Want to use these fancy<br/>64A Hatches and Dynamos from TecTech to convert your<br/>power? Make a Manual Dynamo and convert it all!\n\n[note]Also<br/>needs a muffler, energy hatch, and dynamo. Not guaranteed<br/>to work, wishing you all the best though.[/note]"
+                },
+                {
+                    "name": "Medium Voltage Transformer",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/MV\u53d8\u538b\u5668.png",
+                    "x": -192.0,
+                    "y": 132.0,
+                    "tooltip": "These work the same as the LV ones, but 1 tier higher."
+                },
+                {
+                    "name": "More Than 4 Amps? Crazy!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/HV\u9ad8\u80fd\u53d8\u538b\u5668.png",
+                    "x": -288.0,
+                    "y": 180.0,
+                    "tooltip": "For the truly insane, there is a 16 to 64 A power amp transformer. Just ludicrous!"
+                },
+                {
+                    "name": "MV Batteries",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u578b\u9502\u7535\u6c60.png",
+                    "x": 48.0,
+                    "y": 132.0,
+                    "tooltip": "Better machines need some better batteries. Lithium<br/>is the best material to use when making batteries.\n\n[note]You<br/>only need to complete one task.[/note]"
+                },
+                {
+                    "name": "MV Battery Buffers",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u538b\u7535\u6c60\u7bb1.png",
+                    "x": 96.0,
+                    "y": 132.0,
+                    "tooltip": "You'll probably want MV battery buffers as well.\n\n[note]You only need to complete one task.[/note]"
+                },
+                {
+                    "name": "MV Battery Hulls",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u578b\u7535\u6c60\u5916\u58f3.png",
+                    "x": 0.0,
+                    "y": 132.0,
+                    "tooltip": "Better machines need better batteries. Let's make some<br/>MV battery hulls for new batteries.\n\nIt's up to you<br/>what kind of battery to make, but realistically you'll"
+                },
+                {
+                    "name": "Nano Crystal",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7eb3\u7c73\u6676\u4f53.png",
+                    "x": -48.0,
+                    "y": 180.0,
+                    "tooltip": "Nano crystals are used for making the nano armor."
+                },
+                {
+                    "name": "Not Enough Amps?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/HV\u9ad8\u7535\u6d41\u53d8\u538b\u5668.png",
+                    "x": -240.0,
+                    "y": 180.0,
+                    "tooltip": "How about 4x more? A Hi-Amp transformer will transform<br/>4A to 16A. Great for setting up a large power grid<br/>and locating polluting power generators further from"
+                },
+                {
+                    "name": "One BILLION EU",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/AFSU.png",
+                    "x": -96.0,
+                    "y": 324.0,
+                    "tooltip": "If you want a stationary battery, you can make an AFSU<br/>capable of storing up to 1 billion EU and charging<br/>items. You can pick it up with a wrench, but you'll<br/>lose a percentage of the stored EU. Make sure you right-click,<br/>not left-click. Left-clicking will cause it to lose<br/>all stored EU.\n\nAs an alternative, if you can afford<br/>them, try the GT++ Energy Buffers. They are more expensive<br/>and cannot charge items, but store more, don't lose<br/>any EU, and can be configured from 1-16A. See the GT++<br/>tab for details.\n\n[note]These can apparently draw infinite<br/>amps, so maybe use a diode or something if you like<br/>having the power on.[/note]"
+                },
+                {
+                    "name": "Power in the Ether",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/UEV\u65e0\u7ebf\u80fd\u6e90\u4ed3.png",
+                    "x": -96.0,
+                    "y": 516.0,
+                    "tooltip": "These new hatches allow you to wirelessly send, store<br/>and receive energy from any location in any dimension.<br/>They can be placed in any existing multi block structure<br/>and will function as normal energy/dynamo hatches.<br/>A dynamo hatch will consume EU and store it in a global<br/>network linked to your user. The wireless network can<br/>store a total of 2^(2^31) EU, far exceeding even a<br/>max tier LSC.\n\nYou can share a wireless network with<br/>others by adding them to your network with /gt global_energy_join<br/>user1 user2. This will make user1 use user2's energy<br/>when interacting with the global network. You can leave<br/>a network at any time by doing /gt global_energy_join<br/>your_name your_name. \n\nYou cannot connect wires to<br/>these blocks. These are also designed to be highly<br/>lag efficient, meaning EU is added at large intervals<br/>to prevent needless calculations from occurring. This<br/>will also save you some TPS lag from vast wire networks.\n\n[note]If<br/>your calculator is giving up, 2^(2^31) is a number<br/>with 646,456,994 digits.[/note]<br/>"
+                },
+                {
+                    "name": "Quantum Crystal",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u91cf\u5b50\u6676\u4f53.png",
+                    "x": -48.0,
+                    "y": 228.0,
+                    "tooltip": "For your quantum armor you need some quantum crystals.<br/>Place a lapotron crystal in your precision laser to<br/>get a quantum crystal. You'll still need to be in IV"
+                },
+                {
+                    "name": "Reusable Battery: Cadmium",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u9549\u7535\u6c60.png",
+                    "x": 0.0,
+                    "y": 36.0,
+                    "tooltip": "This is the Cadmium one."
+                },
+                {
+                    "name": "Reusable Battery: Lithium",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u9502\u7535\u6c60.png",
+                    "x": 36.0,
+                    "y": 36.0,
+                    "tooltip": "...and the Lithium one.\n\n[note]Lithium is the one that<br/>stores the most EU of the 3 rechargable batteries.[/note]"
+                },
+                {
+                    "name": "Reusable Battery: Sodium",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u94a0\u7535\u6c60.png",
+                    "x": 72.0,
+                    "y": 36.0,
+                    "tooltip": "Sodium, cadmium, and lithium batteries are rechargeable<br/>batteries. They're crafted without stored energy, but<br/>can be charged in any gregtech machine. If unneeded,<br/>they can be placed in an extractor and converted back<br/>into small battery hulls, but their contents are lost.\n\nIf<br/>placed in a machine, it will fill up if there's excess<br/>power, and drain if the machine can't get enough. Handy<br/>for high-EU machines you don't want to choke.\n\n[note]Sodium<br/>is the one that stores the least EU of the 3 rechargable<br/>batteries, but is definitely the easiest to get.[/note]<br/>"
+                },
+                {
+                    "name": "\u00a73\u00a7lSafety First",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8b66\u544a\u6807\u5fd7.png",
+                    "x": -192.0,
+                    "y": 36.0,
+                    "tooltip": "For those new to GregTech, here are some tips and warnings<br/>about electricity. \n\nMachines don't like being out<br/>in the rain, and will start fires nearby. Fires next<br/>to a machine have a random chance of an explosion.<br/>Also, sending a higher voltage than a machine's tier<br/>causes an explosion. Or several, if you pack things<br/>together, like many people. Sending more amps than<br/>a machine can use doesn't harm anything though.\n\nSending<br/>too high a voltage or too many amps down a cable will<br/>cause the cable to burn up and start fires, which may<br/>then cause machine explosions. Make sure the number<br/>of amps provided by generators and buffers to a cable<br/>does not exceed the amps it is capable of carrying.\n\nA<br/>generator that supplies 1A can possibly feed multiple<br/>machines, if their recipes require less than the full<br/>voltage.  For example, macerators processing ore only<br/>need 2 EU/t, so you could run several from a single<br/>1A generator, as long as the wires aren't too long.<br/>Why does that matter? Because there's loss for every<br/>amp for every block, listed on the wire/cable. Note<br/>that cables are better than wires. But be careful!<br/>Sometimes a recipe needs a lot more EU than you expect,<br/>like a macerator sand -> quartz dust recipe.\n\nMost<br/>machines only use 1A, however there are exceptions,<br/>such as the arc furnace, thermal centrifuge, world<br/>accelerators, and the UUM machines. Note that machines<br/>can accept more amps than they use (usually 2) in order<br/>to top up their energy supply, especially if they didn't<br/>recieve most of the amp because of loss (mostly a problem<br/>in LV). The formula is (EU/t of Recipe * 2) / Voltage<br/>Tier + 1. Keep this in mind when deciding on cables.\n\nSome<br/>machines are specifically there to help you deal with<br/>multiple amps, such as battery buffers, transformers,<br/>and diodes. Check out the quest tab Storing and Transforming<br/>EU for more on those.\n\nIf you want to send more amps,<br/>use a larger cable or a superconductor (MV+, but ULV<br/>and LV have their own lossless cables). You can use<br/>laser hatches much later to send even more. There even<br/>are wireless options, but not right now.\n\nA single<br/>block machine starved of EU will restart progress but<br/>not lose the recipe items. A multiblock machine will<br/>lose the items.\n\nNote that any block that emits EU<br/>has loss when doing so: 2 ^ (tier-1) per amp. So 1<br/>EU at LV, 2 EU at MV, and so on. Using large numbers<br/>of battery buffers in a row is thus very wasteful of<br/>your power. You have to be careful with losses when<br/>making your first EBF later in LV, maybe rather power<br/>them directly? Of course, if you want to keep your<br/>amps topped up over longer distances, you'll need to<br/>place BBs occasionally to 'top up' the amps, though<br/>this is less the case the further ingame you get, as<br/>the loss becomes less of something to worry about.\n\nIf<br/>this info isn't enough for you, head on over to [url]https://wiki.gtnewhorizons.com/wiki/Electricity[/url]<br/>to read more.<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Single Use Battery: Mercury",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u6c5e\u7535\u6c60.png",
+                    "x": -36.0,
+                    "y": 36.0,
+                    "tooltip": "Mercury and acid batteries are single-use batteries.<br/>They are crafted fully charged but cannot be re-charged.<br/>Once their stored energy is depleted, they can be placed<br/>in an extractor to be converted back into small battery"
+                },
+                {
+                    "name": "Single Use Battery: Acid",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u9178\u7535\u6c60.png",
+                    "x": -72.0,
+                    "y": 36.0,
+                    "tooltip": "Mercury and acid Batteries are single-use batteries.<br/>They are crafted fully charged but cannot be re-charged.<br/>Once their stored energy is depleted, they can be placed<br/>in an extractor to be converted back into small battery"
+                },
+                {
+                    "name": "Storage of the Gods",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u771f\u00b7\u7ec8\u6781\u7535\u6c60.png",
+                    "x": -48.0,
+                    "y": 468.0,
+                    "tooltip": "Who needs a PSS when this bad boy holds over 600,000x as much."
+                },
+                {
+                    "name": "Take charge!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u8d85\u7ea7\u7535\u5bb9\u5e93.png",
+                    "x": -144.0,
+                    "y": 228.0,
+                    "tooltip": "The Lapotronic Supercapacitor is your best option for<br/>massive power storage.\n\nIt can have maintenance issues<br/>which increase its power loss by 20% more each, so<br/>try not to let that slide. Though at most it's still<br/>only 2.2%\n\nFor the first, smallest one, you'll need<br/>the following, plus an Energy Hatch and a Dynamo. Remember<br/>that you can get your Lapos back if you run the capacitor<br/>through an unpackager. Finally a reason to make one!\n\nYou<br/>can use Laser Hatches, that can output very high amperage.<br/>You need at least UV Glass to use them.\n\nYour LSC can<br/>hold between 300 MEU and 25.38 GEU using only the EV<br/>capacitors. Remember that you need more than half the<br/>blocks to be non-empty capacitors for it to be valid.<br/>"
+                },
+                {
+                    "name": "Transform and...Stay Put Actually",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6709\u6e90\u53d8\u538b\u5668.png",
+                    "x": -192.0,
+                    "y": 324.0,
+                    "tooltip": "Active Transformers will transform power up or down<br/>at only a 0.004% power loss, making using several in<br/>a row obsolete, if you can afford it. Unfortunately,<br/>it's kinda expensive. On the other hand, you can use<br/>it to turn your lasers from your laser hatches, which<br/>is probably a better use.\n\nIt doesn't need a Maintenance<br/>Hatch, just the I/O Hatches.\n\n[warn]Be sure to turn<br/>off Power Pass if you want to edit your machine and<br/>don't want it to explode![/warn]"
+                },
+                {
+                    "name": "Transformers, Roll Out!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/HV\u53d8\u538b\u5668.png",
+                    "x": -192.0,
+                    "y": 180.0,
+                    "tooltip": "When you get to HV you'll want to start thinking about<br/>centralizing power generation and delivering power<br/>over longer distances. An HV to EV transformer will<br/>let you send power across your base without too much"
+                },
+                {
+                    "name": "Who Cares About a Little Cancer...",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65e0\u7ebf\u5145\u7535\u5668 MK III.png",
+                    "x": 48.0,
+                    "y": 276.0,
+                    "tooltip": "...when it means you don't have to strip naked to recharge<br/>your nanosuit? \nThe Wireless Charger will keep your<br/>armor and tools charged up without having to put them<br/>into a battery buffer. \n\nIt will charge armor and tools<br/>at the tier and below.\n\nYou didn't want kids anyways..."
+                },
+                {
+                    "name": "Wireless Power!?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7279\u65af\u62c9\u7535\u5854.png",
+                    "x": 144.0,
+                    "y": 180.0,
+                    "tooltip": "Are you sick and tired of having cables all around<br/>your base? Are you tired of having to upgrade your<br/>cables constantly to handle different amperage amounts?<br/>Are you a fan of lightning bolts zapping around your<br/>base?\n\nThen this multiblock is for you, the Telsa Tower<br/>comes with high amperage output and full TecTech energy<br/>hatch support with this powerful multiblock.\n\nTo get<br/>started you will need to fill the tower with capacitors<br/>matching the tier of the Primary Tesla Windings within<br/>the capacitor bank. The Tesla Winding determines the<br/>tier of power that the tower transfers power at and<br/>the amount of capacitors determines the maximum amperage<br/>that can be output. \n\nA total of 16 capacitors can<br/>be placed into one capacitor bank so you might need<br/>many banks depending on your power needs.\n\nOnce the<br/>tower is constructed click open the controller to configure<br/>the maximum transfer distance of the tower to fit the<br/>needs of your base. The range setting is currently<br/>buggy which means that at least for now you can do<br/>so without needing any plasmas. This option is called<br/>\u201cTesla Towers Transfer Radius Setting\u201d.\n\nNow that your<br/>tower is all configured how do you get power out of<br/>it to your machines? Well I am glad you asked. To get<br/>power to the machines of the base you will need to<br/>use the Tesla Coil Covers. Place them on your machines,<br/>energy hatches and even transformers to get power flowing<br/>from the tower. Energy hatches are a bit picky however<br/>and the hatch likes to be facing upwards to receive<br/>power.\n\n[warn]Warning! The Tesla Tower will output<br/>only one tier of amp such as EV, IV etc. When upgrading<br/>the Primary Tesla Windings, please make sure to check<br/>that all of your coil covers and transceivers in the<br/>base can handle the upgraded power. Failure to do so<br/>will result in a machine explosion.[/warn]\n\n[warn]Failure<br/>to turn off the controller before adjustment can also<br/>cause an explosion.[/warn]<br/><br/>"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "Battery Buffer",
+                    "target": "16 Slot LV Battery Buffer"
+                },
+                {
+                    "source": "Can we get much higher?",
+                    "target": "\u00a76\u00a7lAt last, the final capacitor!"
+                },
+                {
+                    "source": "\u00a72\u00a73\u00a75\u00a7lA Lead About Lead That Leads to Lead",
+                    "target": "\u00a75\u00a7lBattery Alloy"
+                },
+                {
+                    "source": "\u00a75\u00a7lAntimony",
+                    "target": "\u00a75\u00a7lBattery Alloy"
+                },
+                {
+                    "source": "Single Use Battery: Mercury",
+                    "target": "Battery Buffer"
+                },
+                {
+                    "source": "Single Use Battery: Acid",
+                    "target": "Battery Buffer"
+                },
+                {
+                    "source": "Reusable Battery: Sodium",
+                    "target": "Battery Buffer"
+                },
+                {
+                    "source": "Reusable Battery: Cadmium",
+                    "target": "Battery Buffer"
+                },
+                {
+                    "source": "Reusable Battery: Lithium",
+                    "target": "Battery Buffer"
+                },
+                {
+                    "source": "\u00a75\u00a7lDiodes",
+                    "target": "\u00a75\u00a7lCable Diodes"
+                },
+                {
+                    "source": "Extremely Ultimate and Ultimately Extreme",
+                    "target": "Can we get much higher?"
+                },
+                {
+                    "source": "\u00a76\u00a7lCleanroom",
+                    "target": "\u00a76\u00a7lDon't Put a Finger in That Socket"
+                },
+                {
+                    "source": "\u00a7b\u00a7lMallard Rust Smelly",
+                    "target": "Energy Buffers"
+                },
+                {
+                    "source": "\u00a79\u00a7lPlaying With Dust",
+                    "target": "Energy Crystals"
+                },
+                {
+                    "source": "Lapotron Crystal",
+                    "target": "Engraved Lapotrons"
+                },
+                {
+                    "source": "\u00a7b\u00a7lMallard Rust Smelly",
+                    "target": "EU packets flowing everywhere..."
+                },
+                {
+                    "source": "\u00a7a\u00a7lTier 4 (EV)",
+                    "target": "EV Battery Buffer"
+                },
+                {
+                    "source": "HV Battery Buffers",
+                    "target": "EV Battery Buffer"
+                },
+                {
+                    "source": "EV Battery Buffer",
+                    "target": "EV GT++ Batteries"
+                },
+                {
+                    "source": "EV Battery Buffer",
+                    "target": "EV Sunnarium Battery"
+                },
+                {
+                    "source": "\u00a7a\u00a7lBlue Steel",
+                    "target": "EV Sunnarium Battery"
+                },
+                {
+                    "source": "Power in the Ether",
+                    "target": "Extremely Ultimate and Ultimately Extreme"
+                },
+                {
+                    "source": "My Eyes Hurt! #4",
+                    "target": "Extremely Ultimate and Ultimately Extreme"
+                },
+                {
+                    "source": "LSC = MC^2",
+                    "target": "Extremely Ultimate and Ultimately Extreme"
+                },
+                {
+                    "source": "Infinite Energy Storage",
+                    "target": "Gotta Pump It Up"
+                },
+                {
+                    "source": "HV Battery Hulls",
+                    "target": "HV Battery"
+                },
+                {
+                    "source": "Energy Crystals",
+                    "target": "HV Battery Buffers"
+                },
+                {
+                    "source": "HV Battery",
+                    "target": "HV Battery Buffers"
+                },
+                {
+                    "source": "\u00a79\u00a7lTier 3 (HV)",
+                    "target": "HV Battery Hulls"
+                },
+                {
+                    "source": "MV Battery Hulls",
+                    "target": "HV Battery Hulls"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "Infinite Energy Storage"
+                },
+                {
+                    "source": "\u00a7a\u00a7lLapotron Dust",
+                    "target": "Lapotron Crystal"
+                },
+                {
+                    "source": "\u00a79\u00a7lMixing at HV Level",
+                    "target": "Lapotron Crystal"
+                },
+                {
+                    "source": "Lapotronic Capacitor (LuV)",
+                    "target": "Lapotronic Capacitor (ZPM)"
+                },
+                {
+                    "source": "Lapotronic Capacitor (IV)",
+                    "target": "Lapotronic Capacitor (LuV)"
+                },
+                {
+                    "source": "Lapotronic Capacitor (ZPM)",
+                    "target": "Lapotronic Capacitor (UV)"
+                },
+                {
+                    "source": "Lapotronic Energy Orb",
+                    "target": "Lapotronic Capacitor (IV)"
+                },
+                {
+                    "source": "Take charge!",
+                    "target": "Lapotronic Capacitor (IV)"
+                },
+                {
+                    "source": "\u00a7a\u00a7lRadon Decay",
+                    "target": "Lapotronic Energy Storage Unit"
+                },
+                {
+                    "source": "\u00a7a\u00a7lRadon Loop",
+                    "target": "Lapotronic Energy Storage Unit"
+                },
+                {
+                    "source": "Engraved Lapotrons",
+                    "target": "Lapotronic Energy Orb"
+                },
+                {
+                    "source": "\u00a7a\u00a7lEmpty Fiber Reinforced Glass Board",
+                    "target": "Lapotronic Energy Orb"
+                },
+                {
+                    "source": "\u00a7a\u00a7lTier 4 (EV)",
+                    "target": "L.E.S.U. Upgrade - EV Tier"
+                },
+                {
+                    "source": "L.E.S.U. Upgrade - HV Tier",
+                    "target": "L.E.S.U. Upgrade - EV Tier"
+                },
+                {
+                    "source": "\u00a79\u00a7lTier 3 (HV)",
+                    "target": "L.E.S.U. Upgrade - HV Tier"
+                },
+                {
+                    "source": "L.E.S.U. Upgrade - MV Tier",
+                    "target": "L.E.S.U. Upgrade - HV Tier"
+                },
+                {
+                    "source": "L.E.S.U. Upgrade - EV Tier",
+                    "target": "L.E.S.U. Upgrade - IV Tier"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "L.E.S.U. Upgrade - IV Tier"
+                },
+                {
+                    "source": "\u00a7c\u00a7lTier 6 (LuV)",
+                    "target": "L.E.S.U. Upgrade - LuV Tier"
+                },
+                {
+                    "source": "L.E.S.U. Upgrade - IV Tier",
+                    "target": "L.E.S.U. Upgrade - LuV Tier"
+                },
+                {
+                    "source": "Lapotronic Energy Storage Unit",
+                    "target": "L.E.S.U. Upgrade - LV Tier"
+                },
+                {
+                    "source": "L.E.S.U. Upgrade - LV Tier",
+                    "target": "L.E.S.U. Upgrade - MV Tier"
+                },
+                {
+                    "source": "Infinite Energy Storage",
+                    "target": "Let if flow, let it floww ..."
+                },
+                {
+                    "source": "LV High-Amp Transformer",
+                    "target": "Low Voltage Power Transformer"
+                },
+                {
+                    "source": "\u00a75\u00a7lGetting Ready for Tier 2, MV",
+                    "target": "Low Voltage Transformer"
+                },
+                {
+                    "source": "Lapotronic Capacitor (UV)",
+                    "target": "LSC = MC^2"
+                },
+                {
+                    "source": "Low Voltage Transformer",
+                    "target": "LV High-Amp Transformer"
+                },
+                {
+                    "source": "\u00a79\u00a7lTitanium, Finally",
+                    "target": "Manual Transformer"
+                },
+                {
+                    "source": "Low Voltage Transformer",
+                    "target": "Medium Voltage Transformer"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "Medium Voltage Transformer"
+                },
+                {
+                    "source": "Not Enough Amps?",
+                    "target": "More Than 4 Amps? Crazy!"
+                },
+                {
+                    "source": "MV Battery Hulls",
+                    "target": "MV Batteries"
+                },
+                {
+                    "source": "MV Batteries",
+                    "target": "MV Battery Buffers"
+                },
+                {
+                    "source": "Battery Buffer",
+                    "target": "MV Battery Hulls"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "MV Battery Hulls"
+                },
+                {
+                    "source": "Energy Crystals",
+                    "target": "Nano Crystal"
+                },
+                {
+                    "source": "Transformers, Roll Out!",
+                    "target": "Not Enough Amps?"
+                },
+                {
+                    "source": "Lapotronic Energy Orb",
+                    "target": "One BILLION EU"
+                },
+                {
+                    "source": "Your First SpaceTime",
+                    "target": "Power in the Ether"
+                },
+                {
+                    "source": "Lapotron Crystal",
+                    "target": "Quantum Crystal"
+                },
+                {
+                    "source": "\u00a7a\u00a7k\u00a7r\u00a7a\u00a7lEV Laser Engraver",
+                    "target": "Quantum Crystal"
+                },
+                {
+                    "source": "\u00a75\u00a7lBasic Canner",
+                    "target": "Reusable Battery: Cadmium"
+                },
+                {
+                    "source": "\u00a75\u00a7lBattery Alloy",
+                    "target": "Reusable Battery: Cadmium"
+                },
+                {
+                    "source": "\u00a75\u00a7lBasic Canner",
+                    "target": "Reusable Battery: Lithium"
+                },
+                {
+                    "source": "\u00a75\u00a7lBattery Alloy",
+                    "target": "Reusable Battery: Lithium"
+                },
+                {
+                    "source": "\u00a75\u00a7lBasic Canner",
+                    "target": "Reusable Battery: Sodium"
+                },
+                {
+                    "source": "\u00a75\u00a7lBattery Alloy",
+                    "target": "Reusable Battery: Sodium"
+                },
+                {
+                    "source": "\u00a73\u00a7lSteam-a-licious!",
+                    "target": "\u00a73\u00a7lSafety First"
+                },
+                {
+                    "source": "\u00a75\u00a7lBattery Alloy",
+                    "target": "Single Use Battery: Mercury"
+                },
+                {
+                    "source": "\u00a75\u00a7lMercury",
+                    "target": "Single Use Battery: Mercury"
+                },
+                {
+                    "source": "\u00a75\u00a7lBattery Alloy",
+                    "target": "Single Use Battery: Acid"
+                },
+                {
+                    "source": "\u00a75\u00a7lSulfuric Acid",
+                    "target": "Single Use Battery: Acid"
+                },
+                {
+                    "source": "UHV Superconductors (2,097,152 EU/t)",
+                    "target": "Storage of the Gods"
+                },
+                {
+                    "source": "UV Field Generator",
+                    "target": "Storage of the Gods"
+                },
+                {
+                    "source": "Lapotron Crystal",
+                    "target": "Take charge!"
+                },
+                {
+                    "source": "\u00a7a\u00a7lNanoprocessor Mainframe",
+                    "target": "Take charge!"
+                },
+                {
+                    "source": "The Beginning of the End Game",
+                    "target": "Transform and...Stay Put Actually"
+                },
+                {
+                    "source": "\u00a79\u00a7lTier 3 (HV)",
+                    "target": "Transformers, Roll Out!"
+                },
+                {
+                    "source": "Medium Voltage Transformer",
+                    "target": "Transformers, Roll Out!"
+                },
+                {
+                    "source": "Carbon Skin",
+                    "target": "Who Cares About a Little Cancer..."
+                },
+                {
+                    "source": "\u00a7a\u00a7lQuantum Eye",
+                    "target": "Who Cares About a Little Cancer..."
+                },
+                {
+                    "source": "\u00a7a\u00a7lEpoxid",
+                    "target": "Wireless Power!?"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_4e3ed402cdf94d9aaea1914ff4564e04.setOption(option_4e3ed402cdf94d9aaea1914ff4564e04);
+            window.addEventListener('resize', function(){
+                chart_4e3ed402cdf94d9aaea1914ff4564e04.resize();
+            })
+    </script>
+</body>
+</html>
+

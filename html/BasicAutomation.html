@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="825f0c7c7ebf42d48db96a023186cea2" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_825f0c7c7ebf42d48db96a023186cea2 = echarts.init(
+            document.getElementById('825f0c7c7ebf42d48db96a023186cea2'), 'white', {renderer: 'canvas'});
+        var option_825f0c7c7ebf42d48db96a023186cea2 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "Advanced Detector Rail",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u7ea7\u63a2\u6d4b\u8f68\u9053.png",
+                    "x": 216.0,
+                    "y": 12.0,
+                    "tooltip": "Now that you have a cargo manager you need a specific<br/>rail so that your cart can interact with it. Just place<br/>it next to the cargo manager, depending on the color<br/>of the side it is on you will have to adjust settings"
+                },
+                {
+                    "name": "A Simple Cart",
+                    "symbolSize": 31.200000000000003,
+                    "x": 324.0,
+                    "y": 108.0,
+                    "tooltip": "In order to create or customize your cart you need<br/>a hull to attach your desired upgrades to. The wooden<br/>one can be used for really simple applications, but<br/>to farm wheat or wood, you need at least an iron one.\n\n\u00a7c\u00a7lWARNING:<br/>\u00a7r\u00a7cUnprotected carts can be knocked off their rails<br/>by lightning. Cover the area with glass (or any solid<br/>block) to prevent carts from disappearing.\n\nAlso, make<br/>sure to keep your cart in one chunk, or use chunkloaders<br/>covering the whole area the cart works within. Loading/unloading<br/>chunks may cause carts to disappear or duplicate.<br/>"
+                },
+                {
+                    "name": "Automated (un-)Loading",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d27\u7269\u7ba1\u7406\u5668.png",
+                    "x": 216.0,
+                    "y": 60.0,
+                    "tooltip": "You can fill and empty your cart manually, but it's<br/>a lot more convenient to automate item transfer, isn't"
+                },
+                {
+                    "name": "Cart Modules: Coal Power",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5c0f\u578b\u7164\u70ad\u5f15\u64ce.png",
+                    "x": 324.0,
+                    "y": 156.0,
+                    "tooltip": "Your cart needs power, obviously. A cart can be powered<br/>via coal, solar, or lava. But for now you have to use"
+                },
+                {
+                    "name": "Cart modules: Digging",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94c1\u5236\u94bb\u5934.png",
+                    "x": 264.0,
+                    "y": 60.0,
+                    "tooltip": "Want to automate digging for ores ? A drill head made out of iron is the cheapest alternative."
+                },
+                {
+                    "name": "Cart Modules: Farming",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u7840\u79cd\u690d\u5668.png",
+                    "x": 384.0,
+                    "y": 60.0,
+                    "tooltip": "Unfortunately, the basic farmer can't farm anything<br/>besides wheat, carrots and potatoes. It's not expensive<br/>at all, and probably the cheapest solution to give<br/>your automated food production a nice boost."
+                },
+                {
+                    "name": "Cart Modules: More Storage",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u524d\u90e8\u7bb1\u5b50.png",
+                    "x": 432.0,
+                    "y": 108.0,
+                    "tooltip": "After you craft side chests you can add more different<br/>chests to the cart. Some sides are reserved for tools"
+                },
+                {
+                    "name": "Cart Modules: Solar Power",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u7840\u592a\u9633\u80fd\u5f15\u64ce.png",
+                    "x": 264.0,
+                    "y": 156.0,
+                    "tooltip": "Your cart needs power, obviously. A cart can be powered<br/>via coal, solar or lava. If you are able to make solar<br/>panels you can power your cart with the sun."
+                },
+                {
+                    "name": "Cart Modules: Storage",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4fa7\u9762\u7bb1\u5b50.png",
+                    "x": 384.0,
+                    "y": 108.0,
+                    "tooltip": "A basic cart can't hold any items, so you need to attach special chests to it."
+                },
+                {
+                    "name": "Cart Modules: Thermal Engine",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u70ed\u80fd\u5f15\u64ce.png",
+                    "x": 384.0,
+                    "y": 156.0,
+                    "tooltip": "Your cart needs power, obviously. A cart can be powered<br/>via coal, solar or lava. Why not power your cart with"
+                },
+                {
+                    "name": "Cart Modules: Wood Cutter",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u7840\u4f10\u6728\u5668.png",
+                    "x": 324.0,
+                    "y": 60.0,
+                    "tooltip": "The basic wood cutter will break after a while, but<br/>you never have to replace it. It can easily be repaired"
+                },
+                {
+                    "name": "Chips",
+                    "symbolSize": 31.200000000000003,
+                    "x": 60.0,
+                    "y": 60.0,
+                    "tooltip": "Now you need to make some chips to use in those interface<br/>pipes. These ones do not do anything but are needed<br/>as a material for crafting the others.\n\nNow would be<br/>a good time to look into IC2 crops to get all the dyes<br/>you will need for your advanced chips.\n\n[note]If NEI's<br/>bookmarks are blocking you on the left, you can turn<br/>it off (O) until that gets fixed.[/note]"
+                },
+                {
+                    "name": "Crafting Chip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 60.0,
+                    "y": 240.0,
+                    "tooltip": "The crafting chip does exactly what it says. It's not<br/>just for default crafting. You can use it with GT machines.<br/>Just put in the matrix that it should insert and the<br/>output is what it should extract. A great use for them<br/>is in combination with fluid canners or super tanks<br/>for filling cells.\n\n\n[note]While these chips are really<br/>powerful for your PRT system they become a laghazard<br/>relatively quickly, so be careful.[/note]"
+                },
+                {
+                    "name": "Dealing with H2S",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u786b\u5316\u6c22\u5355\u5143.png",
+                    "x": 60.0,
+                    "y": 288.0,
+                    "tooltip": "Now let's convert all that H2S into sulfuric acid.<br/>Hook up a chemical reactor to electricity, water and<br/>interface pipe. Put inside an item responder chip set<br/>to accept H2S cells and extract empty cells. Distill<br/>that diluted sulfuric acid in distillery and store<br/>it in super tank.\n\nCongratulations. You now have a<br/>completely automatic desulfuring of oil, automatic<br/>production of hydrogen and oxygen and you also store"
+                },
+                {
+                    "name": "Desulfurizing Oil Automation",
+                    "symbolSize": 31.200000000000003,
+                    "x": 108.0,
+                    "y": 240.0,
+                    "tooltip": "This quest line will show you how to automate desulfurizing<br/>of oil products. Return here once you have unlocked<br/>the LV distillery quest and have some polyethylene"
+                },
+                {
+                    "name": "Desulfurizing the Oil",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u542b\u786b\u8f7b\u71c3\u6cb9\u5355\u5143.png",
+                    "x": 108.0,
+                    "y": 288.0,
+                    "tooltip": "Now it's time to start the actual desulfurization.<br/>Use a chemical reactor of your choice, fill it with<br/>sulfuric light fuel and hook it to power. Now connect<br/>an interface pipe to it. Put an item stock keeper inside<br/>set to store 4 hydrogen cells. Then put in item extractor<br/>set to extract hydrogen sulfide and empty cells.\n\nGo<br/>to your hydrogen storage super tank and put in a crafting<br/>chip set to make one hydrogen cell from one empty cell.\n\nAnd<br/>that's all."
+                },
+                {
+                    "name": "Does Anyone Even Still Use These?",
+                    "symbolSize": 31.200000000000003,
+                    "x": 324.0,
+                    "y": 204.0,
+                    "tooltip": "If you do, they're now really good. I guess. They sound like it at least?"
+                },
+                {
+                    "name": "Dynamic Item Responder",
+                    "symbolSize": 31.200000000000003,
+                    "x": 144.0,
+                    "y": 96.0,
+                    "tooltip": "The dynamic item responder chip behaves exactly like<br/>an item responder chip, but instead of you setting<br/>up which items it should accept, it looks in the chest<br/>what items are there and those items it will accept."
+                },
+                {
+                    "name": "Electrolyzing Water",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c34.png",
+                    "x": 156.0,
+                    "y": 288.0,
+                    "tooltip": "Now let's automate electrolyzing water into oxygen<br/>and hydrogen. You'll need hydrogen for tons of stuff<br/>including desulfurization, obtaining tungsten, and<br/>nitric acid production. Oxygen is also useful as I'm<br/>sure you noticed when making steel.\n\nHow to set it<br/>up:\n\nPlace the electrolyzer down and connect it to<br/>water and electricity. Place the 2 super tanks nearby.<br/>Set the electrolyzer to produce hydrogen gas and oxygen<br/>cells. Use normal GT fluid pipes to output the hydrogen<br/>gas into one super tank. That is now your hydrogen<br/>storage. Now connect interface pipes to all 3 machines.\n\nFor<br/>the electrolyzer put in item stock keeper set to keep<br/>2 empty cells stored. Also put in extractor set to<br/>extract oxygen cells.\n\nNow for the oxygen storage put<br/>it item responder chip set to accept oxygen cells and<br/>extractor set to extract empty cells.\n\nNow put some<br/>empty cells inside your default storage chest and don't<br/>forget to have a broadcaster there."
+                },
+                {
+                    "name": "Further Automation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5916\u90e8\u5206\u914d\u5668.png",
+                    "x": 264.0,
+                    "y": 12.0,
+                    "tooltip": "If you want to load and unload a lot of different items<br/>from your cargo manager the pipes can get quite messy.<br/>The external distributor is a block you can place next<br/>to your cargo manager and it will help you to access<br/>different slots which you can specify in its GUI. Quite<br/>handy for pumping items in and out!"
+                },
+                {
+                    "name": "Interacting With Stuff",
+                    "symbolSize": 31.200000000000003,
+                    "x": 60.0,
+                    "y": 12.0,
+                    "tooltip": "That's all nice and all, but none of these pipes connect<br/>to chests and machines. What am I supposed to do with<br/>them?\n\nI'm glad you asked. You are going to need a<br/>special pipe for that. This is a pipe you need to use<br/>to connect to machines and chests. You'll have to set<br/>it up with chips that we'll make soon."
+                },
+                {
+                    "name": "Item Broadcaster",
+                    "symbolSize": 31.200000000000003,
+                    "x": 60.0,
+                    "y": 192.0,
+                    "tooltip": "The item broadcaster is a chip that tells everything<br/>in the pipe system what items it has in the connecting<br/>inventory and if another chip needs anything it will<br/>send it to them. Right click it to set the items it<br/>will transmit. If you leave it empty and set to blacklist<br/>it will transmit everything.\n\nDefinitely use one in<br/>combination with an item overflow chip on your default<br/>storage chest. That way overflow will end up in the<br/>chest, but will be useable by the rest of your system."
+                },
+                {
+                    "name": "Item Extractor Chip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 60.0,
+                    "y": 144.0,
+                    "tooltip": "This chip will extract items from the connecting inventory.<br/>The extracted items then look for pipes with item responder<br/>chips where there's a free space they could go. If<br/>they don't find any they will go to the overflow default<br/>storage chest.\n\nIf you want it to extract everything<br/>leave the filter empty and set it to blacklist."
+                },
+                {
+                    "name": "Item Overflow Chip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 24.0,
+                    "y": 96.0,
+                    "tooltip": "This chip stores the items in a connected inventory.<br/>It designates a storage for items that have no other<br/>place to go. It is strongly recomended to have a default<br/>storage for items in every pipe system, otherwise bad<br/>stuff can happen. Best used with a large chest (diamond<br/>for example).\n\nIt seems to have some bugs though, so<br/>don't craft more than one without testing it first.\n\nYou<br/>might have to just use a normal item responder and<br/>add the items you want routed back to your overflow"
+                },
+                {
+                    "name": "Item Responder Chip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 96.0,
+                    "y": 96.0,
+                    "tooltip": "This chip also stores items in connected invetory.<br/>It designates a storage for items that are set in the<br/>filter of this chip. They do not actively request for<br/>items, they only serve as a destination for items to<br/>go. You can open up the menu by rightclicking the chip.<br/>There you can set which items should it accept and<br/>the priority. Items will go to item responders with"
+                },
+                {
+                    "name": "Item Stock Keeper Chip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 108.0,
+                    "y": 192.0,
+                    "tooltip": "The item stock keeper looks at the connecting inventory<br/>and keeps item stocked in there. If the item is missing<br/>it will keep bothering item broadcasters every few<br/>seconds if they have the item and if they can send<br/>it. It's basically like an annoying child. \n\nIt is<br/>really useful though. Want a chest that will always<br/>have 64 cobble and dirt in it and if you take them<br/>they will get replaced? This guy is perfect for that<br/>job. It's great for keeping machines stocked. When<br/>stocking GT machines, the top left slot of the 3x3<br/>is equal to the left slot of the machine. Want a chemical<br/>reactor that keeps 3 hydrogen cells ready to go to<br/>make ammonia, just add nitrogen? This is the chip for"
+                },
+                {
+                    "name": "Junctions",
+                    "symbolSize": 31.200000000000003,
+                    "x": 108.0,
+                    "y": 12.0,
+                    "tooltip": "So how do we deal with junctions then? We use these<br/>pipes. They are smart and they will send everything<br/>where it needs to go, so if you make a junction make"
+                },
+                {
+                    "name": "Let's Get Some Pipes",
+                    "symbolSize": 31.200000000000003,
+                    "x": 156.0,
+                    "y": 12.0,
+                    "tooltip": "First we're gonna need some pipes to connect everything.<br/>Do not use these pipes in junctions or the items will<br/>choose which path to go at random and you don't want<br/>that.\n\n[note]Keep in mind PR automation is laggy, so<br/>don't use it more than the minimum you can get away<br/>with on servers, wait until AE2 for that. In SP, do<br/>what you want, but keep in mind that AE2 is way more"
+                },
+                {
+                    "name": "More Tree Types",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6a61\u80f6\u6811\u6811\u82d7.png",
+                    "x": 324.0,
+                    "y": 12.0,
+                    "tooltip": "The standard wood cutter can only chop down (and replant)<br/>vanilla trees. If you want to use saplings from other<br/>mods however this addon will come in handy. Who knows<br/>- maybe you're tired of clicking rubber trees with"
+                },
+                {
+                    "name": "Request Pipe",
+                    "symbolSize": 31.200000000000003,
+                    "x": 12.0,
+                    "y": 192.0,
+                    "tooltip": "This pipe lets you request stuff from the system. It<br/>shows all items that are available thanks to broadcast<br/>chips and even stuff that can be crafted thanks to"
+                },
+                {
+                    "name": "Reward for Desulfurizing Automation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6218\u5229\u54c1\u888b(Tier 1 LV).png",
+                    "x": 12.0,
+                    "y": 288.0,
+                    "tooltip": "The greatest reward is having your stuff automated<br/>if you've done everything correctly, but here's a reward<br/>for making it this far.\n\nSome other setups to look<br/>at automating are making polyethylene and nitric acid.<br/>\n\nWith stock keeper chips you can always keep a set<br/>amount on-hand and when you pull out the cells to use<br/>elsewhere, your setup will automatically make more."
+                },
+                {
+                    "name": "Simple Storage System",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u62bd\u5c49\u7ba1\u7406\u5668.png",
+                    "x": 12.0,
+                    "y": 240.0,
+                    "tooltip": "[warn]Using the drawer controller with large amounts<br/>of I/O will tank TPS! If you're on a server, do not<br/>use drawer cubes, or expect the possibility of it being<br/>deleted or you getting banned.[/warn]\n\nTime to build<br/>a simple system to store your stuff. Place down the<br/>drawer controller and place the drawers around it.<br/>Connect the interface pipe to the drawer controller<br/>and put the dynamic item responder and broadcaster<br/>chips inside. Don't forget to set the broadcaster to<br/>transmit everything by leaving the filter empty and<br/>setting it to blacklist. Now you can request stuff<br/>from your storage and if you have a chest with a pipe<br/>and extractor chip everything you put inside will be<br/>sorted into the storage."
+                },
+                {
+                    "name": "Small Reward",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6218\u5229\u54c1\u888b(Tier 1 LV).png",
+                    "x": 156.0,
+                    "y": 192.0,
+                    "tooltip": "Here's a small reward for making all those chips."
+                },
+                {
+                    "name": "Storing the Fluids",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d85\u7ea7\u7f38 I.png",
+                    "x": 156.0,
+                    "y": 240.0,
+                    "tooltip": "First we should make a place to store all the fluids<br/>we'll use.\n\nIf you're interested what they'll be used<br/>for:\n1 for oxygen\n1 for hydrogen\n1 for sulfuric acid"
+                },
+                {
+                    "name": "Your First Automation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u77ff\u8f66\u88c5\u914d\u673a.png",
+                    "x": 216.0,
+                    "y": 108.0,
+                    "tooltip": "Well, probably not the first, but definitely something big! You'll need a cart assembler first."
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "Automated (un-)Loading",
+                    "target": "Advanced Detector Rail"
+                },
+                {
+                    "source": "Your First Automation",
+                    "target": "A Simple Cart"
+                },
+                {
+                    "source": "Your First Automation",
+                    "target": "Automated (un-)Loading"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart Modules: Coal Power"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart modules: Digging"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart Modules: Farming"
+                },
+                {
+                    "source": "Cart Modules: Storage",
+                    "target": "Cart Modules: More Storage"
+                },
+                {
+                    "source": "\u00a76\u00a7lPower of the Sun",
+                    "target": "Cart Modules: Solar Power"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart Modules: Solar Power"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart Modules: Storage"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart Modules: Thermal Engine"
+                },
+                {
+                    "source": "A Simple Cart",
+                    "target": "Cart Modules: Wood Cutter"
+                },
+                {
+                    "source": "Interacting With Stuff",
+                    "target": "Chips"
+                },
+                {
+                    "source": "Item Broadcaster",
+                    "target": "Crafting Chip"
+                },
+                {
+                    "source": "Desulfurizing the Oil",
+                    "target": "Dealing with H2S"
+                },
+                {
+                    "source": "Item Stock Keeper Chip",
+                    "target": "Desulfurizing Oil Automation"
+                },
+                {
+                    "source": "Crafting Chip",
+                    "target": "Desulfurizing Oil Automation"
+                },
+                {
+                    "source": "Electrolyzing Water",
+                    "target": "Desulfurizing the Oil"
+                },
+                {
+                    "source": "One Ingot, Infinite Power",
+                    "target": "Does Anyone Even Still Use These?"
+                },
+                {
+                    "source": "Cart Modules: Solar Power",
+                    "target": "Does Anyone Even Still Use These?"
+                },
+                {
+                    "source": "Cart Modules: Thermal Engine",
+                    "target": "Does Anyone Even Still Use These?"
+                },
+                {
+                    "source": "Cart Modules: Coal Power",
+                    "target": "Does Anyone Even Still Use These?"
+                },
+                {
+                    "source": "Item Responder Chip",
+                    "target": "Dynamic Item Responder"
+                },
+                {
+                    "source": "Storing the Fluids",
+                    "target": "Electrolyzing Water"
+                },
+                {
+                    "source": "Automated (un-)Loading",
+                    "target": "Further Automation"
+                },
+                {
+                    "source": "Junctions",
+                    "target": "Interacting With Stuff"
+                },
+                {
+                    "source": "Item Extractor Chip",
+                    "target": "Item Broadcaster"
+                },
+                {
+                    "source": "Item Responder Chip",
+                    "target": "Item Extractor Chip"
+                },
+                {
+                    "source": "Item Overflow Chip",
+                    "target": "Item Extractor Chip"
+                },
+                {
+                    "source": "Chips",
+                    "target": "Item Overflow Chip"
+                },
+                {
+                    "source": "Chips",
+                    "target": "Item Responder Chip"
+                },
+                {
+                    "source": "Item Broadcaster",
+                    "target": "Item Stock Keeper Chip"
+                },
+                {
+                    "source": "Let's Get Some Pipes",
+                    "target": "Junctions"
+                },
+                {
+                    "source": "\u00a73\u00a7lYour First Electronic Circuit",
+                    "target": "Let's Get Some Pipes"
+                },
+                {
+                    "source": "Cart Modules: Wood Cutter",
+                    "target": "More Tree Types"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "More Tree Types"
+                },
+                {
+                    "source": "Item Broadcaster",
+                    "target": "Request Pipe"
+                },
+                {
+                    "source": "Dealing with H2S",
+                    "target": "Reward for Desulfurizing Automation"
+                },
+                {
+                    "source": "Request Pipe",
+                    "target": "Simple Storage System"
+                },
+                {
+                    "source": "Item Stock Keeper Chip",
+                    "target": "Small Reward"
+                },
+                {
+                    "source": "\u00a75\u00a7lYour Oil is Too Crude? Refine it!",
+                    "target": "Storing the Fluids"
+                },
+                {
+                    "source": "Desulfurizing Oil Automation",
+                    "target": "Storing the Fluids"
+                },
+                {
+                    "source": "\u00a75\u00a7lAvengers, Assemble!",
+                    "target": "Your First Automation"
+                },
+                {
+                    "source": "\u00a75\u00a7lMolten Redstone?",
+                    "target": "Your First Automation"
+                },
+                {
+                    "source": "\u00a75\u00a7lYou're Gonna Hate This #1",
+                    "target": "Your First Automation"
+                },
+                {
+                    "source": "\u00a75\u00a7lYou're Gonna Hate This #4",
+                    "target": "Your First Automation"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_825f0c7c7ebf42d48db96a023186cea2.setOption(option_825f0c7c7ebf42d48db96a023186cea2);
+            window.addEventListener('resize', function(){
+                chart_825f0c7c7ebf42d48db96a023186cea2.resize();
+            })
+    </script>
+</body>
+</html>
+

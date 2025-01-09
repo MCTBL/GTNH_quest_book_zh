@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="0950507d45f34ab09880da01472fd9f2" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_0950507d45f34ab09880da01472fd9f2 = echarts.init(
+            document.getElementById('0950507d45f34ab09880da01472fd9f2'), 'white', {renderer: 'canvas'});
+        var option_0950507d45f34ab09880da01472fd9f2 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "Advanced Cable Cluster",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u7ea7\u96c6\u7ebf\u5668.png",
+                    "x": 156.0,
+                    "y": 240.0,
+                    "tooltip": "The Advanced Cable Cluster will also act as an Inventory cable, extending the range of your MIM."
+                },
+                {
+                    "name": "Advanced Inventory Relay",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u7ea7\u7269\u54c1\u680f\u4e2d\u8f6c\u7ad9.png",
+                    "x": 60.0,
+                    "y": 240.0,
+                    "tooltip": "An Advanced Inventory Relay can add/remove items from a player's inventory."
+                },
+                {
+                    "name": "All Your Card Are Belong To Us",
+                    "symbolSize": 31.200000000000003,
+                    "x": 264.0,
+                    "y": 72.0,
+                    "tooltip": "Card bases are just as you might think they are; they're<br/>the base part that each card you make will use to connect<br/>onto the motherboard.\n\nI suggest making a handful of"
+                },
+                {
+                    "name": "Arithmetic Logic Circuits",
+                    "symbolSize": 31.200000000000003,
+                    "x": 306.0,
+                    "y": 168.0,
+                    "tooltip": "The Arithmetic Logic Circuits are used in numerous<br/>parts;  mostly in groups of 8-16, up to 64.\n   \nSo"
+                },
+                {
+                    "name": "Basic Power Display",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7535\u8111\u5c4f\u5e55\u8986\u76d6\u677f.png",
+                    "x": 480.0,
+                    "y": 216.0,
+                    "tooltip": "For this part we will learn how to use our adapter,<br/>place it next to, let's say your EBFs battery buffer<br/>and connect it to the computer with cables.\nNow lets<br/>type in lua while on the computer to open the LUA environment<br/>where we can test things without worrying about saving<br/>and trying our program.\n\nType in 'component.list()'<br/>this will display a table of all of .list from component.<br/>What we're looking for is gt_batterybuffer.\nIf you<br/>have too many nearby things it may not display and<br/>the way to search the entire list of components is<br/>too advanced for starters.\n\nSo now assign a variable<br/>to it; for example 'a = component.gt_batterybuffer';<br/>now we can call 'a' to see what methods the batteryBuffer<br/>has.\nWhat we'll be using in this example is the 'getBatteryCharge'<br/>method. So type  'a.getBatteryCharge(1)' this will<br/>call the method getBatteryCharge from the first inventory<br/>slot on the gt_batterybuffer in component.\n\nSo if we're<br/>using a 2x2 battery buffer; we can type something like,<br/>'for i=1, 4 do print(a.getBatteryCharge(i)) end'\nPoof<br/>you now see what all the batteries EU values. Now what<br/>can we do with this?\n\nTry making a variable called<br/>'batteryCharge = 0', now do 'for i=1, 4 do batteryCharge<br/>= batteryCharge + a.getBatteryCharge(i) end'\n\nNow print(batteryCharge)<br/>will display the total charge. Here's a program example<br/>of this being used.\n\nPlace in your tape drive and type<br/>'install', and follow the promps to install it into<br/>C. Then edit it, test it, figure how it works.\n\nI suppose<br/>that's enough for now; congrats! Experiment and learn,<br/>and don't forget to check google as much as possible!<br/> \nThis questline will be updated again in the future;<br/>but I figure this is a good ending point for now.<br/><br/><br/>"
+                },
+                {
+                    "name": "BIOS",
+                    "symbolSize": 31.200000000000003,
+                    "x": 300.0,
+                    "y": 72.0,
+                    "tooltip": "The ROM disks are necessary to get your computer to<br/>start, they're also what you use to run a drone off<br/>from.\n\nYour BIOS go onto these little disks,  get a<br/>blank one and write the basic BIOS onto it.\n\nYou can<br/>do this later when you make more computers by flashing<br/>your existing BIOS onto new cards or combining a blank"
+                },
+                {
+                    "name": "Block Detector",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65b9\u5757\u66f4\u65b0\u68c0\u6d4b\u5668.png",
+                    "x": 204.0,
+                    "y": 144.0,
+                    "tooltip": "The Block Detector allows your MIM to detect when a Block update has occured. "
+                },
+                {
+                    "name": "Block Gate",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65b9\u5757\u4ea4\u4e92\u5668.png",
+                    "x": 12.0,
+                    "y": 96.0,
+                    "tooltip": "The Block Gate can break, pickup, or place blocks."
+                },
+                {
+                    "name": "Cable Camouflage",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f2a\u88c5\u65b9\u5757.png",
+                    "x": 12.0,
+                    "y": 144.0,
+                    "tooltip": "Camouflage blocks allow the faces of cable blocks to<br/>be made to imitate any other block. This works in the<br/>full workflow and thus can be updated on the fly.\n\nPlease<br/>note that this block is placed the same as all SFM<br/>cables. It does not act as an inventory cable and thus<br/>will need to be in an advanced cable cluster in many"
+                },
+                {
+                    "name": "Cable Cluster",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u96c6\u7ebf\u5668.png",
+                    "x": 156.0,
+                    "y": 192.0,
+                    "tooltip": "The cable cluster allows you to combine as many of<br/>the other cables together into one block. You could<br/>have a redstone receiver and emitter and a inventory<br/>relay all in one block.\n\nThis cable is a \"terminal\"<br/>cable. It does not extend the MIM beyond it."
+                },
+                {
+                    "name": "Coin Conversion",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/Doge\u5e01.png",
+                    "x": 480.0,
+                    "y": 72.0,
+                    "tooltip": "Sell 32 of those Dogecoins for a Bitcoin."
+                },
+                {
+                    "name": "Computer Case",
+                    "symbolSize": 31.200000000000003,
+                    "x": 384.0,
+                    "y": 228.0,
+                    "tooltip": "100 Percent Waterproof.\n\nThe computer base is the HUB<br/>of all your computer parts essentially. It takes two<br/>memory sticks, a BIOs rom, a CPU, and a hard drive<br/>at the very least to run your computer.\n\nThe power<br/>converter allows you to power it from your GregTech<br/>power grid, and the floppy drive will allow you to<br/>install your operating system onto the hard drive.<br/>Both parts are essential but both for some strange<br/>reason requires the T2 microchips to craft; so I'll<br/>let you trade the materials+T1 Microchips for some."
+                },
+                {
+                    "name": "Control Units",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u63a7\u5236\u5355\u5143(CU).png",
+                    "x": 270.0,
+                    "y": 168.0,
+                    "tooltip": "So controlling! Strangely enough, this part takes an<br/>HV circuit to craft; so here's some to make your first<br/>computer parts in exchange for MV circuits in their<br/>place. Don't spend them all in one place!"
+                },
+                {
+                    "name": "Double Sided Cable Camouflage",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f2a\u88c5\u65b9\u5757-\u53cc\u9762.png",
+                    "x": 12.0,
+                    "y": 192.0,
+                    "tooltip": "Double sided cable camouflage blocks allows setting<br/>the inside face of the cable block, allowing you to"
+                },
+                {
+                    "name": "For All the Artists Out There",
+                    "symbolSize": 31.200000000000003,
+                    "x": 432.0,
+                    "y": 72.0,
+                    "tooltip": "These are the Creative components. Depending on what it is, there's also T2 and T3 components too."
+                },
+                {
+                    "name": "HDD",
+                    "symbolSize": 31.200000000000003,
+                    "x": 384.0,
+                    "y": 42.0,
+                    "tooltip": "Your hard drive is where all your programs and data<br/>is stored.\n\nYou're playing minecraft, you should already<br/>know this though. Unless you use an SSD I guess."
+                },
+                {
+                    "name": "Hello World!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ed1\u5496\u5561.png",
+                    "x": 432.0,
+                    "y": 168.0,
+                    "tooltip": "First things first, let's install OpenOS to the computer<br/>so you don't always need disk in the drive. Type in<br/>'install' and then type 'Y' when asked if you wish<br/>to install OpenOS.\n\nWhen finished, remove the disk<br/>and toss it on your wall and reboot the computer.\n\nType<br/>'df' to display all present file systems and mount<br/>points, you'll notice one named OpenOS; this is your<br/>hard drive's default name after installing the OS.\n\nLet's<br/>change it with 'label -a OpenOS HDD', '-a' checks for<br/>names starting with what you type after it with that<br/>command. [note]<-- part of this is apparently wrong?<br/>Thanks for the non-ticket explaining what part, guys.[/note]\n\nNow<br/>for fun, let's make your first program! How about something<br/>functional, make a with 'edit startup' this will bring<br/>you to an edit page for a new program called startup.<br/>Let's just have it do something simple, 'print(\"Hello<br/>World!\")' Like that'll never get old.\n\nNow press Ctrl+S<br/>to save, and Ctrl+W to get out of that screen. Back<br/>in your home root let's now type startup and you'll<br/>see it display \"Hello World!\" neat huh?\n\nLet's now<br/>make startup actually work on startup. Type 'edit .shrc'<br/>.shrc is a mystic file that runs shell commands when<br/>booting your PC. So in .shrc type 'startup' save and<br/>reboot the computer. Now it should say \"Hello World!\"<br/>upon starting. Double neat right?<br/>"
+                },
+                {
+                    "name": "I Love Pressing the F5 Key.",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u952e\u76d8.png",
+                    "x": 384.0,
+                    "y": 102.0,
+                    "tooltip": "It's so refreshing.\n\nPlace a keyboard facing a screen,<br/>or stuck to the back of a screen to make it able to<br/>interact with a computer.\n\nAbsolutely necessary to<br/>doing anything on your computer, but can safely be<br/>removed once you have an endlessly running program."
+                },
+                {
+                    "name": "Intelligence is the Ability to Adapt to Change",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9002\u914d\u5668.png",
+                    "x": 384.0,
+                    "y": 138.0,
+                    "tooltip": "This block allows our computer to interact with GT machines and everything else.  A must have!"
+                },
+                {
+                    "name": "Inventory Relay",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7269\u54c1\u680f\u4e2d\u8f6c\u7ad9.png",
+                    "x": 60.0,
+                    "y": 192.0,
+                    "tooltip": "The inventory relay can access the inventory of non-stationary entities, such as minecarts."
+                },
+                {
+                    "name": "Item Valve",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7269\u54c1\u9600\u95e8.png",
+                    "x": 108.0,
+                    "y": 192.0,
+                    "tooltip": "The Item Valve allows your factory manager to suck<br/>in dropped items from around them in a 3x3x3 cube.<br/>Or you can use them to push items out into the world"
+                },
+                {
+                    "name": "It's everytime these Transistors",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6676\u4f53\u7ba1.png",
+                    "x": 336.0,
+                    "y": 72.0,
+                    "tooltip": "Hello fellow achievement hunter. \n\nLooking for the<br/>OC Transistor to get one out of all these achievements?\nLucky<br/>you, because now you can craft it and it's realy simple.\n\nJust<br/>put one of your first GT Transistors in your 2x2 crafting<br/>grid and be happy with it's result. Don't forget to<br/>change it back the same way."
+                },
+                {
+                    "name": "Machine Inventory Manager",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u5382\u7ba1\u7406\u5668.png",
+                    "x": 108.0,
+                    "y": 96.0,
+                    "tooltip": "The core block of Stacy's...er Steve's Factory Manager.<br/>SFM is a high tier automation system. While AE2 can<br/>handle a lot of different crafting tasks, SFM can handle<br/>even more complex crafting. It's not actually needed<br/>for the Assembly Line. But still, this is one place<br/>where you can go that route.\n\nInventory Cables connect<br/>the MIM to inventories or tanks.\n\nRight now until some<br/>Moron figures it out, your best bet is to experiment,<br/>ask for help on Discord, and search Google. The interface<br/>resembles most GUI based automation systems like LabView.\n\nThere<br/>have been TPS problems caused by poorly designed SFM<br/>setups. Make sure your outputs are properly emptied,<br/>and don't get filled.\n\nInventory cables are the \"basic\"<br/>cable of SFM. They allow the MIM to interact with an<br/>inventory, and act as a connector cable to other cables.\n\nmehdi2344<br/>thinks my jokes suck, but he's an idiot, so there.<br/>\n\nThanks to Nori Silverrage for writing up these quests!\n\n[note]BTW,<br/>there's a Creative Supplier for creative testing. The<br/>Energistics Connector is disabled because it doesn't<br/>work correctly.[/note]<br/>"
+                },
+                {
+                    "name": "Mounting Your HDD",
+                    "symbolSize": 31.200000000000003,
+                    "x": 432.0,
+                    "y": 216.0,
+                    "tooltip": "Alright, you have your computer, it says \"Hello World!\"<br/>When you start it, and you feel awesome and capable<br/>of world domination. \n\nNow lets setup your HDD. Open<br/>.shrc again in the editor, and press ENTER to go down<br/>a line after the print, and type in 'cd ../' this will<br/>move your viewed directory that's being viewed to the<br/>absolute base directory.  \n\nNow go down another line<br/>and type in 'mount HDD C:' because why not, it's Classic;<br/>this mounts the file drive into the folder you're in.<br/>Go down another line and type cd 'C:/' save and reboot<br/>the computer.\n\nYou'll now start in C:/ nifty! Try typing<br/>'mkdir programs' and now you have a dedicated directory<br/>to put your programs in for the sake of organization.\n'cd<br/>programs' will then take you to programs, and 'cd ../'<br/>will take you back a directory; you can also do things<br/>like, lets say you have a folder called apples in C<br/>as well but you're in apples, type 'cd ../apples' and<br/>it'll take you to apples. '..' essentially just means<br/>previous directory and this can be stacked; works with<br/>copying files and moving them as well, very useful<br/>to know.  \n\nBut right now we're going to do something<br/>functional, come over to the next quest and bring your<br/>adapter and cables.<br/>"
+                },
+                {
+                    "name": "Moving the Manager ",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ba1\u7406\u5668\u590d\u5236\u5668.png",
+                    "x": 192.0,
+                    "y": 48.0,
+                    "tooltip": "Ever finished a wonderful program and then realised<br/>your Manager needs to move and you have to rewrite<br/>the whole thing? Ever need to copy and paste a section<br/>of code a bunch of times and been frustrated that you<br/>can't? Well we've got you covered with the Manager"
+                },
+                {
+                    "name": "My Little Scrench",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u87ba\u4e1d\u5200\u6273\u624b.png",
+                    "x": 384.0,
+                    "y": 198.0,
+                    "tooltip": "A screwdriver and wrench in one. Not really a necessary<br/>tool, but has some purposes; I suggest referring to"
+                },
+                {
+                    "name": "Naming Names",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u5382\u8d34\u6807\u5668.png",
+                    "x": 144.0,
+                    "y": 24.0,
+                    "tooltip": "The Factory Labeler allows you to assign unique names<br/>to anything that can be connected to a Manager - making<br/>it easy to identify when you are setting up commands.\n\nType<br/>in the text box to set a label or to searched stored<br/>labels - click any stored entry to select it, double<br/>click to edit it. Closing the GUI will set the Labeler<br/>to whatever was in the text box at that time.\n\nLeft<br/>click to set labels, right click to open the gui. Setting<br/>a blank label will remove any existing labels.\n\n[note]May<br/>or may not be buggy. Will lose the label in MP when<br/>relogging, but works fine in SP. It'll still work until<br/>you need to change it though. Have fun![/note]<br/>"
+                },
+                {
+                    "name": "Not Your Average Platter",
+                    "symbolSize": 31.200000000000003,
+                    "x": 252.0,
+                    "y": 102.0,
+                    "tooltip": "We'll need these for our hard drives."
+                },
+                {
+                    "name": "Online Shopping - Tier 1",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6bd4\u7279\u5e01.png",
+                    "x": 480.0,
+                    "y": 120.0,
+                    "tooltip": "Hey, a use for bitcoins!"
+                },
+                {
+                    "name": "Purchase Cables",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ebf\u7f06.png",
+                    "x": 540.0,
+                    "y": 216.0,
+                    "tooltip": "I'll sell you 16 cables for two bitcoins."
+                },
+                {
+                    "name": "Purchase Floppy Disk",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8f6f\u76d8.png",
+                    "x": 576.0,
+                    "y": 120.0,
+                    "tooltip": "I'll sell you a Floppy Disk for a Bitcoins."
+                },
+                {
+                    "name": "Purchase Keyboard",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u952e\u76d8.png",
+                    "x": 576.0,
+                    "y": 168.0,
+                    "tooltip": "I'll sell you a Keyboard for two Bitcoins."
+                },
+                {
+                    "name": "Purchase Network Card",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7f51\u5361.png",
+                    "x": 540.0,
+                    "y": 72.0,
+                    "tooltip": "I'll sell you a Network Card for six Bitcoins."
+                },
+                {
+                    "name": "Purchase Tier 1 Graphics Card",
+                    "symbolSize": 31.200000000000003,
+                    "x": 540.0,
+                    "y": 120.0,
+                    "tooltip": "I'll sell you a Tier 1 Graphics Card for four Bitcoins."
+                },
+                {
+                    "name": "Purchase Tier 1 Hard Drive",
+                    "symbolSize": 31.200000000000003,
+                    "x": 576.0,
+                    "y": 72.0,
+                    "tooltip": "I'll sell you a Tier 1 Hard Drive for eight Bitcoins."
+                },
+                {
+                    "name": "Purchase Tier 1 Memory",
+                    "symbolSize": 31.200000000000003,
+                    "x": 540.0,
+                    "y": 168.0,
+                    "tooltip": "I'll sell you a pair of Tier 1 Memory Chips for four Bitcoins."
+                },
+                {
+                    "name": "Purchase Tier 1 Microchip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 576.0,
+                    "y": 216.0,
+                    "tooltip": "I'll sell you a Tier 1 Microchip for two Bitcoins."
+                },
+                {
+                    "name": "Purchase Tier 1 Screen",
+                    "symbolSize": 31.200000000000003,
+                    "x": 576.0,
+                    "y": 24.0,
+                    "tooltip": "I'll sell you a Tier 1 Screen for three Bitcoins."
+                },
+                {
+                    "name": "Purchase Tier 1 Wireless Network Card",
+                    "symbolSize": 31.200000000000003,
+                    "x": 540.0,
+                    "y": 24.0,
+                    "tooltip": "I'll sell you a Tier 1 Wireless Network Card for 12 Bitcoins."
+                },
+                {
+                    "name": "Rapid Item Valve",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5feb\u901f\u7269\u54c1\u9600\u95e8.png",
+                    "x": 108.0,
+                    "y": 240.0,
+                    "tooltip": "Rapid Item Valves can pick up items in the world without any delays."
+                },
+                {
+                    "name": "Redstone Emitter",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ea2\u77f3\u4fe1\u53f7\u53d1\u5c04\u5668.png",
+                    "x": 204.0,
+                    "y": 192.0,
+                    "tooltip": "The Redstone Emitter sends redstone signals on each<br/>of its 6 faces. The redstone signal strength can be"
+                },
+                {
+                    "name": "Redstone Receiver",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ea2\u77f3\u4fe1\u53f7\u63a5\u6536\u5668.png",
+                    "x": 204.0,
+                    "y": 240.0,
+                    "tooltip": "The Redstone Receiver reads redstone signals on each of its 6 faces."
+                },
+                {
+                    "name": "RF Node",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/RF\u8282\u70b9.png",
+                    "x": 24.0,
+                    "y": 48.0,
+                    "tooltip": "The RF Node acts as an I/O point for RF. If you need that, I guess."
+                },
+                {
+                    "name": "Short Term Memory",
+                    "symbolSize": 31.200000000000003,
+                    "x": 384.0,
+                    "y": 72.0,
+                    "tooltip": "Gotta get more RAM.\n\nMemory, or RAM, is essentially<br/>a temporary storage of data on your computer that can<br/>be rapidly accessed via your programs.\n\nHence the name"
+                },
+                {
+                    "name": "Sign Updater",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u544a\u793a\u724c\u66f4\u65b0\u5668.png",
+                    "x": 204.0,
+                    "y": 96.0,
+                    "tooltip": "The Sign Updater allows your MIM to update an external display of information."
+                },
+                {
+                    "name": "The Basics of SFM",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u5382\u7ba1\u7406\u5668.png",
+                    "x": 72.0,
+                    "y": 24.0,
+                    "tooltip": "Variables - Declaration vs Standard\nDeclaration is<br/>simply creating a variable with eligible blocks in<br/>it. This allows easy updating of workflows. For instance<br/>you could have a variable that contains 2 chests. You<br/>use it in a nifty for each loop and later add another<br/>chest. Simply update the variable and the for each<br/>loop will start using it.\n\nStandard variables are able<br/>to be inserted into the middle of a workflow (it has<br/>input/output) and thus can be modified on the run.\n\nPlease<br/>note that for each loops will require a empty variable<br/>to work with. This is listed as \"Element\" in the loop.\n\nGlobal<br/>vs Local\nGlobal will keep changes to a variable that<br/>are done in the workflow, whereas local keeps anything<br/>done local to that part of the workflow.<br/>"
+                },
+                {
+                    "name": "Tier 1",
+                    "symbolSize": 31.200000000000003,
+                    "x": 336.0,
+                    "y": 120.0,
+                    "tooltip": "Congratulations, we have the parts to start making a computer!\n\nLet's start with the basics here."
+                },
+                {
+                    "name": "Transforming Cable Camouflage",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f2a\u88c5\u65b9\u5757-\u53d8\u6362.png",
+                    "x": 12.0,
+                    "y": 240.0,
+                    "tooltip": "Transforming Cable Camouflage allows you to change<br/>the collision box of the cable, so you can turn it"
+                },
+                {
+                    "name": "Welcome to OpenComputers!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56e0\u7279\u7f51.png",
+                    "x": 288.0,
+                    "y": 120.0,
+                    "tooltip": "Hello there, my name is Teirdalin and today we shall<br/>embark on one of the most exciting and fun mods; OpenComputers!<br/>First things first though, you will need some patience<br/>to get through this mod, but it will certainly pay"
+                },
+                {
+                    "name": "What Did the Data Say to the CPU?",
+                    "symbolSize": 31.200000000000003,
+                    "x": 384.0,
+                    "y": 168.0,
+                    "tooltip": "Cache me outside.\n\nYour CPU will essentially be how<br/>fast your computer processes data. \nA stronger CPU"
+                },
+                {
+                    "name": "Woah, Rad Graphics!",
+                    "symbolSize": 31.200000000000003,
+                    "x": 384.0,
+                    "y": 12.0,
+                    "tooltip": "See the digital world.\n\nYour graphics card allows the<br/>computer to draw text and other things to the screen.<br/>\n\nThe better graphics card you use the higher resolution,<br/>and better features can be drawn.\n\nYou also need a<br/>higher tier monitor to display colors or to get touchscreen<br/>compatability, but that's something to worry about"
+                },
+                {
+                    "name": "Your First Computer",
+                    "symbolSize": 31.200000000000003,
+                    "x": 432.0,
+                    "y": 120.0,
+                    "tooltip": "Place the power converter you got earlier near a cable<br/>(you could also power it with RF if you wanted) and<br/>connect it with your wire cutters. Now place your computer<br/>case by the converter and by the magic of technology<br/>it shall fuel the computer case! Now take your hard<br/>drive, memory and graphics cards and place them inside,<br/>place the disk drive next to the computer and insert<br/>the operating system disk. Insert the BIOS we made<br/>into the case and turn it on."
+                },
+                {
+                    "name": "Your First Microchip",
+                    "symbolSize": 31.200000000000003,
+                    "x": 252.0,
+                    "y": 138.0,
+                    "tooltip": "Microchips will be used in most things you make, so<br/>if possible; I suggest bulk crafting quite a few of"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "Cable Cluster",
+                    "target": "Advanced Cable Cluster"
+                },
+                {
+                    "source": "Inventory Relay",
+                    "target": "Advanced Inventory Relay"
+                },
+                {
+                    "source": "Welcome to OpenComputers!",
+                    "target": "All Your Card Are Belong To Us"
+                },
+                {
+                    "source": "Welcome to OpenComputers!",
+                    "target": "Arithmetic Logic Circuits"
+                },
+                {
+                    "source": "Mounting Your HDD",
+                    "target": "Basic Power Display"
+                },
+                {
+                    "source": "Welcome to OpenComputers!",
+                    "target": "BIOS"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Block Detector"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Block Gate"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Cable Camouflage"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Cable Cluster"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Coin Conversion"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "Computer Case"
+                },
+                {
+                    "source": "Welcome to OpenComputers!",
+                    "target": "Control Units"
+                },
+                {
+                    "source": "Cable Camouflage",
+                    "target": "Double Sided Cable Camouflage"
+                },
+                {
+                    "source": "Your First Computer",
+                    "target": "For All the Artists Out There"
+                },
+                {
+                    "source": "\u00a7c\u00a7lCrystalprocessor Mainframe",
+                    "target": "For All the Artists Out There"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "HDD"
+                },
+                {
+                    "source": "Your First Computer",
+                    "target": "Hello World!"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "I Love Pressing the F5 Key."
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "Intelligence is the Ability to Adapt to Change"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Inventory Relay"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Item Valve"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "It's everytime these Transistors"
+                },
+                {
+                    "source": "\u00a79\u00a7lMainframes, Your First IV Circuit ",
+                    "target": "Machine Inventory Manager"
+                },
+                {
+                    "source": "Hello World!",
+                    "target": "Mounting Your HDD"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Moving the Manager "
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "My Little Scrench"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Naming Names"
+                },
+                {
+                    "source": "Welcome to OpenComputers!",
+                    "target": "Not Your Average Platter"
+                },
+                {
+                    "source": "Your First Computer",
+                    "target": "Online Shopping - Tier 1"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Cables"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Floppy Disk"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Keyboard"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Network Card"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Tier 1 Graphics Card"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Tier 1 Hard Drive"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Tier 1 Memory"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Tier 1 Microchip"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Tier 1 Screen"
+                },
+                {
+                    "source": "Online Shopping - Tier 1",
+                    "target": "Purchase Tier 1 Wireless Network Card"
+                },
+                {
+                    "source": "Item Valve",
+                    "target": "Rapid Item Valve"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Redstone Emitter"
+                },
+                {
+                    "source": "Redstone Emitter",
+                    "target": "Redstone Receiver"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "RF Node"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "Short Term Memory"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "Sign Updater"
+                },
+                {
+                    "source": "Machine Inventory Manager",
+                    "target": "The Basics of SFM"
+                },
+                {
+                    "source": "Your First Microchip",
+                    "target": "Tier 1"
+                },
+                {
+                    "source": "Arithmetic Logic Circuits",
+                    "target": "Tier 1"
+                },
+                {
+                    "source": "All Your Card Are Belong To Us",
+                    "target": "Tier 1"
+                },
+                {
+                    "source": "Control Units",
+                    "target": "Tier 1"
+                },
+                {
+                    "source": "Not Your Average Platter",
+                    "target": "Tier 1"
+                },
+                {
+                    "source": "BIOS",
+                    "target": "Tier 1"
+                },
+                {
+                    "source": "Double Sided Cable Camouflage",
+                    "target": "Transforming Cable Camouflage"
+                },
+                {
+                    "source": "\u00a79\u00a7lAdvanced Circuit Assembler",
+                    "target": "Welcome to OpenComputers!"
+                },
+                {
+                    "source": "\u00a76\u00a7lAvengers, Assemble! 2",
+                    "target": "Welcome to OpenComputers!"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "What Did the Data Say to the CPU?"
+                },
+                {
+                    "source": "Tier 1",
+                    "target": "Woah, Rad Graphics!"
+                },
+                {
+                    "source": "Intelligence is the Ability to Adapt to Change",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "I Love Pressing the F5 Key.",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "Short Term Memory",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "Woah, Rad Graphics!",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "What Did the Data Say to the CPU?",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "Computer Case",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "My Little Scrench",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "HDD",
+                    "target": "Your First Computer"
+                },
+                {
+                    "source": "Welcome to OpenComputers!",
+                    "target": "Your First Microchip"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_0950507d45f34ab09880da01472fd9f2.setOption(option_0950507d45f34ab09880da01472fd9f2);
+            window.addEventListener('resize', function(){
+                chart_0950507d45f34ab09880da01472fd9f2.resize();
+            })
+    </script>
+</body>
+</html>
+

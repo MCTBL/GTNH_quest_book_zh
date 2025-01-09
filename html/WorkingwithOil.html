@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="a21dc118829d4aae82a9ee6f6553dec2" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_a21dc118829d4aae82a9ee6f6553dec2 = echarts.init(
+            document.getElementById('a21dc118829d4aae82a9ee6f6553dec2'), 'white', {renderer: 'canvas'});
+        var option_a21dc118829d4aae82a9ee6f6553dec2 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "Acetone and Ethenone",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e59\u70ef\u916e\u5355\u5143.png",
+                    "x": 360.0,
+                    "y": 360.0,
+                    "tooltip": "Another ingredient in the making of TNM is Ethenone,<br/>which can be made directly from Acetone. This one is<br/>a little more organic, which is to say it's much easier<br/>to automate if you chose Benzene or Biomass. From those<br/>routes, you can get it from a Wood Vinegar DT, or reacting<br/>Acetic Acid with Calcite Dust from a Fermented Biomass<br/>DT (get the calcite from electrolyzing Fertilizer).<br/>If you used biomass to get Ammonia, you can do it this<br/>way.\n\nIf not using plants, though, there are other<br/>ways to automate this. Ethenone can be made directly<br/>from Acetic Acid and Sulfuric Acid, and this last one<br/>should already be automated from cleaning the sulfuric<br/>waste from the oil fractions. Acetic Acid, on the other<br/>hand, is a mix of Oxygen and Ethylene, a combo that<br/>you might have already automated to make Polyethylene.<br/>If not, this a good time to do so. \n\nThe amount of<br/>Ethenone you need to make a lot of Cetane-Boosted Diesel<br/>is small, so it's unlikely that you'll run out of Sulfuric<br/>Acid for this. Make sure you automate it all, though.<br/>"
+                },
+                {
+                    "name": "Ammonia Source",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u785d\u9178\u5355\u5143.png",
+                    "x": 264.0,
+                    "y": 360.0,
+                    "tooltip": "One of the components of Tetranitromethane is Nitric<br/>Acid, which is made from Nitrogen Dioxide, and this<br/>from Nitrogen Oxide, which is ultimately created from<br/>Ammonia. You can do a small Chemical Reactor chain<br/>to do this line of recipes, but the better option is<br/>to make an LCR and use the circuit 24 recipe to turn<br/>Ammonia and Oxygen directly into Nitric Acid.\n\nYou'll<br/>still need to automate Ammonia, though, and there are<br/>two main ways of doing this. One of the options is<br/>to create it directly from Nitrogen and Hydrogen, but<br/>this recipe consumes a lot of EU. The other option<br/>is to switch to the biological side of things and get<br/>it from the DT recipe of Fermented Biomass, but this<br/>requires a whole another setup with sapling automation,<br/>a Pyrolyse Oven and some other machines, so don't do<br/>it unless you're interested in getting the other outputs<br/>of that recipe. It, however, might be a good option<br/>if you don't have those yet. Either way, automate your<br/>Ammonia.\n\n"
+                },
+                {
+                    "name": "Basic Cracking",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u7840\u5316\u5b66\u53cd\u5e94\u91dc.png",
+                    "x": 24.0,
+                    "y": 360.0,
+                    "tooltip": "Despite what the Distillery recipe might have led you<br/>to believe, there are many more fractions of Oil than<br/>the four you could choose from. However, to get the<br/>rest of the oil byproducts, you need to split these<br/>four into the others, a process known as cracking.<br/>To crack the fuels, they must not be sulfuric, and<br/>you will need either Hydrogen (hydro-cracking) or Steam<br/>(steam-cracking) to successfully crack. Your Hydrogen<br/>source for desulfurizing is hopefully good enough to<br/>sustain hydro-cracking, and the Steam you were previously<br/>using for power can now be useful to get more out of<br/>the Oil you're pumping.\n\nHeavy Fuel, Light Fuel, Refinery<br/>Gas and Naphtha can each be cracked both ways, and<br/>with three different intensities: lightly, moderately<br/>or severely cracked. This means that each portion has<br/>6 different cracking options, and the products of distilling<br/>them can be cracked once more! There are a lot of options<br/>here, but a few of them stand out for their usefulness.\n\nThe<br/>first one you should try is Refinery Gas. In order<br/>to make that, you will need to desulfurize Sulfuric<br/>Gas, so make some of that in your Distillery. Currently,<br/>you can only crack through the Chemical Reactor, so<br/>once you have the Refinery Gas grab some steam and<br/>get cracking. \n\n*Hint* You should start by making some<br/>Severely-Cracked Refinery Gas\n\n[note]Make x5 as many<br/>cells if you don't want to waste anything.[/note]<br/><br/>"
+                },
+                {
+                    "name": "Boiler and Super Fuel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u949b\u9505\u7089.png",
+                    "x": 504.0,
+                    "y": 216.0,
+                    "tooltip": "With the advancements in building materials you've<br/>made until now, a new kind of generator has been unlocked.<br/>The Large Boilers you might have looked at before,<br/>and perhaps used, change when you reach Titanium, and<br/>if you build one of those, you will get something quite<br/>different from the tiers before.\n\nTo start, most burnable<br/>items don't work here. These advanced boilers need<br/>to burn much hotter, and as such they only accept specific<br/>fuels. The fuel of interest here is one of two, who<br/>are built in a sort of chain, in a similar fashion<br/>as to how Diesel and CBD worked. There is Solid Super<br/>Fuel, and Magic Solid Super Fuel, and they are both<br/>created from some coal-like block, some binder and<br/>some liquid fuel. You can use CBD for this, but Heavy<br/>Fuel and LPG are also options.\n\nWhy go through this<br/>route, though? The answer is that this extra processing,<br/>although it is difficult to automate, creates fuel<br/>that is much more efficient than the fuels that were<br/>put into it, and this is because the advanced Large<br/>Boilers are slow burners that output Superheated Steam,<br/>instead of regular one. This also means that they will<br/>need two turbines to convert all the steam into EU,<br/>and even more if the amount produced is too much for<br/>them. If fuel efficiency is something you're looking<br/>for, you can tackle this challenge and further process<br/>your CBD into something even more powerful.<br/>"
+                },
+                {
+                    "name": "Boosting the Diesel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6da1\u8f6e\u5185\u71c3\u53d1\u7535\u673a.png",
+                    "x": 312.0,
+                    "y": 312.0,
+                    "tooltip": "As you might have guessed, extra byproducts is not<br/>the only thing that HV does with Oil. On top of that,<br/>you can further improve the main fuel that you use<br/>for power, and this builds on the previous tier, as<br/>Diesel did from Light Fuel. As before, you will need<br/>to mix the fuel you have with something else to improve<br/>it, but it is not a direct byproduct this time. Instead,<br/>it's a chemical that requires a complicated processing<br/>chain to produce, at a much higher EU cost, with only<br/>a tiny amount needed to create the next fuel, Cetane-Boosted<br/>Diesel.\n\nTo make this additive, Tetranitromethane (TNM),<br/>you will need to source several chemicals you might<br/>have not used yet. I hope you have some Distillation<br/>Towers handy, because they will be very useful for<br/>this."
+                },
+                {
+                    "name": "Breaking the Mold",
+                    "symbolSize": 62.400000000000006,
+                    "x": 312.0,
+                    "y": 492.0,
+                    "tooltip": "Welcome, o' Baron of Oil. For you who has completed<br/>the 5 questlines of oil processing, a new chapter awaits<br/>you.\n\nThe following quests are not guidelines on how<br/>to work with oil. In reality, they are meant for tiers<br/>where you're not supposed to be using this kind of<br/>power anymore. However, if you do want to continue<br/>it, and push it as far as it can go, the following<br/>are a few challenges that you can take on, mostly for<br/>bragging rights.\n\nAll these challenges are for the<br/>tiers after IV. Some of them are for LuV, others need<br/>further progression. Good luck!"
+                },
+                {
+                    "name": "Buffered Dynamo",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/IV\u52a8\u529b\u4ed3[\u7f13\u51b2].png",
+                    "x": 600.0,
+                    "y": 264.0,
+                    "tooltip": "Another use for a few stacks of Tungstensteel is a<br/>new, even more powerful generator, but you can't run<br/>it just yet. Just like the LCE before it, the IV generator<br/>can't be run without a dynamo hatch that is powerful<br/>enough to keep up with the output, and in this case<br/>it applies to both the boosted and unboosted modes.\n\nWhat<br/>that means is that you need an IV Buffered Dynamo Hatch.<br/>The power will be worth it."
+                },
+                {
+                    "name": "Cetane-Boosted Diesel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u5341\u516d\u70f7\u503c\u67f4\u6cb9\u5355\u5143.png",
+                    "x": 312.0,
+                    "y": 408.0,
+                    "tooltip": "If you made it here, then you should be ready to make<br/>Cetane-Boosted Diesel flow into your generators by<br/>itself. Congratulations!\n\nOil is still the best power<br/>option in HV, building up from what you used in LV.<br/>This CBD you've made will help fuel your EBFs, get<br/>into space and then handle the increased power needs<br/>that EV will throw at you, especially if you want to<br/>make an AE2 network for quick automation. Your singleblock<br/>generators are at the lowest efficiency yet, 85%, but<br/>the fuel you use now has a fuel value of 1 million<br/>EU per bucket, a very powerful liquid compared to any<br/>other you could make at this time.\n\nI'll see you on<br/>EV. Good luck when you make it there."
+                },
+                {
+                    "name": "Desulfurizing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8f7b\u71c3\u6cb9\u5355\u5143.png",
+                    "x": 24.0,
+                    "y": 264.0,
+                    "tooltip": "After distillation, the fluid you got still isn't that<br/>good. It can be used for power, but it's almost as<br/>bad as Oil itself unless you remove the sulfuric content<br/>it has. This applies for all the portions that can<br/>be distilled from Oil, and as such it's a required<br/>step regardless of which one you're working with. \n\nTo<br/>get clean Light Fuel, the sulfur needs to be drawn<br/>out with something that reacts with it, in a Chemical<br/>Reactor. What you need is Hydrogen, a relatively common<br/>gas that can be electrolyzed from water, or from specific<br/>ores (check NEI for all the possible sources). After<br/>reacting, you will get Hydrogen Sulfide and the clean<br/>Light Fuel, which can be further processed or burned<br/>for power at this stage."
+                },
+                {
+                    "name": "Diesel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u67f4\u6cb9\u5355\u5143.png",
+                    "x": 168.0,
+                    "y": 360.0,
+                    "tooltip": "Finally, the oil of the gods. At least, early gods.\n\nDiesel,<br/>as a power source, has widely been known as the optimal<br/>choice all the way up to EV, when you unlock the ability<br/>to make nukes. It can be further upgraded into Cetane-Boosted<br/>Diesel in HV, by adding another chemical chain to it,<br/>but a fuel value of 480k EU on a fuel that needs so<br/>few machines to be made is quite exceptional. It should<br/>be automated as soon as possible, to ensure that you<br/>won't run out of power when you need it the most.\n\nAt<br/>this stage, you can use either LV or MV Diesel Generators.<br/>Using the LV ones will mean you need to make more of<br/>them, and more pollution, but they have 95% fuel efficiency<br/>compared to MV's 90%. It's a difference, but an automated<br/>Diesel setup is unlikely to be affected by a 5% change<br/>in efficiency.\n\nAs you progress, fuel will become more<br/>and more power-dense, but also need more steps automated.<br/>The next tier is much harder than this one, so get<br/>ready!<br/>"
+                },
+                {
+                    "name": "Distillation Tower",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6d01\u51c0\u4e0d\u9508\u94a2\u673a\u68b0\u65b9\u5757.png",
+                    "x": 312.0,
+                    "y": 156.0,
+                    "tooltip": "In HV, your oil processing options soar to new levels<br/>of complexity, and efficiency. Many of the processing<br/>multis that can be used are unlocked in this tier,<br/>and one of the most iconic is the Distillation Tower,<br/>the direct upgrade of the Distillery.\n\nThis tower can<br/>do actual fractional distillation, a process used in<br/>real life petrochemistry to separate oil into many<br/>different parts, based on their boiling points. The<br/>tall structure is required for the process, because<br/>the condensation of the vapours occurs in different<br/>temperatures. And since heating is only applied at<br/>the bottom, temperature drops the higher the vapour<br/>travels. This means that compounds with higher boiling<br/>points will condense sooner and will end up lower in<br/>the column, the opposite is also applicable for compounds<br/>with low boiling points.\n\nThat said, the Distillation<br/>Tower replaces Distilleries by allowing you to collect<br/>all fractions at once, from the same amount of input.<br/>This means that the tower is both more efficient, and<br/>also allows automation of all the outputs at the same<br/>time, but this comes at a cost: the controller needs<br/>EV circuits, which require a built Cleanroom, and the<br/>structure blocks are mostly made of Stainless Steel.<br/>Not only that, but the tower's height depends on the<br/>recipe, since each output needs its own height level<br/>to successfully be extracted. A max-height, 12-block<br/>tall DT can cost almost a dozen stacks of stainless<br/>to build, a very expensive multi for the tier.\n\nInstead<br/>of doing that, the first DT you should build is a 5-block<br/>tall one, to distill the Oil you're pumping out of<br/>reservoirs. Doing this, you can get all the fractions<br/>at once, for a reasonably cheap multi, compared to<br/>its maximum size.<br/>"
+                },
+                {
+                    "name": "Distilled Heavy Fuel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u84b8\u998f\u5854.png",
+                    "x": 264.0,
+                    "y": 240.0,
+                    "tooltip": "You don't always have to crack the base fuels to get<br/>useful chemicals out of them. The best example of this<br/>is Heavy Fuel, whose recipe only has 3 outputs, but<br/>they're all excellent. This is the perfect format for<br/>a Distillation Tower automation, so get on it as soon<br/>as you can, you won't regret it!\n\nAs a sidenote, all<br/>of these are power-dense, and can be used for power<br/>if you stockpile a lot of them. Benzene is the first<br/>one you should use for this purpose, if you wish to<br/>do it, because the other two are core chemicals for<br/>required progression in HV and EV. However, Benzene<br/>can also turn into several useful chemicals, so don't<br/>burn it all for power."
+                },
+                {
+                    "name": "Early Ethylene",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e59\u70ef\u5355\u5143.png",
+                    "x": 24.0,
+                    "y": 408.0,
+                    "tooltip": "In LV, cracking fuels is only possible in a Chemical<br/>Reactor, which has a lower efficiency than the Oil<br/>Cracker multiblock that is available at HV. That said,<br/>it is still a great source of some fluids, one of which<br/>being Ethylene, the precursor to Polyethylene, the<br/>first plastic that can be produced and a required part<br/>of progression in the pack. To obtain Ethylene from<br/>Oil, the best way to go is to severely steam-crack<br/>Refinery Gas.\n\nSimply put the Refinery Gas and the<br/>Steam in a Chemical Reactor with the correct circuit<br/>(check NEI) and then distill the cracked Refinery Gas.<br/>It can give a lot of different outputs, so make sure<br/>you choose the right one. After doing this, you'll<br/>have successfully processed Oil, both for power and<br/>for byproducts. Congratulations!\n\n[note]After you unlock<br/>different types of oil from underground fluids at MV<br/>the best route to ethylene may change depending on<br/>what type of oil you will decide to extract.[/note]<br/>"
+                },
+                {
+                    "name": "Extreme Combustion Engine",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6781\u9650\u5185\u71c3\u5f15\u64ce.png",
+                    "x": 600.0,
+                    "y": 312.0,
+                    "tooltip": "Very similar to the LCE in most aspects, the Extreme<br/>Combustion Engine was created to close the gap between<br/>the diesels and more advanced forms of powergen, mainly<br/>nuclear fusion. However, the main thing they differ<br/>on is the fuel that they can run, and in this case<br/>you're limited to the powerful fuel from the last tier,<br/>High Octane Gasoline.\n\nThat's right, only this fuel<br/>will work, and in exchange the ECE will output more<br/>than 10k EU/t. If you add Liquid Oxygen, which you'll<br/>need 4 Vacuum Freezers for (3 at HV and 1 at EV), you<br/>can keep it boosted permanently, which will send it<br/>up to 4 IV amps of power and 150% fuel efficiency.<br/>It's in your best interest to keep this thing going<br/>if you want to keep using Oil fuels for power, and<br/>the only thing you can rely on is your automated HOG<br/>setup, which you might have to, and should improve<br/>with the new IV multis as soon as you can, unless you<br/>have other sources of power working simultaneously.\n\nAs<br/>a last note, there is also an IV equivalent of the<br/>Vacuum Freezer, if you want to tackle the Liquid Oxygen<br/>needs that way. It's more power efficient, look it<br/>up on the GT++ tab."
+                },
+                {
+                    "name": "Gasoline",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c7d\u6cb9\u5355\u5143.png",
+                    "x": 456.0,
+                    "y": 360.0,
+                    "tooltip": "Raw Gasoline is raw, obviously. To make it a proper<br/>fuel, it needs something explosive mixed in with it...<br/>what could you have that is considered explosive? Maybe<br/>the TNT, or what it's made of?\n\nYou have Toluene automated"
+                },
+                {
+                    "name": "Generator Power",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u52a0\u5f3a\u949b\u673a\u68b0\u65b9\u5757.png",
+                    "x": 456.0,
+                    "y": 156.0,
+                    "tooltip": "Welcome to EV! If you thought the previous tier had<br/>a big jump in oil processing, you are correct, but<br/>now it's going to jump up all over again!\n\nThis tier<br/>does not unlock new processing multis like HV did,<br/>but it does bring better, much better generators. From<br/>now on, your main generators options will almost always<br/>be multiblocks, unless you need an easy-to-move generator<br/>for a multiblock miner or something similar. For your<br/>diesel fuels, the next step is the Large Combustion<br/>Engine (LCE), and there is a quest for it on the Multiblock<br/>Goals tab as usual. This, however, is a big investment<br/>in Titanium, amongst other things, so I hope you have<br/>that processing automated already.\n\nIf you boost the<br/>LCE, you will get both a huge boost in EU/t and efficiency.<br/>While an HV Diesel Generator had an output of 512 EU/t<br/>at 85% efficiency, this expensive multi outputs 6144<br/>EU/t at 150% efficiency! Make sure you have an EV Buffered<br/>Dynamo Hatch that can handle this output.\nThere is<br/>an equivalent turbine for gases, like the Refinery<br/>Gas you might be using to power your oil processing<br/>setup, which is cheaper to build but its performance<br/>depends on the turbine placed inside it, and you won't<br/>be able to get near the levels of the LCE unless you<br/>get some Tungstensteel, and a good metal like Shadow<br/>Metal.<br/>"
+                },
+                {
+                    "name": "Heavy Fuel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8fdb\u9636\u6405\u62cc\u673a.png",
+                    "x": 168.0,
+                    "y": 312.0,
+                    "tooltip": "There is a better way to get fuel from Oil in MV, but<br/>you will need to expand into other fractions instead<br/>of just using Light Fuel. The next step is Diesel,<br/>and it is a mix of 5 buckets of Light Fuel with 1 bucket<br/>of Heavy Fuel, turning into 6 buckets of Diesel that<br/>each have a higher fuel value than the fuel used in<br/>LV.\n\nTo automate this from regular Oil, you will need<br/>another Distillery and Chemical Reactor, and finally<br/>a Mixer to put the fuels together. There are other<br/>possible sources of Heavy Fuel, mentioned on another<br/>quest in this chain, which can be of assistance if<br/>the input of Oil into the setup isn't very high. You<br/>will also need more Hydrogen, so get on it!"
+                },
+                {
+                    "name": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?",
+                    "symbolSize": 62.400000000000006,
+                    "x": 312.0,
+                    "y": 60.0,
+                    "tooltip": "During your travels you may have seen some huge oil<br/>spouts. Now's the time to make a pump and go collect<br/>this black gold into tanks. Oil can be burned directly<br/>in a combustion generator (onsite to power the pump,<br/>perhaps?) or be refined for better fuels and crafting<br/>materials. \n\nBring a generator or battery buffer (with<br/>full batteries obviously) with you to power the pump.<br/>Thanks to the advancement of technology the pump can<br/>auto output on top. Stacking multiple pumps makes them<br/>work faster. In that case, oil has to be removed from<br/>the bottom of the stack using a pump cover or other<br/>means like a conduit.\n\nTaller spouts have more oil.<br/>But for the LV pump, it's better to use the short spouts<br/>if possible since it doesn't have enough range to fully<br/>collect the larger ones in the horizontal range. Save<br/>the taller spouts for MV or HV pumps.\n\nMining pipes<br/>are needed for pumping the oil, same as the auto miner.<br/>When it hits the bottom (or something in the way),<br/>if there's no fluid left to collect, it will start<br/>retracting the pipes. Same thing if you disable it<br/>with a soft mallet. You can also change the range with<br/>a screwdriver if there's a reason to do that, like<br/>collecting lava in a limited area faster.\n\nThese are<br/>GT machines, so remember to protect them (and their<br/>power sources!) from rain on all sides. And set a waypoint<br/>with JourneyMaps so you don't forget where you placed<br/>it!\n\n[note]Once you run out of surface oil, you'll<br/>want to turn to:\n1) Oilsands ore, though this is better<br/>suited for making heavy oil\n2) Making oil from logs<br/>in a pyrolyze oven\n4) Bacterial Vat (EV+)\n5) Crops\n6)<br/>Bees\n7) Underground (UG) oil. Dimensions generally<br/>have a couple fluids that can be accessed with a multiblock<br/>version of the pump, available in MV+[/note]\n\n[note]Heavy<br/>oil cannot be used until MV for anything except lubricant<br/>and burning in semifluid generator since it requires<br/>MV distillery.[/note]<br/><br/>"
+                },
+                {
+                    "name": "Here's Some Oil",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8131\u6c27\u94a2\u673a\u68b0\u65b9\u5757.png",
+                    "x": 24.0,
+                    "y": 156.0,
+                    "tooltip": "[note]Here the oil questlines diverge into two tabs<br/>- part about getting every possible output is in the<br/>LV tab, part about the usefulness of oil is in the<br/>Working with Oil tab, this quest is part of the latter.[/note]\n\nWelcome!<br/>This is the questline that shows the path through oil<br/>processing towards all the useful items and fluids<br/>that can be obtained from it. Working with this black<br/>liquid involves a lot of steps that range from LV (Low<br/>Voltage), all the way to IV (Insane Voltage), and outputs<br/>that are useful at those tiers and beyond. \n\nOil is<br/>useful both for generating power, and to automate a<br/>lot of chemicals that are important for progression.<br/>As you progress, you will be able to get more of it,<br/>and get it faster, as well as process it in new ways<br/>that improve on the setup that you were using before.<br/>It is not a required path for progression in the pack,<br/>but it is a very useful one, should you choose to follow<br/>it.\n\nThe best way to start working with oil is to extract<br/>it from the surface. Oil spouts are visible without<br/>having to dig down, and they can be interacted with<br/>by using a Pump placed above them, alongside a generator<br/>that feeds it some power. You can use some of the Oil<br/>to generate this power for now.<br/>"
+                },
+                {
+                    "name": "High Octane Gasoline",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u8f9b\u70f7\u503c\u6c7d\u6cb9\u5355\u5143.png",
+                    "x": 456.0,
+                    "y": 408.0,
+                    "tooltip": "Gasoline is a regular fuel, as I'm sure you know. Nothing<br/>special about it, it's the same as Diesel but with<br/>a different density, for different engines. In real<br/>life, it's incredibly useful for the average person,<br/>but in GTNH it's mostly replaced by Diesel. However,<br/>that is about to change.\n\nThis step is by far the most<br/>complicated one in the entire chain, but you already<br/>automated all the additives you need, so this is just<br/>a matter of mixing. This is the EV step, the final<br/>step, so put your chemicals together. Add Octane to<br/>help the fuel resist compression after putting in the<br/>explosive Toluene, mix in the nitrous to juice it up<br/>and finish by controlling it with Anti-Knock Agent.<br/>Mix this all with Gasoline and you have HOG, the most<br/>powerful diesel fuel in the game.\n\nThere is more progression<br/>to the oil processing, and more quests from here, but<br/>this is it for fuel improvements. What is left for<br/>you is unlocking, and building even better generators<br/>that can take full advantage of how powerful HOG is.<br/>Nuclear Power is likely to be your next step in power,<br/>as diesels cannot last forever, but you can still continue<br/>through this path.\n\nOh, and congratulations! You have<br/>earned this reward.<br/>"
+                },
+                {
+                    "name": "Hyperheated Steam",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7279\u5927\u9ad8\u538b\u84b8\u6c7d\u6da1\u8f6e.png",
+                    "x": 312.0,
+                    "y": 588.0,
+                    "tooltip": "If there is someone who found themselves invested in<br/>the Large Tungstensteel Boilers, this one is for you.<br/>Through the pollution, the multiblock spamming and<br/>the chained processing lines you need to get here,<br/>you will find that this is a lot of heat for one boiler<br/>to handle. Why not make two quad boilers?\n\nYou might<br/>be thinking about the number of turbine multis you<br/>need to withstand this, but fret not! There are extra<br/>large turbines, for the extra large steam enthusiast.<br/>You will need twelve turbine items for each multi,<br/>and you best bring the best ones you can make! Loose<br/>mode is up to you, just go wild with your super fuel.\n\n[warn]You<br/>will need an Assembly Line to craft the dynamo needed<br/>to complete this quest.[/warn]"
+                },
+                {
+                    "name": "Improved Oil Cracker",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u954d\u94ec\u5408\u91d1\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 456.0,
+                    "y": 264.0,
+                    "tooltip": "Have you built an Oil Cracker? Have you checked its<br/>coils? This multi gets a significant discount to EU/t<br/>when upgrading the coils, but it caps at TPV, at a<br/>maximum of 50% discount. If you are still using low-tier<br/>coils, this is a great time to upgrade them to Nichrome<br/>and enjoy a 40% discount. You could also do TPV directly.\n\nBy<br/>the way, you can wall-share Oil Crackers, just like<br/>DTs, LCRs and many other multis, and doing this will<br/>save on the amount of coils you need!\n\n[note]You only<br/>need to do one of the two tasks.[/note]"
+                },
+                {
+                    "name": "Largest Oil Drain",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6cb9\u6c14\u6d41\u4f53\u94bb\u673a IV.png",
+                    "x": 600.0,
+                    "y": 216.0,
+                    "tooltip": "One way or another, you will need to get Oil faster.<br/>Reservoirs can get really big, but the rig only pumps<br/>from a portion of them... until now. With a few stacks<br/>of Tungstensteel, you can put together the tier 4 of<br/>the Oil Rigs, and suck up all the fluid from a reservoir<br/>at once, covering the full 8x8 chunk size from a single<br/>spot. \n\nIf you need even faster Oil input, build more<br/>rigs! They'll draw from the same pool, and exhaust<br/>it together. If you put them on adjacent reservoir<br/>chunks, you can draw multiple full reservoirs at once<br/>and feed them into a central location, and this transportation<br/>becomes even easier with Ender Tanks, which are unlocked<br/>in this tier."
+                },
+                {
+                    "name": "Light Fuel Power",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u7840\u5185\u71c3\u53d1\u7535\u673a.png",
+                    "x": 24.0,
+                    "y": 312.0,
+                    "tooltip": "Light Fuel is a great power source in LV, for several<br/>reasons. Not only is it much more power-dense than<br/>Steam, which means that you need a smaller amount of<br/>it to get the same EU amount, but the generators that<br/>can burn it have a higher fuel efficiency than the<br/>Steam ones. Even wooden fluid pipes will be enough<br/>to transport this fuel!\n\nThat said, your old generators<br/>will not accept Light Fuel, so you will have to make<br/>some Combustion Generators to get power out of it.<br/>You'll still get one LV amp out of each, which means<br/>you might have to make more if you are running several<br/>machines at once. By the time you build your first<br/>Electric Blast Furnace, you will want 4 of these feeding"
+                },
+                {
+                    "name": "Magic Super Fuel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9b54\u6cd5\u8d85\u7ea7\u71c3\u6599.png",
+                    "x": 504.0,
+                    "y": 264.0,
+                    "tooltip": "Solid Super Fuel is an excellent fuel to burn in the<br/>Titanium Boiler, but you can do something even better<br/>than that. With a touch of magic, you can make yet<br/>another solid fuel with 50% more fuel value than the<br/>last one, but it's very likely that you will need Thaumcraft<br/>progression to automate this fully, should you wish<br/>to do so.\n\nIf you do want to do it, I recommend you<br/>also find a way to automate Coal, from IC2 crops for<br/>example, because the recipes that use it is much more<br/>efficient on liquid fuel than the other coals. You<br/>will also end up making more boilers, perhaps a quad<br/>Titanium Boiler, which will surely force you to increase<br/>the amount of Steam Turbines you'll have to make, but<br/>there is a catch here: you can screwdriver the turbines<br/>into Loose mode, which significantly decreases their<br/>efficiency but boosts their speed by something like<br/>8 times, depending on the turbine you're using. Given<br/>that this process already boosts the efficiency of<br/>your fuels a lot, you may want to lose some of it to<br/>keep your number of turbines low.\n\nI'll leave the planning<br/>up to you."
+                },
+                {
+                    "name": "Maxed Oil Cracker",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u901f\u94a2-G\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 576.0,
+                    "y": 408.0,
+                    "tooltip": "How many oils have you cracked at this point? No matter<br/>the number, you can do it cheaper. Once you reach HSS-G<br/>coils, you will have achieved the maximum EU/t discount<br/>of 50% on your Oil Crackers, and enjoy the full array<br/>of benefits that they can provide you. Don't forget<br/>to overclock them if they're running slow, the energy<br/>cost is minimal at this point."
+                },
+                {
+                    "name": "More Hydrogen",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c22\u5355\u5143.png",
+                    "x": 168.0,
+                    "y": 264.0,
+                    "tooltip": "With more Oil in your hands, you are sure to have problems<br/>with the other inputs you need. Hydrogen is required<br/>to get any type of clean byproduct, and the amount<br/>you need scales with the speed at which your Chemical<br/>Reactors work. It is possible to get a lot of it from<br/>ores, and mining out a Limonite vein will get you enough<br/>to last a long while, but it will eventually run out.<br/>Which automatic sources can you choose from?\n\nThe simplest<br/>option is to electrolyze water. You can just keep feeding<br/>water for free, but it's a slow and inefficient process,<br/>although it also gives you Oxygen. You will need a<br/>few Electrolyzers running to keep it going at a decent<br/>pace. \n\nAn alternative option is to do this, but with<br/>salt water, obtained from Salty Root, if you have delved<br/>into IC2 crops. You will also get Chlorine that you<br/>will need very often in the next two tiers.\n\nLastly,<br/>did you know that most of the oil byproducts are organic<br/>compounds, and as such are made mostly of Carbon and<br/>Hydrogen? You can electrolyze most of them to get these<br/>elements, at a faster rate than water, but only if<br/>you have leftovers. Methane is one of the choices that<br/>you might have stockpiling. However, note that these<br/>byproducts often have fuel values and it's often better<br/>to use them as fuel to then electrolyze (salt) water.\n\nEither<br/>way, you will need Electrolyzers. Build at least an<br/>MV one to continue!<br/>"
+                },
+                {
+                    "name": "More Oil Options",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6cb9\u7802\u77ff\u77f3.png",
+                    "x": 120.0,
+                    "y": 240.0,
+                    "tooltip": "Alongside the Oil Drilling Rig, there are other sources<br/>you can explore. For Heavy Oil, a good source might<br/>be Oilsands Ore, which is found in rare veins at high<br/>altitudes. If you find one, you will have a large amount<br/>of Heavy Fuel to make Diesel with after processing.\n\nThere<br/>are also renewable sources of Oil, namely from IC2<br/>crops and bees. The Oilberry crop can produce it indefinitely,<br/>but at a very slow rate, whereas bees can do it much<br/>faster, particularly Refined Bees, but they are much<br/>harder to obtain.\n\nYou can also get more out of the<br/>Oil by cracking it in specific ways. Lightly Hydrocracked<br/>Heavy Fuel, for example, gives 60% of the input amount<br/>as Light Fuel, which can be helpful if you have an<br/>excess of Heavy, and not enough Light to make Diesel.<br/>"
+                },
+                {
+                    "name": "Oil Cracker",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u77f3\u6cb9\u88c2\u5316\u673a.png",
+                    "x": 312.0,
+                    "y": 264.0,
+                    "tooltip": "Another HV multi, and another Stainless Steel sink.<br/>Not only that, but it needs 16 coils to work! There<br/>is a quest about this multi in the Multiblock Goals<br/>tab, as per usual.\n\nDespite being expensive, this is<br/>an important multiblock to build. It does the cracking<br/>recipes like the Chemical Reactor does, and you might<br/>even be tempted to make an LCR for this purpose, since<br/>it's cheap and can do many recipes at once, but the<br/>Oil Cracker is much more efficient and gives several<br/>bonuses when used (check the tooltip for more information).<br/>As it stands, it's a higher initial investment that<br/>will pay off in the long run, many times over, and<br/>in this pack everything takes a long time, so get on"
+                },
+                {
+                    "name": "Oil Drilling Rig",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5f3a\u5316\u94dd\u673a\u68b0\u65b9\u5757.png",
+                    "x": 168.0,
+                    "y": 156.0,
+                    "tooltip": "In the MV tier, Oil gets a big boost in its effectiveness,<br/>and becomes a fantastic powergen option for anyone<br/>wanting to switch off Steam, if they haven't done it<br/>already. It becomes difficult to use Steam as the only<br/>power source in this tier, so you should find a more<br/>reliable way to get power.\n\nOf course, you might already<br/>be using Light Fuel as your power source of choice,<br/>but a different question might have popped up in your<br/>mind by now: is there a better way to get Oil? Perhaps<br/>you have run short, or perhaps not. Either way, there<br/>is a multi unlocked in this tier that can greatly facilitate<br/>the automation of Oil input into your Distillery. That<br/>multi is the Oil Drilling Rig, which can pump it from<br/>below bedrock, but only if there is some in the current<br/>chunk, which means that you will have to scan the chunks<br/>around you to find it.\n\nThere is a quest for this rig<br/>in the Multiblock Goals tab. Go check it out!<br/>"
+                },
+                {
+                    "name": "Oil Reservoirs",
+                    "symbolSize": 31.200000000000003,
+                    "x": 168.0,
+                    "y": 216.0,
+                    "tooltip": "Unlike the oil spouts that are visible on the surface,<br/>the underground reservoirs cannot be seen or measured<br/>without the use of specific tools.\nThe main quest for<br/>prospecting \"Analyzing the Soil\" is in the LV tab."
+                },
+                {
+                    "name": "Pushing with Anti-Knock Agent",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6297\u7206\u5242\u5355\u5143.png",
+                    "x": 492.0,
+                    "y": 312.0,
+                    "tooltip": "If you want your generators to last, you'll want to<br/>make this. In fact, since safety is always the priority,<br/>you can't make HOG without this Anti-Knock Agent, a<br/>mixture that keeps the fuel from damaging the engine<br/>even when it is this powerful. There are two paths<br/>to get this automated: one with an LCR recipe, and<br/>the other with a DT. The LCR option is cheaper to build,<br/>as per usual, but it consumes considerably more power<br/>than the DT path, so this quest will focus on the latter.<br/>As before, having an initial higher investment to save<br/>energy in the long run is the way to go.\n\nThe DT path<br/>is a cycle between a Mixer and the tower itself, where<br/>each distillation extracts a bit of Anti-Knock Agent<br/>from the MTBE Reaction Mixture, and will need to be<br/>mixed again. The two inputs needed for the setup are<br/>Butene and Methanol. Butene is obtainable from any<br/>of the max-height DT distillations, and Methanol from<br/>a mixture of Hydrogen and Carbon Dioxide/Carbon Monoxide.<br/>If you have a Fermented Biomass setup, you will already<br/>have CO2 ready to go, and Hydrogen can be sourced from<br/>a variety of ways.\n\nMake this cycle, and you'll have<br/>a safe fuel."
+                },
+                {
+                    "name": "Raw Gasoline",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7c97\u6c7d\u6cb9\u5355\u5143.png",
+                    "x": 456.0,
+                    "y": 312.0,
+                    "tooltip": "At this point, you have almost all the additives needed<br/>to transform basic gasoline into the powerful HOG.<br/>What you'll need to do next is to create the gasoline<br/>itself, and this begins with Raw Gasoline. It has four<br/>different inputs, and each of them is sourced in a<br/>different way, but none of them are new: Naphtha and<br/>Refinery gas are well-known to you, Methanol was created<br/>in the previous quest and Acetone was explained in<br/>the \"Acetone and Ethenone\" quest in HV.\n\nAn important<br/>detail here is that Raw Gasoline is 80% Naphtha. It<br/>can be obtained in large quantities from raw oil. If<br/>you are not pumping raw oil, you will most likely find<br/>the amount you get to be short. But this problem has<br/>already been solved! Your source of Octane, if processed<br/>in a DT as explained, will also crack the Light Fuel<br/>into a lot of Naphtha that you can use here to compensate<br/>for the low amount you get from Oil. If you get low<br/>on Light Fuel, you can also crack Heavy Fuel to get<br/>some."
+                },
+                {
+                    "name": "Simple Distillation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57fa\u7840\u84b8\u998f\u5ba4.png",
+                    "x": 24.0,
+                    "y": 216.0,
+                    "tooltip": "As rich as Oil is, it's hardly useful for anything<br/>in this state. One of the most important parts in the<br/>processing chain is distillation, which separates the<br/>components of this black mixture by the difference<br/>in their boiling points. You can do this in a Distillery,<br/>starting in LV, but for now only one of the fractions<br/>can be obtained at a time: you must choose which one<br/>you want.\n\nLighter fractions are generally more useful<br/>than heavier ones, but that doesn't mean that lightest<br/>is best. For now, going for Sulfuric Light Fuel is<br/>the best option, since it will become a good source<br/>of power after being treated. Don't use unprocessed<br/>oil to power these machines, stick to Steam until you<br/>can use something better.\n\n[note]You can find info<br/>about the other fractions in the LV tab![/note]"
+                },
+                {
+                    "name": "Special Rubber from Oil",
+                    "symbolSize": 31.200000000000003,
+                    "x": 360.0,
+                    "y": 240.0,
+                    "tooltip": "Another one of the Oil \"specials\" is Butadiene. It<br/>can be used in a few ways, including power, but where<br/>it shines is in making advanced rubber, specifically<br/>Styrene-Butadiene Rubber. You can make it in HV, but<br/>it is not required to have an improved rubber until<br/>the start of IV. There is a questline for this in the<br/>HV tab, so go check it out.\n\nThere is an equivalent<br/>alternative, Silicone Rubber, made from other inputs.<br/>They are mostly interchangeable, but they each have<br/>some unique use that makes it so you should have a"
+                },
+                {
+                    "name": "Speeding with Octane",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8f9b\u70f7\u5355\u5143.png",
+                    "x": 384.0,
+                    "y": 312.0,
+                    "tooltip": "One of the components of High-Octane Gasoline, as the<br/>name implies, is Octane. It is so important to improve<br/>the fuel because of something called \"octane rating\",<br/>which measures how much the fuel resists compression<br/>without detonating. The energy that vehicles get to<br/>move around comes from this detonation, but being able<br/>to apply more compression allows for engine designs<br/>that are more efficient, but need the fuel to resist<br/>that increased force without detonating. That said,<br/>any of these fuels can be run in the engines you use,<br/>so the way to represent this efficiency bonus is in<br/>the fuel value.\n\n(There is a multi in the next tier<br/>that only runs on HOG, though. Don't forget it.)\n\nHow<br/>is Octane obtained, then? In the last tier, it was<br/>explained as coming from Light Fuel, and this is still<br/>how you should, and can obtain it: lightly hydrocracked<br/>Light Fuel gives some Octane, so put a DT for it and<br/>leave your Diesel needs behind. It's time to move on.<br/>"
+                },
+                {
+                    "name": "Sulfuric Acid",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u786b\u9178\u5355\u5143.png",
+                    "x": 72.0,
+                    "y": 288.0,
+                    "tooltip": "This sulfuric waste that came out of the oil fractions<br/>could be voided, but it's actually a useful byproduct<br/>for your progression. The Hydrogen Sulfide that you<br/>obtained, mixed with Water in another Chemical Reactor<br/>will give back Diluted Sulfuric Acid, which can be<br/>turned into its more concentrated form by distilling<br/>it.\n\nSulfuric Acid is one of the most important chemicals<br/>in the pack, so make sure to use this opportunity to<br/>automate it. It's needed for circuits, amongst other<br/>things, so you will need a lot of it."
+                },
+                {
+                    "name": "Super Distillation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e39\u683c\u7279\u84b8\u998f\u5382.png",
+                    "x": 600.0,
+                    "y": 360.0,
+                    "tooltip": "Your tallest and closest buddy, the Distillation Tower.<br/>You've relied on it so much, haven't you? It's time<br/>to take it down.\n\nNo, not really, but you can do better<br/>now. The catch is that the upgrade to this, the Dangote<br/>Distillus, is special in the sense that its crafting<br/>recipe is in the Chemical Plant, and the one you have<br/>to build for this recipe is very expensive. Should<br/>you decide to accept the costs, though, you can build<br/>a Dangote in much the same way as the DT, and even<br/>upgrade it to tier 2 for better performance (look in<br/>NEI for a Distillus Chip, you have to put it in the<br/>controller). \n\nIn summary, this multi runs faster than<br/>the DT by doing parallels, a recipe done multiple times<br/>at once. A quad DT that you were using to distill Oil<br/>can be replaced by a Dangote, and so on. Since distillation<br/>is usually a bottleneck in speed for oil processing,<br/>this multi should prove useful."
+                },
+                {
+                    "name": "Super Fuel At The Top",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u94a8\u94a2\u9505\u7089.png",
+                    "x": 624.0,
+                    "y": 408.0,
+                    "tooltip": "I was kidding, there's one more step in Oil, but it<br/>isn't really a better fuel, it's just the Tungstensteel<br/>Boiler.\n\nThis multi operates in the same fashion as<br/>the Titanium one. It needs a Super Fuel, it produces<br/>Superheated Steam and it makes you build a bunch of<br/>Steam Turbines to actually get power out of the fuel<br/>it consumes. The output energy of a single one of these<br/>boilers, at 100% efficiency, is 16k EU/t, so you'll<br/>need many turbines per boiler. You can build them like<br/>that, if you wish to, but at this point the Loose mode<br/>on those turbines is really useful. The efficiency<br/>hit is big, yes, but the Tungstensteel Boiler is 300%<br/>as efficient as the Bronze one, and a single Magic<br/>Solid Super Fuel burns for 4,5M EU at 100% turbine<br/>efficiency. Look at the amount of CBD you need to make<br/>one super fuel, and then you can decide if you want<br/>to tackle this super finale.\n\nYes, it's the end, basically.<br/>There is a couple of things you can still do, but I'll<br/>give you this as an award for having pushed through<br/>essentially all the Oil content in the pack. It has<br/>been a long journey, and I hope that you found it worthwhile<br/>and enjoyable."
+                },
+                {
+                    "name": "Superpowered Fuel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6cb9\u6c14\u6d41\u4f53\u94bb\u673a III.png",
+                    "x": 456.0,
+                    "y": 216.0,
+                    "tooltip": "As did all tiers until now, the EV tier introduces<br/>a new type of bigger, better liquid fuel to burn on<br/>engines, High-Octane Gasoline. However, this one doesn't<br/>use the previous fuel, and instead takes a different<br/>oil-based route, which means that the CBD you have<br/>is of no use in this processing chain.\n\nAlso as before,<br/>the amount of processing you will need is greatly increased,<br/>and you can expect to need a lot more DTs, Oil Crackers,<br/>LCRs and other machines. You will also have to automate<br/>the input of materials from other sources, since Oil<br/>cannot provide you with everything anymore. You can<br/>overclock the multis you have, or build more of them,<br/>your choice. In the end, you'll have a fuel that is<br/>2.5x more powerful than CBD, at an impressive fuel<br/>value of 2.5 million EU, and more byproducts than you<br/>could ever imagine. \n\nYou might have to crack one of<br/>the four oil fractions into the other ones, and you<br/>will surely need to pump Oil faster and faster to keep<br/>up with the power needs that will come when jumping<br/>to IV. I do recommend you use AE2 to automate the setup,<br/>relying on fluid P2Ps to transport fluids around, because<br/>it will make your life easier, even if it's harder<br/>to start and learn the setup. Either way you go, don't<br/>forget, you have to automate it.\n\n[warn]Work on making<br/>these important EV multis to continue.[/warn]<br/>"
+                },
+                {
+                    "name": "Tetranitromethane as Additive",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56db\u785d\u57fa\u7532\u70f7\u5355\u5143.png",
+                    "x": 312.0,
+                    "y": 360.0,
+                    "tooltip": "If both Nitric Acid and Ethenone are automated, then<br/>you can now get TNM effortlessly!\n\nIf you look at the<br/>recipe, you'll see that you need a lot more Nitric<br/>Acid than anything else. Given that Ammonia is the<br/>most power-hungry recipe, this is what will cut down<br/>into the fuel efficiency at the end, but not nearly<br/>enough to discourage the creation and use of CBD. Not<br/>only that, but if you check the uses of TNM, you'll<br/>see that you can treat Biodiesel the same way, although<br/>at a higher cost due to its lower fuel value, if you"
+                },
+                {
+                    "name": "The Era of Multis",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5f3a\u5316\u94a8\u94a2\u673a\u68b0\u65b9\u5757.png",
+                    "x": 600.0,
+                    "y": 156.0,
+                    "tooltip": "What does this mean, \"the era of multis\"? I've built<br/>so many multis already!\n\nWell, yes, but now it's all<br/>multiblocks. There are still singleblock machines for<br/>all the tasks they're needed for, but at IV the newer<br/>GT++ multis become available, or at least most of them,<br/>which can do the same jobs of bending, extruding, extracting,<br/>amongst others, but with higher initial investments<br/>and many bonuses to their processing. Remember what<br/>I said before about higher initial investments being<br/>worth it?\n\nThat said, there isn't a new oil processing<br/>chain in IV, you only improve what you already have.<br/>If there was a step in the chain that was running too<br/>slow, and you needed to add more machines to it or<br/>overclock, it's likely that there is now a multi that<br/>can take over that role by itself. Tungstensteel is<br/>usually an important part of these things, so get it<br/>automated in anticipation of what's to come.<br/>"
+                },
+                {
+                    "name": "Ultimate Distillation",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de8\u578b\u84b8\u998f\u5854.png",
+                    "x": 408.0,
+                    "y": 588.0,
+                    "tooltip": "The Dangote Distillus is not enough for the goals of<br/>an oil baron. You might have heard about \"mega\" multiblocks,<br/>namely the Mega EBF, but did you know that a Distillation<br/>Tower equivalent exists?\n\nIt does the same thing as<br/>the Dangote, parallels, but it does 256 at a time,<br/>and is much, much bigger than anything you've built<br/>so far. My challenge to you is to build a max-height,<br/>full-sized Mega Distillation Tower, and come out of<br/>your efforts with the biggest multiblock that the pack<br/>has to offer. You will need more, much more casings<br/>than what the quest asks for, but your inventory is<br/>not big enough to hold the full amount that will need<br/>to build this monstrosity."
+                },
+                {
+                    "name": "Universal Fuel Power",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u901a\u7528\u5316\u5b66\u71c3\u6599\u5f15\u64ce.png",
+                    "x": 216.0,
+                    "y": 588.0,
+                    "tooltip": "This is the most powerful combustion engine that has<br/>ever been built. In fact, it's not only that, but also<br/>a Gas Turbine and a Rocket Fuel Generator!\n\nThe Universal<br/>Chemical Fuel Engine burns fuel with some additives,<br/>as did its predecessors, but it runs at a lower efficiency.<br/>The 150% value is a mathematical limit, you cannot<br/>reach it without supplying infinite fuel, but this<br/>engine compensates by running as fast as fuel is input<br/>into it, without the maximum EU/t limitation the others<br/>had. The only two things you have to make sure of are<br/>that you supply enough Combustion Promoter to keep<br/>efficiency up (I'll let you figure the best ratio on<br/>your own, but 1:4 promoter:fuel is decent), and that<br/>the dynamo can support the EU/t that the generator<br/>is outputting.\n\n[warn]You will need an Assembly Line<br/>to craft the dynamo needed to complete this quest.<br/>You better burn enough HOG to make it worth![/warn]<br/>"
+                },
+                {
+                    "name": "Using All the Fractions",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u91d1\u5e01.png",
+                    "x": 312.0,
+                    "y": 216.0,
+                    "tooltip": "After getting large amounts of all the oil fractions,<br/>what can you do with them? They'll pile up in the tanks<br/>or output hatches, and the Distillation Tower stop<br/>when it filles, unless you enable fluid voiding in<br/>the controller - in which case everything that cannot<br/>be output will just be voided instead, and it's in<br/>your best interest to avoid this waste. What do, then?\n\nFirst<br/>off, it's important to note that almost everything<br/>you get from Oil can be processed into even more things.<br/>Whether or not the step is worthwhile is a different<br/>story altogether. That said, you're free to look through<br/>NEI or the spreadsheet to decide what you want to do,<br/>and how you want to do it. The charm of a processing<br/>chain like this is that it lets you choose your own<br/>path and gives you the information to know how to best<br/>utilize it.\n\nSecond off, Oil is a major source of byproducts,<br/>many of which are needed to create various important<br/>materials. However, this isn't the only way to obtain<br/>most of them, and you might already found other sources,<br/>especially if you've dabbled in the Benzene or the<br/>Biomass chains. Which path you take is up to you.\n\nNow,<br/>for the four fractions that you get from regular Oil.<br/>Up until now, the power generation needed both Light<br/>Fuel and Heavy Fuel processing, and Refinery Gas already<br/>proved to be a good source of Ethylene. What can these<br/>be used for, in case you can build more DTs to process<br/>the cracked fluids? Roughly speaking, these are the<br/>possibilities:\n\nLight Fuel: You will most likely be<br/>using most, or all of this to make Diesel. If you do<br/>have leftovers, moderately hydrocracking it is a good<br/>source of Propene, and lightly hydrocracking is the<br/>best source for Octane. These two are important, but<br/>only in EV, for epoxy and powergen, specifically.\n\nHeavy<br/>Fuel: If only working with regular Oil, a lot of this<br/>will also be consumed to make Diesel. However, it's<br/>important to get more of it automated, since it can<br/>be distilled directly to make three fantastic byproducts:<br/>Toluene, Phenol and Benzene. All of them are important<br/>for progression, so make sure you pay attention to<br/>this recipe. Toluene is especially useful in HV, as<br/>you will need many buckets of it when making your first<br/>rocket to be able to get into EV.\n\nNaphtha: You could<br/>distill it in a Distillation Tower, but keep in mind<br/>that you need to build a max-height one to cover the<br/>entire recipe. However, if you do it, you will have<br/>most of the Oil byproducts automated meaning that it's<br/>worth it to tackle this challenge when you get comfortable<br/>with making lots of Stainless Steel; it also has a<br/>good burn value, so if you don't need these byproducts,<br/>best just use it for power.\n\nRefinery Gas: You're probably<br/>already distilling this for Ethylene. You could switch<br/>this recipe to a Distillation Tower and a Oil Cracking<br/>Unit (see next quest) to gain more output and some<br/>useful byproducts.<br/><br/><br/>"
+                },
+                {
+                    "name": "Zooming with Nitrous",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e00\u6c27\u5316\u4e8c\u6c2e\u5355\u5143.png",
+                    "x": 420.0,
+                    "y": 312.0,
+                    "tooltip": "Nitrous Oxide, N2O, also known as nitro. It makes cars<br/>go really fast for short bursts. In reality, it is<br/>a source of extra oxygen when mixed in with the fuel<br/>during combustion, allowing it to be consumed faster<br/>and also release energy faster, but at the risk of<br/>\"knocking\", detonating the fuel out of its intended<br/>boundaries and possibly destroying the engine. \n\nTo<br/>avoid this, something else needs to be mixed in this<br/>HOG to prevent your generators from exploding, right?<br/>Luckily for you, such an option exists and it will<br/>be presented after this quest. For now, though, you<br/>can focus on automating Nitrous Oxide by mixing Nitrogen<br/>with Oxygen. These are the two main products of distilling<br/>air, so you can obtain them in one step, but you probably<br/>have chosen your source of these gases at this point,<br/>so use what you have."
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "Boosting the Diesel",
+                    "target": "Acetone and Ethenone"
+                },
+                {
+                    "source": "Boosting the Diesel",
+                    "target": "Ammonia Source"
+                },
+                {
+                    "source": "Desulfurizing",
+                    "target": "Basic Cracking"
+                },
+                {
+                    "source": "Generator Power",
+                    "target": "Boiler and Super Fuel"
+                },
+                {
+                    "source": "Oil Cracker",
+                    "target": "Boosting the Diesel"
+                },
+                {
+                    "source": "Cetane-Boosted Diesel",
+                    "target": "Breaking the Mold"
+                },
+                {
+                    "source": "Super Fuel At The Top",
+                    "target": "Breaking the Mold"
+                },
+                {
+                    "source": "Early Ethylene",
+                    "target": "Breaking the Mold"
+                },
+                {
+                    "source": "Diesel",
+                    "target": "Breaking the Mold"
+                },
+                {
+                    "source": "High Octane Gasoline",
+                    "target": "Breaking the Mold"
+                },
+                {
+                    "source": "Largest Oil Drain",
+                    "target": "Buffered Dynamo"
+                },
+                {
+                    "source": "Tetranitromethane as Additive",
+                    "target": "Cetane-Boosted Diesel"
+                },
+                {
+                    "source": "Simple Distillation",
+                    "target": "Desulfurizing"
+                },
+                {
+                    "source": "Heavy Fuel",
+                    "target": "Diesel"
+                },
+                {
+                    "source": "\u00a79\u00a7lTier 3 (HV)",
+                    "target": "Distillation Tower"
+                },
+                {
+                    "source": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?",
+                    "target": "Distillation Tower"
+                },
+                {
+                    "source": "Using All the Fractions",
+                    "target": "Distilled Heavy Fuel"
+                },
+                {
+                    "source": "Basic Cracking",
+                    "target": "Early Ethylene"
+                },
+                {
+                    "source": "Buffered Dynamo",
+                    "target": "Extreme Combustion Engine"
+                },
+                {
+                    "source": "Raw Gasoline",
+                    "target": "Gasoline"
+                },
+                {
+                    "source": "\u00a7a\u00a7lTier 4 (EV)",
+                    "target": "Generator Power"
+                },
+                {
+                    "source": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?",
+                    "target": "Generator Power"
+                },
+                {
+                    "source": "More Hydrogen",
+                    "target": "Heavy Fuel"
+                },
+                {
+                    "source": "\u00a75\u00a7lYou're Gonna Hate This #2",
+                    "target": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?"
+                },
+                {
+                    "source": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?",
+                    "target": "Here's Some Oil"
+                },
+                {
+                    "source": "\u00a75\u00a7lYour Oil is Too Crude? Refine it!",
+                    "target": "Here's Some Oil"
+                },
+                {
+                    "source": "Pushing with Anti-Knock Agent",
+                    "target": "High Octane Gasoline"
+                },
+                {
+                    "source": "Zooming with Nitrous",
+                    "target": "High Octane Gasoline"
+                },
+                {
+                    "source": "Speeding with Octane",
+                    "target": "High Octane Gasoline"
+                },
+                {
+                    "source": "Gasoline",
+                    "target": "High Octane Gasoline"
+                },
+                {
+                    "source": "Breaking the Mold",
+                    "target": "Hyperheated Steam"
+                },
+                {
+                    "source": "Superpowered Fuel",
+                    "target": "Improved Oil Cracker"
+                },
+                {
+                    "source": "The Era of Multis",
+                    "target": "Largest Oil Drain"
+                },
+                {
+                    "source": "Desulfurizing",
+                    "target": "Light Fuel Power"
+                },
+                {
+                    "source": "Boiler and Super Fuel",
+                    "target": "Magic Super Fuel"
+                },
+                {
+                    "source": "Super Distillation",
+                    "target": "Maxed Oil Cracker"
+                },
+                {
+                    "source": "Oil Reservoirs",
+                    "target": "More Hydrogen"
+                },
+                {
+                    "source": "Oil Reservoirs",
+                    "target": "More Oil Options"
+                },
+                {
+                    "source": "Using All the Fractions",
+                    "target": "Oil Cracker"
+                },
+                {
+                    "source": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?",
+                    "target": "Oil Drilling Rig"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "Oil Drilling Rig"
+                },
+                {
+                    "source": "Oil Drilling Rig",
+                    "target": "Oil Reservoirs"
+                },
+                {
+                    "source": "Improved Oil Cracker",
+                    "target": "Pushing with Anti-Knock Agent"
+                },
+                {
+                    "source": "Improved Oil Cracker",
+                    "target": "Raw Gasoline"
+                },
+                {
+                    "source": "Here's Some Oil",
+                    "target": "Simple Distillation"
+                },
+                {
+                    "source": "Using All the Fractions",
+                    "target": "Special Rubber from Oil"
+                },
+                {
+                    "source": "Improved Oil Cracker",
+                    "target": "Speeding with Octane"
+                },
+                {
+                    "source": "Desulfurizing",
+                    "target": "Sulfuric Acid"
+                },
+                {
+                    "source": "Extreme Combustion Engine",
+                    "target": "Super Distillation"
+                },
+                {
+                    "source": "Super Distillation",
+                    "target": "Super Fuel At The Top"
+                },
+                {
+                    "source": "Generator Power",
+                    "target": "Superpowered Fuel"
+                },
+                {
+                    "source": "Acetone and Ethenone",
+                    "target": "Tetranitromethane as Additive"
+                },
+                {
+                    "source": "Ammonia Source",
+                    "target": "Tetranitromethane as Additive"
+                },
+                {
+                    "source": "\u00a75\u00a7lHello Baron, How's Your Black Gold Today?",
+                    "target": "The Era of Multis"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "The Era of Multis"
+                },
+                {
+                    "source": "Breaking the Mold",
+                    "target": "Ultimate Distillation"
+                },
+                {
+                    "source": "Breaking the Mold",
+                    "target": "Universal Fuel Power"
+                },
+                {
+                    "source": "Distillation Tower",
+                    "target": "Using All the Fractions"
+                },
+                {
+                    "source": "Improved Oil Cracker",
+                    "target": "Zooming with Nitrous"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_a21dc118829d4aae82a9ee6f6553dec2.setOption(option_a21dc118829d4aae82a9ee6f6553dec2);
+            window.addEventListener('resize', function(){
+                chart_a21dc118829d4aae82a9ee6f6553dec2.resize();
+            })
+    </script>
+</body>
+</html>
+

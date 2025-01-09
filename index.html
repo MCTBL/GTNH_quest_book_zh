@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GTNH quests book</title>
+    <style>
+        /* 设置整体布局为flex布局 */
+        .container {
+            display: flex;
+            height: 98vh;
+            /* 设置容器高度为视口高度 */
+        }
+
+        /* 导航栏样式 */
+        .sidebar {
+            width: 200px;
+            /* 设置导航栏宽度 */
+            background-color: #afa393;
+            /* 设置背景颜色 */
+            padding: 20px;
+            /* 设置内边距 */
+            overflow-y: auto;
+            /* 添加垂直滚动条 */
+            max-height: 100%;
+            /* 设置最大高度为容器高度 */
+        }
+
+        .sidebar button {
+            font-size: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            /* 移除列表项的默认样式 */
+            padding: 0;
+            /* 移除列表项的默认内边距 */
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+            /* 设置列表项之间的间距 */
+        }
+
+        /* 内容展示区域样式 */
+        .content {
+            flex-grow: 1;
+            /* 设置内容区域占据剩余空间 */
+            padding: 20px;
+            /* 设置内边距 */
+            background-color: #fff;
+            /* 设置背景颜色 */
+            overflow-y: auto;
+            /* 设置垂直滚动条 */
+        }
+
+        /* 内容区域的iframe样式 */
+        .content iframe {
+            width: 100%;
+            /* 设置iframe宽度为内容区域的100% */
+            height: 99%;
+            /* 设置iframe高度为内容区域的100% */
+            border: none;
+            /* 移除iframe的边框 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <button id="AndSoItBegins.html">AndSoItBegins</button>
+                </li>
+                <li>
+                    <button id="TipsandTricks.html">TipsandTricks</button>
+                </li>
+                <li>
+                    <button id="Tier0StoneAge.html">Tier0StoneAge</button>
+                </li>
+                <li>
+                    <button id="Tier05Steam.html">Tier05Steam</button>
+                </li>
+                <li>
+                    <button id="Tier1LV.html">Tier1LV</button>
+                </li>
+                <li>
+                    <button id="Tier2MV.html">Tier2MV</button>
+                </li>
+                <li>
+                    <button id="Tier3HV.html">Tier3HV</button>
+                </li>
+                <li>
+                    <button id="Tier4EV.html">Tier4EV</button>
+                </li>
+                <li>
+                    <button id="Tier5IV.html">Tier5IV</button>
+                </li>
+                <li>
+                    <button id="Tier6LuV.html">Tier6LuV</button>
+                </li>
+                <li>
+                    <button id="Tier7ZPM.html">Tier7ZPM</button>
+                </li>
+                <li>
+                    <button id="Tier8UV.html">Tier8UV</button>
+                </li>
+                <li>
+                    <button id="Tier9UHV.html">Tier9UHV</button>
+                </li>
+                <li>
+                    <button id="Tier10UEV.html">Tier10UEV</button>
+                </li>
+                <li>
+                    <button id="Tier11UIV.html">Tier11UIV</button>
+                </li>
+                <li>
+                    <button id="Tier12UMV.html">Tier12UMV</button>
+                </li>
+                <li>
+                    <button id="EndgameGoals.html">EndgameGoals</button>
+                </li>
+                <li>
+                    <button id="FishingFarmingCo.html">FishingFarmingCo</button>
+                </li>
+                <li>
+                    <button id="GettingAround.html">GettingAround</button>
+                </li>
+                <li>
+                    <button id="WithoutDying.html">WithoutDying</button>
+                </li>
+                <li>
+                    <button id="BuildingBetterBa.html">BuildingBetterBa</button>
+                </li>
+                <li>
+                    <button id="ForestryandMulti.html">ForestryandMulti</button>
+                </li>
+                <li>
+                    <button id="MultiblockGoals.html">MultiblockGoals</button>
+                </li>
+                <li>
+                    <button id="MassProcessing.html">MassProcessing</button>
+                </li>
+                <li>
+                    <button id="HowtoGeneratePow.html">HowtoGeneratePow</button>
+                </li>
+                <li>
+                    <button id="StoringandTransf.html">StoringandTransf</button>
+                </li>
+                <li>
+                    <button id="WorkingwithOil.html">WorkingwithOil</button>
+                </li>
+                <li>
+                    <button id="BiofortheMasses.html">BiofortheMasses</button>
+                </li>
+                <li>
+                    <button id="PowerfulNuclearP.html">PowerfulNuclearP</button>
+                </li>
+                <li>
+                    <button id="SpaceRace.html">SpaceRace</button>
+                </li>
+                <li>
+                    <button id="BasicAutomation.html">BasicAutomation</button>
+                </li>
+                <li>
+                    <button id="SFMandComputers.html">SFMandComputers</button>
+                </li>
+                <li>
+                    <button id="HandleLogisticsw.html">HandleLogisticsw</button>
+                </li>
+                <li>
+                    <button id="AppliedEnergisti.html">AppliedEnergisti</button>
+                </li>
+                <li>
+                    <button id="HowtoBee.html">HowtoBee</button>
+                </li>
+                <li>
+                    <button id="BeeBreeding.html">BeeBreeding</button>
+                </li>
+                <li>
+                    <button id="HardcoreEnderExp.html">HardcoreEnderExp</button>
+                </li>
+                <li>
+                    <button id="NoviceThaumaturg.html">NoviceThaumaturg</button>
+                </li>
+                <li>
+                    <button id="AdeptThaumaturgy.html">AdeptThaumaturgy</button>
+                </li>
+                <li>
+                    <button id="KaaamiHaaaamiHA.html">KaaamiHaaaamiHA</button>
+                </li>
+                <li>
+                    <button id="FocusonWandFociE.html">FocusonWandFociE</button>
+                </li>
+                <li>
+                    <button id="FlowerPower.html">FlowerPower</button>
+                </li>
+                <li>
+                    <button id="LooktotheEdges.html">LooktotheEdges</button>
+                </li>
+                <li>
+                    <button id="PayingtheHighest.html">PayingtheHighest</button>
+                </li>
+                <li>
+                    <button id="KillAlltheThings.html">KillAlltheThings</button>
+                </li>
+                <li>
+                    <button id="CoinsCoinsCoins.html">CoinsCoinsCoins</button>
+                </li>
+                <li>
+                    <button id="RewardArea.html">RewardArea</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 内容展示区域 -->
+        <div class="content">
+            <iframe id="contentFrame" src="about:blank">
+                <iframe id="contentFrame" src="about:blank" width="100%" height="800"></iframe>
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript代码
+
+        document.getElementById('AdeptThaumaturgy.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/AdeptThaumaturgy.html';
+        });
+
+
+        document.getElementById('AndSoItBegins.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/AndSoItBegins.html';
+        });
+
+
+        document.getElementById('AppliedEnergisti.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/AppliedEnergisti.html';
+        });
+
+
+        document.getElementById('BasicAutomation.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/BasicAutomation.html';
+        });
+
+
+        document.getElementById('BeeBreeding.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/BeeBreeding.html';
+        });
+
+
+        document.getElementById('BiofortheMasses.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/BiofortheMasses.html';
+        });
+
+
+        document.getElementById('BuildingBetterBa.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/BuildingBetterBa.html';
+        });
+
+
+        document.getElementById('CoinsCoinsCoins.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/CoinsCoinsCoins.html';
+        });
+
+
+        document.getElementById('EndgameGoals.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/EndgameGoals.html';
+        });
+
+
+        document.getElementById('FishingFarmingCo.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/FishingFarmingCo.html';
+        });
+
+
+        document.getElementById('FlowerPower.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/FlowerPower.html';
+        });
+
+
+        document.getElementById('FocusonWandFociE.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/FocusonWandFociE.html';
+        });
+
+
+        document.getElementById('ForestryandMulti.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/ForestryandMulti.html';
+        });
+
+
+        document.getElementById('GettingAround.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/GettingAround.html';
+        });
+
+
+        document.getElementById('HandleLogisticsw.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/HandleLogisticsw.html';
+        });
+
+
+        document.getElementById('HardcoreEnderExp.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/HardcoreEnderExp.html';
+        });
+
+
+        document.getElementById('HowtoBee.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/HowtoBee.html';
+        });
+
+
+        document.getElementById('HowtoGeneratePow.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/HowtoGeneratePow.html';
+        });
+
+
+        document.getElementById('KaaamiHaaaamiHA.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/KaaamiHaaaamiHA.html';
+        });
+
+
+        document.getElementById('KillAlltheThings.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/KillAlltheThings.html';
+        });
+
+
+        document.getElementById('LooktotheEdges.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/LooktotheEdges.html';
+        });
+
+
+        document.getElementById('MassProcessing.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/MassProcessing.html';
+        });
+
+
+        document.getElementById('MultiblockGoals.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/MultiblockGoals.html';
+        });
+
+
+        document.getElementById('NoviceThaumaturg.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/NoviceThaumaturg.html';
+        });
+
+
+        document.getElementById('PayingtheHighest.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/PayingtheHighest.html';
+        });
+
+
+        document.getElementById('PowerfulNuclearP.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/PowerfulNuclearP.html';
+        });
+
+
+        document.getElementById('RewardArea.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/RewardArea.html';
+        });
+
+
+        document.getElementById('SFMandComputers.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/SFMandComputers.html';
+        });
+
+
+        document.getElementById('SpaceRace.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/SpaceRace.html';
+        });
+
+
+        document.getElementById('StoringandTransf.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/StoringandTransf.html';
+        });
+
+
+        document.getElementById('Tier05Steam.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier05Steam.html';
+        });
+
+
+        document.getElementById('Tier0StoneAge.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier0StoneAge.html';
+        });
+
+
+        document.getElementById('Tier10UEV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier10UEV.html';
+        });
+
+
+        document.getElementById('Tier11UIV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier11UIV.html';
+        });
+
+
+        document.getElementById('Tier12UMV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier12UMV.html';
+        });
+
+
+        document.getElementById('Tier1LV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier1LV.html';
+        });
+
+
+        document.getElementById('Tier2MV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier2MV.html';
+        });
+
+
+        document.getElementById('Tier3HV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier3HV.html';
+        });
+
+
+        document.getElementById('Tier4EV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier4EV.html';
+        });
+
+
+        document.getElementById('Tier5IV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier5IV.html';
+        });
+
+
+        document.getElementById('Tier6LuV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier6LuV.html';
+        });
+
+
+        document.getElementById('Tier7ZPM.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier7ZPM.html';
+        });
+
+
+        document.getElementById('Tier8UV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier8UV.html';
+        });
+
+
+        document.getElementById('Tier9UHV.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/Tier9UHV.html';
+        });
+
+
+        document.getElementById('TipsandTricks.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/TipsandTricks.html';
+        });
+
+
+        document.getElementById('WithoutDying.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/WithoutDying.html';
+        });
+
+
+        document.getElementById('WorkingwithOil.html').addEventListener('click', function () {
+            document.getElementById('contentFrame').src = 'html/WorkingwithOil.html';
+        });
+
+    </script>
+</body>
+
+</html>

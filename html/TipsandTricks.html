@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="742762f206fa4365b0793298da429f8a" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_742762f206fa4365b0793298da429f8a = echarts.init(
+            document.getElementById('742762f206fa4365b0793298da429f8a'), 'white', {renderer: 'canvas'});
+        var option_742762f206fa4365b0793298da429f8a = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u00a71\u00a7lAll Alone in the Night",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u547d\u4ee4\u65b9\u5757.png",
+                    "x": 156.0,
+                    "y": 60.0,
+                    "tooltip": "Thanks to our amazing devs, you no longer have to use<br/>a command block to reload your questbook between updates.<br/>This means you'll get all new quests automatically<br/>upon updating to a new version of GTNH! Isn't that<br/>convenient?\n\nIf, for whatever reason, you want to manually<br/>reload your questbook, you can do so by typing /bq_admin<br/>default load in the chat window. You will need to be<br/>an admin for it to work, though.\n\nHere's another questbook<br/>in case you already lost the one you spawned with.<br/>Don't forget that it can also be viewed at any time<br/>by pressing the Tilde (~) key if you have not changed<br/>its keybind.\n\n\u00a73Some command blocks are still used<br/>for specific tasks, but they do not concern the average<br/>player since they are admin-only and thus are not craftable.<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lAutomating Power On/Off",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u673a\u5668\u63a7\u5236\u8986\u76d6\u677f.png",
+                    "x": 156.0,
+                    "y": 156.0,
+                    "tooltip": "Once you have a GT boiler or Large Combustion Engine<br/>with a long startup time, you may wish to automate<br/>turning it on/off to save fuel, since extra power or<br/>Steam will just be voided. Additionally, the bigger<br/>your Steam/EU buffer is, the less time your generators<br/>will spend heating up, which makes them more efficient.<br/>\n\nUse a Machine Controller Cover on the controller<br/>for that. You can put it on top, bottom, or sides next<br/>to a casing - casings will transmit the redstone signal.<br/>You can use a Soldering Iron and Fine Soldering Alloy<br/>Wire to set the Redstone Output of a controller block<br/>to strong. When set to Strong it can go through a casing,<br/>but not hatches, buses, or other blocks. Use it with<br/>an activity detector if you want to receive a signal<br/>from the controller rather than turning it on/off with<br/>one.\n\nWith a Machine Controller Cover, you can use<br/>redstone to turn the machine on and off. This is handy<br/>if you don't want to use a Soft Hammer to disable a<br/>machine yourself constantly.\n \nThe best way to do that<br/>is with an RS latch. One input will turn the machine<br/>on, and one input will turn the machine off. Use a<br/>comparator attached to a valve to measure the steam<br/>level in your multiblock Iron or Steel Tank. Invert<br/>the signal to turn on your boiler when the steam level<br/>is low. When the steam level signal is high, turn your<br/>boiler off. Use a trail of redstone to lower the signal<br/>strength. Because of boiler/turbine warmup, try to<br/>set the ON strength to 30 percent of capacity and OFF<br/>strength to about 90 percent.\n\nRed alloy wire will<br/>hold a redstone signal for a longer distance than normal<br/>redstone, while redstone conduits will go indefinitely.<br/>You can also use amplified redcrystal to improve the<br/>strength of the signal for a long distance, repeating<br/>as necessary. \n\nYou can use a Energy Detector Cover<br/>in Normal Electrical Storage (including batteries)<br/>mode to monitor the power in a battery buffer and use<br/>it to enable/disable generators in a similar way. Change<br/>mode using a screwdriver. If you use a dense redcrystal,<br/>it will only allow signal through at a certain level,<br/>perfect for automating this kind of thing.\n\nYou can<br/>use MCCs on more than just generators though, you can<br/>use it on any multiblock and most singleblocks. This<br/>is useful to prevent voiding of materials. Unlike GT++<br/>multies that will halt if full, a non-GT++ multi will<br/>void the items or liquids and keep on working, potentially<br/>voiding huge amounts of materials. You'll want to use<br/>them in combination with Fluid or Item Detection Covers<br/>on the output hatch or bus.\n\nFor a video version, check<br/>out this video: [url]https://www.youtube.com/watch?v=jPfnifJEO64[/url]<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a71\u00a7lBackup Your Stuff...",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7bdd\u706b.png",
+                    "x": 108.0,
+                    "y": 12.0,
+                    "tooltip": "The mod ServerUtilities (SU) is included in the pack<br/>to backup your world. You can adjust save path, frequency,<br/>and the number of backups to keep in its settings at<br/>'.minecraft\\serverutilities\\serverutilities.cfg'. \n\nIf<br/>you need to restore from a backup, you can find them<br/>in the backups folder in the instance directory.\n\nRemember<br/>that the mods JourneyMap and Thaumcraft Node Tracker<br/>store information outside of what most solutions back<br/>up, so please backup your journeymap and tcnodetracker<br/>folders yourself. \n\nThe Thaumcraft data is a little<br/>buggy, losing scanned aspect data and Thaumonomicon<br/>data, so consider backing it up as well. The file is<br/>at 'saves\\<worldname>\\playerdata\\<nameofplayer>.thaum'.\n\nIf<br/>you move to another drive or computer, don't forget<br/>to migrate all the backed up files, not just the world<br/>folder."
+                },
+                {
+                    "name": "Basic Bee Stats",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66.png",
+                    "x": 300.0,
+                    "y": 12.0,
+                    "tooltip": "There are a couple of basic bees that have good stats<br/>you want to breed into your breeding stock.\n\nCave Dwelling<br/>- Rocky - This lets you put the bee housing underneath<br/>or inside. Handy for putting a chest on top for products.\n\nNocturnal<br/>- Rocky - This keeps your bees working all night long,<br/>and in the dark.\n\nRain Tolerant - Water - Keep producing<br/>even when it is raining.\n\nHigh Fertility - Wintry -<br/>For breeding purposes, you want the maximum number<br/>of drones produced.\n\nKeep in mind that specialty products<br/>from bees require the Jubilant state. \nTo be in this<br/>state, a bee needs have its naturally preferred humidity<br/>and temperature. Just being able to work due to tolerance<br/>traits is not enough.\n\nFor example, a Salt bee needs<br/>Warm/Normal climate. Even if it has +- humidity and<br/>temp, it will not produce its Salt comb unless it is<br/>in a Warm/Normal climate. Use Alveary upgrades to make<br/>sure it is in its preferred temp/humidity.<br/>"
+                },
+                {
+                    "name": "\u00a71\u00a7lBetter Questing?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4efb\u52a1\u4e66.png",
+                    "x": 60.0,
+                    "y": 12.0,
+                    "tooltip": "Better Questing has a number of useful commands for<br/>the questbook (QB). You need to have cheats enabled<br/>to use them. \n\n/bq_admin default load\nUse this command<br/>to update your QB after you update the modpack. It<br/>reloads the quest database from the file. Your save<br/>file stores a version of the QB that can be different<br/>from the one in the file.\n\n/bq_admin edit\nToggles editing<br/>quests. Pressing RMB on the quest will open a context<br/>menu to share it or copy its ID.\n\n/bq_admin reset all<br/><Player>\nResets all quests. Use this if you want to<br/>start over, or are editing the QB. You should specify<br/>the player as well if it is a server, otherwise you<br/>can skip that part.\n\n/bq_admin reset <ID> <Player>\nResets<br/>a specific quest, defined by the quest ID. Sometimes<br/>it may be easier to go into Edit Mode > Designer Tool<br/>to specify what to reset.\n\n/bq_admin complete <number><br/><Player>\nCompletes a specific quest, similarly to the<br/>above. You can still claim the rewards. Use this command<br/>if a quest is broken, and then report it on GitHub,<br/>but please check if it's already reported.\n\n/bq_admin<br/>default save\nSaves changes to the QB after editing<br/>it.\n\n/bq_copyquests <PlayerWithQuestsCompleted> <NewPlayer>\nIf<br/>you want to sync the quests with someone in your party,<br/>then use this. They won't get any rewards for that<br/>though.\n\n/bq_admin hardcore\nEnables BQ3 Hardcore Mode.<br/>You only start with 3 lives, so best of luck. Additional<br/>life hearts are available in the Kill all the Things<br/>tab.\n\nAside from the consume-type quests, a quest counts<br/>for everyone in the party if one person finished it.<br/>However, if someone joined your party later, you need<br/>to get them up to speed first either through /bq_copyquests<br/>above, or manually. Otherwise, your quest completion<br/>won't count for them because the requirements for that<br/>quest are not fulfilled for them.\n\nIf your singleplayer<br/>world does not have cheats enabled, go to the ESC screen,<br/>open to LAN, then enable cheats. This makes pausing<br/>impossible until you reload afterwards. If you host<br/>a server, you can run the commands in the command line,<br/>without \"/\". You can also edit the level.dat file,<br/>and set 'allowCommands' to 1, but make sure to backup<br/>your world before doing that.\n\n[warn]For quests to<br/>save properly, you must be online and logged into your<br/>Mojang account when starting the game. Sorry, it's<br/>a limitation of Better Questing.[/warn]<br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a75\u00a7lCircuit Programming",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7f16\u7a0b\u7535\u8def.png",
+                    "x": 108.0,
+                    "y": 108.0,
+                    "tooltip": "Some machines have a very, very large number of recipes.<br/>To avoid conflicts, many recipes have programmed circuits<br/>to ensure that the correct recipe is used. These programmed<br/>circuits are not consumed.\n\nIn this modpack, all singleblock<br/>GT machines now come with an icon in the GUI on the<br/>bottom-right that represents a ghost circuit. Click<br/>it or scroll to choose the number you need. If you<br/>do that, you don't have to insert a physical circuit.<br/>This is going to be your main option for all single<br/>block machines. This option is now also available for<br/>input buses of multiblocks, which you will use much<br/>later.\n\nThere are a few places throughout the modpack<br/>where you still need the physical circuits. You can<br/>turn an LV circuit into a programmed circuit in the<br/>crafting grid and then program it in various ways:\n\n1)<br/>Find a correct crafting recipe with a screwdriver in<br/>NEI and use that.\n\n2) Right-click while holding the<br/>programmed circuit to open an easy menu. You still<br/>need to at least have the screwdriver in your inventory<br/>though or it won't work. Eventually you can also make<br/>an electric screwdriver.\n\n3) Use the BartWorks Circuit<br/>Programmer. It's only available in MV, but it does<br/>not use any durability and runs on EU.\n\n4) Use the<br/>GT++ Circuit Programmer block. It isn't portable and<br/>only available in MV, but it allows for automation.\n\n\nThe<br/>tasks in this quest are just the showcase of what programming<br/>circuits there are. You can just click the checkmark<br/>once you understand how the programmed circuits work.<br/><br/>"
+                },
+                {
+                    "name": "Covering Up",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6a61\u6728\u6728\u677f.png",
+                    "x": 60.0,
+                    "y": 156.0,
+                    "tooltip": "This quest goes over all of the covers, just in case<br/>you forgot or they weren't mentioned. If they have<br/>their own quest, look at it for more info. You can<br/>put them on basically any GT block, pipe, machine,<br/>tank, etc. Though that doesn't consider whether it<br/>will work right or be useful. Shift-Right-Click will<br/>open a GUI for many of them. For covers that you can<br/>adjust the amount of, clicking the left side with a<br/>screwdriver goes down, and right goes up. All covers<br/>block rain on the side they're attached to. Generally<br/>you can adjust covers with a screwdriver, whether they<br/>have a GUI or not. You can remove them with a crowbar<br/>if you forgot.\n\n\u00a7lFluid-Related Covers:\u00a7r\nPump: Transfers<br/>fluids at the speed specified on the tooltip.\n\nFluid<br/>Regulator: Regulates the rate that fluid can go through<br/>it, as well as pumping it. Can work x/s or x/t.\n\nSteam<br/>Valve: Moves more, but is only for steam. Only goes<br/>to IV. Does not work on SH steam.\n\nOverflow: Voids<br/>anything over the specified amount in the tank.\n\nFluid<br/>Detector: Will emit a redstone signal (RS) based on<br/>fluid fill rate of the tank it's on. By default, empty=15,<br/>full=0. Use inverted mode to swap. Useful on tanks<br/>and hatches.\n\nEnder Fluid Link: Cover version of ender<br/>tanks to TP fluid around. Doesn't connect to ender<br/>tanks though.\n\nDrain Module: Protects from rain on<br/>that side, and will fill the tank with water from rain<br/>if it can. Useless.\n\nFluid Filter: Filters fluid going<br/>through it. Click with a cell to set it.\n\nShutter:<br/>Blocks items/fluids when active. Use it with a machine<br/>controller and RS. Does not visually disconnect/block.<br/>You place it between the pipes, and put the MC on the<br/>same pipe.\n\n\u00a7lItem-Related Covers:\u00a7r\nConveyor: Sends<br/>items. Use an item pipe in import mode or on a GT block/machine.\n\nRobot<br/>Arm: Sends from a specific slot in the machine it's<br/>on (internal) to another specific slot in a block next<br/>to it (adjacent). Keep going through numbers until<br/>you get it right, it seems to change per machine. If<br/>the output slot is full, it won't output. There need<br/>to be a valid block with slots to send to or the settings<br/>won't save.\n\nItem Detector: Will emit RS based on item<br/>fill rate of the block it's on. By default, empty=0,<br/>full=15. Detects by filled slots, so doesn't work right<br/>with the super/quantum chests. Probably better for<br/>busses.\n\nItem Filter: This one is work-in-progress<br/>that is not yet finished. Feel free to contribute.\n\n\u00a7lEU-Related<br/>Covers:\u00a7r\nEnergy Detector: Will emit RS based on EU<br/>fill rate of the batbuff/tank it's on. By default,<br/>empty=0, full=15. Make sure to set it to include batteries.<br/>Can also detect steam for some reason.\n\nPower Pass<br/>Upgrade: Read the tooltip, then ask Bart how it works,<br/>he didn't bother telling anyone. He'll probably just<br/>tell you the code is the best documentation, just like<br/>the Tectech guys. May not actually be finished/work,<br/>either.\n\nTesla Coil/Tesla Coil Rich Edition: Use with<br/>the tesla tower to send EU wirelessly or something.<br/>\n\n\u00a7lOther Covers:\u00a7r\nPlayer Detector: Detects players.<br/>About 10 block range. [warn]Currently owner/other is<br/>inverted on non-pipes due to some bug or another.[/warn]\n\nActivity<br/>Detector: Detects either recipe progress or idleness.<br/>0%=0 RS, ~95%=14 by default. In idle mode, idleness<br/>is 15, and is 0 when running by default.\n\nMachine Controller:<br/>Turns machine on/off based on RS. Disable machine will<br/>keep it off regardless of RS state. Safe Mode only<br/>works on MBs. If a MB runs out of power, it will normally<br/>turn off, but a MC will turn it back on, continuing<br/>to void stuff. This will set it to the disable machine<br/>state instead. You will also get a notification. [warn]Safe<br/>mode is currently broken?[/warn]\n\nNeeds Maintenance:<br/>Emits RS if it meets the condition specified. Rotor=turbine?\n\nRedstone<br/>Transmitter/Receiver (In/Out): OK, these things are<br/>confusing, so listen closely. First, set a frequency,<br/>either by using the GUI, or using the original way:<br/>right clicking it with an item. Empty hand = 0, other<br/>items = their item ID. Be careful not to reset it to<br/>0 by accident. Honestly, just use the GUI. You can<br/>set it to private or not, it's the same kind of thing<br/>as EnderStorage, so you don't blare RS across the server.<br/>Channel state = RS level.\n\nRT(O) sets the channel state<br/>based on the redstone level sent from outside to the<br/>specific side. You can TP a RS from this to the RR(O).\nRT(I)<br/>sets the channel state based on redstone level that<br/>would be emitted from the machine itself. [warn]Always<br/>sends 15, so it's useless.[/warn]\nRR(O) outputs redstone<br/>level based on channel state. You can TP RS from the<br/>RT(O) to here.\nRR(I) controls whether a machine can<br/>work based on channel state, just like a machine controller<br/>cover does. If it has 0 RS, it stays off. At least<br/>1, and it turns on. You send the signal from elsewhere<br/>with the RT(O).\nRR(I) can also be used in conjunction<br/>with other covers whose states talk about conditional.\n\nIC2<br/>Heat vents: Speeds up machines a tiny amount? Also<br/>looks neat. TODO: someone please look at the code to<br/>see what it actually does.\n\nCrafting Table: Adds a<br/>crafting table to the block you can use. Mostly cosmetic.\n\nPlanks/Plates/Foils:<br/>Blocks I/O on that side. Use a screwdriver to set allowed<br/>types of stuff through. Blocks everything by default.<br/>Set the output to another side first to avoid changing<br/>its settings too. You'll probably 'use' this by accident<br/>at least once.\n\nComputer Monitor: Adds a visual look.<br/>Cosmetic-only cover.\n\nLens: Cosmetic-only cover.\n\nYou<br/>can also use AE2 facades as cosmetic covers.<br/><br/><br/><br/><br/><br/><br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a72\u00a7lDigging Deeper",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u91d1\u77ff\u77f3.png",
+                    "x": 60.0,
+                    "y": 108.0,
+                    "tooltip": "Now that you know what an Ore Chunk is, dig all the<br/>way down to bedrock to find if there is a vein located<br/>in it.\n\nCheck out an ore in NEI to see where you can<br/>find a vein that contains it. Search for it and click<br/>on it to get this info, among other things.\n\nThere<br/>are many types of ores, even just for getting one material<br/>like Iron, so don't stick to only one ore.\n\nYou can<br/>also search small ores in NEI, but not all of them"
+                },
+                {
+                    "name": "\u00a71\u00a7lE_TOO_MANY_KEYS",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94c1\u94a5\u5319.png",
+                    "x": 108.0,
+                    "y": 60.0,
+                    "tooltip": "ERROR: Too many keys to fit a 104 key keyboard.\n\nThere<br/>are many keybinds in this modpack. To avoid conflicts,<br/>most of them are unbound by default. Only the ones<br/>available from the start are bound. Note that NEI keybinds<br/>are found in the NEI menu and not with the rest of<br/>the keybinds.\n\nHere is the list of what some of them<br/>do :\n\n\nBetterQuesting\nGRAVE - Open Questbook\n\nBattlegear\nR<br/>- Draw Weapons - It's a second hotbar that holds weapons\n\nDraconic<br/>Evolution\nV - Place the item you are holding on the<br/>block you are looking at\n\nJourneymap\nB - Create a Waypoint\nCtrl+B<br/>- Open the Waypoint Manager\nJ - Open Fullscreen Map\n=<br/>- Zoom In (works on minimap too)\n- - Zoom out\n\nInventory<br/>Tweaks\nR - Sort Inventory\n\nShare Where I am\nINSERT<br/>- Places a temporary beam where you are looking at<br/>that will be seen by you and other players\nSHIFT +<br/>INSERT - Places a temporary beam where \u00a7oyou\u00a7r are<br/>that will be seen by you and other players\nCTRL + INSERT<br/>- Shares the position you are looking at with other<br/>players\nCTRL + SHIFT + INSERT - Shares your position<br/>with other players\n\nWaila - Shows information about<br/>what you are looking at\nNUMPAD1 - show/hide the Waila<br/>HUD\nNUMPAD3 - shows how to craft what you are looking<br/>at\nNUMPAD4 - shows the crafting usages of the thing<br/>you are looking at\n\n\n[note]If you have a non-standard<br/>keyboard layout, using the java 17-21 version of GTNH<br/>\u00a7omight\u00a7r help you in being able to use certain keys<br/>for keybinds.\n[/note]<br/>"
+                },
+                {
+                    "name": "Gas Planets",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c22\u5355\u5143.png",
+                    "x": 300.0,
+                    "y": 156.0,
+                    "tooltip": "You probably also want a good overview of what you<br/>can get with your Gas Siphon. So here we go:\n\n\nJupiter\u00a7r\n1<br/>Hydrogen - 15000 L/s\n2 Helium - 500 L/s\n3 Nitrogen<br/>- 300 L/s\n4 Oxygen - 200 L/s\n\n\u00a7oSaturn\u00a7r\n1 Hydrogen<br/>- 18000 L/s\n2 Helium - 800 L/s\n3 Oxygen - 500 L/s\n4<br/>Liquid Oxygen - 150 L/s\n\n\u00a7oUranus\u00a7r\n1 Deuterium - 5000<br/>L/s\n2 Neon - 450 L/s\n3 Argon - 250 L/s\n4 Krypton -<br/>100 L/s\n\n\u00a7oNeptune\u00a7r\n1 Tritium - 3000 L/s\n2 Helium-3<br/>- 500 L/s\n3 Ammonia - 400 L/s\n4 Xenon - 350 L/s"
+                },
+                {
+                    "name": "\u00a72\u00a7lGT6-Styled Pipes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u9752\u94dc\u6d41\u4f53\u7ba1\u9053.png",
+                    "x": 156.0,
+                    "y": 108.0,
+                    "tooltip": "Wondering why new pipes don't always auto-connect?<br/>This was changed to make the pipes smarter. You can<br/>now use a wrench to connect only the pipes you want.<br/>You don't need a plate or a foil to prevent pipes from<br/>connecting anymore. The pipes will still autoconnect<br/>if you build one onto the other.\n\nPipes transferring<br/>anything hotter than a certain amount, like steam,<br/>will cause damage to a player touching them. You might<br/>want to cover hot pipes to prevent getting hurt. Also,<br/>if the heat level is higher than the pipe's heat capacity,<br/>it will melt.\n\nPressing RMB on a pipe in the center<br/>of the 'grid' will enable or disable a connection.<br/>It will have an X through it if the connection is enabled.<br/>You can do the same to any of the 4 corners to adjust<br/>the opposite side. You can similarly connect each of<br/>the 4 sides by clicking on the closest box in the grid.\n\nPipes<br/>have a free built-in shutter to reduce sloshing. Shift-RMB<br/>with a wrench on the side you want prevent input.\n\nPipes<br/>attempt to transfer half of their capacity twice per<br/>second, so the full capacity per second in total.\n\nLarge<br/>or Huge fluid pipes can be a poor man's storage tank,<br/>holding large amounts on their own.\n\nFor machine outputs,<br/>including the boilers and Railcraft water tanks - the<br/>one made of Water Tank Siding - you will not need pumps.<br/>Other tanks will need pumps or Tinker's Construct faucets<br/>to move fluids.\n\nYou can put covers such as GT oak<br/>planks or plates on a pipe as well. Normally this prevents<br/>connections in that direction, but you can use a screwdriver<br/>to enable connections. This lets you make pipes that<br/>look nice going through walls. Use a crowbar to remove<br/>covers.<br/><br/>"
+                },
+                {
+                    "name": "\u00a72\u00a7lHow the Heck Do I Find Ores?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94c1\u77ff\u77f3.png",
+                    "x": 12.0,
+                    "y": 108.0,
+                    "tooltip": "GregTech ore generation is based on veins. Veins have<br/>a fixed height and a rectangular base.\n\nThere is a<br/>vein every 3 chunks in x and z direction. The veins<br/>typically extend into the neighboring chunks and have<br/>varying forms. The center point however is very regular.<br/>It is based on the chunk number. Look at upper left<br/>of the screen to find the chunk number. This info is<br/>displayed by InGame Info XML mod. For now, you need<br/>to see chunk info like \"Chunk X: 3 Z: -2\".\n\nThe 3,-2<br/>is the chunk's address. The orecenters are located<br/>at chunk numbers of the form 3N+1 for both x and z.<br/>So, 4,7 is an orecenter, as well as 10,16, -23,19,<br/>and so on. If you are in the right spot InGame Info<br/>will also say that \"This is an ore chunk.\".\n\nAnother<br/>useful tool is the NEI ore vein overlay which you activate<br/>by pressing F9 three times. It shows the 3x3 areas<br/>and marks the center blue.\n\nThe generation of Ore Chunks<br/>is not related to biomes.\n\nFor reading all the way,<br/>here's some iron."
+                },
+                {
+                    "name": "\u00a75\u00a7lMachine Interface Fluid I/O",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c34\u5355\u5143.png",
+                    "x": 12.0,
+                    "y": 156.0,
+                    "tooltip": "Thanks to the tireless work of the devs, you can now<br/>use cells to I/O fluids directly from the interface<br/>of GT machines. Just click on the fluid while holding<br/>a cell or other fluid container item.\n\nPoints to consider:\n1)<br/>Left click to attempt filling/emptying all fluid containers<br/>held on cursor.\n2) Right click to attempt filling/emptying<br/>one fluid container held on cursor.\n3) All fluid containers<br/>that can be used in a standard gt tank (e.g. super<br/>tanks or the X voltage tanks) are supported, including<br/>but not limited to: water bottles, vanilla buckets,<br/>ic2 (universal and normal) cells, volumetric flasks,<br/>large fluid cells, pressurized fluid tanks, etc.\n4)<br/>Can fill/take less than one cell (1000L or 144L if<br/>molten) of fluid if the fluid container supports doing<br/>so.\n5) It won't check if it's a valid fluid for the<br/>machine/recipe, keep that in mind.\n6) Doesn't work<br/>with Crops++ alcohols, feel free to code compatibility<br/>for us.\n7) EIO tanks need to be placed and picked up<br/>first before they can be used.<br/>"
+                },
+                {
+                    "name": "\u00a71\u00a7lMain Quests and Secondary Quests",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4efb\u52a1\u4e66.png",
+                    "x": 12.0,
+                    "y": 12.0,
+                    "tooltip": "Now that you've made it this far,  you might notice<br/>how the two new quests look different. \n\nThe quest<br/>with the jagged edges is a main quest - it is linked<br/>to other main quests by a thick line. You must complete<br/>main quests to unlock the next tier and to progress<br/>in general. If you can't progress, go back to previous<br/>tiers and look for uncompleted main quests.\n\nThe other<br/>quest is an optional quest, and is not needed to unlock<br/>new tiers. However, optional quests often introduce<br/>you to useful items or processes.\n\nWhat are the coins<br/>for? You can use them to purchase things in the \"Coins,<br/>Coins, Coins\" questbook tab - you have to scroll to<br/>the bottom once it unlocks!\n\nIn case you started in<br/>a bad biome, here's enough coins to purchase some saplings.<br/>"
+                },
+                {
+                    "name": "Moron's Guide to Better Trees",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66.png",
+                    "x": 204.0,
+                    "y": 108.0,
+                    "tooltip": "Forestry trees have a variety of attributes.  Once<br/>you get a tree with a useful attribute, you can breed<br/>that attribute into other tree species. This way you<br/>can get an ultimate tree that combines all the attributes<br/>you want - including the type of fruit! you can also<br/>extract the genes with Gendustry if you can make the<br/>machines.\n\n[warn]Please do your Forestry tree-breeding<br/>indoors or underground because butterflies cause lag.[/warn]\n\nKeep<br/>in mind that for quests, you will need to breed the<br/>species \"pure\", not a hybrid. You should probably save<br/>the crossbreeding until after you get all the good<br/>ones.\n\nFor faster tree breeding, enclose your trees<br/>so that butterflies cannot escape, and breed bees with<br/>better traits for area and pollination speed. There's<br/>also frames too if you can afford it. The sieve may<br/>also help if you want to do it more exactly if you<br/>can make an alveary. You need either bees or butterflies,<br/>trees won't pollinate each other.\n\nTrees have the following<br/>characteristics:\n\u00a7eSaplings/Fertility\u00a7r: chance of<br/>getting a sapling from a destroyed leaf. Good for making<br/>into biomass or other uses. Balsa, Gooseberry and Sweetgum<br/>are what you want.\n\nAllele     Drop Chance\nLowest <br/> 1%\nLower    2.5%\nLow       3.5%\nAverage 5%\nHigh  <br/>   10%\n\n[warn]Maturation/Matures[/warn]: the growth<br/>speed of a sapling into a tree. Important if you plan<br/>to cut it down right away for logs. Golden Raspberry<br/>is the fastest.\n\nAllele    Time\nSlowest  10\nSlower<br/>  7\nSlow      5\nAverage 4\nFast      3\nFaster   2 \nFastest<br/> ?\n\n\u00a7dHeight\u00a7r: controls how high the tree grows. Giant<br/>Sequoia is the best, though it may be a little \u00a7otoo\u00a7r<br/>large.\n\nAllele    Value\nSmallest  25%\nSmaller   50%\nSmall<br/>     75%\nAverage 100%\nLarge    125%\nLarger   150%\nLargest<br/> 175%\nGigantic  BIG\n\n\u00a7bGirth\u00a7r: the width of your tree.<br/> Wider trees have more leaves and logs, but will also<br/>need more saplings to begin growing. All saplings must<br/>be the same species and girth. The sapling in the NW<br/>corner determines the stats of the new tree, and is<br/>where bone meal must be applied to mature the tree.<br/>The Giant Sequoia is best here too.\n\nAllele/Size\n1x1\n2x2\n3x3\n4x4<br/>\n\nYield: chances of getting a fruit from a destroyed<br/>leaf. Orchard Apple and Chili Pepper are the best here.\n\nAllele<br/>    Drop Chance\nLowest   2.5%\nLower    5%\nLow     <br/> 10%\nAverage 20%\nHigh       30% \nHigher    ?%\n\n\u00a76Sappiness\u00a7r:<br/>the amount of biomass a sapling produces in the Forestry<br/>Fermenter. You can boost the Fermenter's output by<br/>using honey or fruit juice. Blue Mahoe and Red Maple<br/>are the best. NEI doesn't show recipes for analyzed<br/>saplings, and probably hybrids too, in the fermenter.\n\nAllele<br/> Forestry Biomass\nLowest   100mB\nLower    200mB\nLow<br/>      300mB\nAverage 400mB\nHigh       600mB \n\n[warn]Fireproof[/warn]:<br/>applies to the wood. Only the Coast and Giant Sequoia<br/>have this.\n\n\u00a77Effect\u00a7r: not used in trees, so it's<br/>None for any.\n\nBelow is more information on some other<br/>parameters:\n\n\u00a72Growth\u00a7r: Sipiri trees have Tropical<br/>instead of Light, can only be bred in a Biome with<br/>temperature 90%-190% and humidity 90%-200%, and can<br/>only grow in 120%-190% temp and 90%-200% humidity.<br/>All other trees just need light to grow.\n\n[note]Territory/Soil[/note]:<br/>all trees have Average, whatever that means. Probably<br/>something related to the below that never really got<br/>used.\n\n\u00a7eTolerates\u00a7r: if it can be planted on sand<br/>or not. Only Desert Acacia and Grandidier's Baobab<br/>have this. The trait is either Plains or Plains, Desert.\n\n\u00a75Supports\u00a7r:<br/>what kind of fruits it can theoretically have. Determined<br/>by Species. Only fruits from families listed under<br/>this trait can be produced by the tree, regardless<br/>of what appears under the tree's Fruits trait. There<br/>is a number of trees from the Extra Trees mod that<br/>support all 4 types, but none from Forestry itself.\n\n\u00a7aFruit\u00a7r:<br/>determines what fruit or nut it produces. Each fruit/nut<br/>provides different advantages:\nPlum and Cherry Plum<br/>only produces 100L Fruit Juice, but have a 60% chance<br/>of producing Mulch in the Fluid Extractor or Squeezer.\nPapaya<br/>produces 600L Fruit Juice, but only has a 10% chance<br/>to produce Mulch.\nCoconuts produce 300L Seed Oil, but<br/>only have a 25% chance to produce Mulch.\nUse a Forestry<br/>Multifarm so you don't have to break the leaf block<br/>to get the fruit/nut. Set it to Manual Orchard, and<br/>place everything first.\n\n\u00a7bFamily\u00a7r: Tells you what<br/>family of the fruit listed under the Fruits trait is:<br/>Pomes, Prunes, Nuts or Jungle.<br/><br/><br/><br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Moron's Guide to Breeding Better Bees",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66.png",
+                    "x": 252.0,
+                    "y": 12.0,
+                    "tooltip": "First off, don't be scared by the massive amounts of<br/>bees you see here once you unlock the breeding trees.<br/>There's even more that aren't included and you'll need<br/>NEI to find!\n\nHa ha, just kidding - don't panic! The<br/>breeding lines unlock bit by bit showing you what you<br/>can go for next, mostly from the top to the bottom.<br/>The large icons represent particularly powerful bees.<br/>Many of the basic bees have multiple breeding options,<br/>only one is shown on the Bee Breeding Tree.\n\nBees have<br/>two sets of traits, active and inactive. The active<br/>one affects the behaviour of the bee while the inactive<br/>one is only relevant for breeding. \n\nA trait can be<br/>[warn]Dominant[/warn] or \u00a79Recessive\u00a7r. When getting<br/>newly bred princesses and drones, check both sets in<br/>case you got the desired traits. You can breed the<br/>ones with inactive traits to try and make them active<br/>in later crosses. A Field Kit or GT scanner cannot<br/>see passive traits, you need a Beealyzer for that.<br/>\n\nWhen breeding bees, a good idea is to settle upon<br/>a master template bee - a bee that has little to no<br/>crossbreeding potential but has all the traits you<br/>want - short life, nocturnal, cave dwelling, rain tolerant,<br/>humidity tolerance, temperature tolerance, 4xfertility,<br/>and so on. Once you have that bee, breed a bunch of<br/>pure princesses with those traits as both active and<br/>inactive. These will be your breeding stock.\n\nWhen<br/>you are trying to get new species, what you want is<br/>a drone - this way you can use your \"breeding stock\"<br/>princess with the drone to get new species without<br/>the annoying effects or limitations. Poorly crossed<br/>princesses can be returned to normal by crossing with<br/>breeding stock drones, or just thrown into storage<br/>if they now have annoying restrictions. Make sure you<br/>keep the trait and species you want, and slowly merge<br/>the good traits from your breeding stock. You don't<br/>have to do this part in an Apiary, you can use a Bee<br/>House to swap around traits. Remember that no species<br/>mutations occur in a Bee House. Ignoble bees are good<br/>to swap traits because they're mostly disposable -<br/>they have a chance to die after 100 breeding cycles,<br/>increasing slightly more each generation after that,<br/>though genetic stability frames can let them live longer.<br/>\n\nOnce you solidify your species, create a pool of<br/>drones. You can use those to convert pristine princesses<br/>to the new species. Pristine princesses will not die,<br/>but they can become Ignoble under certain circumstances<br/>like using tons of production frames. Rocky bees are<br/>a great source - all their princesses are always pristine,<br/>they have decent traits, and there's a bunch of them<br/>underground. If you have an ender quarry, you can collect<br/>them with that.\n\nOnce you get a new species, it will<br/>replace either all Active or Inactive traits. If the<br/>mutation happens twice at the same bee, it will replace<br/>both sets. For example, when you get a Cultivated bee,<br/>either the Active or Inactive column will have all<br/>the default Cultivated traits. Mix it a few times and<br/>you'll eventually get purebred versions. Just watch<br/>out that you don't lose a key trait, like Fast Worker<br/>for Cultivated. Most effects are useless, so you can<br/>disregard them.\n\nAll quests require purebred species.<br/>Purebred means that the inactive species-trait is the<br/>same as the active one.\n\nAll traits can be bred into<br/>any bee species, aside from the species itself. Species<br/>also determines the preferred temperature and humidity,<br/>as well as drops. Species require their preferred temperature<br/>and humidity to be in the 'jubilant' state and produce<br/>their special drops. You can also mimic this with the<br/>alveary or industrial apiary, but NOT with tolerances.\n\nAdvanced<br/>frames can provide useful boosts to mutation chances<br/>or lifespan reduction for faster breeding cycles. However,<br/>the excessive multipliers will increase genetic decay,<br/>giving a chance for a pristine princess to become ignoble.\n\nIt<br/>looks complex, because it is! But it's also a lot of<br/>dangerous and useful fun!<br/><br/><br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lMoron's Manual for Effective EBFing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66.png",
+                    "x": 108.0,
+                    "y": 156.0,
+                    "tooltip": "Welcome to the latest Moron's Manual, Effective EBFing!<br/>This manual covers common problems encountered when<br/>using the GregTech 1000 Electric Blast Furnace.\n\nSetup\nWhen<br/>setting up your EBF, make sure to place it a few chunks<br/>away from things pollution affects, like farmland.<br/>Pollution is nobody's friend!\n\nDuring setup, make sure<br/>the center of the EBF is hollow. Sometimes things can<br/>sneak in there without you noticing, like a Thaumcraft<br/>light orb!\n\nMake sure your muffler faces \u00a7lout\u00a7r, not<br/>\u00a7lin\u00a7r. The EBF can't work if it is not spreading those<br/>delightful odors!\n\nWhen placing your power hatches,<br/>make sure to minimize the distance between any generators<br/>and the EBF. Especially at LV, those few blocks make<br/>a big difference! Every amp of energy traveling over<br/>a cable loses a little bit - and you'll need as much<br/>as you can get! Your best setup is to put two generators<br/>right next to each hatch, with a 2A cable. If you're<br/>poor, you could use 2 battery buffers with 2 batteries<br/>each directly attached to each hatch. Make sure to<br/>top off the buffers' generators. If you make 9 slot<br/>battery buffers, you can fill them up over time to<br/>get longer running time until you get stable power.\n\nOutput<br/>hatches and buses will automatically push into tanks<br/>and inventories placed next to them such as chests<br/>or BC tanks. They will also void if they're full, so<br/>keep an eye on them!\n\nWhen building multiple EBFs,<br/>the GregTech 1000 Electric Blast Furnace can share<br/>walls. This can save you on input and output hatches<br/>too. Not recommended for energy and maintenance hatches!<br/><br/>"
+                },
+                {
+                    "name": "\u00a71\u00a7lMoron's Manual for Massacring Monsters",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9aa8\u5934.png",
+                    "x": 156.0,
+                    "y": 12.0,
+                    "tooltip": "If you haven't noticed, this world is a true hellscape<br/>full of Special Mobs and Infernals around every corner.<br/>Unlike in vanilla, a player has to actually stay aware<br/>and pay attention to what they are fighting. Here are<br/>some tips.\n\nIf an infernal has Vengeance, don't shoot<br/>it with your 56-damage crossbow!\n\nA high health infernal<br/>with regeneration is hard to kill. Even worse if it<br/>is a witch that can also heal herself. In those cases,<br/>run like hell, or bring a soul vial to capture it and<br/>throw it into Mount Doom. \n\nWatch out for zombies with<br/>fishing poles - they can pull you to them. And zombies<br/>with a bow and arrow - they can shoot you back!"
+                },
+                {
+                    "name": "Moron's Manual to Fecund Farms",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f5c\u7269\u67b6.png",
+                    "x": 204.0,
+                    "y": 60.0,
+                    "tooltip": "If you ever wanted to know how crop breeding works,<br/>you are in the right place! Get some Crops - the sticks,<br/>that is - and some seeds from farming with a hoe or<br/>mattock. You can also place some plants and berries<br/>directly on crop sticks. Good plants to start with<br/>are flowers, wheat, cactus and sugarcane. \n\nMake a<br/>plot of farmland with your tool and place water in<br/>the middle. For now, make 3x1 plots, separated by a<br/>row of dirt or cobble. You want to be able to see the<br/>center of each column of 3x1 plots all at once, like<br/>this:\nFFFdddFFF\ndddFFFddd\nFFFdddFFF\ndddFFFddd\nFFFdWdFFF\ndddFFFddd\nFFFdddFFF\ndddFFFddd<br/>\nFFFdddFFF\nNow place crop sticks in each end of the<br/>3x1 plot. Then place the seeds on the sticks and wait<br/>a bit.\n\nWhen they are almost fully grown you can put<br/>double crop sticks in the center spots by using crop<br/>sticks once more on already placed crop sticks. This<br/>center area can now grow new crops, even new species.\n\nWith<br/>some luck you might get a new unknown seed which can<br/>be scanned later.\n\nWeeds need to be removed with a<br/>trowel or spade otherwise your field will become overgrown<br/>by them.\n\nUsing 3x1 plots is easy and not much work.<br/> Check them every 5-10 minutes to remove weeds and<br/>gather new seeds. If you forget, you only lose one<br/>or two seeds. \n\nIf you find a really nice seed, you<br/>can do 3x3 or 5x5 plots with the nice seed in the middle<br/>and others next to it for crossing. But this requires<br/>more babysitting since weeds could destroy the whole<br/>field.\n\nNote that the more crops next to the double<br/>crop stick the faster new plants will show up, up to<br/>4 obviously. This is also the way to get new versions<br/>of the same plant, you can't do it with just one parent<br/>like Agricraft.\n\nDon't leave new crops in these intensive<br/>fields. Pull them out and hopefully get a seedbag.<br/>Put low stat seeds in production fields that don't<br/>require babysitting. Keep the high stat seeds for more<br/>crossing. \n\nCrossing happens when two or more almost-mature<br/>crops are next to a double cropstick. There is a high<br/>chance of getting the same species as the parents.<br/>The rest of the time will be a mutation. For more details,<br/>check out the IC2 cropnalyzer quest.<br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a71\u00a7lMushroom Biomes? Why Are There So Many?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u591c\u5149\u83c7.png",
+                    "x": 12.0,
+                    "y": 60.0,
+                    "tooltip": "The GTNH pack is made for the Realistic World Generator<br/>(RWG).\n \nIf your setup uses the vanilla-biomes worldgen,<br/>you will get huge Mushroom biomes over the map. If<br/>you have this problem, please generate a new world<br/>with the RWG. \n\nIf you met this problem on a server,<br/>put \"level-type=rwg\" into the server.properties file"
+                },
+                {
+                    "name": "\u00a72\u00a7lNEI is More Powerful Than You Imagine",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66\u67b6.png",
+                    "x": 300.0,
+                    "y": 60.0,
+                    "tooltip": "NEI has some really nice advanced features too.\n\nClicking<br/>LMB or pressing R on an item shows the recipes to create<br/>it. RMB or U show recipes that use the item. Backspace<br/>moves you back to the previously browsed recipe. \n\nHold<br/>Shift to stop the oredict cycling through items, and<br/>to show the oredict entries for the current item under<br/>your cursor.\n\nSearch using @ to find all items from<br/>that mod; for example, \u00a7o@thaumcraft\u00a7r will list all<br/>Thaumcraft items and blocks.\n\nYou can combine multiple<br/>search terms with a space. \u00a7o@thaumcraft table\u00a7r will<br/>search for anything with table in the name or description,<br/>in the mod Thaumcraft. \n\nIt has even more advanced<br/>features than mentioned here and many configuration<br/>options, you can look in the NEI option menu under<br/>Inventory to find a few. Here you can change more things<br/>about how the search works (like using regex), toggle<br/>collapsible items or the item zoom panel, or configure<br/>the history panel to your liking. <br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lNobody Wants an Explosion...",
+                    "symbolSize": 31.200000000000003,
+                    "x": 300.0,
+                    "y": 108.0,
+                    "tooltip": "...right? So when building multiblocks, make sure you:\n\n1.<br/>Don't cross chunk boundaries with the multiblock.\n\n2.<br/>If possible, don't rely on resources coming from outside<br/>the chunk. Make sure you source your water locally.\n\nKeep<br/>in mind that electric machines don't like getting rain<br/>or snow on them. They'll start fires, and those fires<br/>have a chance of causing an explosion. This explosion<br/>will explode other machines, cascading until your whole<br/>base is a hole in the ground. This is one of the reason<br/>backups are a thing. Stay safe out there!\n\nIf worse<br/>comes to worst, there is logs/Explosion.log that tracks<br/>what caused an explosion. However, this file appears<br/>to reset on world load."
+                },
+                {
+                    "name": "\u00a72\u00a7lNot Enough Items - Now with Bookmarks and Recent History!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66\u67b6.png",
+                    "x": 252.0,
+                    "y": 60.0,
+                    "tooltip": "More like too many items! Here are some tips for using<br/>NEI.\n\nWhen you have your inventory open, you can type<br/>the search terms in the text bar at the bottom. Make<br/>sure your GUI size is set correctly, or you won't be<br/>able to see it. Double-click the bar to highlight any<br/>matching items in your inventory or inventories you're<br/>looking at. Handy for searching for a specific ore,<br/>as they tend to look the same!\n\nEven better, you can<br/>use T to search nearby inventories, which will emit<br/>some particles. \n\nWe have also provided the special<br/>Y command to look for a machine in the world, in case<br/>you've forgotten where you placed that Advanced Circuit<br/>Assembler.\n\nWe now have an extra-fancy Bookmark feature!<br/>The default key is A, but can be changed in the NEI<br/>config window. Bookmarks will be on the left side of<br/>the inventory, and you can look up their recipes or<br/>uses as normal. To move a bookmark, drag it with Shift+LMB.<br/>You can even bookmark entire recipes with Shift+A or<br/>recipes with amounts using Ctrl+Shift+A.\n\nPressing<br/>O will hide NEI, useful for fancy screenshots.<br/>"
+                },
+                {
+                    "name": "\u00a71\u00a7lNumbers in the Corner?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7b26\u6587\u9ed1\u540d\u5355.png",
+                    "x": 60.0,
+                    "y": 60.0,
+                    "tooltip": "What's with the numbers in the corner? That is the<br/>In-Game Info (IGI) mod. Some of the info it gives is<br/>useful right away, some of it shines later on in progression.\n\nFor<br/>now, the most important thing it does is showing if<br/>you are in an ore chunk. Further quests will explain<br/>what it means.\n\nIf you want to hide it, type \"/igi<br/>disable\" in the chat. Type \"/igi enable\" if you want<br/>to turn it back on.\n\nThe command \"/igi config\" opens<br/>the configuration window to control its position, scale,<br/>and size.\n\nThe command \"/xu_tps\" from the mod Extra<br/>Utilities toggles numbers to measure ticktime in milliseconds<br/>and the TPS (Ticks Per Second). TPS is a measure of<br/>how well your server is running. The ideal TPS is 20.00<br/>(meaning a ticktime of at most 50.00). If your TPS<br/> is less than 15, things are going to start lagging<br/>noticeably. At 10 or less TPS, it is going to be hard<br/>to play.\nThe tooltip shows three types of measurement:<br/>instantaneous, average, and worst-case. Each one first<br/>shows the ticktime and then the TPS in brackets.\n\nIf<br/>you need suggestions on solving TPS problems, feel<br/>free to ask for help in the GTNH Discord.\n\nWhile GTNH<br/>comes with recommended default settings, in particular<br/>when it comes to balance, there are many commands and<br/>configurations to customize your experience. They range<br/>from accessability or debug tools to visual customization<br/>all the way to various cheats. You can find a small<br/>overview on [url]https://wiki.gtnewhorizons.com/wiki/Commands_and_Configurations[/url].<br/><br/>"
+                },
+                {
+                    "name": "\u00a7e\u00a7d\u00a7c\u00a76\u00a7lObtaining Ender Pearls",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u672b\u5f71\u73cd\u73e0.png",
+                    "x": 204.0,
+                    "y": 12.0,
+                    "tooltip": "You can hunt endermen the Vanilla way to get a chance<br/>at Ender Pearls, you can purchase Endermen spawn eggs,<br/>or try your luck in the End. \n\nOr you can get cruel,<br/>and stuff one into a smeltery to melt it down into<br/>delicious Liquid Ender and cast pearls from it.\n\nYou<br/>monster.\n\nSome of the dungeons have Spawner of Enderman,<br/>so you can do whatever you want with it.\n\nTo prevent<br/>endermen from teleporting, make sure to cover the smeltery<br/>so they don't see the sky.\n\nIf you manage to put a<br/>regenerating endermen in there, tag it so it doesn't<br/>despawn, and make sure your smeltery is not in a claimed<br/>chunk on a server."
+                },
+                {
+                    "name": "Planetary Tears",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9cb8\u9c7c\u5ea7T\u661fE\u85fb\u7c7b.png",
+                    "x": 252.0,
+                    "y": 156.0,
+                    "tooltip": "Indeed you will be crying over all the tiers you have<br/>to do for planets. Here is a handy reference.\n\nTier<br/>1 - Requires Oxygen Gear\nMoon\n\nTier 2 - Requires Thermal<br/>Padding\nDeimos\nMars\nPhobos\n\nTier 3 - Requires Thermal<br/>Padding Tier 2\nAsteroids - Counts as Zero-G, because<br/>there's no planet\nCallisto\nCeres\nEuropa\nGanymede\nRoss128b<br/>- Habitable Planet (needs no Oxygen Gear/Thermal Padding)\n\nTier<br/>4 - Requires Thermal Padding Tier 2\nIo\nMercury\nVenus<br/>- Requires SpaceSuit\n\nTier 5  Requires Thermal Padding<br/>Tier 2\nEnceladus\nMiranda\nOberon\nRoss128ba\nTitan\n\nTier<br/>6 - Requires Thermal Padding Tier 2\nProteus\nTriton\n\nTier<br/>7   Requires Thermal Padding Tier 2\nKuiper Belt - Also<br/>counts as Zero-G\nHaumea\nMakemake\nPluto\n\nTier 8 - Requires<br/>Thermal Padding Tier 2\nAlpha Centauri Bb - Requires<br/>SpaceSuit\nBarnarda C - Habitable Planet (needs no Oxygen<br/>Gear/Thermal Padding)\nBarnarda E\nBarnarda F\nTau Ceti<br/>E - Habitable Planet (needs no Oxygen Gear/Thermal<br/>Padding)\nVega B\n\nTier 9\nHorus - Requires Thermal Padding<br/>Tier 1\nNeper - Habitable Planet (needs no Oxygen Gear/Thermal<br/>Padding)\nMehen Belt\nMaahes\nSeth\nAnubis - Requires Thermal<br/>Padding Tier 2<br/>"
+                },
+                {
+                    "name": "\u00a73\u00a7lSafety First",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8b66\u544a\u6807\u5fd7.png",
+                    "x": 252.0,
+                    "y": 108.0,
+                    "tooltip": "For those new to GregTech, here are some tips and warnings<br/>about electricity. \n\nMachines don't like being out<br/>in the rain, and will start fires nearby. Fires next<br/>to a machine have a random chance of an explosion.<br/>Also, sending a higher voltage than a machine's tier<br/>causes an explosion. Or several, if you pack things<br/>together, like many people. Sending more amps than<br/>a machine can use doesn't harm anything though.\n\nSending<br/>too high a voltage or too many amps down a cable will<br/>cause the cable to burn up and start fires, which may<br/>then cause machine explosions. Make sure the number<br/>of amps provided by generators and buffers to a cable<br/>does not exceed the amps it is capable of carrying.\n\nA<br/>generator that supplies 1A can possibly feed multiple<br/>machines, if their recipes require less than the full<br/>voltage.  For example, macerators processing ore only<br/>need 2 EU/t, so you could run several from a single<br/>1A generator, as long as the wires aren't too long.<br/>Why does that matter? Because there's loss for every<br/>amp for every block, listed on the wire/cable. Note<br/>that cables are better than wires. But be careful!<br/>Sometimes a recipe needs a lot more EU than you expect,<br/>like a macerator sand -> quartz dust recipe.\n\nMost<br/>machines only use 1A, however there are exceptions,<br/>such as the arc furnace, thermal centrifuge, world<br/>accelerators, and the UUM machines. Note that machines<br/>can accept more amps than they use (usually 2) in order<br/>to top up their energy supply, especially if they didn't<br/>recieve most of the amp because of loss (mostly a problem<br/>in LV). The formula is (EU/t of Recipe * 2) / Voltage<br/>Tier + 1. Keep this in mind when deciding on cables.\n\nSome<br/>machines are specifically there to help you deal with<br/>multiple amps, such as battery buffers, transformers,<br/>and diodes. Check out the quest tab Storing and Transforming<br/>EU for more on those.\n\nIf you want to send more amps,<br/>use a larger cable or a superconductor (MV+, but ULV<br/>and LV have their own lossless cables). You can use<br/>laser hatches much later to send even more. There even<br/>are wireless options, but not right now.\n\nA single<br/>block machine starved of EU will restart progress but<br/>not lose the recipe items. A multiblock machine will<br/>lose the items.\n\nNote that any block that emits EU<br/>has loss when doing so: 2 ^ (tier-1) per amp. So 1<br/>EU at LV, 2 EU at MV, and so on. Using large numbers<br/>of battery buffers in a row is thus very wasteful of<br/>your power. You have to be careful with losses when<br/>making your first EBF later in LV, maybe rather power<br/>them directly? Of course, if you want to keep your<br/>amps topped up over longer distances, you'll need to<br/>place BBs occasionally to 'top up' the amps, though<br/>this is less the case the further ingame you get, as<br/>the loss becomes less of something to worry about.\n\nIf<br/>this info isn't enough for you, head on over to [url]https://wiki.gtnewhorizons.com/wiki/Electricity[/url]<br/>to read more.<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Underground Fluids",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7535\u52a8\u6cf5(UEV).png",
+                    "x": 204.0,
+                    "y": 156.0,
+                    "tooltip": "So you're probably wondering what all the underground<br/>fluids are. You can actually check so in NEI now!\n\nJust<br/>look for the tab called \u00a7oUnderground Fluid Stats\u00a7r.<br/>You can click \u00a7oSee All\u00a7r for a general overview, search<br/>by fluid, or search by planet."
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u00a71\u00a7lCrafting Time",
+                    "target": "\u00a71\u00a7lAll Alone in the Night"
+                },
+                {
+                    "source": "\u00a76\u00a7lIt's Time to Get More Steam",
+                    "target": "\u00a76\u00a7lAutomating Power On/Off"
+                },
+                {
+                    "source": "\u00a76\u00a7lGas Turbine",
+                    "target": "\u00a76\u00a7lAutomating Power On/Off"
+                },
+                {
+                    "source": "\u00a76\u00a7lDo You Hear That Engine Revving?",
+                    "target": "\u00a76\u00a7lAutomating Power On/Off"
+                },
+                {
+                    "source": "\u00a7d\u00a73\u00a72\u00a71\u00a7lYour First Night",
+                    "target": "\u00a71\u00a7lBackup Your Stuff..."
+                },
+                {
+                    "source": "Moron's Guide to Breeding Better Bees",
+                    "target": "Basic Bee Stats"
+                },
+                {
+                    "source": "\u00a7d\u00a73\u00a72\u00a71\u00a7lYour First Night",
+                    "target": "\u00a71\u00a7lBetter Questing?"
+                },
+                {
+                    "source": "\u00a75\u00a7lSaving Metal With Bending",
+                    "target": "\u00a75\u00a7lCircuit Programming"
+                },
+                {
+                    "source": "\u00a75\u00a7r\u00a75\u00a7lWelcome to Tier 1, LV",
+                    "target": "Covering Up"
+                },
+                {
+                    "source": "\u00a72\u00a7lHow the Heck Do I Find Ores?",
+                    "target": "\u00a72\u00a7lDigging Deeper"
+                },
+                {
+                    "source": "\u00a7d\u00a73\u00a72\u00a71\u00a7lYour First Night",
+                    "target": "\u00a71\u00a7lE_TOO_MANY_KEYS"
+                },
+                {
+                    "source": "Space Pumping",
+                    "target": "Gas Planets"
+                },
+                {
+                    "source": "\u00a72\u00a7lMaking Bronze",
+                    "target": "\u00a72\u00a7lGT6-Styled Pipes"
+                },
+                {
+                    "source": "\u00a72\u00a7lCopper Sky, Iron Curtain",
+                    "target": "\u00a72\u00a7lHow the Heck Do I Find Ores?"
+                },
+                {
+                    "source": "\u00a75\u00a7r\u00a75\u00a7lWelcome to Tier 1, LV",
+                    "target": "\u00a75\u00a7lMachine Interface Fluid I/O"
+                },
+                {
+                    "source": "\u00a71\u00a7lCrafting Time",
+                    "target": "\u00a71\u00a7lMain Quests and Secondary Quests"
+                },
+                {
+                    "source": "Trigger:CtH (unlock)",
+                    "target": "Moron's Guide to Better Trees"
+                },
+                {
+                    "source": "First Things First",
+                    "target": "Moron's Guide to Breeding Better Bees"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lMoron's Manual for Effective EBFing"
+                },
+                {
+                    "source": "\u00a71\u00a7lMonster Hunter",
+                    "target": "\u00a71\u00a7lMoron's Manual for Massacring Monsters"
+                },
+                {
+                    "source": "\u00a72\u00a7lImportant Tools",
+                    "target": "Moron's Manual to Fecund Farms"
+                },
+                {
+                    "source": "\u00a7d\u00a73\u00a72\u00a71\u00a7lYour First Night",
+                    "target": "\u00a71\u00a7lMushroom Biomes? Why Are There So Many?"
+                },
+                {
+                    "source": "\u00a72\u00a7lNot Enough Items - Now with Bookmarks and Recent History!",
+                    "target": "\u00a72\u00a7lNEI is More Powerful Than You Imagine"
+                },
+                {
+                    "source": "\u00a71\u00a7lSO...TIRED...MUST...SLEEP...",
+                    "target": "\u00a76\u00a7lNobody Wants an Explosion..."
+                },
+                {
+                    "source": "\u00a72\u00a7lReady, Set, Go!",
+                    "target": "\u00a72\u00a7lNot Enough Items - Now with Bookmarks and Recent History!"
+                },
+                {
+                    "source": "\u00a7d\u00a73\u00a72\u00a71\u00a7lYour First Night",
+                    "target": "\u00a71\u00a7lNumbers in the Corner?"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Now Prepared, Hopefully!",
+                    "target": "\u00a7e\u00a7d\u00a7c\u00a76\u00a7lObtaining Ender Pearls"
+                },
+                {
+                    "source": "Rocket Tier 1",
+                    "target": "Planetary Tears"
+                },
+                {
+                    "source": "\u00a73\u00a7lSteam-a-licious!",
+                    "target": "\u00a73\u00a7lSafety First"
+                },
+                {
+                    "source": "\u00a76\u00a7lTime to Drill for Oil!",
+                    "target": "Underground Fluids"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_742762f206fa4365b0793298da429f8a.setOption(option_742762f206fa4365b0793298da429f8a);
+            window.addEventListener('resize', function(){
+                chart_742762f206fa4365b0793298da429f8a.resize();
+            })
+    </script>
+</body>
+</html>
+

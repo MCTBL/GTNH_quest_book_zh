@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="92e93bf3cdd14115aa77868cb2a08d28" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_92e93bf3cdd14115aa77868cb2a08d28 = echarts.init(
+            document.getElementById('92e93bf3cdd14115aa77868cb2a08d28'), 'white', {renderer: 'canvas'});
+        var option_92e93bf3cdd14115aa77868cb2a08d28 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "A Second Reactor?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u81f4\u5bc6\u80fd\u6e90\u5143\u4ef6.png",
+                    "x": 612.0,
+                    "y": 648.0,
+                    "tooltip": "At this point, why not? You should be a in a better<br/>position to afford it, but there is the issue that<br/>t3 fusion unlocks an easier Americium recipe, which<br/>lets you craft a second t3 more easily. You might not<br/>want to wait that long, maybe you've been smelting<br/>a lot of ingots, or using World Accelerators?\n\nRegardless,<br/>two Helium Plasma reactors will surely suffice for<br/>whatever it is you're doing. Tin Plasma is worth using,<br/>of course, but the Molecular Transformer recipe to<br/>convert Silver to Tin isn't available in the singleblock<br/>anymore, so you might want the easier option, since<br/>you're rocking two reactors and all. With the 2x overclock<br/>they're still produce millions of EU/t with the right<br/>Plasma Turbines, assuming you have them ready.\n\nIf<br/>you want to continue expanding, you can look at the<br/>Mk2 fusion chain that ends at Runite Plasma. This process<br/>uses Force Plasma from the Mk1 fusion chain, so it<br/>needs those 5 fusion recipes, plus another 5. Despite<br/>being an extremely powerful powergen option, it's unlikely<br/>you need something in this scale right now. Keep in<br/>mind, however, that you might need it in UHV or UEV.<br/>"
+                },
+                {
+                    "name": "Automation for Fluid Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u53cd\u5e94\u5806\u7ea2\u77f3\u63a5\u53e3.png",
+                    "x": 516.0,
+                    "y": 384.0,
+                    "tooltip": "If you've looked at the wiki setups, you might have<br/>seen some that seem harder to automate than others.<br/>Particularly, that one with two kinds of Uranium Rods.<br/>More than filling empty slots with Reactor Platings<br/>to force all the inputs to move to the specific slots<br/>where the rods must go, this one needs each rod to<br/>go in a specific slot!\n\nThe solution for this is a<br/>GT cover. The Robot Arm does the same action of moving<br/>items around as the Conveyor, but it moves to specific<br/>slots. With this, you can move the Dual Rod to where<br/>it needs to be, and the Quad Rods can fill the remaining<br/>slots as intended. If you're using other setups, you<br/>can use a similar logic to do your automation."
+                },
+                {
+                    "name": "Basis for All Reactors",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6838\u53cd\u5e94\u5806.png",
+                    "x": 612.0,
+                    "y": 444.0,
+                    "tooltip": "Nuclear energy is first available in EV. However, it<br/>comes in all shapes and forms, and it can be hard to<br/>choose one kind of setup to use amongst all of those<br/>that are available. To start this questbook page, this<br/>first quest will be a summary of how nuclear power<br/>can be produced, and when it is available. Other quests<br/>down the line will have more details about each specific<br/>setup, but this is an overview of all of them.\n\nTL;DR:<br/>Nuke < Fluid Nuke < Vacuum Nuke < LFTR = THTR = Naq<br/>Reactor < Fusion < Compact Fusion for power, per reactor.<br/>For breeding, Nuke < LFTR = Naq Reactor < HTGR in terms<br/>of breeding speed and outputs, with fusion being required<br/>to make some materials.\n\nThe first nuclear source you<br/>have access to is the Industrialcraft 2 Nuclear Reactor,<br/>usually called a nuke. It's a small singleblock that<br/>can have additional chambers attached to it to make<br/>a multiblock structure, and the amount of chambers<br/>decides the amount of space available for the nuke's<br/>components. Inside it, fuel rods with radioactive materials<br/>generate power, and every other item serves to control<br/>the temperature of the reactor and keep it from exploding.<br/>It generates EU directly, but it can be upgraded to<br/>a fluid nuke, which outputs hot coolant instead, for<br/>the Large Heat Exchanger, but with more efficiency.<br/>Lastly, there's also the vacuum nuke, which is very<br/>similar to regular nukes but it cools down by using<br/>Coolant Cells, which wear out and are only reusable<br/>by using Vacuum Freezers. Usual fuels for all of these<br/>are Thorium, in EV, and Uranium, in IV.\n\nBetween IV<br/>and LuV, there's another kind of reactor, the Liquid<br/>Fluoride Thorium Reactor (LFTR). In this large multi,<br/>the Thorium and Uranium are mixed with very hot, molten<br/>salts (which need to be prepared in another multi),<br/>improving the power generation at the cost of additional<br/>processing. It's an expensive setup, but the depleted<br/>fuel can be recycled into many more byproducts than<br/>usual, especially at LuV, where you can get almost<br/>all the noble gases amongst other things, alongside<br/>huge amounts of power.\n\nAt those same tiers (albeit<br/>mostly for LuV and above), there are also two larger<br/>multis, the Thorium High Temperature Reactor (THTR)<br/>and the High Temperature Gas-cooled Reactor (HTGR).<br/>The THTR is mostly for power, needing an input of about<br/>0.5 IV amps and outputting LuV power at a varied amount<br/>of amps, whereas the HTGR is a breeder reactor, outputting<br/>1/20 the amount of hot coolant, which is where the<br/>power generation comes from, but with much better ratios<br/>for breeding into Lutetium and other elements.\n\nAnother<br/>kind of nuclear reactor is the Good Generators Naquadah<br/>Reactor, which coincidentally has recipes to consume<br/>Thorium Liquid Fuel and Uranium Liquid Fuel, alongside<br/>the several types of Naquadah fuel that exist. With<br/>these two, this reactor can process those elements<br/>much faster than regular nukes, which is helpful for<br/>power and for breeding, but it requires more processing<br/>until those fuels are ready to be consumed. Additionally,<br/>there are fuel rods for the IC2 nukes that use different<br/>Thorium and Uranium fuels, more or less related to<br/>these. \n\nFrom then on, it's fusion power. The infamous<br/>GregTech Fusion Reactors work by fusing two elements<br/>into a new one, which is often a required step for<br/>progression, but they also turn the power they require<br/>into exponentially more in the way of plasma. Helium<br/>and Tin Plasma are some of the most used for power,<br/>and putting them into Plasma Turbines is an excellent<br/>source of power for lategame, in ZPM to UEV and so<br/>on. There are 4 tiers to the regular Fusion Reactors,<br/>but there is also compact fusion and some other kinks<br/>to fusion that you might explore later on.\n\nThis page<br/>will mostly serve to guide you into making a choice<br/>between all of these possibilities. It's pretty much<br/>guaranteed that you'll use at least 2-3 of these setups,<br/>so try to get comfortable with these quest descriptions.<br/><br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Bismuth Plasma For Soldering",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94cb\u952d.png",
+                    "x": 696.0,
+                    "y": 672.0,
+                    "tooltip": "Who in their right mind would use a plasma to solder<br/>things together? That's mental. Well, all the progression<br/>at this point is mental, that's all there is to it.\n\nIt's<br/>not directly with the plasma, though. It is once again<br/>about the Mutated Living Solder, and now its fluid<br/>inputs: Tin Plasma and Bismuth Plasma. These are the<br/>two main components of the previous solders, and that's<br/>the reason they're needed now. Tin Plasma is t2 fusion,<br/>and you might have already made a lot of it to generate<br/>power, but Bismuth Plasma is t3, with the inputs being<br/>Zinc Plasma and Molten Tantalum, which is actually<br/>Tritium, Copper and Tantalum in the end. \n\nThe recipes<br/>are cheap in power, you just have to make sure the<br/>inputs are there. Tritium can be centrifuged from Deuterium,<br/>which itself can be centrifuged from Hydrogen Gas,<br/>and the other two inputs are easy. You will need 18000L<br/>of each plasma for 40000L of the solder, or almost<br/>half the amount for each.<br/>"
+                },
+                {
+                    "name": "Building the Reactor",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u591a\u7528\u9014\u673a\u68b0\u81c2.png",
+                    "x": 648.0,
+                    "y": 480.0,
+                    "tooltip": "All the regular Fusion Reactors share the same structure.<br/>The tier they belong to is determined by the materials<br/>used, which become more expensive for each tier. Tier<br/>1 is LuV, tier 2 is ZPM, tier 3 is UV and there's also<br/>a tier 4. The structure looks like a huge ring, which<br/>barely fits in one chunk, with the controller on the<br/>inside of the ring, not the outside.\n\nTo help you with<br/>placing all the blocks in the right places, the controller's<br/>interface shows a diagram of which blocks go where.<br/>To get a 3D view of the placements in the world, use<br/>the Multiblock Structure Hologram Projector on the<br/>controller. If you need even more assistance, there<br/>are lots of resources on the internet that explain<br/>how it's build, since this is a big GregTech multiblock<br/>that is required in many packs, and almost always built<br/>the same way.\n\nThe original quests for each reactor<br/>tier will be included in the questline, since they<br/>provide good information about each tier and are updated.<br/>"
+                },
+                {
+                    "name": "Build the Assembly Line First",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9632\u8f90\u5c04\u677f.png",
+                    "x": 612.0,
+                    "y": 492.0,
+                    "tooltip": "This branch refers to nuclear fusion. This content<br/>is strictly LuV onwards, so you will need the Assembly<br/>Line before even starting to think about fusion. It<br/>is the most \"endgame\" content on this quest page, so<br/>it's the one left for last.\n\nThe quest you need to<br/>complete is in the \"Multiblock Goals\" tab. There are<br/>also fusion-related quests in the LuV, ZPM and UV tabs,<br/>amongst others, so check them out when you're there."
+                },
+                {
+                    "name": "Can We Get Uranium Here?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94c0-238\u7c89.png",
+                    "x": 504.0,
+                    "y": 300.0,
+                    "tooltip": "Yes, you can. In fact, you can get it much earlier<br/>than EV, but the speed at which you get it can vary<br/>wildly, depending on how you approach this problem.<br/>Uranium is the main upgrade to Thorium in nukes, with<br/>a lot more power to give and a different useful breeding<br/>byproduct, but you need about 3 stacks of Uranium 238<br/>to set up the most powerful basic IC2 Uranium Nuke.\n\nHow<br/>do you get it, though? The one answer is, you get it<br/>from Thorium. Looking at NEI, the Thorium ore processing<br/>has a chance to give Uranium dusts, which you can use<br/>as fuel, but this happens very slowly, especially considering<br/>that Thorium is a rare ore in the Nether, even if each<br/>ore block gives 4 crushed dust. The reality seems to<br/>be that fast Uranium only happens when you can mine<br/>from t2 planets, but this is not the only way. There<br/>is a secret, and this secret involves IC2 crops.\n\nHow<br/>does it work? Well, it's simple. The IC2 crop that<br/>corresponds to Thorium, the God of Thunder, can quadruple<br/>each Crushed Thorium Ore into 4 Purified Thorium Ore,<br/>but it also outputs, in fluid form, one Uranium Ingot!<br/>This means that each Thorium Ore gives you 4 Uranium<br/>Ingots, and with around 42 ore, you can do one cycle<br/>of that big reactor setup. God of Thunder needs the<br/>ore under it, though, so make sure you save some for<br/>that purpose.\n\nEV Uranium nukes are a achievement intended<br/>mostly for IC2 crop users, so this quest won't demand<br/>something like that. Still, it's a useful secret, so<br/>here it is. Additionally, the Uranium crop quest in<br/>the questbook awards you with 32 Pitchblende when you<br/>complete it, which might prove useful for both for<br/>quadrupling Uranium and getting Radium for Radon!<br/><br/>"
+                },
+                {
+                    "name": "Duranium and the Cyclotron",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/COMET-\u7d27\u51d1\u5f0f\u56de\u65cb\u52a0\u901f\u5668.png",
+                    "x": 612.0,
+                    "y": 612.0,
+                    "tooltip": "In the previous quest, Duranium was introduced as a<br/>material used to make Tritanium. While it becomes required<br/>for this reason, there is more to it than that. Another<br/>recipe that uses it is a Cyclotron recipe, which has<br/>a chance to produce a Quantum Anomaly. \n\nFirst off,<br/>what is the Cyclotron? That is a multiblock that works<br/>a bit like fusion, but only for the purpose of making<br/>new materials. It collides single particles with one<br/>another, or against fluids, to generate new items while<br/>consuming power. Most of the recipes it has won't be<br/>very useful, if at all, but it can also make Quantum<br/>Anomalies. This is a chance craft, but the Anomaly<br/>has a special property: when used to convert some blocks<br/>to others, it will not be consumed. Therefore, for<br/>that purpose, you only need to get one.\n\nIs this required?<br/>Well, yes. When you arrive at a certain stage of the<br/>game, you might find yourself needing a new kind of<br/>soldering alloy, called Mutated Living Solder. To craft<br/>this, you need a Chemical Plant made with Botmium,<br/>which is an alloy that required Advanced Nitinol. This,<br/>in turn, is one of the blocks that need a Quantum Anomaly<br/>for its conversion. Given that Duranium is the only<br/>fluid choice to make the Anomaly, then it becomes required<br/>for this as well, but only a couple tiers from ZPM.\n\nAdditionally,<br/>there are other recipes, like the Elemental Duplicator.<br/>This is a very powerful replicator that will give you<br/>a great boost in automation due to its speed and the<br/>replication recipes it can do, but the Quantum Anomaly<br/>used in this recipe will be consumed, so watch out:<br/>if you only have one, don't use it for this. Later<br/>on, however, you will encounter other recipes that<br/>consume the anomaly, namely the casings for the Quantum<br/>Force Transformer, so it will be important to automate<br/>their production by then.<br/><br/>"
+                },
+                {
+                    "name": "Establishment of Fusion",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8ba1\u7b97\u673a\u7bb1.png",
+                    "x": 612.0,
+                    "y": 576.0,
+                    "tooltip": "Fusion is the lategame. It is not the entire lategame,<br/>but several tiers are effectively relying on it, even<br/>if new ways of generating power are being discovered<br/>(developed) over time. Whether you got here through<br/>focusing on power or products, you have surely felt<br/>the importance of that donut on your base, have you<br/>not? Let's just hope your power storage doesn't run<br/>out when you start relying on Mega Blast Furnace processing.\n\nIf<br/>you've looked at NEI enough, you might have discovered<br/>Force Plasma, or some of its crafting steps. This plasma<br/>is the end of the first of three fusion chains dedicated<br/>to power generation, although some of these special<br/>plasmas transform into useful materials in Plasma Turbines<br/>or Extreme Heat Exchangers, like Celestial Tungsten<br/>later on. There are three of these chains, and the<br/>build on top of one another: one for Mk1 Reactors,<br/>another for Mk2 and the last for Mk3. \n\nYou can build<br/>these chains any time you like, and they offer more<br/>EU/t per Fusion Reactor than the Helium Plasma alternative,<br/>but it's unlikely you'll need them this early. They<br/>only become really useful later on, at the Mk3 stage<br/>with bigger reactors and turbines. Despite the fact<br/>the three plasmas can be used for power, only the final<br/>one, Celestial Tungsten, is powerful enough to be worthwhile<br/>for your central power generation.<br/>"
+                },
+                {
+                    "name": "EV vs. IV",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/2\u9636\u706b\u7bad.png",
+                    "x": 480.0,
+                    "y": 360.0,
+                    "tooltip": "Your sourcing of Uranium is gonna be very small in<br/>EV, unless you use crops. Similarly, your ability to<br/>put together the multiblocks needed for the fluid nuke<br/>will be better in IV, since you can mine Small Titanium<br/>Ore directly, and use GT++ multis. \n\nAll in all, the<br/>Tier 2 Rocket makes things a lot easier by letting<br/>you mine ores on Mars and Phobos to get Uranium and<br/>Tungstate/Scheelite. However, building it requires<br/>considerable progression in EV, due to TPV Coils, which<br/>need Titanium and Platinum, and the Mainframes that<br/>the rocket needs. In IV, fluid nukes are one of the<br/>best choices for efficient power without a lot of setup,<br/>although it's very viable to use Thorium and not just<br/>Uranium, so you can ignore Uranium Fuel Rods and use<br/>fluid nukes in EV if you so wish.\n\nEither way, it's<br/>recommended to have a multiblock Miner in either the<br/>Nether or Phobos, to source your Thorium or Uranium.<br/>"
+                },
+                {
+                    "name": "Excited Fluid Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u67af\u7aed\u56db\u8054\u71c3\u6599\u68d2(\u6fc0\u53d1\u949a).png",
+                    "x": 360.0,
+                    "y": 312.0,
+                    "tooltip": "This quest is after the vacuum nuke one because the<br/>fuel required to do a setup like this is harder to<br/>get. Whereas the previous rods were made with compressed<br/>Uranium, this fuel needs that same material to then<br/>be further processed in GoodGenerators machines, namely<br/>the Neutron Activator, to make Excited Uranium Liquid<br/>Fuel. It is directly usable in the Naquadah Reactor,<br/>with more fuel efficiency there, but you might not<br/>be able to build it yet, since it's post-fusion. Instead,<br/>you can use said fuel here.\n\nBefore attempting this,<br/>you need to know all the mechanics related to the fluid<br/>nuke. In fact, this quest won't even have any required<br/>tasks, given how challenging it is to create a good<br/>setup of this kind. At the time of writing this quest,<br/>there is no nuke simulator that supports the Excited<br/>Fuel Rods, which means you'll have to first test in<br/>Creative mode and gather whatever results you get from<br/>there.\n\nThe basis for this setup is simple: Excited<br/>Uranium Fuel Rods, the only kind you should consider<br/>for this, output 16x more heat than the regular ones,<br/>which is a lot more Hot Coolant output if you can send<br/>all this heat to the reactor to be turned into power.<br/>Only the heat matters, which means that extra EU/t<br/>based on temperature will do nothing here. Throw as<br/>many rods as you can at this nuke without overheating,<br/>that is the challenge.\n\nWhat then? You will surely<br/>need many multis if you want to process LuV amps of<br/>power, unless you choose some more advanced options.<br/>The LHE upgrades into the EHE, the Extreme Heat Exchanger,<br/>and this new multi can output either Superheated or<br/>Supercritical Steam. For the former, use XL Steam Turbines<br/>to process the ludicrous amount of Steam you will be<br/>getting. For the latter, you need special turbines.<br/><br/>"
+                },
+                {
+                    "name": "Exciting Liquid Nuking",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94c0\u57fa\u6d41\u4f53\u71c3\u6599(\u6fc0\u53d1\u6001)\u5355\u5143.png",
+                    "x": 816.0,
+                    "y": 312.0,
+                    "tooltip": "With the reactor built, it's time to automate the fuel<br/>and additives, since there are additives this time.<br/>They are optional, so let's begin with the required<br/>inputs.\n\nLiquid Air is trivial to automate: it's a<br/>Vacuum Freezer job. Input energy and Air and output<br/>Liquid Air, there are quests for this. The fuels themselves<br/>are more complicated, but the three of them follow<br/>a similar set of recipes. First, you grab a lot of<br/>the radioactive element (Thorium, Uranium or Plutonium),<br/>wrap it in a specific foil and then put in an Implosion<br/>Compressor to make very dense nuggets. These are into<br/>the High Density items you need, which are then mixed<br/>with specific dusts to create the basic fuel fluid.\n\nThis<br/>part is where it becomes complicated, though. To get<br/>the energy out of this radioactive fluid, you need<br/>to activate it. Thorium is done by mixing with Helium<br/>Plasma (t1 fusion), while the other two are made directly<br/>in the Fusion Reactor (t2 fusion). The activated fuels<br/>can be thrown directly in the reactor to produce EU,<br/>at a very slow pace. Your bottleneck should be the<br/>main radioactive element, so make sure you can source<br/>it fast enough.\n\nBeing here, you should have a Large<br/>Naquadah Reactor ready to go. However, it is true that<br/>these Excited Fuels can be used to make fuel rods for<br/>IC2 nukes, with much larger heat outputs meant for<br/>fluid nukes. You can try to use them there, but there<br/>are no simulated setups of any kind for those rods,<br/>so it's going to be a very experimental setup if you<br/>ever decide to make it.<br/>"
+                },
+                {
+                    "name": "Faster Lutetium Excitement",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9565\u7c89.png",
+                    "x": 816.0,
+                    "y": 396.0,
+                    "tooltip": "This quest is late LuV.\n\nYou might have read before<br/>that Lutetium is necessary as an input for fusion crafting.<br/>In a tier 2 fusion reactor, Lutetium + Chrome = Americium,<br/>a required material for many required crafts. Lutetium<br/>is a material that is obtained exclusively from breeding,<br/>so you're in the right place to find ways to get it.\n\nThe<br/>very first method, EV's IC2 Thorium nukes, is the cheapest,<br/>but also the slowest. Each fuel rod takes 50000 seconds<br/>to deplete, almost 14 hours, with half of a Lutetium<br/>Dust per depleted rod. Highly stackable designs, such<br/>as the 2-chamber 11 quad rod one, will grant you 22<br/>dust per cycle. After building 10 of those, the rate<br/>is still 16 dust per hour. This processing speed isn't<br/>good enough to keep progressing forever, and there<br/>is no need to make more towers of breeder nukes.\n\nYour<br/>5 main options are:\n\n1) HTGR - fastest but also quite<br/>expensive multiblock reactor, unfortunately it requires<br/>purified thorium232 you will need to purify it first\n2)<br/>Lutetium bees - if you started bees getting it should<br/>be quite easy\n3) Spamming IC2 nuclear reactors\n4) Distilling<br/>Heavy Naquadah Fuel\n5) Summoning meteors<br/><br/>"
+                },
+                {
+                    "name": "First Half of LFTR Breeding",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u67af\u7aed\u948d\u94cd\u7194\u76d0\u5355\u5143.png",
+                    "x": 708.0,
+                    "y": 432.0,
+                    "tooltip": "The LFTR processing chain has two halves, with the<br/>first being in mid-late IV and the second requiring<br/>the Assembly Line and more materials to finish. Aside<br/>from power, both of these halves have special outputs<br/>that can be helpful for progression, but the second<br/>half is most likely the one that holds the most value.<br/>Regardless, the full processing chain around the reactor<br/>and its fuel will keep outputting everything, so it's<br/>worth it to look at what it gives.\n\nLet's start with<br/>the LFTR Fuel 1 outputs, after the fuel is consumed<br/>in the reactor. U233 and UF6 are both used to make<br/>more fuel. U233 will be used until you have Sparge<br/>Towers to improve your fuel production, while UF6 is<br/>a part of the good fuel recipe that you always want<br/>to use. T Salt is processed in the Reactor Processing<br/>Unit to yield Proactinium, which decays into even more<br/>U233, and then in the Cold Trap to yield more U233<br/>and UF6.\n\nRemember: U233 is the early source of fuel,<br/>UF6 is the one you will switch to as you progress.\n\nMeanwhile,<br/>U Salt also processes into more fuel, but with a bonus<br/>of automated Phosphorous Dust. Unfortunately, you won't<br/>get a lot of it, but it is still a breeding output<br/>from the nuclear fission and is needed for GT++ alloys<br/>and other purposes.\n\nTB Salt is very similar to T Salt,<br/>but with higher amounts of the same output and also<br/>Beryllium Fluoride, whose output grows into more than<br/>what you used when you reach the later parts of the<br/>chain. Free Beryllium!<br/>"
+                },
+                {
+                    "name": "First Steps in Reprocessing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u51b7\u9631 II.png",
+                    "x": 744.0,
+                    "y": 360.0,
+                    "tooltip": "You now have 4 different fluid outputs running away<br/>from your LFTR. Each of them needs specific attention,<br/>and all of them are useful. \n\nWhere to start looking?<br/>The best way to start is at the end, which is to say,<br/>the Fuel Refinery. You want to upgrade to the better<br/>fuels as soon as possible, and each one has 2 recipes:<br/>one with 4 inputs, similar to the recipe you've already<br/>done, and one with 2 inputs, focusing on LFTR Fuel<br/>Base. The 2-input recipes produce 10x the fuel, so<br/>they're much better, but you can't use this recipe<br/>alone. The Fuel Base can only be made from reprocessing<br/>depleted fuel, and you don't get enough of it to make<br/>the same amount of fuel spent. If you perfectly reprocess<br/>any of the first two fuels to get Fuel Base, you will<br/>come out short and run out of fuel.\n\nGiven that, your<br/>strategy will be to use two Fuel Refineries, one for<br/>each Fuel 2 recipe, and then change them to Fuel 3<br/>once you've built the Assembly Line, which is required<br/>to build the final multiblocks in this line. For Fuel<br/>2, get as much Fuel Base as you can from this chain<br/>- EBF <- DT <- RPU <- LFTR and put it into one of the<br/>refineries, while using the second one to top off on<br/>the remaining fuel you need to keep the LFTR going.<br/>You can limit the UF4 on the second refinery to not<br/>make too much fuel there, or just turn it on and off,<br/>and use as much of the better recipe as possible. You<br/>will be able to use the better recipe 100% of the time,<br/>but only after building a Sparge Tower.\n\nAdditional<br/>details on the other outputs you can get from reprocessing<br/>can be found on the breeding side of this questline<br/>branch.<br/>"
+                },
+                {
+                    "name": "Fission Guidelines",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7834\u635f\u7684\u5237\u602a\u7b3c.png",
+                    "x": 612.0,
+                    "y": 396.0,
+                    "tooltip": "The branch to the left and to the right are both about<br/>nuclear fission, or the midgame content about fusion.<br/>If you're looking for fusion, you went the wrong way!<br/>Go straight down for that content, although it only<br/>begins in LuV.\n\nOn the left side, the top side is the<br/>beginning of it all, with your usual IC2 nukes that<br/>were developed more than 10 years ago. On the bottom,<br/>the neat and powerful upgrades to those nukes, either<br/>fluid or vacuum.\n\nOn the right side, the top side is<br/>dedicated to power, whereas the bottom side is dedicated<br/>to breeding (byproducts). This covers the more GTNH-exclusive<br/>fission content, all of which comes after IC2 nukes,<br/>and generally builds on their concept to work faster<br/>and pump out more complex, and often more useful things.<br/>"
+                },
+                {
+                    "name": "Fluid Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u53cd\u5e94\u5806\u538b\u529b\u5bb9\u5668.png",
+                    "x": 528.0,
+                    "y": 432.0,
+                    "tooltip": "Eventually, the previous nukes will not be big enough.<br/>You can make more of them, to get more power, but it's<br/>clear that you need something bigger. Bigger, literally.<br/>The next step in nuclear fission starts with a bigger<br/>multiblock, built on top of the original nuke. By surrounding<br/>it with a 5x5x5 cube of Reactor Pressure Vessels, it<br/>will become a different type of multiblock, the fluid<br/>nuke.\n\nAfter doing this, there's no direct EU generation<br/>anymore. The main output of a working fluid nuke is<br/>Hot Coolant, a fluid that can be turned into Steam<br/>or Superheated Steam in another multi, the Large Heat<br/>Exchanger (LHE). Steam means power, as you already<br/>know, so the obvious chain of processes here is a fluid<br/>nuke into an LHE, and then into Steam Turbines. These<br/>added steps are required to make EU from a nuke of<br/>this type (or, at least, they're the most popular way<br/>of doing it), but this work is rewarded by the final<br/>EU/t output of the setup, which is much larger than<br/>a regular nuke's output with the same amount of fuel.\n\nThe<br/>difference exists because regular nukes actually have<br/>a 50% penalty to EU/t. It's such a big step-up that,<br/>in reality, one fluid nuke is enough for IV power,<br/>if it's powerful enough. The one in this quest, though,<br/>is not that one, because fluid nukes in general have<br/>some additional complications that will be harder to<br/>deal with it. In fact, for this, you have the option<br/>to use Thorium as fuel and still get a good amount<br/>of power! What you will need are the fluid nuke blocks,<br/>but there is an optional task for this setup that only<br/>needs some blocks from the setup.<br/><br/>"
+                },
+                {
+                    "name": "Focus on Breeding",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6ce8\u9b54\u722a.png",
+                    "x": 660.0,
+                    "y": 444.0,
+                    "tooltip": "This side of the advanced fission branch will focus<br/>on the items you can get from nuclear fission. In terms<br/>of physics, this fission refers to atoms being broken<br/>into two parts, each of which generates a different<br/>atom. This has potential to produce some interesting<br/>stuff and, perhaps, replace some chemical lines.\n\nAs<br/>you advance, your rewards will scale just as the complexity<br/>does. However, this part is one where development has<br/>lagged behind, and some fission setups are poorly rewarding<br/>when it comes to byproducts. However, as those setups<br/>are updated, so will these quests, so check back on<br/>new updates to see what has changed!"
+                },
+                {
+                    "name": "Focus On Power Generation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5170\u6ce2\u987f\u80fd\u91cf\u7403.png",
+                    "x": 672.0,
+                    "y": 372.0,
+                    "tooltip": "Each side of this branch will focus on one of the two<br/>halves of nuclear fission outputs. This side will focus<br/>on generating power from the reactors available here,<br/>which is probably why you're here in the first place.\n\nThese<br/>setups share one purpose: when they were created, they<br/>were meant to bridge the gap between IC2 nukes and<br/>fusion, because there was really nothing else worth<br/>using beyond fluid nukes if there were no backups available,<br/>or redstone automation was too unreliable for vacuum<br/>nukes. Not only is there a full 2-tier gap of one single<br/>powergen until fusion, but there's also a required<br/>power input in order to begin a fusion reaction in<br/>the first place. This is both boring and difficult<br/>to push through, especially with the Assembly Line<br/>in the middle, so here we are.\n\nThe first setup you<br/>can put together is the LFTR chain, although only one<br/>half of it is available in IV. As such, that is where<br/>we will start."
+                },
+                {
+                    "name": "Fuel Input Automation",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f20\u9001\u5e26(MAX).png",
+                    "x": 528.0,
+                    "y": 336.0,
+                    "tooltip": "Reactor Platings. These are very important for automation,<br/>although their supposed use is not this one. They serve<br/>to increase the maximum temperature of the reactor,<br/>but that is useless to you because you'll be using<br/>heat-neutral setups. Instead, they are simply the cheapest<br/>way to fill every slot of your nukes, except for those<br/>where fuel rods need to go.\n\nAs you know, the placement<br/>of each component is critical to keep the reactor safe.<br/>Fuel automation is as simple as just pushing fuel rods<br/>into the reactor, but you need to make it so the open<br/>slots are the only safe places for the rods. From there,<br/>you can extract with a filter set to the depleted version<br/>of the rods you are using. and the exchange will happen<br/>seamlessly.\n\nFrom there, you can turn the depleted<br/>rods into usable rods by putting them in the Thermal<br/>Centrifuge, adding back the fuel that wasn't recycled<br/>(each type of rod recycles different amounts of fuel)<br/>and the Empty Fuel Rods/Steel Rods.<br/>"
+                },
+                {
+                    "name": "Further IC2 Nuke Potential",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u672a\u77e5\u7c92\u5b50.png",
+                    "x": 384.0,
+                    "y": 384.0,
+                    "tooltip": "An observant nuclear scientist might have seen many<br/>more options for IC2 nukes than those mentioned in<br/>the quests up to this point. Thorium, Uranium, Thorium,<br/>Uranium... what about all of these other things, what<br/>do they do?\n\nUnfortunately, this is where the copying<br/>of builds ends. The nuke research that has been done<br/>is almost all about the fuel rods that existed from<br/>base IC2, namely the Thorium, Uranium and MOX ones.<br/>Almost all the others were added with GTNH, and they<br/>are more or less ignored by most players. However,<br/>not all of them are useless! To see why, keep reading.\n\nGoodGenerators<br/>has added two new pairs of Uranium and Plutonium rods:<br/>High Density, and Excited. Both of these use a lot<br/>more of the element per rod, to the extent where you'll<br/>need stacks and stacks of each to run a single nuke,<br/>which means that these are fuels for later in progression,<br/>when you have stockpiled a lot of U238. The main difference<br/>is that High Density rods output a lot more EU/t with<br/>the same heat output, whereas the Excited rods do output<br/>a lot more heat than usual. This means that the former<br/>are good for vacuum nukes, while the latter are good<br/>for fluid nukes. This is true because vac nukes want<br/>more EU/t from rods with less heat, to make the coolant<br/>cells last longer, while fluid nukes produce Hot Coolant<br/>directly from the amount of heat dissipated into the<br/>reactor. The Plutonium versions also have MOX-like<br/>behavior, while the Uranium ones don't.\n\nThis is not<br/>the end of high-powered nukes, though. There is a special,<br/>one-of-a-kind fuel rod called The Core, and there is<br/>a single vac nuke setup in the wiki using these things<br/>that outputs 7.906.206 EU/t, or about 3 amps of UHV.<br/>A truly ridiculous number, matching the truly ridiculous<br/>cost of making the fuel itself. This is a setup for<br/>a time in which you shouldn't be using IC2 nukes anymore,<br/>a true challenge for the mad nuclear scientist.\n\nWhat<br/>else is there? Unfortunately, not much. Every other<br/>fuel rod is largely useless. Tiberium rods can breed<br/>Zirconium and Xenon, if you need them, Lithium breeds<br/>Tritium and the Naquadah rods are unbelievably bad<br/>at generating power, which many other better reactors<br/>to use the Naquadah in. In terms of power, nothing<br/>else is worth using.<br/><br/><br/>"
+                },
+                {
+                    "name": "Fusing Americium and Tritanium",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9545\u952d.png",
+                    "x": 672.0,
+                    "y": 588.0,
+                    "tooltip": "A t2 Fusion Reactor unlocks more fusion materials,<br/>some of which will again be necessary to progress into<br/>the next tiers. One of them is Americium, which is<br/>the reason for all the Lutetium worry until now: both<br/>are required, because one makes the other. The recipe<br/>also needs Chrome as input, but that should be much<br/>easier to get than Lutetium or the power needed per<br/>bucket of Molten Americium, which is almost 300M EU.<br/>\n\nYou will need many stacks of this material for your<br/>future progression, but your first goal should be to<br/>make 141 ingots (check the ZPM \"Making Americium\" quest<br/>for details). However, if you have extra Lutetium,<br/>you should make more Americium, you will not regret<br/>doing this when you need more of it later.\n\nAnother<br/>useful material you unlock at t2 is Tritanium, which<br/>is different from Trinium. The source of this material<br/>is fusion, and the inputs to make it are Duranium and<br/>Titanium. If you haven't made Duranium before, you'll<br/>see that it needs a lot of Radon, almost 8x the amount<br/>of Tritanium you end up with. For this, you should<br/>already have the Radon loop automated, that step is<br/>very important for this.\n\nYou will need Tritanium to<br/>progress, just as you need Americium, so it's a good<br/>idea to batch craft both of these in your new t2 Fusion<br/>Reactor so you don't have to go back to these recipes<br/>soon."
+                },
+                {
+                    "name": "Fusion Europium",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94d5\u952d.png",
+                    "x": 648.0,
+                    "y": 516.0,
+                    "tooltip": "There are chemical elements that are very important<br/>as building materials for high-tier machines. Unfortunately,<br/>some of these elements are very hard to find naturally,<br/>if at all, and need to be created by hand. They're<br/>not alloys, not a mix of materials, but they can be<br/>a mix of atoms...\n\nEuropium is the first wall that<br/>can be solved by fusion, and only by fusion. It is<br/>possible to find it in ores, but even the most complicated<br/>magic rituals to get them need some Europium to start,<br/>which leaves fusion crafting as the most reliable option<br/>to automate the entire process. It is a slow craft,<br/>but not an expensive one provided you already have<br/>the reactor built, since it uses cheap materials as<br/>inputs: Hydrogen and Neodymium. Both of these were<br/>used extensively for progression, so you should not<br/>have any trouble grabbing several hundreds of each<br/>to start this reaction.\n\nIt is important that you gather<br/>a lot of inputs. Each time the Fusion Reactor changes<br/>recipe, it has a start-up period where it needs a large<br/>amount of energy to begin crafting. In the case of<br/>Europium, you'll need 150 million EU to start crafting<br/>it, and then 7,077,888 EU per ingot of Europium crafted.<br/>This does not come out as plasma, so you can't get<br/>energy back from it! Additionally, each ingot takes<br/>14.4 seconds to craft, so you can come out with a few<br/>stacks of Europium relatively quickly. During this<br/>time, you cannot produce plasma for power, so it's<br/>a good idea to have a good amount of EU stored, or<br/>other powergen setups working in the background, while<br/>you craft this material.\n\nWith Europium, you can craft<br/>a new kind of boule, wafers and many other things!<br/>Check NEI to see what you have unlocked.<br/>"
+                },
+                {
+                    "name": "High Density Vacuum Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56db\u8054\u71c3\u6599\u68d2(\u6d53\u7f29\u94c0).png",
+                    "x": 348.0,
+                    "y": 360.0,
+                    "tooltip": "Throw more U238 at it!\n\nIf you ever though that a vacuum<br/>nuke doesn't burn through Uranium fast enough, this<br/>one is for you. High Density Uranium, or HDU, outputs<br/>twice the EU of the regular Uranium rods, and lasts<br/>for 70000 seconds instead of 20000. The heat output,<br/>like mentioned before, is the same, so the actual effect<br/>of using these rods in a vacuum nuke setup is that<br/>your final EU/t per nuke is multiplied by 2, and rods<br/>will need to be replaced less often, but the U238 consumption<br/>per cycle is a lot higher.\n\nThis also helps if you<br/>aren't automating the fuel rod input, since each one<br/>lasts longer. It's better if it's automated, but there's<br/>no danger of explosions if this part is done manually,<br/>so it's technically safe, as long as your EU buffer<br/>doesn't start complaining from lack of input.\n\nAs the<br/>last step before using The Core, you have High Density<br/>Plutonium. This HDP has MOX-like behavior, so it can<br/>output even more EU/t than HDU, up to several LuV amps<br/>per nuke, but you need to keep it running at high temperatures,<br/>which means even more risk! There is no such thing<br/>as too much safety, if you try to put one of these<br/>together.<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a76\u00a76\u00a7lHigh Temperature Super Breeder",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u6e29\u6c14\u51b7\u53cd\u5e94\u5806.png",
+                    "x": 876.0,
+                    "y": 360.0,
+                    "tooltip": "Have you heard of pebble reactors?\n\nIt's called the<br/>High Temperature Gas-cooled Reactor (HTGR), and it<br/>uses fuel pebbles and consumes power. However, it doesn't<br/>really make a lot of power, and doesn't even match<br/>the EU/t of THTR, despite being much more expensive.<br/>The multiblock structure is basically the same, a huge<br/>reactor around 12x12x12 blocks in size, with 500+ casings<br/>made with Europium. What it doesn't make in power,<br/>it compensates in breeding, however.\n\nFor the unaware,<br/>this is expensive. Pebble reactors work by stuffing<br/>the reactor absolutely full of pebbles, and then the<br/>reaction will keep going for, essentially, forever.<br/>In this case, you will have a fully automated source<br/>of almost endless Lutetium, Plutonium and other things<br/>that will be explained in the following quests, alongside<br/>the production of fuel and the processing of outputs.<br/>What this means is that this is an expensive multiblock,<br/>but it's placed a tier in which this expense is actually<br/>reasonable, if there is a need for immense, endless<br/>breeding of many outputs.\n\nIf you're on the fence about<br/>building this, check the next quests to learn more<br/>about the fuel and outputs.\n\nNotes:\n\nHTGR has an internal<br/>buffer for fuel and only one input bus is required<br/>(any will do), as well as only one output bus (reactor<br/>automatically compresses every 64 burned pellets into<br/>one ball, so you need 6 slots or more to avoid problems<br/>with voiding at full capacity).\n\nReactor requires only<br/>72k out of 720k pebbles to operate, but running at<br/>minimum capacity means that you will not get any bonuses,<br/>such as lower recipe time and higher amount of pebbles<br/>processed per cycle.\n\nThis multi consumes 1A LuV when<br/>operating, no matter how many pebbles are inside, but<br/>it also generates Hot Coolant as it runs. If you use<br/>it to generate power, you will gain more EU than is<br/>consumed by the reactor. \n\nIn this reactor, the throughput<br/>increases with the amount of pebbles put into it.\n\nBy<br/>typing HTGR in NEI, you can see all the items that<br/>are related to this multiblock.<br/><br/>"
+                },
+                {
+                    "name": "How Much Power From One Reactor?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c26\u7b49\u79bb\u5b50\u4f53\u5355\u5143.png",
+                    "x": 576.0,
+                    "y": 516.0,
+                    "tooltip": "A completed Fusion Reactor does not generate any EU<br/>on its own, it only consumes it. That said, it's very<br/>simple to generate power from plasma, a one-step process<br/>of having a Plasma Turbine. These special turbines<br/>only work with plasma and are significantly more expensive<br/>than the previous ones, requiring Tungstensteel for<br/>the body and Naquadah + Naquadah Alloy for the controller.\n\nFirst,<br/>how much plasma can one tier 1 reactor produce? The<br/>best option for power at this stage is Helium Plasma,<br/>with its cheap inputs, and this takes 6.4 seconds per<br/>bucket to generate. Since a bucket is worth 81,920,000<br/>EU, that equates to 640,000 EU/t at 100% efficiency<br/>or 960,000 EU/t at 150%. That is almost 8 ZPM amps,<br/>a massive power spike compared to the powergen available<br/>before this, with almost no processing before the plasma!<br/>For most players, fusion is the only source of power<br/>for 3 or 4 tiers, and all other ways of getting power<br/>are much more complicated and harder to upscale.\n\nThat<br/>said, you will still need multiple turbines to actually<br/>consume all of the plasma. At LuV, each turbine can<br/>only output the equivalent of 1 ZPM amp, so you will<br/>need high-efficiency turbines that don't go above the<br/>value of 131,072 EU/t output. Three candidates, in<br/>descending order of efficiency, are: Large Rhodium-Palladium<br/>at 150% and 124,740 EU/t, Normal Draconium at 145%<br/>and 121,800 EU/t and Large Tungstencarbide at 140%<br/>and 123,480 EU/t.\n\n[note]Note: the suggestions in this<br/>questline might be outdated, and there might be other<br/>options that are just as good, if not better. Look<br/>through NEI and ask other people, there might be a<br/>new setup that can replace the ones in these quests![/note]<br/><br/>"
+                },
+                {
+                    "name": "IC2 Nuke Variations",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8fc7\u70ed\u84b8\u6c7d.png",
+                    "x": 564.0,
+                    "y": 444.0,
+                    "tooltip": "This branch of the questline focuses on the IC2 nukes<br/>that work differently from the simple kind that is<br/>explored on the branch right next to this one. They<br/>are more powerful, but also require more setup.\n\nThe<br/>main two kinds are fluid nukes and vacuum nukes, which<br/>will be explained in the following quests. However,<br/>there are also other obscure types, such as wrench<br/>nukes, which might or might not work in the current<br/>version.\n\nThose are memes, but if any new viable type<br/>of IC2 nuke is ever introduced, it will be explained"
+                },
+                {
+                    "name": "Improved Fission",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u53cd\u5e94\u5806\u71c3\u6599\u52a0\u5de5\u5382.png",
+                    "x": 648.0,
+                    "y": 408.0,
+                    "tooltip": "This branch starts at mid-IV. In this direction, you<br/>will find several setups that are related to nuclear<br/>fission, the same process that the IC2 nukes do, but<br/>in more complex and rewarding ways. Through here, you<br/>can get power and breeding byproducts as you would<br/>with nukes, but faster and with more variety of options<br/>and goals. \n\nThat's right. If you've used IC2 nukes,<br/>you might have learned more or less how they work,<br/>but the whole system feels a bit dated. That's no surprise,<br/>considering that this is base IC2 content and from<br/>10 years ago or more. Whatever additions GTNH gave<br/>to those setups, they were minimal in comparison to<br/>the general implementation of those nukes. In fact,<br/>some of the new content for those was a result of new<br/>nuclear fission content that was sort of backported<br/>into nukes. \n\nWe have good progression standards here,<br/>though. Once you've reached IV, LuV and so on, you<br/>will be able to use more advanced ways to work with<br/>Thorium and Uranium! These fuels are almost always<br/>the focus of the whole thing, with Plutonium coming<br/>in from time to time, but each new reactor will demand<br/>them to be supplied in a different way for things to<br/>work properly. The power generating reactors featured<br/>here are the LFTR, the THTR and the Naq-related reactors.\n\nFinally,<br/>this questline features many different multis and setups<br/>that are often unrelated to each other. Instead of<br/>forcing you to build a full LFTR setup before getting<br/>access to the THTR, for example, these quests will<br/>have simple required tasks, and simple rewards. The<br/>optional tasks will have the main expensive crafting,<br/>to guide you in building these setups if you're interested<br/>in them.<br/>"
+                },
+                {
+                    "name": "Infinite Turbines",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5723\u7075\u5947\u70b9.png",
+                    "x": 564.0,
+                    "y": 684.0,
+                    "tooltip": "Some turbine materials are not available for you, either<br/>because you don't have the material itself or because<br/>the Dynamo Hatch in the turbine cannot handle the power<br/>output from plasma. It will be a different story in<br/>UHV, when you can once again quadruple the max output<br/>of each turbine, and also unlock Infinity as an option<br/>for turbines.\n\nHuge Infinity 300% 6,451,200 EU/t\nHuge<br/>Infinity Catalyst 231% 1,236,480 EU/t\n\nYes, that's<br/>basically it. You can use any material from the previous<br/>turbine quests, but when you make the t8 rocket and<br/>can mine Infinity Catalyst, these are the two options.<br/>Obviously, Infinity is much better, but also much more<br/>expensive. If you stick with fusion, you will need<br/>several of those to push through the endgame. Remember<br/>that you can input plasma beyond the optimal flow,<br/>and get more out of each turbine at the cost of fuel<br/>efficiency.\n\nMake a normal or buffered UHV dynamo to<br/>complete the quest."
+                },
+                {
+                    "name": "Inputs and Outputs in the LFTR",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c1f\u5355\u5143.png",
+                    "x": 720.0,
+                    "y": 300.0,
+                    "tooltip": "Assuming you have both the LFTR and the Fuel Refinery<br/>built, and the inputs for the fuel available to be<br/>used, you can power up the reactor and leave it running.<br/>The first fuel you can use will work with 4 IV Energy<br/>Dynamos to output 4 IV amps, as long as the reactor<br/>runs, and each cycle lasts for 100 seconds (you can<br/>see the recipes on NEI, there's a tab dedicated to<br/>the 3 fuels the LFTR can run and what you get from<br/>them).\n\nWhat about everything else? The entire setup<br/>has 2 inputs and 4 outputs. One of the inputs is any<br/>of the 3 possible fuels, the other input is Lithium<br/>Tetrafluoroberyllate (LTFB). On the output side, there's<br/>one constant: U233 is output in small quantities at<br/>random, averaging 10 seconds per output. There are<br/>two other outputs, U Salt and UF6, that come from every<br/>fuel, although better fuels output more of these per<br/>cycle. Finally, T Salt or TB Salt can be outputted,<br/>the first from the first fuel and the second from the<br/>other two, with TB being more valuable than T. All<br/>of these are meant to be processed in order to reach<br/>better LFTR fuels, and also useful breeding byproducts.\n\nStarting<br/>with the first fuel, every bucket of it will need 2<br/>buckets of LTFB, last 1000 seconds and output a total<br/>of 655.536.000 EU at 32.768 EU/t. After this, you will<br/>have 367L of U233 on average, 250L of U Salt, 500L<br/>of T Salt and 5L of UF6. As you can tell, this is a<br/>slow burner, and one bucket of each of these fluids<br/>is worth a lot!<br/>"
+                },
+                {
+                    "name": "Large Heat Infrastructure",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u70ed\u4ea4\u6362\u673a.png",
+                    "x": 492.0,
+                    "y": 420.0,
+                    "tooltip": "A required intermediate machine between your fluid<br/>nukes and your power is the Large Heat Exchanger (LHE).<br/>It takes in a hot fluid, in this case Hot Coolant,<br/>and transforms Distilled Water into Steam or Superheated<br/>Steam depending on how fast the hot fluid is coming<br/>in. It's important to only use Distilled Water here,<br/>because the Steam Turbines will output and recycle<br/>it back to the LHE.\n\nFor this purpose, you will need<br/>around one LHE per fluid nuke if you're doing one of<br/>the good setups from the wiki. None of them will reach<br/>the maximum flow one LHE can accept, but any setup<br/>above 800 HU will give you Superheated Steam, which<br/>is more efficient for EU and what you want to get.\n\nIf<br/>your setup does not match that 800 HU threshold, you<br/>can use a Hot Coolant buffer and set up a redstone<br/>latch so that the Hot Coolant flows in fast enough,<br/>until the buffer is almost empty. ProjectRed has a<br/>special block that acts as the latch, and you will<br/>then need two redstone signals that scale with the<br/>amount of fluid stored in your buffer tank. One of<br/>the signals should be normal, and the other reversed.\n\n<br/>"
+                },
+                {
+                    "name": "Liquid Fluorine Thorium Reactor",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6db2\u6001\u6c1f\u948d\u53cd\u5e94\u5806.png",
+                    "x": 696.0,
+                    "y": 336.0,
+                    "tooltip": "What a complicated name this is. What does it mean?\n\nWell,<br/>it's what is called a molten salt reactor. The Liquid<br/>Fluoride part means that the nuclear fuel is actually<br/>a liquid, mixed in with fluoride salts. This is a mechanism<br/>that makes it more difficult to get the fuel ready<br/>for fission, but also makes the process more efficient,<br/>gives out more byproducts and also removes the danger<br/>of explosion. That's right, nuclear meltdowns are a<br/>thing of the past! The molten salt is designed to flow<br/>downwards into a hole where it solidifies, in case<br/>the reactor has problems, so it's impossible for the<br/>fission process to continue into an explosive mess.\n\nThere<br/>are three downsides, though. One of them was mentioned<br/>just above, the fuel needs more processing to be ready<br/>for the LFTR, and more input materials to reach the<br/>right mixture. After it goes through the reactor, it<br/>comes out as depleted, and this part too requires more<br/>processing steps, although it gives out a lot more<br/>useful chemicals than the single Lutetium/Plutonium<br/>the IC2 nuke depletion process gave. Lastly, the molten<br/>salt is very hot and very corrosive, which means it<br/>would destroy the materials used to build the IC2 nukes.<br/>You will need newer, stronger and more expensive materials<br/>to build a reactor, not to mention its much larger<br/>size. \n\nThe structure for this multi is truly something<br/>else. It has not one, but four required Dynamo Hatches,<br/>which should all be the Buffered type, either EV, IV<br/>or LuV depending on the fuel being fed into the reactor,<br/>with better fuels being unlocked at later progression<br/>stages. This means that one LFTR makes either 1 LuV<br/>amp, 1 ZPM amp or 1 UV amp while running. It also requires<br/>2 Maintenance and 4 Muffler Hatches, when it has no<br/>maintenance problems or pollution output! Mysterious<br/>are the workings of this reactor.\n\nOther than this,<br/>all the inputs and outputs are fluids. The minimum<br/>amount you'll need is 2 inputs and 4 outputs, although<br/>one of the outputs comes out over time, and not on<br/>recipe finish. This output is Uranium 233, a very rare<br/>isotope that can get you deeper into LFTR fuels and<br/>more power, hardly obtainable from any other source.<br/><br/><br/>"
+                },
+                {
+                    "name": "Max Danger Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8b66\u544a\u6807\u5fd7.png",
+                    "x": 408.0,
+                    "y": 312.0,
+                    "tooltip": "Were you courageous enough to build a vac nuke? If<br/>so, are you courageous enough to do it in a MOX setup,<br/>with high heat?\n\nYes, this is possible, and extremely<br/>powerful. However, all the risks you signed up for<br/>are exponentially increased, since MOX nukes keep getting<br/>better and better the closer the nuke's temperature<br/>is to the critical point. This sort of automation is<br/>more complicated than almost any other, and I honestly<br/>don't have any specific guidelines for you. \n\nIf you<br/>manage this, do share it on the Discord. I bet people<br/>will be surprised."
+                },
+                {
+                    "name": "Maxed-out LFTR",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u585e\u9f99-100\u53cd\u5e94\u5806\u5c4f\u853d\u673a\u68b0\u65b9\u5757.png",
+                    "x": 780.0,
+                    "y": 336.0,
+                    "tooltip": "An LuV LFTR running on Fuel 3 outputs 4 ZPM amps per<br/>tick, or 524,288 EU/t. Each bucket is worth 1,048,576,000,000<br/>EU, more than a trillion EU! Certainly, this is the<br/>most power-dense fuel you've ever held, and now that<br/>you've made it here, you can make it to fusion and<br/>beyond much more easily. But wait, there's more!\n\nYou<br/>might have noticed that the limiting factor in using<br/>the best recipe for Fuel 1 and Fuel 2 was the U Salt,<br/>which ultimately makes the LFTR Fuel Base. You just<br/>can't get enough of it to drop that inefficient 4-input<br/>recipe. However, the increased output of U Salt from<br/>Fuel 3, alongside the doubling that you can get from<br/>processing Helium Sparged U Salt instead of the regular<br/>one, means that you can use the 2-input recipe to make<br/>all your fuel from now on! If you haven't set up Helium<br/>Sparge Towers yet, do so now.\n\nWhen you do this, you<br/>can grab the two Fuel Refineries you should have and<br/>set them both to the 2-input recipe. Each bucket of<br/>Fuel 3 takes 9000 seconds to make, but is consumed<br/>in 4000 seconds, so it's good to have more than one<br/>Refinery per LFTR. With this, you will make fuel much<br/>faster, and generate much more EU than before. If you<br/>continue expanding, it's very possible to match the<br/>first tiers of fusion power from something like this.<br/>"
+                },
+                {
+                    "name": "MOX Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56db\u8054\u71c3\u6599\u68d2(MOX).png",
+                    "x": 420.0,
+                    "y": 240.0,
+                    "tooltip": "Upon gathering more Plutonium, you can try building<br/>a MOX nuke, the most powerful of the basic nukes. It<br/>is a 6-chamber, like usual, and it takes U238 as before,<br/>but it outputs close to 6820 EU/t while only using<br/>5 quad rods instead of 7. How is this possible? The<br/>answer is... MOX.\n\nMOX means mixed-oxide, which is<br/>the name given to the mix of Uranium and Plutonium.<br/>In here, rods with this fuel are special in the sense<br/>that they don't output a specific amount of EU/t from<br/>the usual nuke mechanics. On top of those, it also<br/>reacts to the heat of the reactor, generating more<br/>energy the hotter it is. To compensate, these rods<br/>last only half the time that the Uranium fuel rods<br/>do, but their total EU is higher if they are active<br/>in very hot reactors. This imposes an obvious problem<br/>- hot reactors are not good for your base.\n\nThere is<br/>one standardized way of dealing with this: heat-neutral<br/>reactors. What this means is that the reactor's temperature<br/>does not change while it's active, because the components<br/>inside are not interacting with the reactor's temperature<br/>value, only with the value of other components like<br/>the fuel rods themselves. This limits the type of components<br/>you can use, and you'll find that Advanced Heat Vents<br/>are now required (the overclocked ones interact with<br/>the reactor itself). However, at the same time, you<br/>can use any fuel rod to heat the reactor up to a high<br/>temperature and then activate a setup of this kind,<br/>which ensures safety and efficiency in MOX nukes.\n\nVAAV\nARRA\nVAAV\nVAAV\nARRA\nVAAV\n\nA<br/>- Advanced Heat Exchanger (12 needed)\nV - Component<br/>Heat Vent (8 needed)\nR - Dual Fuel Rod of MOX (4 needed)\n\n1200-2730<br/>EU/t\n\n(This setup is the most efficient per MOX fuel<br/>rod, if you're short on fuel, which you shouldn't be<br/>if you're doing a MOX setup)\n\nAEAVPVAEA\nVARAVARAV\nAVAVAVAVA\nEAVARAVAE\nARAVAVARA\nVAEAVAEAV\n\nA<br/>- Advanced Heat Vent (26 needed)\nE - Component Heat<br/>Exchanger (6 needed)\nV - Component Heat Vent (16 needed)\nR<br/>- Quad Fuel Rod of MOX (5 needed)\nP - Reactor Plating<br/>(1 needed)\n\n3000-6825 EU/t\n\n(This setup is the most<br/>efficient per Advanced Heat Vent)\n<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Naquadah Reactor For Nuclear Fuels",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u7845\u5ca9\u53cd\u5e94\u5806.png",
+                    "x": 768.0,
+                    "y": 228.0,
+                    "tooltip": "What is the most powerful nuclear fission generator<br/>there is? The answer to that question isn't even a<br/>nuclear fission generator, for the most part. The answer<br/>is the Large Naquadah Generator. It follows the same<br/>principle as the LFTR, use a new processing chain to<br/>turn Thorium, Uranium and Plutonium into liquid fuels,<br/>very dense with energy, which are then slowly burned<br/>to generate large amounts of power over a very long<br/>period of time. This reactor, for example, burns its<br/>fuels 1 milibucket at a time, over several seconds,<br/>when running without additives, a very slow burner<br/>by default.\n\nLet's look at the NEI recipes. Excited<br/>Thorium outputs 2,200 EU/t, Excited Uranium outputs<br/>12,960 EU/t and Excited Plutonium outputs 32,400 EU/t.<br/>These are small numbers, clearly, so this can't possibly<br/>be the most powerful nuclear fission reactor. However,<br/>this multi is more complicated than that! In total,<br/>there are 4 inputs you can provide for it: one of them<br/>is the required fuel and another is the also required<br/>Liquid Air to generate EU from that fuel, but the other<br/>2 are additives that are optional, yet increase both<br/>the efficiency and the consumption speed of the fuel.<br/>The controller's tooltip lists all the possible additives<br/>and their bonuses.\n\nFuel efficiency here means that<br/>the fuel is burned at the same rate, but energy output<br/>is increased by the percentage. Let's consider the<br/>two best options, Cryotheum and Atomic Separation Catalyst.<br/>They multiply with each other, so the energy output<br/>is 2.75 x 16 = 44 times the displayed EU/t on NEI!<br/>Excited Plutonium, the most energetic of the three<br/>fuels, will award you with 1,425,600 EU/t, almost 3<br/>UV amps.<br/>"
+                },
+                {
+                    "name": "Nuclear Fuel Processing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6db2\u6001\u6c1f\u948d\u53cd\u5e94\u5806\u71c3\u65991\u7c89.png",
+                    "x": 708.0,
+                    "y": 384.0,
+                    "tooltip": "The previous reactor is useless on its own, unfortunately.<br/>Even if you have built it fully, there's no way to<br/>get fuel that it will accept without making another<br/>multi that mixes and processes several chemical mixtures<br/>into one, the molten salt that generates all that nuclear<br/>energy in the LFTR.\n\nThe multi's name is Reactor Fuel<br/>Processing Plant (RFPP), although it's easier to call<br/>it the Fuel Refinery. It's a mid-late IV multiblock,<br/>like the LFTR, especially due to needing 2 ZPM circuits<br/>for the Computer Cube used in the controller's recipe.<br/>The other casings are similar to what you've made before,<br/>and the tooltip gives a good description of what exactly<br/>is needed to build the Fuel Refinery. \n\nWhere to put<br/>each casing? The bottom two layers are 3x3, and they<br/>take the Structural Blocks. On top of the second layer,<br/>in the middle block, make a tower of 5 Fluid Containment<br/>Blocks, and then cover these with Sealant Blocks, like<br/>you would do in a Multiblock Miner. However, the second<br/>layer of the 5, from the bottom, uses Reactor Shielding<br/>Blocks, 4 of them there instead of the Sealant Blocks.<br/>Use the Hologram Projector for assistance if you're<br/>having trouble.\n\nWhen it's fully built, you can focus<br/>on the recipes. Out of the 5 that are available, you<br/>can only do one at this time, the Fuel 1 recipe. To<br/>make this fuel, you need molten U235, but also Lithium<br/>Fluoride, Beryllium Fluoride and Zirconium Tetrafluoride.<br/>Each of the these elements can be obtained with relative<br/>ease, each in their own way, but Fluorine is the main<br/>part of all this, the main component of the molten<br/>salt, so it's a good idea to have a decent source of<br/>it. However, the LFTR fuels are also very, very energy<br/>dense, so each bucket of Fluorine can bring you a long<br/>way.\n\nIf you're looking through NEI, your first response<br/>might be \"There are no recipes for these fluorides<br/>other than reprocessing the depleted fuels! How am<br/>I supposed to make these?\". The answer is in the dusts:<br/>you have to craft the dusts and then fluid extract<br/>them into the fluids. There is a spreadsheet which<br/>has all the steps in crafting and reprocessing ([url]https://docs.google.com/spreadsheets/d/1_1JGSt5-ELdra6emngUc7XvKSJc-_-RO0yreRIbOrx0/edit?usp=sharing[/url]),<br/>to help with how complicated this chain is. \n\nJust<br/>make sure you remember, each bucket of fuel is worth<br/>many millions, perhaps even billions of EU! Don't let<br/>the 207M EU cost per bucket of Fuel 1 discourage you,<br/>it turns into much more energy in the LFTR. Besides,<br/>this first fuel is just a stepping stone, so don't<br/>worry about fully automating everything just yet, the<br/>final setup is different from this one.<br/><br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Nukes - Summarized",
+                    "symbolSize": 31.200000000000003,
+                    "x": 384.0,
+                    "y": 264.0,
+                    "tooltip": "IC2 nukes will fall off when you arrive at fusion energy,<br/>for the most part. Although the highest EU/t numbers<br/>obtained from these newer, more powerful cells haven't<br/>been calculated yet, it is more likely that you will<br/>be using them to process the excited materials instead<br/>of focusing your powergen on them. \n\nThat said, it<br/>is possible to push them very far by using a bigger<br/>Heat Exchanger (there are two kinds) and XL Turbines,<br/>if going fluid, or by putting together a lot of vacuum<br/>nukes. If you want to choose the latter ones, due to<br/>their direct EU/t, then there's one last step: The<br/>Core.\n\nThese are super-powerful fuel rods that can<br/>create UHV setups, as long as you cool them down with<br/>the most powerful coolant cells there are. A setup<br/>for this exists in the wiki, but the most difficult<br/>part will be the redstone automation. These babies<br/>will turn your base into a mini Sun, if you let them,<br/>so you best have practiced your redstone skills!<br/>"
+                },
+                {
+                    "name": "Optional Tier 1 Fusion",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f18\u79c0\u7684\u5efa\u8bbe\u8005\u52cb\u7ae0.png",
+                    "x": 660.0,
+                    "y": 552.0,
+                    "tooltip": "Osmium - from Helium and Tungsten. Osmium from the<br/>platline is quite power-hungry, which this recipe won't<br/>solve, but it will at least help you past the terrible<br/>output rate of Osmium. You can get it faster from here<br/>as long as you can keep supplying Tungsten and power.\n\nSunnarium<br/>- from Helium + Glowstone. If you've had difficulty<br/>in getting lots of Sunnarium after the Molecular Transformer<br/>nerf, you can try this for your Solar Panels and other<br/>things. Glowing Coral processing with UUM is recommended,<br/>though.\n\nBoron - from Lithium and Helium. If you haven't<br/>automated this yet, for Borosilicate Glass for example,<br/>this is one way to do it. You will need lots of glass<br/>for the Mega Blast Furnace and other big multis of<br/>the kind, so it's not a useless recipe.<br/>"
+                },
+                {
+                    "name": "Optional Tier 2 Fusion",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u52cb\u7ae0-\u5450\u5450\u5450\u5450\u5450\u5450\u2026\u2026\u2026\u626d\u66f2\u8005!.png",
+                    "x": 684.0,
+                    "y": 624.0,
+                    "tooltip": "Uranium - from Gold + Aluminium or Magnesium + Mercury.<br/>You should have already left nuclear fission behind,<br/>but if you ever need Uranium, you can use this? You<br/>should have a lot of it already.\n\nPlutonium - from<br/>Helium + Uranium. A quick 1:1 conversion from U238<br/>to P239, but you already have access to Plutonium Ore,<br/>so this is probably pointless.\n\nCalifornium - from<br/>Beryllium + Plutonium. Mostly used for Oganesson, not<br/>very useful for anything else, and you won't need a<br/>lot of this if replicating Oganesson is an option.\n\n(These<br/>3 recipes makes a possible chain to Oganesson, which<br/>can be made in t3 fusion. Not that they are necessarily<br/>the best option to get it.)\n\nExcited Uranium Fuel -<br/>from Hydrogen and Uranium Liquid Fuel. This is for<br/>the Naquadah Generator, which is late ZPM, or possibly<br/>to use in IC2 nukes, although that's the worse option.<br/>Basically, it's accelerated nuclear fission, if you<br/>have interest in that.\n\nExcited Plutonium Fuel - from<br/>Hydrogen and Plutonium Liquid Fuel. Same as above,<br/>but from Plutonium. This means it's more expensive,<br/>but also more powerful, and can yield a lot of power<br/>in the Naquadah Generator with the right additives.<br/>"
+                },
+                {
+                    "name": "Optional Tier 3 Fusion",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5b98\u65b9GT\u73a9\u5bb6\u52cb\u7ae0.png",
+                    "x": 660.0,
+                    "y": 684.0,
+                    "tooltip": "Indium - from Lithium + Silver. This is one of the<br/>most important optional fusion recipes, given how difficult<br/>Indium is to get. Your options are to either replicate<br/>it, make it with fusion, obtain it from the naquadria<br/>line, or obtain it from processing sphalerite ore.\n\n(You<br/>can make Indium in other ways, of course, but this<br/>is a relatively popular, non-forced fusion recipe)\n\nOganesson<br/>- from Calcium + Californium. This is the best noble<br/>gas of them all, and a very power-hungry recipe compared<br/>to most. However, Oganesson will save you power on<br/>EBF recipes, reducing recipe time more than any other<br/>fluid, and it also boosts Void Miners to their maximum<br/>speed. Replicating it might be better, if you have<br/>the right setup with GT++ multis.\n\nAmericium - from<br/>Hydrogen + Plutonium 241. This is the cheaper Americium<br/>recipe that was promised to you in t2, and it no longer<br/>needs Lutetium. You should be able to get both of the<br/>inputs very easily, so enjoy your cheaper Americium!\n\nNeutronium<br/>- from Naquadria + Americium. Neutronium fusion? You<br/>probably won't need to use this, but it is a source<br/>other than ores that you can try.<br/>"
+                },
+                {
+                    "name": "Pebble Reactor Fuels and Outputs",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u67af\u7aedTRISO\u71c3\u6599\u7403(\u94c0).png",
+                    "x": 864.0,
+                    "y": 312.0,
+                    "tooltip": "Thorium, Uranium and Plutonium. There you go, quest<br/>done, onwards. I do find it kind of funny how it always<br/>goes back to these. Why is it that when there are problems,<br/>it's always you three?\n\nMaking the pebbles for any<br/>of these elements is a multi-step process. To get them,<br/>you need to throw in huge amount of the main radioactive<br/>fuel alongside some materials used to make the outer<br/>shell, namely Carbon, Silicon, and Graphite Dust.\n\nFor<br/>a full reactor, you will need thousands of stacks of<br/>each of these, much more than quest tasks could ask<br/>for. Anyways, the depleted pebbles can be centrifuge<br/>to recover most of the materials used to reach the<br/>final pebbles (Silicon, Graphite, Carbon), alongside<br/>a smaller chance at getting the main nuclear material<br/>for each kind of pebble. On top of that, you will get<br/>the breeding outputs: Lutetium from Thorium, Krypton<br/>from Uranium, Xenon from Plutonium."
+                },
+                {
+                    "name": "Plutonium 239",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u949a-239\u7c89.png",
+                    "x": 456.0,
+                    "y": 228.0,
+                    "tooltip": "Red as an ingot, white as a blob. These are the same<br/>element, and the same isotope, even if they don't seem<br/>like it.\n\nPlutonium is a major part of nuclear fission<br/>reaction, mainly as an product of Uranium fissile fuel,<br/>when an atom in the mix captures a neutron and then<br/>emits an electron and an anti-neutrino. After several<br/>hours in the reactor, the fuel is considered depleted<br/>and there's enough Plutonium in it to separate the<br/>two through thermal centrifuging, a basic and inefficient<br/>way to do nuclear reprocessing. Later on, it's possible<br/>to improve your methods of handling spent nuclear fuel,<br/>but this is the first way you get this nuclear byproduct.\n\nIf<br/>you've made Quantum Eyes, you might know one of the<br/>main uses of Plutonium: to get Radium. By having enough<br/>of it to serve as a catalyst in the reaction, you can<br/>convert Uranium to Radium in small quantities without<br/>losing any Plutonium. Since you need 6 ingots, you<br/>will have to do 3 cycles of the setup shown in the<br/>quest before this one, or more if you're running smaller<br/>Uranium nukes. However, there is another useful thing<br/>you can use this for at this time: more nuclear fuel.\n\nNot<br/>just more nuclear fuel, but a different, more complex<br/>but also more powerful nuclear fuel. It's known as<br/>MOX fuel, and it is essentially a mix of Uranium and<br/>Plutonium. The catch is that all the Plutonium spent<br/>on creating the fuel is returned to you when reprocessing<br/>the depleted rods, alongside the extra you usually<br/>get, but not the Uranium return. To source a nuke of<br/>this kind, you will need more than 6 ingots.<br/><br/>"
+                },
+                {
+                    "name": "Powering-up Fluid Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u53cd\u5e94\u5806\u6d41\u4f53\u63a5\u53e3.png",
+                    "x": 456.0,
+                    "y": 408.0,
+                    "tooltip": "The previous setup's EU/t might not have impressed<br/>you. You have enough materials to put together the<br/>fluid nuke structure, but you want something more than<br/>what you've seen before. What kind of setup is powerful<br/>enough to output several IV amps, and sustain a developed<br/>IV base on its own? That sort of setup is shown in<br/>this quest, but it requires more multiblocks, and therefore<br/>more expense than the previous quest's chain. The fuel<br/>is the same, Uranium, so at this point it's certainly<br/>the least of your worries, until you try to automate<br/>the fuel input, at least.\n\nThe components inside the<br/>nuke get more and more complicated, so at this point<br/>I'm going to ask you to look at the wiki, under the<br/>Nuclear Reactors page ([url]https://wiki.gtnewhorizons.com/wiki/Nuclear_Reactors[/url]),<br/>and scroll down to the fluid nuke setups, specifically<br/>the 1352 HU, 2 Quad Uranium and 1408, 3 Quad Uranium,<br/>1 Dual Uranium ones. The main difference between these<br/>two setups is that the first needs Iridium Neutron<br/>Reflectors, which are quite expensive if you haven't<br/>done the platline yet, while the second doesn't use<br/>them but is harder to automate due to having more than<br/>one type of rod.\n\nWhat's the final EU/t output, at<br/>170% turbine efficiency? 36288 and 38016 EU/t, respectively.\n\nAfter<br/>automating the nuke itself, there is still more to<br/>do, though. The LHE is required, as usual, but these<br/>setups cause something new to happen: the LHE starts<br/>outputting Superheated Steam, due to the high flow<br/>of hot coolant that it receives, which means that you<br/>need two sets of turbines instead of one. This type<br/>of steam must go into Large HP Steam Turbines, which<br/>use a good amount of Tungstensteel for the controller<br/>and stacks of Titanium for the casings. After those,<br/>it goes into the usual Large Steam Turbines, and the<br/>process is complete.\n\nThere is yet another new thing<br/>to worry about, in case all of this wasn't enough:<br/>the Steam flow is very high, higher than before, which<br/>means it's likely you will need 3 or more of each turbine<br/>type, further compounding on the costs you'll have<br/>here. \n\nYour best option for a turbine in the IV tier<br/>is the HSS-E at 170% turbine efficiency. \n\nThere is<br/>another turbine at 180% efficiency with the HSS-S however;<br/>this turbine requires a robust platinium line completed<br/>to spare the resources for it.<br/><br/><br/>"
+                },
+                {
+                    "name": "Radioactivity's Additives",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u70ed\u539f\u5b50\u5206\u79bb\u50ac\u5316\u5242\u952d.png",
+                    "x": 804.0,
+                    "y": 240.0,
+                    "tooltip": "The Naquadah Reactor has the potential to be an endgame<br/>power generator, but only if the right additives are<br/>used. These additives boost the EU/t output of the<br/>multi, but in different ways, and it's important to<br/>upgrade them as quickly as possible. However, going<br/>beyond the max output of the Dynamo Hatch is not a<br/>good idea!\n\nThere are two types of additives: the coolants<br/>and the fuel boosters. The coolants boost fuel efficiency,<br/>which means fuel consumption is the same, whereas the<br/>boosters increase the speed the multi burns the fuel,<br/>increasing the output at the same time.\n\nThere are<br/>three coolants, but the 275% efficiency boost by using<br/>Cryotheum should not be ignored. To automate it, you<br/>will need an automated source of Blaze Rods and Snowballs<br/>(Snow is made from Water). To this, you add Redstone<br/>and Saltpeter, and you're done.\n\nThe boosters are more<br/>difficult to choose from. Caesium should be ignored,<br/>Uranium 235 can be automated from Uranium 238 with<br/>magic at an almost 1:1 ratio, but Naquadah is what<br/>you probably have ready to use for this, which quadruples<br/>the speed of this reactor. However, if this is too<br/>slow, you can instead automate Atomic Separation Catalyst<br/>to get a 16x speed boost! There are many recipes for<br/>this, so choose your favorite.<br/>"
+                },
+                {
+                    "name": "Reactors are Expensive!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6bd4\u7279\u5e01.png",
+                    "x": 612.0,
+                    "y": 540.0,
+                    "tooltip": "Your first t1 Fusion Reactor is one of the biggest<br/>walls to overcome throughout this pack's progression.<br/>It's very unlikely you can afford to just build another<br/>one right after, so you will have to manage several<br/>reactions with that single one.\n\nThe new fusion condition<br/>is that you will have to pay a cost of EU and time<br/>every time you switch the recipe that's being crafted.<br/>Assuming you're using fusion power, the production<br/>of Europium and any other material should be batched<br/>between your usual rows of power generation. Perhaps<br/>you're overproducing power? In that case, you can use<br/>the pause to fuse some useful materials.\n\nIn time,<br/>you will be able to afford and use multiple fusion<br/>reactors. For now, this isn't the case."
+                },
+                {
+                    "name": "Second Half of LFTR Breeding",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c19\u7b49\u79bb\u5b50\u4f53\u5355\u5143.png",
+                    "x": 780.0,
+                    "y": 408.0,
+                    "tooltip": "There are two gas inputs that the Sparge Tower accepts:<br/>Helium and Fluorine. Each one works on different depleted<br/>salts (U Salt, T Salt, TB Salt) in a specific way.<br/>Helium works with U Salt to make the most valuable<br/>byproducts, while Fluorine works with the other two<br/>salts to make other byproducts and TF4, which is required<br/>to make the LFTR Fuel 3. Here, we'll focus on Helium<br/>and U Salt, and the other recipes will be covered on<br/>the powergen side of the branch.\n\nAll the U Salt you<br/>get from the LFTR, from any fuel, can be ran through<br/>the Sparge Tower. It's an additional step that is slow,<br/>yet rewarding. The recipe is HV-tier, but it's recommended<br/>that you overclock it, and maybe even build multiple<br/>towers to accelerate it. All the U Salt you have should<br/>pass through these, because sparging it outputs almost<br/>every noble gas! Xenon, Neon, Argon, Krypton and Radon<br/>will be outputted over time, precious gases to speed<br/>up EBF recipes and save up lots of energy, and also<br/>for the Void Miner. Radon, on the other hand, is required<br/>to make Quantum Eyes, Quantum Stars and many other<br/>important items.\n\nEven though you get many gases, the<br/>speed at which you'll get them isn't great, since it<br/>depends on the speed at which LFTR fuel is being consumed.<br/>This should not be your only source of these gases,<br/>but it is a completely EU-free way to get them, considering<br/>the amount of energy the LFTR produces.<br/><br/>"
+                },
+                {
+                    "name": "Smaller Fusion Is Bigger",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u538b\u7f29\u6838\u805a\u53d8\u53cd\u5e94\u5806\u63a7\u5236\u7535\u8111MK-V.png",
+                    "x": 600.0,
+                    "y": 696.0,
+                    "tooltip": "It's not smaller, it's compact!\n\nCompact Fusion. If<br/>you've been looking for a big multiblock to put together,<br/>you have arrived at a very neat thing. There's hardly<br/>anything that could beat its size, except for a max<br/>height Mega Distillation Tower, but this is instead<br/>a wide multi instead of a tall one. It is so wide,<br/>in fact, that it cannot fit in one chunk, and instead<br/>covers a 3x3 chunk space! Make sure you follow the<br/>instructions and the hologram properly, and jump in<br/>joy when you have one of these built.\n\nYou can choose<br/>one of four tiers for this reactor, in the same way<br/>as the normal Fusion Reactors. The Compact controller<br/>will need 48 of the regular controllers in the same<br/>tier, plus some other materials, and more than 2 thousand<br/>blocks in the structure, which are conveniently detailed<br/>in the tooltip. It is much bigger than the previous<br/>reactors, but it also has a huge number of parallels,<br/>starting at 64x with t1 and ending at a maximum of<br/>320x with t5! \n\nThis is the go-to when you have found<br/>yourself deep into t3 fusion, perhaps even t4, and<br/>you find yourself running short on power. Instead of<br/>making a tower of reactors, why not make one of these?<br/>The only power issue that you'll have after getting<br/>it done is the amount of turbines you will need to<br/>eat up all the plasma. You probably know about the<br/>XL Plasma Turbine, but you should also know that they<br/>force huge penalties on most plasmas, including Helium<br/>and Tin, if you use good turbine materials like Infinity.<br/>Do you remember those fusion chains mentioned in previous<br/>quests? This is the time for them. Check the GT++ tab<br/>for more details.\n\n[note]Compacts follow different<br/>overclocking rules, needing double the startup power<br/>and double the voltage instead of just the voltage.[/note]<br/><br/>"
+                },
+                {
+                    "name": "Sparge Tower",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c14\u6da4\u5854.png",
+                    "x": 744.0,
+                    "y": 420.0,
+                    "tooltip": "This is the last structure of the LFTR chain, and the<br/>only one gated after the Assembly Line. The best LFTR<br/>fuel, Fuel 3, is locked after this, and a lot of useful<br/>byproducts are only obtainable here as well, so it's<br/>important that you build this if you have a working<br/>LFTR.\n\nThe structure itself is very similar to a Distillation<br/>Tower, but with different blocks. The controller is<br/>the most expensive part, but the biggest obstacle is<br/>having the Assembly Line; everything after that shouldn't<br/>be too difficult. It's recommended that you have more<br/>than one tower, but for one focus on making only one.<br/>\n\nNote: the height of this tower is not adjustable.<br/>It is meant to be a 3x8x3 multiblock with at least<br/>45 Sparge Tower Casings."
+                },
+                {
+                    "name": "The End of Fusion Materials",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6d77\u73c0\u73cd\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 624.0,
+                    "y": 696.0,
+                    "tooltip": "There are only so many required fusion materials, which<br/>you've already gone through at this point. There are<br/>many more recipes, many of which have been listed in<br/>the quests so far, but also some that are yet to be<br/>tackled.\n\nThis, however, is the endgame. If you look<br/>at NEI, there are some recipes with EU/T and start<br/>EU values that are higher than what t3 fusion can offer,<br/>which suggests that there is yet another tier. The<br/>reality is that t4 fusion does exist, but it's more<br/>for bragging rights than real usefulness, alongside<br/>being much more expensive and harder to make than any<br/>of the other reactors. There is a quest for this in<br/>the \"Endgame Goals\" page, should you have unlocked<br/>that.\n\nAmong the last materials, you will find Flerovium,<br/>Rhugnor and, finally, Hypogen. They don't have a lot<br/>of possible uses for most of the pack, but Hypogen<br/>becomes essential in the endgame, where it becomes<br/>part of the coil block progression, as well as being<br/>used in some recipes as wires. If you truly want to<br/>walk towards the stargate, you will need to craft many<br/>stacks of this."
+                },
+                {
+                    "name": "The Fission Finale",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7845\u5ca9\u6291\u5236\u5ba4.png",
+                    "x": 840.0,
+                    "y": 264.0,
+                    "tooltip": "Here we are, at the end of fission.\n\nAt this time,<br/>you have more than entered the fusion tiers. In fact,<br/>the last fusion setups go as deep as t2 fusion, so<br/>you might be running both fission and fusion at the<br/>same time, although the latter is generally easier<br/>and more efficient once the structure is built.\n\nOne<br/>of the ultimate goals of fission is a filled HTGR,<br/>or its younger brother, the THTR, two very expensive<br/>multis that can grant you essentially infinite power<br/>or breeding products. However, the Naquadah Generator<br/>that has those excited nuclear fuels can do much more!<br/>The Naquadah fuel line is the reason why it was created,<br/>and it can replace t3 fusion and beyond by condensing<br/>powergen even more than fusion did, and replace the<br/>turbine spam.\n\nThose fuels aren't exactly nuclear fission,<br/>nor fusion, and more of a chemical line, so they were<br/>not included here. If interested, look at NEI to see<br/>what they have to offer."
+                },
+                {
+                    "name": "The Overclocking of the Ages",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6539\u826f\u578b\u8d85\u5bfc\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 528.0,
+                    "y": 672.0,
+                    "tooltip": "Tin Plasma is more power-dense, but it's not a required<br/>upgrade. As you scale up, it's always worth it to look<br/>back at Helium Plasma for how renewable it is, something<br/>that Tin Plasma has unfortunately lost a bit of. It<br/>can be made renewable, but one of its strengths was<br/>in the Molecular Transformer recipe that transformed<br/>Tin, the output, into Silver, one of the inputs. This<br/>recipe is now in the new Molecular Transformer Multiblock<br/>and does not scale as well as before. Therefore it<br/>might be easier to use void miners for silver or to<br/>stick with Helium Plasma.\n\nAs per usual, running a<br/>lower tier recipe awards you with an overclock. Unlike<br/>other GT machines, though, the Fusion Reactor's overclock<br/>doubles both speed and energy consumption, which maintains<br/>the energy consumption per recipe but gives only half<br/>of a speed boost that a perfect overclock (like the<br/>Large Chemical Reactor) would. This means that a t2<br/>reactor can produce exactly twice as much power as<br/>a t1 in the form of plasma output, but the upgrade<br/>is bigger than that when taking better turbines into<br/>account.\n\nWhat comes next, then? Tier 3 is what is<br/>next. There is no new fuel to be used here, your options<br/>are either 4x speed on Helium or 2x speed on Tin. After<br/>getting the cheaper Americium recipe that's available<br/>on t3, you will be able to make more reactors at a<br/>cheaper cost, but this lack of fuel upgrade will still<br/>be problematic in your progression. You will have to<br/>find other ways to upgrade your power, which will be<br/>revealed after this.<br/>"
+                },
+                {
+                    "name": "The Path of Fusion",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c38\u6052\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 576.0,
+                    "y": 480.0,
+                    "tooltip": "The most advanced nuclear technology there is to use<br/>in the pack is nuclear fusion. This is an event where<br/>two atoms collide with each other and fuse into a different<br/>atom while simultaneously generating energy from the<br/>plasma, when it is processed. It's impossible to perform<br/>in a reactor in real life, because the temperature<br/>requirements are too high to maintain any kind of reactor<br/>solid with decent efficiency. In GTNH, though, we have<br/>better materials.\n\nThe first Fusion Reactor can be<br/>built in late LuV, and each tier unlocks some material<br/>that is important to progress into the later tiers.<br/>Fusion crafting becomes important at that stage, for<br/>materials such as Europium, Americium, Neutronium and<br/>Oganesson, so you will want to dedicate reactors to<br/>specific things later on. More importantly, these materials<br/>come out as plasma, which needs to be cooled down to<br/>be turned into ingots and plates. On top of that, though,<br/>this cooling process is where you can get lots of power!\n\nThe<br/>usual process of power generation here is to pump EU<br/>into the Fusion Reactor. It needs enough energy to<br/>start the reaction, which will then proceed quickly<br/>and output good amounts of plasma. This plasma goes<br/>into Plasma Turbines, which output huge amounts of<br/>EU/t and the cooled down material, ready to be used<br/>in further crafting. A beginner's setup can output<br/>640,000 EU/t from one reactor before overclocking,<br/>and this grows quickly over time. Fusion power dominates<br/>the game for several tiers due to its simplicity, receding<br/>away from the powergen setups that were getting more<br/>and more complicated with each tier. Two materials<br/>fuse into one, plasma comes out, goes into turbine<br/>and boom, lots of energy! It's like a steam tier powergen<br/>but with big numbers.\n\nTo summarize, fusion is required<br/>for progression because of the materials it produces.<br/>At the same time, it's very powerful as a source of<br/>EU.<br/>"
+                },
+                {
+                    "name": "Thorium as Breeding Fuel",
+                    "symbolSize": 31.200000000000003,
+                    "x": 552.0,
+                    "y": 372.0,
+                    "tooltip": "Alternatively, you might choose to only process Thorium<br/>for its main output, Lutetium. This is important because<br/>Lutetium is required to make Americium in a Fusion<br/>Reactor down the line, and that is a recipe you will<br/>need to do in order to progress. Your objective is<br/>to breed Thorium into Lutetium, which means you might<br/>want to focus on a breeder reactor.\n\nWhat is a breeder<br/>reactor? In this case, it's an IC2 nuke designed to<br/>consume as much Thorium as possible. The main cost<br/>here is the amount of chambers or nuke components you'll<br/>have to make. If you want to save on Overclocked Heat<br/>Vents, make a tower of 0-chamber nukes, each with the<br/>following setup:\n\nRPR\nORP\nRPR\nPRP\nRPR\nORP\n\nR -> Single<br/>Fuel Rod of Thorium (9 needed)\nO -> Overclocked Heat<br/>Vent (2 needed)\nP -> Reactor Plating (7 needed)\n\nOtherwise,<br/>if you have excess Overclocked Heat Vents and want<br/>to save up on chambers, turn to this setup:\n\nORORORO\nROEOEOR\nORORORO\nROROROR\nOPOPOPO\nROROROR\n\nE<br/>-> Heat Exchanger (2 needed)\nR -> Quad Fuel Rod of<br/>Thorium (16 needed)\nO -> Overclocked Heat Vent (21<br/>needed)\nP -> Reactor Plating (3 needed)\n\n(Each of the<br/>latter is worth 7x the former in terms of breeding.)\n\nTo<br/>complete this quest, you'll need to get Lutetium from<br/>one cycle of the any reactor setup. Which setup you<br/>choose is up to you, of course.<br/><br/>"
+                },
+                {
+                    "name": "Thorium as Early Power",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u71c3\u6599\u68d2(\u948d).png",
+                    "x": 576.0,
+                    "y": 408.0,
+                    "tooltip": "The very first step into nuclear power is done with<br/>Thorium in an Industrialcraft2 nuke. This multiblock<br/>already has a good amount of information in the questbook,<br/>split between the EV and How to Generate Power pages,<br/>so you should look at those if you want even more information<br/>that might not be written here. For the sake of not<br/>repeating everything, this will be more of a summary.\n\nThorium<br/>nukes are better for creating other elements, specifically<br/>Lutetium, than for power. The best setup needs the<br/>maximum amount of chambers, 6, and a lot of components<br/>inside the reactor to burn 10 quad Thorium rods and<br/>generate 1920 EU/t, close to one EV amp. If you made<br/>4 of these, you would get close to an IV amp, but this<br/>becomes very costly between the total 36 chambers and<br/>the recursive crafting of the components inside. The<br/>good news is that Thorium is a very cheap fuel, easily<br/>mined in the Nether, and recyclable in large amounts<br/>from depleted fuel rods.\n\nThis setup, and many others,<br/>can be found in the GTNH wiki in the \"Nuclear Reactors\"<br/>page. However, to display it here as best I can, this<br/>is the 1920 EU/t Thorium reactor:\n\nOPVOVOPPO\nEOOEOEOOE\nORRORORRO\nORRORORRO\nEOOEOEOOE\nOPPOVOVPO\n\nE<br/>-> Component Heat Exchanger (8 needed)\nV -> Component<br/>Heat Vent (4 needed)\nO -> Overclocked Heat Vent (26<br/>needed)\nR -> Quad Fuel Rod of Thorium (10 needed)\nP<br/>-> Reactor Plating (6 needed)\n\nYou can make this setup,<br/>if you wish, but the only required task to continue<br/>to the next quest are 10 single Thorium rods. <br/><br/><br/>"
+                },
+                {
+                    "name": "Thorium Tetrafluoride and Fuel 3",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56db\u6c1f\u5316\u948d\u7c89.png",
+                    "x": 744.0,
+                    "y": 264.0,
+                    "tooltip": "Whether you've mathed it out from NEI, looked at the<br/>spreadsheet or done something else, you might have<br/>figured something out: Fuel 3 is better in every way.<br/>More power, more byproducts, more everything. However,<br/>both recipes for it use Thorium Tetrafluoride (TF4),<br/>and the source of this is salt sparging, done in the<br/>Sparge Tower. Not only that, but Fuel 3 can only be<br/>consumed by having 4 LuV Buffered Dynamo Hatches in<br/>the LFTR, which means that it's a fair bit away from<br/>the previous steps in this chain.\n\nOnce you've made<br/>it there, though, you can start working on getting<br/>this fuel. To make it, you will need at least one Sparge<br/>Tower dedicated to using Fluorine, with T Salt or TB<br/>Salt (TB Salt is better, get it from Fuel 2). There<br/>is a recipe that uses Helium, but it's not required<br/>for Fuel 3 and is meant for byproducts, so the quest<br/>for it is in the breeding half of this branch. Using<br/>a single tower for both recipes is a bad idea, so don't<br/>do it!\n\nPreferably, you should input Fluorine and TB<br/>Salt and let it run for a while. Speeding up the recipe<br/>by overclocking and making more towers is a good idea,<br/>since the TF4 is your bottleneck now. Alongside it,<br/>you get several fluorides: Lithium, Neptunium, Technetium<br/>and Selenium. These might prove useful in the future,<br/>but your goal is the Thorium one.<br/>"
+                },
+                {
+                    "name": "Thorium vs. Uranium",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6d53\u7f29\u94c0\u6838\u71c3\u6599.png",
+                    "x": 444.0,
+                    "y": 336.0,
+                    "tooltip": "Thorium and Uranium have a lot of differences, but<br/>also a lot of similarities.\n\nIn general, Uranium is<br/>a better fuel, but fluid nukes do not follow that general<br/>rule. Because they do not output any EU/t, and simply<br/>convert heat to Hot Coolant, the difference between<br/>the two fuels becomes minimal and Thorium stands out<br/>as being much easier to get and turn into fuel rods.<br/>The maximum amount of heat you can safely move around<br/>in a reactor limits the amount of Uranium Fuel Rods<br/>you can use, which means that your HU value will not<br/>be as high as you would have wanted.\n\nFor regular and<br/>vacuum IC2 nukes, however, Uranium has a big advantage.<br/>Especially in vacuum nukes, which are the most powerful,<br/>the efficient cooling through the cells makes it so<br/>a lot of Uranium can be processed at once, which returns<br/>incredible amounts of EU/t. The different conversion<br/>from fuel to energy between fluid and vacuum means<br/>that Thorium is very good for fluid nukes, whereas<br/>Uranium is very good for vacuum nukes.<br/>"
+                },
+                {
+                    "name": "Tin Plasma From T2",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9521\u7b49\u79bb\u5b50\u4f53\u5355\u5143.png",
+                    "x": 552.0,
+                    "y": 588.0,
+                    "tooltip": "Once you upgrade your Fusion Reactor to tier 2, you<br/>gain access to a better recipe for power generation,<br/>which is Tin Plasma. Helium-3 is used, as it was before,<br/>but now with Silver, which you can automate in a million<br/>ways. The processing speed is slightly higher than<br/>before, but the fuel value of this plasma is much higher<br/>than what you were using before, at 150,000,000 EU<br/>per bucket. This impressive fuel value means that the<br/>max power output of a single t2 reactor at 100% fuel<br/>efficiency is 2,700,000 EU/t, and with the turbines<br/>you can use here, you can twice as much as that or<br/>even more!\n\nTo utilize all of the plasma, you will<br/>be using 10 or more turbines with good rotors. Before<br/>doing that, though, it's a good idea to step back and<br/>test your turbines with this plasma, preferably in<br/>Creative mode, because the fuel value is so high that<br/>one liter of plasma is worth 150,000 EU at 100% efficiency.<br/>If you set the input rate to anything higher than 2<br/>L/t, you will go above the ZPM Dynamo limit, and even<br/>2 L/t will be too high if the turbine's efficiency<br/>is 174% or above! Until you upgrade your hatches, you<br/>might once again be stuck will less power output or<br/>efficiency than you'd like. There's only one way to<br/>fix that."
+                },
+                {
+                    "name": "Two Million Turbines",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u89c9\u9192\u9f99\u5947\u70b9.png",
+                    "x": 540.0,
+                    "y": 624.0,
+                    "tooltip": "Hopefully, not more than a handful. The objective here<br/>is for each of them to output close to 2 million EU/t.\n\nHow<br/>can you get there? Look at the UV Dynamo Hatch's recipe<br/>and you have your new objective. When you arrive there,<br/>each turbine that is equipped with that impressive<br/>block will be able to output up to 2,097,152 EU/t,<br/>which again opens you up to new turbine opportunities.<br/>Some good choices at this point are as follows:\n\nLarge<br/>Cosmic Neutronium 225% 1,360,800 EU/t\nLarge Ichorium<br/>225% 1,360,800 EU/t (very durable)\nLarge Awakened Draconium<br/>195% 491,400 EU/t\nLarge Trinium 185% 1,451,840 EU/t\n\nAt<br/>this point, you might consider building more t1 Fusion<br/>Reactors to process other materials. Even if you stop<br/>the reactor you're using to generate this plasma, the<br/>EU cost of restarting it is less than 1 bucket of plasma,<br/>so it's probably not that big of a deal.\n\nMake a normal<br/>or buffered UV dynamo to complete the quest.<br/>"
+                },
+                {
+                    "name": "Uranium Basic Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u71c3\u6599\u68d2(\u94c0).png",
+                    "x": 480.0,
+                    "y": 264.0,
+                    "tooltip": "The big brother to the Thorium nuke, the Uranium nuke.<br/>The biggest setup you can put together for a single<br/>IC2 Nuclear Reactor uses 7 Quad Uranium Rods, or 28<br/>single rods. This amounts to almost 3 stacks of Uranium<br/>238 (U238), a difficult amount to get from Thorium<br/>but much easier to get from the green ores found in<br/>Phobos. The setup is very similar to the previous one,<br/>but with some important differences. What are they?\n\nThe<br/>first one is the fuel. These fuel rods use a mixture<br/>of U238 and a bit of U235, which is rarer. To get U235,<br/>you can gamble on the chance of getting the dust from<br/>processing some of the related ores, which might be<br/>good enough, but it's also possible to use Thaumcraft<br/>to convert 9 nuggets of U238 to 7 nuggets of U235,<br/>without needing a lot of Thaumcraft progress. Assembling<br/>this fuel and putting it into rods gets it ready to<br/>be used for power, with more EU/t but less burn time<br/>compared to Thorium, 50000 seconds for Thorium compared<br/>to 20000 seconds for Uranium.\n\nThe second difference<br/>in the nuke setup. Uranium eats up more per rod, so<br/>a different arrangement inside the nuke is required.<br/>For the highest EU/t in this situation, 4200 EU/t,<br/>the setup is:\n\nRVOEOOVOP\nPVOOVOORO\nPOROOROOV\nVOOVOOVOP\nOROOROORO\nPOVPOVPOV\n\nE<br/>-> Component Heat Exchanger (1 needed)\nV -> Component<br/>Heat Vent (11 needed)\nO -> Overclocked Heat Vent (28<br/>needed)\nR -> Quad Fuel Rod of Uranium (7 needed)\nP<br/>-> Reactor Plating (7 needed)\n\nWhen the fuel rods get<br/>repleted, you can reprocess them to get 3/4 of the<br/>U235 back, and also a bit of Plutonium.<br/><br/>"
+                },
+                {
+                    "name": "UV Power Per Turbine",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9f99\u5947\u70b9.png",
+                    "x": 564.0,
+                    "y": 552.0,
+                    "tooltip": "Once you progress enough in ZPM to make ZPM Dynamo<br/>Hatches, you can increase each turbine's output to<br/>524,288 EU/t. At this number, you'll be a lot less<br/>limited by the turbine material, and it's possible<br/>to increase the total power output of one Fusion Reactor<br/>considerably. You can cover the total Helium Plasma<br/>output from one reactor with 3 Plasma Turbines, if<br/>you choose the right materials:\n\nLarge High Durability<br/>Compound Steel 235% 473,759 EU/t\nLarge Atomic Separation<br/>Catalyst 206% 409,663 EU/t\nLarge Adamantium 206% 413,280<br/>EU/t\nLarge Draconium 175% 220,500 EU/t (durable)\nLarge<br/>Neutronium 165% 249,480 EU/t (very durable)\n\nThe power<br/>output and final efficiency can vary a lot, based on<br/>which turbines you're using. Some of them, like Ichorium<br/>and Neutronium, last basically forever, while others<br/>will need to be replaced from time to time but offer<br/>higher efficiency. If you want to get more power per<br/>turbine, to reach closer to the dynamo's limit, you<br/>can increase the flow of plasma to the turbine, but<br/>be careful! You can't go beyond the dynamo's limit,<br/>and you will also lose efficiency as you increase the<br/>flow amount. More concrete values for efficiency loss<br/>can be found in the Plasma Turbine quest in the LuV<br/>page.\n\nMake a normal or buffered ZPM dynamo to complete<br/>the quest."
+                },
+                {
+                    "name": "Vacuum Nukes",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u771f\u7a7a\u51b7\u51bb\u673a.png",
+                    "x": 420.0,
+                    "y": 396.0,
+                    "tooltip": "What's the next step, running nuclear reactors in a<br/>perfect vacuum? That would be pretty funny, I'd like<br/>to see that.\n\nDisclaimer: this last step is not very<br/>stable. It's very risky to do it in servers with no<br/>backups, because it relies on redstone circuits to<br/>keep the reactor from exploding. Use multiple failsafes<br/>to guarantee safety. Never ever build a vacuum nuke<br/>in a Thermos server!\n\nVacuum nukes are an interesting<br/>GTNH-specific setup. They use only three components:<br/>fuel rods, platings to fill the empty slots for automation<br/>purposes, and coolant cells. Those cells you have used<br/>to make Energy Hatches, for example, they're used here<br/>to keep the reactor from overheating and exploding.<br/>The main difference this setup has is that these cells<br/>are consumable, and will wear out over time. You will<br/>need to add fresh cells into the reactor to keep running<br/>it safely, but the crux of the show is that you don't<br/>need to make new ones - you just need to cool them<br/>down again.\n\nThe Vacuum Freezer! That's why it's called<br/>a vacuum nuke! Elementary, my dear Steve. This kind<br/>of setup relies on using EU to refill the coolant cells,<br/>so to speak, and get much more EU from the reactor<br/>than you spend to keep it running. However, the redstone<br/>automation for this is quite tricky. If you just try<br/>it blindly, it might take you a long time to figure<br/>it out, and it might have explosive results. Check<br/>the Vacuum Reactors page on the wiki ([url]https://wiki.gtnewhorizons.com/wiki/Vacuum_Reactors[/url])<br/>if you want a detailed guide that goes far beyond what<br/>I could write in this quest description.\n\nThis quest<br/>task is for the last setup shown in the wiki, specifically<br/>the 8720-43600 EU, 40 Quad Uranium setup. As the title<br/>implies, it can produce up to 43600 EU/t, but it will<br/>require multiple filters and failsafes to run it safely.<br/>The bonus, compared to fluid nukes, is that the LHE<br/>+ turbine setup is not necessary for these high output<br/>numbers.<br/><br/>"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "Two Million Turbines",
+                    "target": "A Second Reactor?"
+                },
+                {
+                    "source": "Optional Tier 2 Fusion",
+                    "target": "A Second Reactor?"
+                },
+                {
+                    "source": "Fluid Nukes",
+                    "target": "Automation for Fluid Nukes"
+                },
+                {
+                    "source": "Fuel Input Automation",
+                    "target": "Automation for Fluid Nukes"
+                },
+                {
+                    "source": "\u00a7a\u00a7lTier 4 (EV)",
+                    "target": "Basis for All Reactors"
+                },
+                {
+                    "source": "Optional Tier 2 Fusion",
+                    "target": "Bismuth Plasma For Soldering"
+                },
+                {
+                    "source": "Build the Assembly Line First",
+                    "target": "Building the Reactor"
+                },
+                {
+                    "source": "\u00a76\u00a7lAssembly Line",
+                    "target": "Build the Assembly Line First"
+                },
+                {
+                    "source": "Basis for All Reactors",
+                    "target": "Build the Assembly Line First"
+                },
+                {
+                    "source": "Fuel Input Automation",
+                    "target": "Can We Get Uranium Here?"
+                },
+                {
+                    "source": "Tin Plasma From T2",
+                    "target": "Duranium and the Cyclotron"
+                },
+                {
+                    "source": "Fusing Americium and Tritanium",
+                    "target": "Duranium and the Cyclotron"
+                },
+                {
+                    "source": "Optional Tier 1 Fusion",
+                    "target": "Establishment of Fusion"
+                },
+                {
+                    "source": "UV Power Per Turbine",
+                    "target": "Establishment of Fusion"
+                },
+                {
+                    "source": "Can We Get Uranium Here?",
+                    "target": "EV vs. IV"
+                },
+                {
+                    "source": "Large Heat Infrastructure",
+                    "target": "EV vs. IV"
+                },
+                {
+                    "source": "High Density Vacuum Nukes",
+                    "target": "Excited Fluid Nukes"
+                },
+                {
+                    "source": "Naquadah Reactor For Nuclear Fuels",
+                    "target": "Exciting Liquid Nuking"
+                },
+                {
+                    "source": "Faster Lutetium Excitement",
+                    "target": "Exciting Liquid Nuking"
+                },
+                {
+                    "source": "Tier 7 (ZPM)",
+                    "target": "Faster Lutetium Excitement"
+                },
+                {
+                    "source": "Second Half of LFTR Breeding",
+                    "target": "Faster Lutetium Excitement"
+                },
+                {
+                    "source": "Nuclear Fuel Processing",
+                    "target": "First Half of LFTR Breeding"
+                },
+                {
+                    "source": "Focus on Breeding",
+                    "target": "First Half of LFTR Breeding"
+                },
+                {
+                    "source": "Inputs and Outputs in the LFTR",
+                    "target": "First Steps in Reprocessing"
+                },
+                {
+                    "source": "Improved Fission",
+                    "target": "Fission Guidelines"
+                },
+                {
+                    "source": "Thorium as Early Power",
+                    "target": "Fission Guidelines"
+                },
+                {
+                    "source": "IC2 Nuke Variations",
+                    "target": "Fluid Nukes"
+                },
+                {
+                    "source": "Building the Reactor",
+                    "target": "Focus on Breeding"
+                },
+                {
+                    "source": "Improved Fission",
+                    "target": "Focus on Breeding"
+                },
+                {
+                    "source": "Improved Fission",
+                    "target": "Focus On Power Generation"
+                },
+                {
+                    "source": "Thorium as Breeding Fuel",
+                    "target": "Fuel Input Automation"
+                },
+                {
+                    "source": "Vacuum Nukes",
+                    "target": "Further IC2 Nuke Potential"
+                },
+                {
+                    "source": "Optional Tier 1 Fusion",
+                    "target": "Fusing Americium and Tritanium"
+                },
+                {
+                    "source": "Building the Reactor",
+                    "target": "Fusion Europium"
+                },
+                {
+                    "source": "Further IC2 Nuke Potential",
+                    "target": "High Density Vacuum Nukes"
+                },
+                {
+                    "source": "Faster Lutetium Excitement",
+                    "target": "\u00a76\u00a76\u00a76\u00a7lHigh Temperature Super Breeder"
+                },
+                {
+                    "source": "The Path of Fusion",
+                    "target": "How Much Power From One Reactor?"
+                },
+                {
+                    "source": "The Path of Fusion",
+                    "target": "IC2 Nuke Variations"
+                },
+                {
+                    "source": "Thorium as Early Power",
+                    "target": "IC2 Nuke Variations"
+                },
+                {
+                    "source": "Basis for All Reactors",
+                    "target": "Improved Fission"
+                },
+                {
+                    "source": "The Overclocking of the Ages",
+                    "target": "Infinite Turbines"
+                },
+                {
+                    "source": "Liquid Fluorine Thorium Reactor",
+                    "target": "Inputs and Outputs in the LFTR"
+                },
+                {
+                    "source": "Fluid Nukes",
+                    "target": "Large Heat Infrastructure"
+                },
+                {
+                    "source": "Focus On Power Generation",
+                    "target": "Liquid Fluorine Thorium Reactor"
+                },
+                {
+                    "source": "Plutonium 239",
+                    "target": "Max Danger Nukes"
+                },
+                {
+                    "source": "Vacuum Nukes",
+                    "target": "Max Danger Nukes"
+                },
+                {
+                    "source": "Thorium Tetrafluoride and Fuel 3",
+                    "target": "Maxed-out LFTR"
+                },
+                {
+                    "source": "Plutonium 239",
+                    "target": "MOX Nukes"
+                },
+                {
+                    "source": "Tier 7 (ZPM)",
+                    "target": "Naquadah Reactor For Nuclear Fuels"
+                },
+                {
+                    "source": "Thorium Tetrafluoride and Fuel 3",
+                    "target": "Naquadah Reactor For Nuclear Fuels"
+                },
+                {
+                    "source": "Liquid Fluorine Thorium Reactor",
+                    "target": "Nuclear Fuel Processing"
+                },
+                {
+                    "source": "Excited Fluid Nukes",
+                    "target": "Nukes - Summarized"
+                },
+                {
+                    "source": "MOX Nukes",
+                    "target": "Nukes - Summarized"
+                },
+                {
+                    "source": "Fusion Europium",
+                    "target": "Optional Tier 1 Fusion"
+                },
+                {
+                    "source": "Fusing Americium and Tritanium",
+                    "target": "Optional Tier 2 Fusion"
+                },
+                {
+                    "source": "Bismuth Plasma For Soldering",
+                    "target": "Optional Tier 3 Fusion"
+                },
+                {
+                    "source": "\u00a76\u00a76\u00a76\u00a7lHigh Temperature Super Breeder",
+                    "target": "Pebble Reactor Fuels and Outputs"
+                },
+                {
+                    "source": "Uranium Basic Nukes",
+                    "target": "Plutonium 239"
+                },
+                {
+                    "source": "Large Heat Infrastructure",
+                    "target": "Powering-up Fluid Nukes"
+                },
+                {
+                    "source": "Naquadah Reactor For Nuclear Fuels",
+                    "target": "Radioactivity's Additives"
+                },
+                {
+                    "source": "Fusion Europium",
+                    "target": "Reactors are Expensive!"
+                },
+                {
+                    "source": "How Much Power From One Reactor?",
+                    "target": "Reactors are Expensive!"
+                },
+                {
+                    "source": "Sparge Tower",
+                    "target": "Second Half of LFTR Breeding"
+                },
+                {
+                    "source": "Maxed-out LFTR",
+                    "target": "Second Half of LFTR Breeding"
+                },
+                {
+                    "source": "Infinite Turbines",
+                    "target": "Smaller Fusion Is Bigger"
+                },
+                {
+                    "source": "First Half of LFTR Breeding",
+                    "target": "Sparge Tower"
+                },
+                {
+                    "source": "First Steps in Reprocessing",
+                    "target": "Sparge Tower"
+                },
+                {
+                    "source": "Optional Tier 3 Fusion",
+                    "target": "The End of Fusion Materials"
+                },
+                {
+                    "source": "Pebble Reactor Fuels and Outputs",
+                    "target": "The Fission Finale"
+                },
+                {
+                    "source": "Radioactivity's Additives",
+                    "target": "The Fission Finale"
+                },
+                {
+                    "source": "Two Million Turbines",
+                    "target": "The Overclocking of the Ages"
+                },
+                {
+                    "source": "Build the Assembly Line First",
+                    "target": "The Path of Fusion"
+                },
+                {
+                    "source": "Thorium as Early Power",
+                    "target": "Thorium as Breeding Fuel"
+                },
+                {
+                    "source": "Basis for All Reactors",
+                    "target": "Thorium as Early Power"
+                },
+                {
+                    "source": "Inputs and Outputs in the LFTR",
+                    "target": "Thorium Tetrafluoride and Fuel 3"
+                },
+                {
+                    "source": "Uranium Basic Nukes",
+                    "target": "Thorium vs. Uranium"
+                },
+                {
+                    "source": "Powering-up Fluid Nukes",
+                    "target": "Thorium vs. Uranium"
+                },
+                {
+                    "source": "UV Power Per Turbine",
+                    "target": "Tin Plasma From T2"
+                },
+                {
+                    "source": "Tin Plasma From T2",
+                    "target": "Two Million Turbines"
+                },
+                {
+                    "source": "Can We Get Uranium Here?",
+                    "target": "Uranium Basic Nukes"
+                },
+                {
+                    "source": "How Much Power From One Reactor?",
+                    "target": "UV Power Per Turbine"
+                },
+                {
+                    "source": "Powering-up Fluid Nukes",
+                    "target": "Vacuum Nukes"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_92e93bf3cdd14115aa77868cb2a08d28.setOption(option_92e93bf3cdd14115aa77868cb2a08d28);
+            window.addEventListener('resize', function(){
+                chart_92e93bf3cdd14115aa77868cb2a08d28.resize();
+            })
+    </script>
+</body>
+</html>
+

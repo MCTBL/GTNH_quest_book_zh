@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+	<div id="19fef01590a64a8c8e0cf0ebfc7af576" class="chart-container" style="width:100%; height:900%; "></div>
+    <script>
+        var chart_19fef01590a64a8c8e0cf0ebfc7af576 = echarts.init(
+            document.getElementById('19fef01590a64a8c8e0cf0ebfc7af576'), 'white', {renderer: 'canvas'});
+        var option_19fef01590a64a8c8e0cf0ebfc7af576 = {
+    "backgroundColor": "#f5f0d3",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "none",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 0,
+                "gravity": 0,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": false,
+                "position": "up",
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u00a76\u00a7l2x Steel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u53cc\u91cd\u94a2\u952d.png",
+                    "x": 144.0,
+                    "y": 120.0,
+                    "tooltip": "Steel production is so slow. If you got enough bricks<br/>and clay, build a second BBF. Build it attached to<br/>the first one, so they can share a wall and you will<br/>save some bricks, clay and concrete.\n\n[warn]Note that<br/>this will generate twice as much pollution in total<br/>- consider moving them further away.[/warn]"
+                },
+                {
+                    "name": "\u00a76\u00a7l4x Steel",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56db\u91cd\u94a2\u952d.png",
+                    "x": 192.0,
+                    "y": 120.0,
+                    "tooltip": "Not even two BBFs are fast enough...Can you figure<br/>out how to save the most bricks making 4?\n\n[note]PS:<br/>If you can't, this pack may not be for you.[/note]\n\n[warn]Note<br/>that this will generate massive amounts of pollution<br/>- have you considered the Nether?[/warn]"
+                },
+                {
+                    "name": "\u00a76\u00a76\u00a76\u00a7l\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7A\u00a7l\u00a7A\u00a76\u00a7lAir-Filter",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u7a7a\u6c14\u8fc7\u6ee4\u673aT1.png",
+                    "x": 204.0,
+                    "y": 180.0,
+                    "tooltip": "Electric Air Filter\n\nThis wonderful multiblock comes<br/>in 3 versions:\u00a79 \u00a7rT1 for LV, T2 for late HV and T3<br/>for IV.\n\n\u00a7r\u00a79\u00a7rIt has 2 modes:\n\n\u00a79\u00a7r- a normal mode,<br/>where one chunk is processed at a time in the working<br/>area, in order, per pollution cleaning cycle.\n- a random<br/>mode, where the chunk being cleaned is picked randomly<br/>between all the polluted chunks in the working area.\n\u00a7r\nTo<br/>cycle between the modes, right click on the controller<br/>with a screwdriver.\n\n\u00a79\u00a7rThe controller can change<br/>its working area from 1x1 to (2*tier+1) x (2*tier+1)<br/>chunks. To do that, right click with a screwdriver<br/>on the controller while sneaking. The default size<br/>is the maximum working area.\n\n\u00a7r\u00a79\u00a7rThe pollution removal<br/>calculation is equals (by default) to 30 * bonusMultiTier<br/>* Muffler Hatches * Turbine Eff * Multiblock Eff *<br/>2.5 ^ Effective Tier where:\n\n- BonusMultiTier is a<br/>boost given by the multiblock tier. T1 is 1 (0%), T2<br/>is 1.05 (5%) and T3 is 1.10 (10%)\n\n- Muffler Hatches<br/>is the amount of muffler hatches on the multiblock<br/>(up to 8)\n\n- Turbine Eff is the efficiency of the turbine<br/>chosen to run the multi. It won't run if there is no<br/>turbine in the controller.\n\n- Multiblock Eff is the<br/>efficiency of the multiblock (100% when no maintenance<br/>issue, -10% per issue)\n\n- Effective Tier is the Effective<br/>Tier of the multi: the minimum tier between the electric<br/>tier of the multi and the tier of the muffler hatches\n\n\u00a7rThe<br/>pollution cleaning is boosted by two (by default) when<br/>using an Absorption Filter. When added in the input<br/>bus, it will be consumed and used for 30 (by default)<br/>successful pollution cleaning cycle. If a chunk with<br/>no pollution in it is processed, that doesn't count<br/>as successful, and the multi decides that a chunk has<br/>no pollution if the pollution is below 10k gibbl (by<br/>default). After the 30th successful pollution cleaning<br/>cycle, the output bus will give a Dirty Absorption<br/>Filter.\n\nTo know if an Absorption Filter is present<br/>and how many remaining cycles there are, use an portable<br/>scanner on the controller.\n\n\u00a79\u00a7rA pollution cycle lasts<br/>10s, and the cleaning is done every second.<br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a76\u00a76\u00a7l\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7A\u00a7l\u00a7A\u00a76\u00a7lDrone are not Drones!",
+                    "symbolSize": 31.200000000000003,
+                    "x": 408.0,
+                    "y": 372.0,
+                    "tooltip": "...but they can be as industrious as bees. These new<br/>electric friends are great companions for MultiBlock<br/>machines: maintenance, control, management\u2014they can<br/>do it all.\n\n\u00a7lThe Drone Center is a newly designed<br/>machine. It doesn't need power; just put a drone into<br/>it and then it will run.\nOnce running, drone will automatically<br/>scan for a '\u00a7lDrone Downlink Module\u00a7r' (replacing maintenance<br/>hatches on MultiBlock machines) within a certain range<br/>and attempt to establish a connection with the host.<br/>If successful, you can remotely control this MultiBlock<br/>machine from the Drone Centre GUI! Additionally, you<br/>can rename the machine for easier identification.\n\n[note]You<br/>can rename it either by right-click the Drone Downlink<br/>Module or in Drone Centre GUI.[/note]\n\nPlacing more<br/>advanced drones will increase the range of central<br/>control, with no limit on the number.\n\n[warn]Notice<br/>that drone may crash during operation\u2014the probability<br/>decreases from Tier 1 to Tier 3, and Tier 3 Anti-Gravity<br/>Drones never crash.\nBesides, If the machine host is<br/>too far from the Drone Center, the GUI remote control<br/>function will be disabled, but the turn-on/off-all-button<br/>and maintenance functions will still work.[/warn]\n\u00a76\u00a7l\nMaybe<br/>one day, our drone can control machines on other planets...drive<br/>engine online!<br/>"
+                },
+                {
+                    "name": "A Beginner's Guide to Particle Physics",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7535\u529b\u767d\u70bd\u706f\u6ce1.png",
+                    "x": 516.0,
+                    "y": 504.0,
+                    "tooltip": "If you've built the Source Chamber already, you may<br/>have noticed that particles aren't produced as items,<br/>like GT++ ones are. \n\nInstead they're transmitted through<br/>Beamline Pipes from multi to multi, similar to real<br/>life.\n\nEach stream of particles transmitted, or \"beam\",<br/>has four properties:\n- \u00a7\n\u00a7\n\u00a76Particle\u00a7r: the type of<br/>particle carried by the beam\n- \u00a74Energy\u00a7r: the amount<br/>of energy the particles have\n\u00a7r- \u00a79Focus\u00a7r: out of<br/>100, how focused the beam is\n\u00a7r- \u00a7dAmount\u00a7r: a measure<br/>of the number of particles in the beam\n\nNote that you<br/>can see info about a multi's input and output beams<br/>by using a Tricorder on the controller.\n\nFor the recipes<br/>you'll be interested in, i.e. the ones that actually<br/>produce items, there'll be a threshold for allowed<br/>input beam energy, a minimum focus value, and an amount<br/>value which determines recipe time (more on that in<br/>the Target Chamber quest). \nTake a look some TC recipes<br/>for an example of this.\n\n\nHave a photon. To hang on<br/>your wall."
+                },
+                {
+                    "name": "\u00a76\u00a7lAbsorption Filter",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5438\u9644\u8fc7\u6ee4\u5668.png",
+                    "x": 252.0,
+                    "y": 180.0,
+                    "tooltip": "When you reach MV tier you can make your own Absorption<br/>Filter for the Air Filter to clean pollution much more<br/>efficient. The Filter will be consumed and you get"
+                },
+                {
+                    "name": "\u00a76\u00a7lAdvanced MB Construction",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u591a\u65b9\u5757\u673a\u5668\u5168\u606f\u6295\u5f71\u4eea.png",
+                    "x": 24.0,
+                    "y": 120.0,
+                    "tooltip": "The ability to rotate MBs and view a structure hologram<br/>has been sto-\u00a7oborrowed\u00a7r from \u00a79Tec\u00a71Tech\u00a7r, giving<br/>you greater freedom to build the way you want! \u00a75(until<br/>we nerf wallsharing at least)\u00a7r\n\nUnlike TT, you can<br/>use a normal wrench for this, just aim at the front<br/>center of a controller (or one of the other sides if<br/>you want to. You just need to aim for the part of the<br/>grid with the mark) and right click or shift-right-click.<br/>The first rotates it clockwise, the latter flips it.<br/>If you want to change the facing of the controller<br/>itself, do that the normal way.\n\nUse a Multiblock Structure<br/>Hologram Projector or MSHP to visualize the structure,<br/>pay attention to the bottom left for structure details.<br/>For multiblocks that accept multiple types of tiered<br/>components or have a variable size, the number of MSHPs<br/>you hold in your hand will decide which tier is shown<br/>in the hologram.\n\n[note]If you don't get it, try placing<br/>a controller, wrenching it, and using the MSHP on it.[/note]\n\nWhile<br/>it's now possible to build a sideways EBF, or even<br/>build one into the floor, not everything can be rotated.<br/>Exceptions include: LSC, Charcoal Pile Igniter, BBF,<br/>DT, Miners, Industial Washing Plant, Algae Farm, Bacterial<br/>Vat, DEHP, the MVF can, but the MBF cannot.\n\n[note]PS:<br/>We did get permission, that was just a little joke.[/note]<br/><br/>"
+                },
+                {
+                    "name": "Algae Pond",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u85fb\u7c7b\u519c\u573a.png",
+                    "x": 564.0,
+                    "y": 192.0,
+                    "tooltip": "Sustainability. It's not the name of the game... but<br/>it could be!\n\nIf you've ever wanted to generate many<br/>chemicals from a single source, you've probably looked<br/>at Oil or Benzene. However there's also the Algae Farm.<br/>It's just a pond of sorts, so it doesn't need power<br/>to run. Since it also doesn't really follow normal<br/>recipes, you won't find any NEI recipe page for the<br/>Algae. The multi just produces them on a regular schedule.\n\nThe<br/>tier of the multi is given by the casings on the bottom<br/>layer of the multi, which all have to match to decide<br/>the tier. Each tier from ULV (starting at 50s per batch)<br/>till IV (which is 25s per batch) reduces the time it<br/>takes to produce Algae by about 5 seconds, and then<br/>beyond that each tier will cut the speed in half. The<br/>cases will currently work up to UHV cases, and casings<br/>beyond that will not work with this machine. Randomly<br/>the production speed can either double or triple the<br/>time it takes as well, but this happens relatively<br/>rarely.\n\nEach tier increase also adds to the amount<br/>of Algae you get in a single cycle, as well as the<br/>type of Algae produced. Each cycle gives out an exact<br/>amount as well as a bonus amount 10% of the time. The<br/>Algae Farm also accepts Compost, that you can make<br/>from the algae itself, to boost the multi's tier by<br/>one. This might be expensive at the start, but it's<br/>heavily recommended in most cases. You can get regular<br/>Algae and Green Algae starting at ULV, Brown Algae<br/>starts appearing at HV, Golden-Brown Algae at EV, and<br/>Red Algae at IV, though most of the cases where they<br/>start appearing they start doing so in very small quantities.\n\nTo<br/>find out more about the exact output quantities and<br/>timings, please see the wiki: [url]https://gtnh.miraheze.org/wiki/Algae_Farm[/url]\n\nThe<br/>Algae can be used for various chemicals like Methane,<br/>Ammonia, Sulfuric Acid, Sodium Carbonate, Ethylene,<br/>Lithium Chloride, and even some power-generating fluids.<br/>You typically need a Chemical Plant for that. In IV<br/>tier you can also combine Green Algae with Glowstone<br/>to get Glowing Coral and make Sunnarium from that.<br/>If you're curious about all the processing chains,<br/>look them up on NEI: quests to cover them are coming<br/>up, possibly with more recipes that don't need the<br/>chemplant.<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lAn Industrial Mobfarm",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u4e1a\u5c60\u5bb0\u573a.png",
+                    "x": 516.0,
+                    "y": 252.0,
+                    "tooltip": "\u00a76\u00a7lExtreme Entity Crusher\u00a7r is your new and probably<br/>the \u00a7lbest\u00a7r spawner/grinder, with this you are not<br/>only able to get drops without any \u00a7lTPS\u00a7r issues but<br/>also with style and \u00a7lextreme\u00a7r efficiency.\n\nOf course<br/>that depends on the quality of your sword, damage and<br/>looting are the only stats that matter (weapon is optional<br/>since structure requires spikes and if you want to<br/>use it, put it in to the dedicated slot in controller).\n\nIf<br/>normal drops aren't your thing then you can build blood<br/>magic ritual \"Well of Suffering\" on top of the multiblock<br/>(you still get items but at a very slow rate).\nAlso<br/>generates liquid xp (always 120L) and can spawn infernal<br/>mobs if possible (uses x8 power with every infernal<br/>spawn so you need to take into account that energy<br/>usage will spike once in a while so be prepared for<br/>that!).\n\n\u00a7lNotes:\u00a7r\nIn case of any problems with multiblock<br/>animation just use soldering iron on the machine to<br/>disable it."
+                },
+                {
+                    "name": "\u00a76\u00a7lA Not So Useful Scanner...",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/GT EU\u7535\u8868.png",
+                    "x": 24.0,
+                    "y": 168.0,
+                    "tooltip": "...but a very useful meter.\n\nGT EU Meter will give<br/>you basic information about electricity in your cables<br/>and machines.\n\n\n[note]A more advanced version is available<br/>in MV and will allow you to gather much more data,<br/>so come back to this tab later to find it.[/note]"
+                },
+                {
+                    "name": "\u00a77\u00a76\u00a7lAn Unexpected Bonus",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6728\u70ad\u5757.png",
+                    "x": 240.0,
+                    "y": 120.0,
+                    "tooltip": "Because we're nice developers, we decided to add a<br/>little bonus if you happen to compress charcoal. Use<br/>it in the bricked blast furnace, or in a boiler, it<br/>yields 10 times the burn time of a piece of charcoal.<br/>So one charcoal for free. This bonus only occurs on<br/>the first compression step. (But for fanciness, you<br/>should definitely get a quintuple one!)\n\n[note]Of course<br/>they're kinda useless unless you're using BBFs or boilers,<br/>though you can use them to make industrial diamonds.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lAssembly Line",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u88c5\u914d\u7ebf.png",
+                    "x": 516.0,
+                    "y": 372.0,
+                    "tooltip": "The Assembly Line (or 'Assline') is an important machine<br/>for high tier components in LuV tier and above for<br/>making Motors, Pistons, Robot Arms, Pumps and many<br/>more.\n\nThe multiblock can be 5-16 blocks long. The<br/>minimum length required depends on the number of components<br/>and fluids required by the recipe it's crafting. A<br/>length of 11 blocks will fit 80 percent of all recipes<br/>in GTNH.\n\nThe bottom layer must have on one outer side<br/>all the Input Hatches for fluids (4), in the bottom<br/>middle layer Input Busses for items (10), and on the<br/>end 1 Output Bus. Also on the bottom outer layer must<br/>be one Maintainance Hatch. The rest is Solid Steel<br/>Machine Casings.\n\nThe second layer on the outer sides<br/>left and right are Reinforced Glass and in the middle<br/>center Assembly Line Casing.\n\nThe third layer has on<br/>the left and right Grate Machine Casings and in the<br/>middle Assembler Machine Casings (Note the name change!).<br/>The Assembly Line control block and Data Access Hatch<br/>are on the opposite edge from the Input Hatches - not<br/>at the end with the Output Bus.\n\nThe fourth layer is<br/>a single line of Solid Steel Machine Casings in the<br/>middle (11), with two Energy Hatches for power. Once<br/>you have it built, you can replace the two IV energy<br/>hatches with 1 LuV energy hatch.\n\nAutomating the assline<br/>is a difficult challenge! You can used advanced tooles<br/>like SFM or OpenComputers, but maybe you can figure<br/>out how to do it with Enderio or just AE2.\n\nFor more<br/>details on using the Assembly Line, check out the wiki<br/>page [url]https://wiki.gtnewhorizons.com/wiki/Assembly_Line[/url]\n\n[note]BTW<br/>the input busses are ULV to help with your automating,<br/>if you don't want to automate it, you can use higher<br/>tier ones, unlike the CAL.[/note]\n\n[note]You can have<br/>up to 16 input busses. If you use the full 16 you should<br/>put the output bus to the side.[/note]<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lAt the End of...",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u771f\u7a7a\u51b7\u51bb\u673a.png",
+                    "x": 204.0,
+                    "y": 312.0,
+                    "tooltip": "...the universe everything freezes eventually. But<br/>waiting for the heat death of the universe might take<br/>too long. Therefore we present you the vacuum freezer.<br/>It should be good enough to cool your hot stuff.\n\nIngots<br/>that go through the EBF above a certain temperature<br/>will come out as hot ingots that need to be cooled.\n\nYou<br/>will need a minimum of 16 frost proof machine casings,<br/>the rest depends on your setup."
+                },
+                {
+                    "name": "\u00a76\u00a7lAutomation, Tier 1",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u9752\u94dc\u6d41\u4f53\u7ba1\u9053.png",
+                    "x": 24.0,
+                    "y": 12.0,
+                    "tooltip": "Do you want to automate your smeltery because you're<br/>planning to make stacks and stacks of glass blocks?<br/>\n\nNo problem, craft a large bronze pipe and place it<br/>under the faucet. Make sure to connect the pipe to<br/>the faucet using a wrench. Now the molten fluid will<br/>flow inside the pipe. Under or next to the pipe you<br/>have to place the casting basins or tables.\n\nA hopper<br/>and a chest underneath will auto-output products from<br/>the casting blocks. \n\nNOTE: Faucets will output precisely<br/>144L each activation if you toggle it off immediately.<br/>That's going to have some uses later on..."
+                },
+                {
+                    "name": "\u00a76\u00a7lAutomation, Tier 2",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ea2\u77f3\u6bd4\u8f83\u5668.png",
+                    "x": 24.0,
+                    "y": 72.0,
+                    "tooltip": "You want a better automation than using pipes? Sure,<br/>craft a comparator and link it with redstone dust placed<br/>on the ground. The redstone needs to be adjacent to<br/>the faucet to activate the crafting process."
+                },
+                {
+                    "name": "\u00a76\u00a7lA Very Useful Scanner",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4fbf\u643a\u5f0f\u626b\u63cf\u4eea.png",
+                    "x": -12.0,
+                    "y": 168.0,
+                    "tooltip": "The portable scanner is a tool capable of showing advanced<br/>information about almost every block in the game. In<br/>order to function, the tool needs to be charged first.<br/>It can hold up to 400k EU and accept 128 EU/t or less.<br/>This is MV tier.\n\nIt can scan crops by right clicking<br/>it to fully scan it, unlike a cropnalyzer which needs<br/>a seed bag in your inventory, and takes multiple goes.<br/>Crops that were scanned in the world will drop a scanned<br/>seed bag.\n\nIt can scan machines from GregTech, giving<br/>information about current progress, the stored energy,<br/>efficiency, problems and CPU-load - be sure to check<br/>the full chat window for additional details.\n\nFor any<br/>block in the game it scans, it gives information about<br/>its ID, Metadata, position in the world and hardness<br/>value. It also gives information about pollution level<br/>in the chunk the scanned block belongs to.\n\nIn addition<br/>it shows when the cleanroom has reached its 100 percent<br/>efficiency level.<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lAwakened Draconium Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u89c9\u9192\u9f99\u952d\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 204.0,
+                    "y": 552.0,
+                    "tooltip": "To process the most advanced materials like Infinity<br/>Catalyst or Infinity you need more than 9900K. Upgrade<br/>your EBF to 10800K.\n\n[note]With the heat adjustment<br/>included, you can get up to 11601K if you OC with UHV<br/>hatches. Not that you need it or anything.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lBacterial Vat",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ec6\u83cc\u57f9\u517b\u7f38.png",
+                    "x": 684.0,
+                    "y": 36.0,
+                    "tooltip": "The Bacterial Vat is a unique multiblock machine with<br/>its own recipes. But it also has advanced versions<br/>of many brewery recipes.\n\nThe Vat isn't mandatory in<br/>this tier, but there are many useful recipes and you'll<br/>need it later on, so let's build one!\n\nAll recipes<br/>require a \u00a7cculture\u00a7r, some recipes require a specific<br/>\u00a7cGlass-Tier.\n\n\u00a7rThe culture is made in a BioLab and<br/>\u00a7lput in the controller.\n\n\u00a7l\u00a7rThe Glass-Tier is calculated<br/>as LV = Tier 1, so this quest requires you to make"
+                },
+                {
+                    "name": "\u00a76\u00a7lBetter Glass Upgrade, EV Glass",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u949b\u5f3a\u5316\u787c\u73bb\u7483\u65b9\u5757.png",
+                    "x": 684.0,
+                    "y": 108.0,
+                    "tooltip": "The next tier of Borosilicate glass is Titanium (4).<br/>Make it to allow higher tier recipes in the Bacterial<br/>Vat, higher tier Energy Hatches in the MEBF, or better<br/>Capacitors in your LSC. Or just use it for machine"
+                },
+                {
+                    "name": "\u00a76\u00a7lBetter Than Duct Tape",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7535\u70d9\u94c1(LV).png",
+                    "x": 24.0,
+                    "y": 216.0,
+                    "tooltip": "Using a soldering iron tool to remove the \"burned out<br/>circuits\" message is cheaper than duct tape. \n\nThe<br/>soldering iron requires one soldering material item<br/>and 10,000 EU. Valid soldering materials are fine wires,<br/>rods, and ingots made from either tin, lead, or soldering<br/>alloy. The soldering iron will consume the first such<br/>material it finds in the player's inventory. Since<br/>you'll likely have more than enough, Fine Wires of<br/>Soldering Alloy are probably best.\n\nYou can also use<br/>it to adjust the redstone strength from weak to strong<br/>emitted by GT machines.\n\nAlso, while holding it all<br/>pipes, wires, and cables will look very small, so that<br/>you can see everything past them, and also be sure<br/>of the exact connections.\n\nIn order to \"complete\" the<br/>quest you'll need to charge the soldering iron after<br/>you craft it.\n\nFor the other problems other tools are<br/>necessary. Keep in mind that you can put all needed<br/>tools in a toolbox to fix all problems in one click.\n\nPossible<br/>problems                Tool to fix\n\"Pipe is loose.\"<br/>                   Wrench\n\"Screws are loose.\"     <br/>     Screwdriver \n\"Something is stuck.\"           <br/>Soft Mallet \n\"Platings are dented.\"           Hammer<br/>\n\"Circuitry burned out.\"    Soldering Iron \n\"That doesn't<br/>belong there.\"   Crowbar<br/>"
+                },
+                {
+                    "name": "Bio Chamber",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6e7f\u4ef6\u7ef4\u751f\u7535\u8def\u57fa\u677f.png",
+                    "x": 792.0,
+                    "y": 96.0,
+                    "tooltip": "As I got new technologies, I have seen the need to<br/>make a chamber where the circuit board can contain<br/>neurons for the wetware boards or the upcoming bioware<br/>boards.\n\nThe Bio Chamber is a simple upgrade, it doesn't<br/>require many resources. Don't know why I didn't make<br/>it earlier.\n\n[note]It can use any glass.[/note]"
+                },
+                {
+                    "name": "Catalyzing Miracles",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65e0\u5c3d\u50ac\u5316\u5242.png",
+                    "x": 744.0,
+                    "y": 228.0,
+                    "tooltip": "The QFT uses the kind of catalyst that the Chemical<br/>Plant also does. However, like the plants that have<br/>Awakened Draconium coils or higher, it does not consume<br/>the catalyst\u2019s durability on recipe finish, behaving<br/>more like a real-life catalyst that is regenerated<br/>after being used. This makes the catalysts used here<br/>more expensive to craft, as was the case with the Infinite<br/>Mutation Catalyst for Mutated Living Solder, which<br/>is meant to be used only with those coils that make<br/>it last forever.\n\nGiven that there is no durability<br/>loss, it would seem only one catalyst needs to be crafted.<br/>However, there are two reasons for this to not be true:<br/>firstly, each QFT recipe uses a different catalyst;<br/>secondly, the QFT checks for parallels by counting<br/>the amount of catalysts it has in its input buses for<br/>the recipe in question (with a maximum of 64 parallels,<br/>for a stack of the correct catalyst). This system makes<br/>it so that crafting 1 of the correct type of catalyst<br/>is required to unlock a recipe, but making more is<br/>completely optional and only changes the speed at which<br/>the multi crafts, provided it gets enough EU input.\n\nEvery<br/>catalyst needs some of the materials that it unlocks<br/>in the QFT, which is to say, the original processing<br/>line will have to be used to craft the catalyst that<br/>allows the player to skip it in the QFT. This applies<br/>to every recipe, and in turn every line that can be<br/>skipped.\n\nTo improve the general speed of processing,<br/>your one options is to get more parallels with catalysts.<br/>The other, more complicated way is to boost the chances<br/>of a successful output by adding more energy to the<br/>system, but in a special way: instead of using direct<br/>EU, using it to create a powerful plasma works to improve<br/>the QFT processing.\n\nIf the correct plasmas are added,<br/>the boosting will work, but it is also possible to<br/>upgrade the structure itself to perform chemistry skips<br/>that are not possible with the base QFT. These upgrades<br/>rely on more advanced and powerful materials, mainly<br/>in the material progression of DTPF recipes. However,<br/>those existing materials are not enough, because the<br/>quantum stabilization can\u2019t be maintained with those<br/>\u201cforeign\u201d substances. Luckily, the QFT itself can produce<br/>the items needed to build the upgraded casings, and<br/>these items are outputs of some of the skips performed<br/>in the multi. It begins by allowing the much simpler<br/>production of already-owned materials but, in this<br/>process, it unlocks entirely new materials that are<br/>useful to improve the structure itself.\n\nThere are<br/>three new items and four tiers in the structure. The<br/>first tier can be built without them, but every new<br/>tier needs a new item crafted in the tier before. These<br/>outputs are related to the recipe where they can be<br/>obtained, and they possess unique characteristics that,<br/>in real life, are only theoretical.\n\nThe first item<br/>you will need to craft is the Hyper-Stable Self-Healing<br/>Adhesive. To craft this material, proceed with the<br/>Glue/Solder recipe by using the Adhesion Promoter Catalyst.<br/>Additionally, make these other catalysts to prove you're<br/>well set in your QFT journey.\n<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Chemical Pseudo-Altercations",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u91cf\u5b50\u64cd\u7eb5\u8005.png",
+                    "x": 756.0,
+                    "y": 180.0,
+                    "tooltip": "Learning more about the world and its ways is a sign<br/>of wisdom. However, the truly wise are the ones who<br/>know what is unimportant and can be skipped. For a<br/>true breacher of technology, the constraints of physics<br/>and chemistry are not essential. To skip past their<br/>technicalities, the Quantum Force Transformer comes<br/>into play.\n\nThis multi is meant to replicate the most<br/>popular and important processing lines in the pack\u2019s<br/>progression, mostly those related to chemistry. Because<br/>of recursion in recipes, where earlier tier materials<br/>are required to craft higher tier equivalents, there<br/>are a lot of early processing lines that stay up through<br/>progression. Even worse, they often need more and more<br/>machines to keep up with increasing speed demands.<br/>To save on lag, this multi will do those processing<br/>lines in one step and without most of the extra chemicals<br/>that are added to purify the inputs into the outputs.\n\nThe<br/>Quantum Force Transformer (QFT) is unlocked in UEV,<br/>after Optical Mainframes have been crafted, and with<br/>the addition of a single Eternal Singularity and other<br/>materials. It\u2019s a tall, 15x15 multiblock with many<br/>different casings, including two that are upgradable<br/>and decide the two tiers of the multi. Although it\u2019s<br/>available in UEV, the upgraded casings require more<br/>and more expensive materials, while also unlocking<br/>skips for more advanced processing lines. For example,<br/>a platline skip can be done in the earlier QFT tier,<br/>whereas a Kevlar skip can only be done in the last<br/>tier.\n\nEach recipe that the QFT has represents a single<br/>processing line or a big part of a line. The inputs<br/>for the early plastic skip, for example, are the basic<br/>components of the plastics on a molecular level (Carbon,<br/>Hydrogen, Oxygen, etc.), and not the multi-step chemicals<br/>that were used half a dozen tiers earlier. All recipes<br/>have 3 or more outputs, and every output has a chance<br/>to appear: the chance for each is 100% divided by the<br/>number of outputs. To increase it, there are additional<br/>mechanics that can be used.\n\nSimply put, the QFT uses<br/>huge amounts of energy and quantum field stabilization<br/>to disassemble simple molecules and assemble them into<br/>more complex ones, without needing additives or constrained<br/>processes. The only addition to the base inputs that<br/>the multi requires is a specific catalyst, which the<br/>smart circuits use to guide the materials into what<br/>they ultimately transform into, but they are never<br/>consumed or lost in any way. \n\nThis direct process<br/>simplifies long processing chains to one step, but<br/>it has two consequences: it makes the process expensive,<br/>given the extreme conditions needed to undergo the<br/>transformation (in a similar way to fusion), but it<br/>also generates many different outputs at once, none<br/>of which are guaranteed, and it\u2019s impossible to choose<br/>between them without adding something else into the<br/>setup to alter the conditions inside the QFT in some<br/>way. Throwing more energy into the multi won\u2019t do anything,<br/>and better materials don\u2019t seem to work, so what is<br/>the next step? That is what the next two quests will<br/>answer.\n<br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lCleanroom",
+                    "symbolSize": 62.400000000000006,
+                    "x": 204.0,
+                    "y": 372.0,
+                    "tooltip": "If you want to make more advanced (and cheaper!) circuits,<br/>you will need a Cleanroom. The Cleanroom is an interesting<br/>multiblock, because you will be placing other machines<br/>\u00a7oinside\u00a7r of the room!\n\nThe cleanroom is a hollow<br/>multiblock between 3x4x3 and 15x15x15 (WxHxL) blocks.<br/>The base does not need to be a square; a rectangular<br/>shape is fine. The top layer is built out of Filter<br/>Machine Casings, except for the edges, which are Plascrete<br/>Blocks. The controller needs to be in the center of<br/>the top layer. If the width or length of the room are<br/>even, then it can be any one of the two (or four) middle<br/>blocks. The rest of the structure is built out of Plascrete<br/>Blocks.\n\nUp to 30% of those Plascrete Blocks can be<br/>replaced by other valid blocks or materials:\n\nA Reinforced<br/>Door lets you get in and out of the cleanroom. Make<br/>sure to keep the doors closed, or the cleanroom will<br/>rapidly lose efficiency. Travel Anchors and Elevators<br/>also work, you can even embed them in the floor if<br/>you want to.\n\nIn order to automate power and item transport<br/>through the walls, you can use Cable Diodes or Machine<br/>Hulls. Just be really careful when upgrading your machines<br/>to a higher voltage. Be sure to remove the machine<br/>hulls and diodes and replace them with the new power<br/>tier, or else you will be very sad. You don't need<br/>to do this for ones you only use to pass items through.\n\nIf<br/>you want to see inside, you can use any EV+ tier glass<br/>(for example, Reinforced Glass or Managlass). If the<br/>Cleanroom does not form, mind the 30% limit: often<br/>the problem is that you added too much glass.\n\nFinally,<br/>the Cleanroom itself will need a Maintenance and Energy<br/>Hatch to run. The power usage of this multiblock is<br/>a bit unusual. It starts out at 40 EU/t and then gradually<br/>goes down. But even when it uses 40 EU/t - which is<br/>usually MV - a single LV energy hatch suffices, as<br/>long as you give it enough power. Just keep in mind<br/>that this makes the Cleanroom an exception, not the<br/>rule.\n\nLet's build a 5x5x5 room for now. You can expand<br/>it later as needed. Give it power and let it run until<br/>it reaches 100% efficiency. Below 100% efficiency,<br/>machines inside the cleanroom have a chance to void<br/>outputs, so you want to keep the cleanroom running<br/>at all times!\n\nAny maintenance issue reduces the maximum<br/>efficiency by 10%. Monitor your cleanroom with a Hand<br/>Scanner, Industrial Information Panel, or using a Needs<br/>Maintenance Cover and a Redstone Powered Light or Howler<br/>Alarm.\n\n\n[note]Multiblocks such as the Large Chemical<br/>Reactor or Hyper-Intensity Laser Engraver don't need<br/>to be in a cleanroom. However, you will still need<br/>the cleanroom later on for other machines, like Bio<br/>Labs.[/note]\n\n[note]Other helpful hints: you can use<br/>an AE Wireless Connector or a Transvector Interface<br/>for item transport to avoid machine hulls, and use<br/>a higher tier energy hatch to reach 100% efficiency<br/>faster.[/note]\n\n[warn]Keep in mind that you can not<br/>use anything in the cleanroom that causes pollution,<br/>or the cleanroom will stop working.[/warn]<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Collision Course",
+                    "symbolSize": 62.400000000000006,
+                    "x": 732.0,
+                    "y": 552.0,
+                    "tooltip": "Finally, to actually get some ICs, use your photons<br/>in a Target Chamber.\n\nNote that the EU/t value listed<br/>in TC recipes is only a minimum, as recipe time is<br/>entirely determined by the Amount of photons you give<br/>the multi.\n\nMore specifically, you can get the recipe<br/>time by dividing recipe Amount by your input beam Amount,<br/>then multiplying that by 5s."
+                },
+                {
+                    "name": "\u00a76\u00a7l\u00a76\u00a7lComponent Assembly Line",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u90e8\u4ef6\u88c5\u914d\u7ebf.png",
+                    "x": 516.0,
+                    "y": 432.0,
+                    "tooltip": "Check the NEI pages to see all the nice recipes this<br/>machine can handle for you. Great to craft GT components"
+                },
+                {
+                    "name": "\u00a76\u00a7lCompress All the Things",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u805a\u7206\u538b\u7f29\u673a.png",
+                    "x": 372.0,
+                    "y": 132.0,
+                    "tooltip": "Martin's (DreamMasterXXL) favourite machine. Compress<br/>ALL the things! With explosives, of course. Boom today!\n\nNote:<br/>You might want to put this far from your living quarters,<br/>the pollution can get high really fast."
+                },
+                {
+                    "name": "\u00a76\u00a7lData Access Hatches",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8fdb\u9636\u6570\u636e\u8bbf\u95ee\u4ed3.png",
+                    "x": 564.0,
+                    "y": 372.0,
+                    "tooltip": "So, if you want to do more than one recipe in your<br/>Assline, you want a Data Access Hatch. There are 3+1<br/>versions.\n\nData Access Hatch: It holds 4 data sticks,<br/>so 4 recipes.\n\nAdvanced Data Access Hatch: It holds<br/>16 data sticks. Ironically, you can make this right<br/>away.\n\nAutomatable Data Access Hatch: It's UV, but<br/>it allows I/O of the sticks. Skip it.\n\nThe Data Bank<br/>Multi: Can be connected to multiple Asslines, and can<br/>contain more than 1 DAH. This is the best way, when<br/>you can do it. Look in ZPM for the quest.\n\n[note]You<br/>only need to make one.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lDigging Deep for Water",
+                    "symbolSize": 31.200000000000003,
+                    "x": 192.0,
+                    "y": 12.0,
+                    "tooltip": "Is the Water Tank not cutting it anymore? Have you<br/>set up in a dry biome and are in desperate need of<br/>more water? Fear not, for the Steam Water Pump can<br/>solve your issues! This Multiblock is able to produce<br/>large amounts of Water if fed with Steam (1500L/s).\n\nLike<br/>other Steam Multiblocks, it can be upgraded by using<br/>Steel Frame Boxes instead of Bronze ones, which doubles<br/>the Water output at no additional Steam cost.\n\n\u00a73It<br/>is, however, still dependent on how humid the Biome<br/>you are in is, so keep that in mind."
+                },
+                {
+                    "name": "\u00a76\u00a7lDissolution Tank",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6eb6\u89e3\u7f50.png",
+                    "x": 588.0,
+                    "y": 312.0,
+                    "tooltip": "Basically a mixing machine purposely made for dilution.\n\nYou'll<br/>need to take care in providing the inputs at the required<br/>ratios, else you'll get no output.\n\nAnyway, this plays<br/>a large part in the lanthanide line so craft it up."
+                },
+                {
+                    "name": "Do I Really Need to Make This?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/COMET-\u7d27\u51d1\u5f0f\u56de\u65cb\u52a0\u901f\u5668.png",
+                    "x": 600.0,
+                    "y": 372.0,
+                    "tooltip": "Oh wait, yes, you actually need this now! That was<br/>supposed to be a rhetorical question!\n\nThe main thing<br/>you will probably get out of it is the Quantum Anomaly.\n\n[note]This<br/>multi is LuV. But you don't need it until UHV.[/note]"
+                },
+                {
+                    "name": "Don't Lose That Multiblock Miner!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6570\u636e\u53d1\u5c04\u5668\u8986\u76d6\u677f.png",
+                    "x": 636.0,
+                    "y": 252.0,
+                    "tooltip": "It's easy to lose Ore Drilling Plants. You're a busy<br/>engineer, you know? You can't be bothered to remember<br/>trifling things like \"where, in what galactic backwater<br/>did I last place my miner.\" You could do something<br/>boring like \"write down the location of the miner\"<br/>or \"put up a sign with the miner's location in my ore<br/>processing area,\" but there's a better way.\n\nEnter<br/>the Metrics Transmitter Cover. This cover, when attached<br/>to a multiblock miner (or any GregTech machine,) spawns<br/>in a GregTech Advanced Sensor Card paired to the host<br/>machine. This card, when inserted into a NuclearCraft<br/>Industrial Information Panel, will receive runtime<br/>information transmitted by the host machine, including<br/>its current location. Additionally, it returns the<br/>same information that its lower-tech sibling, the GregTech<br/>Sensor Kit, provides. Unlike the GregTech Senor Kit,<br/>the Metrics Transmitter Cover \u00a7nworks interdimensionally<br/>and at any range without the need of range upgrades.\u00a7r<br/>In addition, since covers remain on machines when they<br/>are dismantled, the paired sensor card \u00a7nwill continue<br/>to work even if the host machine is relocated, and<br/>never needs to be recalibrated.\u00a7r This makes it perfect<br/>for the Ore Drilling Plant and Oil/Gas/Fluid Drilling<br/>Rig, which are deployed in the field and often have<br/>to be relocated.\n\nHowever, like always, there's a catch.<br/>If the Metrics Transmitter Cover is detached from its<br/>host machine, \u00a7nthe paired sensor card will be destroyed.\u00a7r<br/>Maybe you shouldn't be using a crowbar around sensitive<br/>electronics...<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lDon't Put a Finger in That Socket",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7ebf\u7f06\u4e8c\u6781\u7ba1 4A MV.png",
+                    "x": 204.0,
+                    "y": 432.0,
+                    "tooltip": "If you want to pass multiple amps through your cleanroom<br/>walls, use a one-way Diode. Also handy to limit power<br/>when branching off a main power line to trunk lines<br/>that normally will not use as many amps, but that you"
+                },
+                {
+                    "name": "Draconic Development",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6df7\u6c8c\u805a\u5408\u673a\u68b0\u65b9\u5757.png",
+                    "x": 828.0,
+                    "y": 468.0,
+                    "tooltip": "The Draconic Fusion Crafted has 5 tier of casings,<br/>each an upgrade of the previous tier.\n\nEach new tier<br/>of casings allows you to make better Cores, eventually<br/>ending at the Chaotic Core.\n\n[note]Recipe time is divided<br/>by number of tiers above recipe tier![/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lDraconic Evolution",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9f99\u7814\u805a\u5408\u88c5\u7f6e.png",
+                    "x": 828.0,
+                    "y": 408.0,
+                    "tooltip": "You have tinkered long and hard to try to combine magic<br/>and technology. It looks like you finally found a way!<br/>Combining your powers as a thaumaturge and blood mage<br/>with your UHV technology you think you have found a<br/>way to distill the power of a dragon into a small core.<br/>This machine can do it, you are sure. If only you know<br/>how precisely to assembler such a core.\n\n[note]Use<br/>a hologram projector to see how it is built. You can<br/>also upgrade your draconic cores but for that you need<br/>the higher tier schematics and you need to upgrade<br/>the multiblock.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lDynamite",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u70b8\u836f.png",
+                    "x": 456.0,
+                    "y": 156.0,
+                    "tooltip": "Dynamite is the most basic explosive you can use in<br/>the implosion compressor.\nMix some paper, string and<br/>glyceryl trinitrate in a chemical reactor to get dynamite."
+                },
+                {
+                    "name": "\u00a76\u00a7lEBF Info",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u4e1a\u4fe1\u606f\u5c4f.png",
+                    "x": 144.0,
+                    "y": 216.0,
+                    "tooltip": "You can use a scanner to manually check how your EBF<br/>works, or you can make an information panel from nuclear<br/>control and always see the status. Make a GT sensor<br/>kit and use it on the EBF controller. Place the the<br/>sensor card in your info panel. Enable it with a redstone<br/>signal.\n\nThe GregTech sensor card can monitor GregTech<br/>machines like the EBF, Turbines, and Pyrolyse ovens.<br/>This is handy for keeping an eye on maintenance issues<br/>for multiblocks.\n\nIf you want to put the panels far<br/>from the machines they are monitoring, you will need<br/>range upgrades.\n\n[note]There's also a more advanced<br/>version.[/note]"
+                },
+                {
+                    "name": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u4e1a\u9ad8\u7089.png",
+                    "x": 84.0,
+                    "y": 168.0,
+                    "tooltip": "In order to get aluminium ingots, you need an Electric<br/>Blast Furnace. It's another very important step towards<br/>victory, so let's get started.\n\nGetting the Mica for<br/>the heating coils might be a little tricky, but you<br/>can use a substitute for the first tier of coils. \nYou<br/>need 2 LV hatches with 4A of 32V total, or 3 LV hatches<br/>with MOOOORE power if the multiblock is not fully repaired.<br/>\nIn order to not scrape by for Nickel, check out the<br/>quest Source of Nickel in the Novice Thaumaturgy tab.\n\n\u00a7rA<br/>few recipes produce CO2/SO2 as a fluid. This fluid<br/>can be collected by placing a fluid output hatch on<br/>the top layer of the EBF. You could also enable fluid<br/>voiding in the EBF controller block GUI. For recipes<br/>with such a C02/S02 output you must do one or the other<br/>or the EBF will not start.\nThe amount of fluid recovered<br/>depends on the tier of the muffler hatch.\n\nBart's Platinum<br/>Series recipes output fluids on the BOTTOM and are<br/>NOT affected by the mufffler hatch tier, so if you<br/>want to do Platinum Stuff later, remember that.\n\nMoron<br/>always says - Make Muffler Moint Mup. Or point up,<br/>anyways. Before the launch, don't forget to fix maintenance<br/>issues and put a programmed circuit if necessary.\n\nIf<br/>you want a really fancy EBF, you can add more input<br/>fluid hatches and store different fluids in each one.\n\nThe<br/>EBF also has a heat adjustment of 100K for each power<br/>tier above or below MV. You can only make LV energy<br/>hatches right now, but installing two LV energy hatches<br/>will overclock the EBF to MV power, eliminating the<br/>100K penalty and setting the initial heat to 1801K.\n\nAs<br/>you upgrade your EBF over the course of the game, this<br/>heat adjustment will increase. Two MV energy hatches<br/>(overclocking to HV) will add +100K, two HV energy<br/>hatches (overclocking to EV) will give +200K, and so<br/>on. Coils only set the base value. This adjustment<br/>does not apply to the Volcanus.\n\nIf the pollution gets<br/>really bad, check in GT++ Multiblocks for a pollution<br/>scrubber, or upgrade your Muffler.<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lElectrum Flux Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u901a\u6d41\u7425\u73c0\u91d1\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 144.0,
+                    "y": 552.0,
+                    "tooltip": "To process more advanced materials like Cosmic Neutronium,<br/>Tritanium and Awakened Draconium you need more than"
+                },
+                {
+                    "name": "\u00a76\u00a7lEternal Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c38\u6052\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 384.0,
+                    "y": 552.0,
+                    "tooltip": "Beyond spacetime, beyond reality. You have peered into<br/>what never existed and brought into a fluid, and then<br/>a solid. It has been stabilized, against all odds.<br/>When you look at it, you think that you could hold<br/>the entire universe in your hand.\n\nIn the past, you<br/>were able to combine almost all materials into one,<br/>through an Eternal Singularity, an infinitely dense<br/>sample of the universe. However, automating this at<br/>the scale of the DTPF proved ridiculous, which would<br/>have stopped your progress altogether if not for the<br/>discovery of the Energized Tesseract. To physically<br/>manifest spacetime itself, you first needed to manifest<br/>the fourth spatial dimension, and that is what the<br/>Tesseract is: a 4-dimensional cube.\n\nCubes! Almost<br/>everything around you is made out of cubes. You have<br/>only glimpsed at the reality of the 4-dimensional world,<br/>but you have successfully used it to condensate spacetime,<br/>which can be arbitrarily molded into the complete Eternal<br/>mixture, a process that unfortunately cannot be reversed.<br/>Needless to say, living circuits will not suffice to<br/>maintain an infinitely dense, infinitely stable, multi-dimensional<br/>material.\n\nCurrently, the final upgrade with 13501K.<br/>This really makes your DTPF shine!<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lEven More Steam? Are You Sure?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u94a8\u94a2\u9505\u7089.png",
+                    "x": 504.0,
+                    "y": 72.0,
+                    "tooltip": "The Large Tungstensteel Boiler is the biggest and baddest<br/>of the four. Like the Titanium one, it is a specialized<br/>boiler that only accepts specific fuels, mainly the<br/>Solid Super Fuels, but it will produce Superheated<br/>Steam at a rate equivalent to 16000 EU/t, at 100% fuel<br/>efficiency. If you have good Steam Turbines, especially<br/>Oriharukon ones, you will get much more power than<br/>that, around 24000 EU/t or more.\n\nDepending on how<br/>many of these you build, you might need a huge amount<br/>of turbines. To solve that problem, consider going<br/>a bit above the optimal flow on each turbine, or even<br/>switching to Loose mode, although this is only a good<br/>choice if you can match the optimal flow in that mode."
+                },
+                {
+                    "name": "\u00a76\u00a7lExpert MB-Construction",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u591a\u65b9\u5757\u673a\u5668\u5168\u606f\u6295\u5f71\u4eea.png",
+                    "x": -12.0,
+                    "y": 120.0,
+                    "tooltip": "Right click the controller while sneaking will invoke<br/>an action called \u00a7osurvival autoplace\u00a7r. This will<br/>attempt to build the multiblock with items from your<br/>inventory, provided the area this multi occupies is<br/>clear of obstacles. Again, like hologram spawning,<br/>multiblocks that accept multiple types of tiered components<br/>or has variable length, the number of MSHPs you hold<br/>in hand will decide which tier of blocks will be placed.<br/>It will place correct amount of hatches for you, but<br/>will usually orient the hatches towards you, not perpendicular<br/>to the surface. It will just place casings for you<br/>if you don't have any hatches in inventory, unless<br/>this spot require the use of a hatch (e.g. the top<br/>center spot of EBF).\n\nSurvival autoplace can also take<br/>from your alternative inventories, or items that contain/link<br/>to an inventory. Currently, this includes: \n- adventure<br/>backpacks, either worn or as an item in inventory\n-<br/>AE2 portable cells\n- ME network linked by any kind<br/>of AE2 wireless terminal that support item access.<br/>support view cell filtering, consume power, require<br/>security access and within wireless range\n- Forestry<br/>backpacks\n- ender chest inventory, if you have the<br/>Ender Backpack from Backpacks mod. Note: ordinary backpacks<br/>from the Backpacks mod are NOT supported at the moment.<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lFaster Crops",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6781\u9650\u5de5\u4e1a\u6e29\u5ba4.png",
+                    "x": 300.0,
+                    "y": 252.0,
+                    "tooltip": "Welcome to my ted talk, today we talk about the \u00a76\u00a7lExtreme<br/>Industrial Greenhouse.\n\u00a7rIt is the most advanced and<br/>\u00a7l\u00a7nLAG FREE\u00a7r crop farm that will allow you to supply<br/>the amount of tea you need.\nThe machine starts at \u00a75EV\u00a7r,<br/>but to farm IC2 crops you will need at least \u00a7dLuV\u00a7r<br/>power.\nTo see the structure, place the controller on<br/>ground and use a structure hologram to build.\nThe glass<br/>tier limits the energy tier until [note]UV[/note].<br/>With [note]UV[/note] glass you can have an energy tier<br/>as high as you want.\nShift click with screwdriver to<br/>change crop type (IC2/normal), sadly you can't farm<br/>both in one machine.\nThere are 3 modes to manage your<br/>crops (change with screwdriver):\n\n\u00a7lSetup mode (input):\n\u00a7rIn<br/>this mode you can plant your crops in the machine.\nJust<br/>put them in the input bus and enable the machine with<br/>a soft mallet.\nAdditionally, you need to insert block<br/>that is required for IC2 crop to grow (if any)\nWhen<br/>the bus is empty, just disable it and change the mode.\nKeep<br/>in mind that there is limited space of slots for your<br/>crops depending on the voltage.\nWith normal crops you<br/>start with 1 slot and that multiplies by 2 every tier<br/>past \u00a75EV\u00a7r, every slot can take 64 crops of the same<br/>type.\nWith IC2 crops you start with 4 slots and that<br/>multiplies by 4 every tier past \u00a7dLuV\u00a7r, every slot<br/>can take only 1 crop.\n\n\u00a7lSetup mode (output):\n\u00a7rThis<br/>mode allows you to move your Greenhouse or upgrade<br/>your crops.\nWhen the machine is running in this mode<br/>it will output all planted crops in the output bus.\n\n\u00a7lNormal<br/>operation:\n\u00a7rWith normal crops it is a straightforward<br/>process. Base processing time is 5 seconds, at the<br/>end of operation all crops are grown and the outputs<br/>are added to the output bus. Additionally the time<br/>is lower every tier past \u00a75EV\u00a7r \u00a7o(The time is divided<br/>by the number of tiers past \u00a76HV\u00a7r\u00a7o, minimum 1 second.<br/>WOW)\u00a7r\n\nIC2 crops on the other hand, are not that easy.<br/>They are normally simulated, but accelerated 32 times.<br/>Process time is 5 seconds. You can check the progress<br/>of the growing process with a tricorder.\n\nIf you want<br/>to grow your crops even faster, then you can use a<br/>fertilizer (up to \u00a7l400% more drops\u00a7r !). Machine will<br/>take fertilizer from the input busses on start of the<br/>operation and will be applied to that operation only.<br/>Each fertilizer gives +200% per crop in normal mode<br/>or +10% in IC2 mode. The bonus is applied evenly on<br/>crops. Examples:\nNormal mode, 3 wheat seeds, 1 tea<br/>seeds, you insert 1 fertilizer, you will get +150%<br/>wheat drops and +50% tea drops.\nIC2 mode, 16 melon<br/>seed bags, you insert 64 fertilizer, you will get +40%<br/>drops.\n\nAdditionally, all your crops need water to<br/>grow. Every single crop drinks 1000L per operation.<br/>So for example if you have planted 576 tea seeds at<br/>[note]UV[/note] voltage you will need 576000 L per<br/>second.\n\n\u00a7lLast notes:\n\u00a7rThe animation can\u2019t be disabled.\nThe<br/>lamps can be inverted.\nThe dirt must be tilled.\nIf<br/>you encounter any issue or have any suggestion please<br/>open an issue on github and ping \u00a7l@kuba6000\u00a7r.\nThis<br/>MB was created to farm tea because I wanted to.\n<br/><br/><br/><br/>"
+                },
+                {
+                    "name": "Focusing Science and Mystery",
+                    "symbolSize": 31.200000000000003,
+                    "x": 768.0,
+                    "y": 228.0,
+                    "tooltip": "This mechanic is completely optional, and never required<br/>for crafting. However, it\u2019s greatly incentivized when<br/>the number of parallels is high and when crafting the<br/>unique items that unlock higher tiers. \u201cFocusing\u201d,<br/>in general, means to increase the chances of the outputs<br/>in a QFT recipe, and it can be done in two ways, possibly<br/>both at the same time. Each method uses a new plasma,<br/>both of which are crafted in a T4 Fusion Reactor by<br/>using other plasmas as the inputs, including one T3<br/>plasma for each. These plasmas are Neptunium and Fermium<br/>and they can be used together, or individually.\n\nWhen<br/>Neptunium Plasma is present, the current recipe can<br/>have one of the outputs focused. The specific output<br/>is chosen with a circuit in the input bus (this is<br/>the only thing circuits do for this multi), where circuit<br/>1 is for the 1st output visible in NEI, circuit 2 is<br/>for the 2nd output, and so on. It is up to the player<br/>to choose which output they want the most out of all<br/>the existing ones, and the fact that every recipe has<br/>multiple outputs is because of this mechanic.\n\nWhen<br/>an output is successfully focused with Neptunium, its<br/>chance increases by reducing the chance of all the<br/>other outputs. The logic for this change is as follows:\n\n-><br/>Without focusing, the chance of each output is 100<br/>/ number of outputs;\n-> If the casing tier matches<br/>the recipe tier, the chance of all other outputs is<br/>halved and the sum of those halves is added to the<br/>focused output (for example, 20/20/20/20/20 becomes<br/>60/10/10/10/10);\n-> If the casing tier is +1 over the<br/>recipe tier, halve the other outputs' chance again<br/>(for example, 60/10/10/10/10 becomes 80/5/5/5/5);\n-><br/>If the casing tier is +2 or +3 over the recipe tier,<br/>set the focused output to 100% and the rest to 0%.\n\nIn<br/>general, this type of focusing doesn\u2019t increase the<br/>total amount of outputs, save for the new items added<br/>with this multi that will come out in smaller quantities.<br/>Instead, it allows the player to replace less useful<br/>outputs with the more useful ones, and this choice<br/>is completely up to them, as is the choice of focusing<br/>at all.\n\nWhen Fermium Plasma is present, the current<br/>recipe will have all of its output chances boosted,<br/>unless the chance for one of them is 100%, in which<br/>case that chance is unchanged. This happens because<br/>the boost increases if the output chance before ferm<br/>focusing is smaller, and the maximum boost is achieved<br/>when the chance is 0%, which happens with high-tier<br/>nep focusing.\n\nWhen an output is successfully focused<br/>with Fermium, its chance increases based on how far<br/>it is from 100% chance. This applies to all the outputs<br/>at once, and the logic for this change is as follows:\n\n-><br/>If the casing tier matches the recipe tier, each output<br/>gets increased by 1/4 of the \"failure\" chance (for<br/>example, a 50% chance output has a 50% chance of failure,<br/>so it gets boosted by 12.5%, becoming 62.5%)\n-> If<br/>the casing tier is +1 over the recipe tier, each output<br/>gets increased by 1/3 of the \"failure\" chance\n-> If<br/>the casing tier is +2 or +3 over the recipe tier, each<br/>output gets increased by 1/2 of the \"failure\" chance\n\nWith<br/>the two plasmas combined and a +2 or +3 over recipe<br/>tier, a 5-output recipe would normally have 20/20/20/20/20<br/>chances, but it becomes 100/50/50/50/50.\n\nMany lategame<br/>multis have parallels, which means they complete the<br/>recipe several times at once every time the recipe<br/>time is completed, instead of only one, but they require<br/>extra EU to achieve this. This makes power the biggest<br/>constraint for those multiblocks, and the same happens<br/>with the QFT, given that recipe inputs are generally<br/>very cheap and simple. Throwing more power at the machine<br/>means more outputs, in general.\n\nGiven that, a player<br/>that wants a faster QFT will make more catalysts to<br/>unlock more parallels, but each added parallels adds<br/>to the other ones, to a cap of 64. Focusing, instead,<br/>changes output odds, which effectively multiplies the<br/>number of outputs per cycle. In terms of speed, a recipe<br/>with 4 outputs and 64 parallels runs at the speed of<br/>256 parallels for the focused output if it\u2019s nep focused<br/>to the maximum of 100%, since it was 25% originally.<br/>\n\nThis is a lot of saved EU for high-tier, high-parallel<br/>QFTs, so it is the main reason for focusing, and both<br/>plasmas are useful here. However, plasma consumption<br/>is not the same regardless of parallels, it instead<br/>scales with the square root of the number of correct<br/>catalysts for the recipe, which is to say, the number<br/>of parallels.\n\nThis further applies to the 3 new items<br/>that are needed to upgrade the casing tiers. Since<br/>their output amount is much smaller than usual, they<br/>could get a further boost if focusing is being used,<br/>to incentivize the plasma mechanic when upgrading the<br/>multi.<br/><br/><br/><br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lGetting Muddy With Monazite",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u716e\u89e3\u6c60.png",
+                    "x": 516.0,
+                    "y": 312.0,
+                    "tooltip": "Pretty soon you're going to need lanthanide elements.<br/>A lot of them. \nThey're not that easy to separate,<br/>however...\n\nCraft up a Digester to unlock the questline<br/>in the IV tab.\n\nNote: This multiblock will not function<br/>correctly without a muffler hatch"
+                },
+                {
+                    "name": "\u00a76\u00a7lGlyceryl Trini...... What?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u785d\u5316\u7518\u6cb9\u5355\u5143.png",
+                    "x": 420.0,
+                    "y": 156.0,
+                    "tooltip": "Kids, today we will make some glyceryl trinitrate (aka<br/>Nitroglycerin) with some glycerol.\n    - Chemistry"
+                },
+                {
+                    "name": "\u00a76\u00a7lGrinding With Wind",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u539f\u59cb\u7eb8\u8f6c\u5b50(\u98ce\u8f66\u4e13\u7528).png",
+                    "x": 252.0,
+                    "y": 72.0,
+                    "tooltip": "The Windmill is a grinder that uses the force of wind<br/>to macerate Items and Blocks. You will only get one<br/>crushed Ore from it sometimes. However it does give<br/>a bonus when you try to macerate other things. That<br/>bonus depends on the item inserted, for example Netherrack<br/>has a chance to give two instead of one dust and Wheat<br/>will always give one and a quarter flour.\n\nThe dispensers<br/>replace a clay block in the walls. Put anything you<br/>like in the interior - a bed, stairs, torches, etc.\n\nNormal<br/>multiblock rules apply - do not cross chunk boundaries<br/>with this multiblock.\n\nIf this is your first GregTech<br/>multiblock, as with all the rest you will need to whack<br/>the controller with a soft mallet to activate it.\n\nIf<br/>you have troubles forming the multiblock, try breaking<br/>and replacing the controller block.\n\nThe controller<br/>can be fed items via hoppers etc to allow for larger<br/>batches. Just don't allow the dispenser to fill up<br/>or it will void outputs.\n\nThe rotor blades will run<br/>if the controller is disabled or has no recipe. Remove<br/>the blades when not in use or else they'll be used<br/>up.\n\nSpeed and output will be affected by wind speed,<br/>recipe, and rotor.\n\nMacerates 16 items at a time.\n\nHigh<br/>wind speeds will decrease output.\n\nThe durability will<br/>decrease according to the wind speed.<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lHelium is Not Just for Balloons",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6c26\u5355\u5143.png",
+                    "x": 180.0,
+                    "y": 264.0,
+                    "tooltip": "Higher tier superconducting wires and energy hatches<br/>will require helium. Compressing air and liquifying<br/>it requires 1802 compressed air cells to get 1 He cell.<br/>It's probably better to get it from end stone dust<br/>or monazite from the Moon. Another option is to have<br/>a look at your oil processing and see how you can get<br/>Helium from there.\n\n[note]PS: If you've progressed<br/>far enough in the TF, you can also chip off parts of<br/>the snow queen's lair. She won't mind, right?[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lHigher Precision",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7cbe\u5bc6\u7535\u5b50\u5355\u5143\u673a\u68b0\u65b9\u5757 MK-III.png",
+                    "x": 636.0,
+                    "y": 372.0,
+                    "tooltip": "You can upgrade the precise casings to unlock more<br/>recipes in precise mode and gain more parallels in<br/>normal mode.\n\n[note]To make orundum check out the recipe"
+                },
+                {
+                    "name": "\u00a76\u00a7lHigh-Pressure Boiler Tank",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u538b\u9505\u7089.png",
+                    "x": 408.0,
+                    "y": 72.0,
+                    "tooltip": "After you make steel you are able to craft a high pressure<br/>boiler tank. The upgraded version increases the temperature<br/>and produces more steam than the low pressure version.<br/>It will take longer to warm up, so make sure to keep<br/>it well fed!\n\nExtract steam by attaching a pipe to<br/>the boiler tank.\n\n[note]This is better than the low<br/>pressure variant only if you keep it working for very<br/>long time, if you intend to turn it on and off all<br/>the time this will waste a lot of resources! If you<br/>keep it at top temperature it will use ~2x more fuel<br/>than low pressure and will give ~4x more steam per<br/>sec making it 100% more efficient! If you can't sustain<br/>the fuel drain or want a more flexible power source<br/>instead use the low pressure variant.[/note]\n\n[warn]Actual<br/>fuel usage depends on the machine size and other factors<br/>such as machine temperature, if you want to know the<br/>actual number you will need to test it on your own<br/>setup.[/warn]"
+                },
+                {
+                    "name": "\u00a76\u00a7lHigh-Speed Charcoal",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u7ea7\u7126\u7089\u7816\u5757.png",
+                    "x": 24.0,
+                    "y": 312.0,
+                    "tooltip": "Sure, those coke ovens are nice, but they aren't even<br/>remotely fast enough to keep up with a large steam<br/>boiler. Luckily, there is an upgrade available! The<br/>creosote oil will not be produced, but the process<br/>will speed up dramatically. Who needs that nasty yellowish"
+                },
+                {
+                    "name": "\u00a76\u00a76\u00a76\u00a7lHigh Temperature Super Breeder",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u6e29\u6c14\u51b7\u53cd\u5e94\u5806.png",
+                    "x": 408.0,
+                    "y": 312.0,
+                    "tooltip": "Have you heard of pebble reactors?\n\nIt's called the<br/>High Temperature Gas-cooled Reactor (HTGR), and it<br/>uses fuel pebbles and consumes power. However, it doesn't<br/>really make a lot of power, and doesn't even match<br/>the EU/t of THTR, despite being much more expensive.<br/>The multiblock structure is basically the same, a huge<br/>reactor around 12x12x12 blocks in size, with 500+ casings<br/>made with Europium. What it doesn't make in power,<br/>it compensates in breeding, however.\n\nFor the unaware,<br/>this is expensive. Pebble reactors work by stuffing<br/>the reactor absolutely full of pebbles, and then the<br/>reaction will keep going for, essentially, forever.<br/>In this case, you will have a fully automated source<br/>of almost endless Lutetium, Plutonium and other things<br/>that will be explained in the following quests, alongside<br/>the production of fuel and the processing of outputs.<br/>What this means is that this is an expensive multiblock,<br/>but it's placed a tier in which this expense is actually<br/>reasonable, if there is a need for immense, endless<br/>breeding of many outputs.\n\nIf you're on the fence about<br/>building this, check the next quests to learn more<br/>about the fuel and outputs.\n\nNotes:\n\nHTGR has an internal<br/>buffer for fuel and only one input bus is required<br/>(any will do), as well as only one output bus (reactor<br/>automatically compresses every 64 burned pellets into<br/>one ball, so you need 6 slots or more to avoid problems<br/>with voiding at full capacity).\n\nReactor requires only<br/>72k out of 720k pebbles to operate, but running at<br/>minimum capacity means that you will not get any bonuses,<br/>such as lower recipe time and higher amount of pebbles<br/>processed per cycle.\n\nThis multi consumes 1A LuV when<br/>operating, no matter how many pebbles are inside, but<br/>it also generates Hot Coolant as it runs. If you use<br/>it to generate power, you will gain more EU than is<br/>consumed by the reactor. \n\nIn this reactor, the throughput<br/>increases with the amount of pebbles put into it.\n\nBy<br/>typing HTGR in NEI, you can see all the items that<br/>are related to this multiblock.<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lHot Hot Hot!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d85\u7ea7\u62ab\u8428\u624b\u5957.png",
+                    "x": 228.0,
+                    "y": 264.0,
+                    "tooltip": "Once you build your vacuum freezer, you're going to<br/>have to carry around hot ingots all the time (assuming<br/>you don't automate it). Your old gloves are falling<br/>apart, and take up both hands. I think there's a way<br/>to glue them together so you can carry hot items with<br/>just one hand. Give me some parts and I'll do it for<br/>you.\n\n[note]PS: The particle effect is active all the<br/>time, so if you don't like that, don't do this quest<br/>or don't wear them.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lHSS-G Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u901f\u94a2-G\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 84.0,
+                    "y": 432.0,
+                    "tooltip": "To process more advanced materials like HSS-E, HSS-S<br/>and naquadah you need more than 4500K. Time to upgrade"
+                },
+                {
+                    "name": "\u00a76\u00a7lHSS-S Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9ad8\u901f\u94a2-S\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 144.0,
+                    "y": 432.0,
+                    "tooltip": "Technically this coil tier can be skipped. But you<br/>need LuV to get the next one, so you should really<br/>get these coils for now.\n\n\nTo process more advanced<br/>materials like LuV Superconductor Base you need more<br/>than 5400K. Time to upgrade your EBF to 6300K."
+                },
+                {
+                    "name": "Hundreds of Thousands of eV",
+                    "symbolSize": 62.400000000000006,
+                    "x": 588.0,
+                    "y": 552.0,
+                    "tooltip": "A Linear Accelerator (LINAC) can be used to boost the<br/>energy of your beam, provided the beam's particles<br/>are charged. You'll need to constantly provide it with<br/>coolant for it to run, otherwise you'll have maintenance<br/>issues every time it runs dry.\n\nOutput energy can be<br/>increased by increasing EU/t (scales with the cbrt)<br/>or increasing length (scales linearly). The latter<br/>also decreases focus, however.\n\nFocus in turn can be<br/>improved by using a better/lower temperature coolant<br/>(options listed on tooltip).\n\nNote that Amount remains"
+                },
+                {
+                    "name": "\u00a76\u00a7lHypogen Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6d77\u73c0\u73cd\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 324.0,
+                    "y": 552.0,
+                    "tooltip": "Forged from the blood of an ageless dragon, and melded<br/>together by the power of fusion beyond what you thought<br/>was the reality. No natural element, or combination<br/>of elements, could match up to this glowing orange<br/>material, not even the Awakened Draconium you got your<br/>hands on before.\n\nWhat truly happened inside that Mk4<br/>Fusion Reactor? What \u00a7ois\u00a7o\u00a7r this material? Its dust<br/>pulsates visibly, at different rates depending on the<br/>size of the dust itself. Hypogen approaches a state<br/>of complete balance as it approaches the block size,<br/>and it is obvious to you what needs to be done with<br/>it.\n\nIt absorbs and radiates energy without any effort,<br/>but it would be stupid to attempt making coils out<br/>of this without assistance. Wetware wasn't good enough<br/>anymore, and only the most advanced living circuit<br/>could withstand the erratic behavior Hypogen demonstrates.\n\nProvides<br/>12601K heat. Almost certainly, this will end up on<br/>your DTPF."
+                },
+                {
+                    "name": "\u00a76\u00a7lInfinity Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65e0\u5c3d\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 264.0,
+                    "y": 552.0,
+                    "tooltip": "Smelting with the ferocity of the universe itself.\n\nThis<br/>unbelievable material seemed impossible to manipulate<br/>into a coil block form, even though its properties<br/>made this desirable. It is incredibly stable even at<br/>extreme temperatures, but this also made it unable<br/>to pack together for coils.\n\nHowever, the situation<br/>changed when you thought about using something more<br/>intelligent. By integrating a Wetware or better UHV<br/>circuit, the Infinity Coil became a reality, controlled<br/>by the ever-watching eyes of the circuitry you've spent<br/>months to create. From now on, these eyes will watch<br/>over your multiblocks.\n\nProvides 11701K heat. You could<br/>upgrade your EBF, though at this point it's more likely<br/>to be for your MEBFs or your DTPF."
+                },
+                {
+                    "name": "\u00a76\u00a76\u00a76\u00a7lIntegrated Ore Factory - All in One!",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u96c6\u6210\u77ff\u77f3\u5904\u7406\u5382.png",
+                    "x": 300.0,
+                    "y": 372.0,
+                    "tooltip": "The Integrated Ore Factory allows you to process ores through multiple processes at once."
+                },
+                {
+                    "name": "\u00a76\u00a7liTNT",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u4e1aTNT.png",
+                    "x": 348.0,
+                    "y": 180.0,
+                    "tooltip": "Industrial TNT is the HV variant of TNT. It explodes<br/>with more power, and you can't pick it up. Not by hand"
+                },
+                {
+                    "name": "\u00a76\u00a7lIt's Time to Get More Steam",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u9752\u94dc\u9505\u7089.png",
+                    "x": 456.0,
+                    "y": 12.0,
+                    "tooltip": "As soon as you have the ability to store energy in<br/>large quantities, it would be necessary to have a way<br/>to generate energy in large quantities. You need a<br/>large bronze boiler. But in order to make this boiler,<br/>you will need a mountain of bronze. This boiler produces<br/>800L of steam per tick. This is enough to run 10 basic<br/>steam turbines.\n\nThe large boiler can use either water<br/>or distilled water. Water is consumed at a rate of<br/>1L of water per 150L of steam.\n\nTo make a large boiler<br/>you must make a 3x3x5 structure with Bronze Pipe Casings<br/>in the center of the middle 3 levels. The lowest level<br/>must contain at least 1 or 2 input hatches, 1 or 2<br/>input buses, 3 or 4 fireboxes, 1 muffler, and one maintenance<br/>hatch. The lowest level can not contain any plated<br/>bricks. All hatches, buses, and mufflers must have<br/>their back side touching a firebox. The output hatch<br/>can be placed on any of the upper 4 levels.\n\n\u00a7c\u00a7cWarning:<br/>Different from other boilers, Large Boilers must contain<br/>water at all times while active. If at any point the<br/>Boiler runs out of water while it is active, it will<br/>explode."
+                },
+                {
+                    "name": "\u00a76\u00a7lIV Glass",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94a8\u94a2\u5f3a\u5316\u787c\u73bb\u7483\u65b9\u5757.png",
+                    "x": 684.0,
+                    "y": 156.0,
+                    "tooltip": "The next tier of Borosilicate glass is Tungstensteel<br/>(5). Make it to allow higher tier recipes in the Bacterial<br/>Vat, higher tier Energy Hatches in the MEBF, or better<br/>Capacitors in your LSC. Or just use it for machine<br/>recipes, whatever.\n\n[note]PS: If you just want to use<br/>it to make machines, check out the Thorium Yttrium"
+                },
+                {
+                    "name": "\u00a76\u00a7lLess Power Loss",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5e03\u83b1\u6069\u79d1\u6280\u822a\u7a7a\u4e13\u7528\u5f3a\u5316\u80f6\u5e26FAL84\u578b.png",
+                    "x": 24.0,
+                    "y": 264.0,
+                    "tooltip": "When you reach MV tier you can make your own duct tape<br/>in case you have to move your multiblock machines around.<br/>Duct tape will fix all maintenance problems in any"
+                },
+                {
+                    "name": "\u00a76\u00a7lLet's Get Crackin!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u77f3\u6cb9\u88c2\u5316\u673a.png",
+                    "x": 408.0,
+                    "y": 252.0,
+                    "tooltip": "Cracking oil products like light and heavy fuel with<br/>the oil cracker is faster and more efficent than using<br/>a chemical reactor, producing 25 to 50 percent more<br/>output, depending on which cracking method it's doing<br/>(steam does 50%, hydro does 25% but consumes 20% less<br/>hydrogen). Cracked products will result in additional<br/>by-products in the distillation tower. It is a smart<br/>idea to get this multiblock since you are going to<br/>need TONS of industrial TNT from Toluene for advanced<br/>tier rockets. \n\nThe 16 coils form 2 vertical rings<br/>of 8 on either side of the controller. The casings<br/>between the rings can be replaced with a hatch for<br/>steam/hydrogen input. Energy hatch and maintenance<br/>hatch can replace any of the casings. The input product<br/>hatch and output product hatch must replace one of<br/>the casings outside of the coils.\n\nHint: Only GT/Railcraft<br/>steam can be used, not ic2 steam. You can use a fluid<br/>heater to make it instead of a boiler.\n\n[note]The circuit<br/>goes in the controller.[/note]\n\n[note]PS: I listed<br/>all the cracker recipes on the spreadsheet for you<br/>to look at in a convenient format. Now you can easily<br/>compare which oil path to take![/note]<br/>"
+                },
+                {
+                    "name": "Liquid Cooling Tower",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d85\u9891\u5347\u7ea7.png",
+                    "x": 864.0,
+                    "y": 96.0,
+                    "tooltip": "I have started to hit the limit of the multiblock without<br/>overclocking it, so I decided to give it a liquid cooling<br/>tower. This will allow it to overclock like every other<br/>multi with 2x Speed and 4x EU/t.\n\nI will need to provide<br/>some distilled water to its hatch to absorb any excess<br/>heat.\n\n[note]The Liquid Cooling Tower allows the Multiblock<br/>to have 2/4 OC at the cost of 10L/s of distilled water<br/>when running. The input hatch is placed in the bottom<br/>center of the Liquid Cooling Tower.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lLiquid-Fuelled Firebox",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6db2\u6001\u71c3\u6599\u71c3\u70e7\u5ba4.png",
+                    "x": 408.0,
+                    "y": 12.0,
+                    "tooltip": "Cresosote oil into steam! After you make your first<br/>steel you are able to craft a liquid fueled firebox.\n\nDiesel,<br/>ethanol, creosote and bio diesel all work well here.<br/>This will also require a boiler tank - see the quests"
+                },
+                {
+                    "name": "\u00a76\u00a7lLow-Pressure Boiler Tank",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4f4e\u538b\u9505\u7089.png",
+                    "x": 360.0,
+                    "y": 72.0,
+                    "tooltip": "The low pressure boiler tank is the easiest way to<br/>make steam with an RC boiler. The firebox needs this<br/>tank on top to produce steam. The bigger the boiler<br/>the slower it heats up, but it will produce more steam<br/>when heated up.\n\nExtract steam by attaching a pipe<br/>to the boiler tank.\n\n[note]This variant is very useful<br/>for inconsistent operation. It has lower efficiency<br/>but heats up singificantly faster than the high pressure<br/>variant meaning the fuel will be used more efficiently<br/>at the beginning of the operation, the drawback is<br/>that this variant is 50% as efficient as the high pressure<br/>one is at max temperature. If instead you want to have<br/>a constant high-throughput steam generation use high<br/>pressure variant instead.[/note]\n\n[warn]Actual fuel<br/>usage depends on the machine size and other factors<br/>such as machine temperature, if you want to know the<br/>actual number you will need to test it on your own<br/>setup.[/warn]"
+                },
+                {
+                    "name": "\u00a76\u00a7lLuV Glass",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9540\u94d1\u94af\u5f3a\u5316\u787c\u73bb\u7483\u65b9\u5757.png",
+                    "x": 684.0,
+                    "y": 204.0,
+                    "tooltip": "The next tier of Borosilicate glass is Rhodium-Plated<br/>Palladium (6). Make it to allow higher tier recipes<br/>in the Bacterial Vat, higher tier Energy Hatches in<br/>the MEBF, or better Capacitors in your LSC. Or just"
+                },
+                {
+                    "name": "\u00a76\u00a7lMaking the Vat More Efficient!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d85\u9891\u5347\u7ea7.png",
+                    "x": 636.0,
+                    "y": 60.0,
+                    "tooltip": "Looking at the Vat's recipes you are likely discouraged<br/>by the small amount of fluid being produced per recipe.<br/>Don't worry! Fluid consumption and production shown<br/>in NEI are just the baseline for the lowest efficiency.<br/>The efficiency of Vat depends on the amount of fluid<br/>in the Output Hatch.\n\nThe efficiency gradually increases<br/>as the output hatch fills up and reaches maximum efficiency<br/>when it is \u00a7cexactly half-filled\u00a7r. If the hatch fills<br/>even more, the efficiency goes down again, so try to<br/>keep it close to half! At maximum efficiency the amount<br/>of fluid consumed and produced per recipe is multiplied<br/>by 1001. The items and culture are not affected.\n\nThere<br/>are different means to keep it at half, including OC<br/>(not SFM, it doesn't like BW fluids), fluid detector+machine<br/>controller, or a fluid regulator, as well as more off<br/>the wall ones such as frames or block-sharing. If you<br/>choose the fluid detector route, remember that using<br/>a larger output hatch will make it easier to keep it<br/>close to half-filled.<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lMoooooore Steam",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u949b\u9505\u7089.png",
+                    "x": 504.0,
+                    "y": 12.0,
+                    "tooltip": "The Titanium Large Boiler is a distant cousin to the<br/>Bronze and Steel Boilers, and it has a significant<br/>difference. Instead of accepting just about any burnable<br/>fuel, it will only accept specific ones and reject<br/>all others. You can see which ones are accepted by<br/>looking at the appropriate NEI tab, but the Solid Super<br/>Fuels are guaranteed to work.\n\nThis is a big downside,<br/>but the upside is that these boilers output respectable<br/>power even in these tiers. Without any other inputs,<br/>this boiler produces Superheated Steam at a flow rate<br/>matching 4000 EU/t, on turbines running at 100% fuel<br/>efficiency. If this becomes 150%, then the steam output<br/>will produce 6000 EU/t, almost the same as a boosted<br/>Large Combustion Engine!\n\nTo get all the power from<br/>this, though, you will need a HP Steam Turbine, followed<br/>by a regular Steam Turbine, or more than one of each<br/>if the flow rate is too big for the turbine material<br/>you've chosen. Make sure to send the Distilled Water<br/>back to the boilers!"
+                },
+                {
+                    "name": "More Algae Uses",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u91d1\u8910\u7ea4\u7ef4\u7d20\u7ea4\u7ef4.png",
+                    "x": 600.0,
+                    "y": 204.0,
+                    "tooltip": "Now that you have Titanium, why not make about 79 EV<br/>machine casings for some cheap Ammonia? The ratio is<br/>about 50mb to one Golden-Brown Algae. At EV you have<br/>a 10% chance to get 8 about every 30 seconds. It also<br/>does not require a Chemical Plant, but it will require<br/>an MV Assembler and an MV Fluid Extractor at minimum."
+                },
+                {
+                    "name": "\u00a76\u00a7lMore Heat - Kanthal Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u574e\u5854\u5c14\u5408\u91d1\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 84.0,
+                    "y": 252.0,
+                    "tooltip": "Better materials need higher temperatures. You can<br/>just exchange the old coils with the new ones. Kanthal<br/>coils let you reach 2700K. You can even reuse the old<br/>coils in your Pyro or to make other machines, how fancy<br/>is that! If you don't have any other place to use them,<br/>you can macerate or arc furnace them too.\n\nIf you dont<br/>have a Vacuum Freezer yet, then cool the hot ingots<br/>in an MV Chemical Bath with Coolant.\n\nRemember that<br/>you can get an upgraded OC (4/4) instead of a regular<br/>one (4/2) if your coils are 1800K above the recipe<br/>temperature, as well as a EU discount. This applies<br/>to every 900K or 1800K above, so you should try to<br/>upgrade your coils as soon as you can."
+                },
+                {
+                    "name": "\u00a76\u00a7lMoron's Manual for Effective EBFing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e66.png",
+                    "x": 144.0,
+                    "y": 168.0,
+                    "tooltip": "Welcome to the latest Moron's Manual, Effective EBFing!<br/>This manual covers common problems encountered when<br/>using the GregTech 1000 Electric Blast Furnace.\n\nSetup\nWhen<br/>setting up your EBF, make sure to place it a few chunks<br/>away from things pollution affects, like farmland.<br/>Pollution is nobody's friend!\n\nDuring setup, make sure<br/>the center of the EBF is hollow. Sometimes things can<br/>sneak in there without you noticing, like a Thaumcraft<br/>light orb!\n\nMake sure your muffler faces \u00a7lout\u00a7r, not<br/>\u00a7lin\u00a7r. The EBF can't work if it is not spreading those<br/>delightful odors!\n\nWhen placing your power hatches,<br/>make sure to minimize the distance between any generators<br/>and the EBF. Especially at LV, those few blocks make<br/>a big difference! Every amp of energy traveling over<br/>a cable loses a little bit - and you'll need as much<br/>as you can get! Your best setup is to put two generators<br/>right next to each hatch, with a 2A cable. If you're<br/>poor, you could use 2 battery buffers with 2 batteries<br/>each directly attached to each hatch. Make sure to<br/>top off the buffers' generators. If you make 9 slot<br/>battery buffers, you can fill them up over time to<br/>get longer running time until you get stable power.\n\nOutput<br/>hatches and buses will automatically push into tanks<br/>and inventories placed next to them such as chests<br/>or BC tanks. They will also void if they're full, so<br/>keep an eye on them!\n\nWhen building multiple EBFs,<br/>the GregTech 1000 Electric Blast Furnace can share<br/>walls. This can save you on input and output hatches<br/>too. Not recommended for energy and maintenance hatches!<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lMultiblock Tanks... Railcraft Tanks",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94c1\u8d28\u84c4\u6c34\u5668\u58c1\u677f.png",
+                    "x": 192.0,
+                    "y": 48.0,
+                    "tooltip": "576 buckets of fluid, that should be enough to store<br/>all the creosote you have accumulated thus far. If<br/>that isn't enough you can make this tank bigger. The<br/>smallest tanks are 3x4x3 while the biggest are 9x8x9.\n\nFluid<br/>will auto-output without any pumps if you place a valve<br/>on its bottom side at the center. The output rate is<br/>1000 L/t so twice as fast as a GT HV Pump Cover. You<br/>can color the tank with Buildcraft paintbrushes and<br/>the GT spray can.\n\nIf you still use Railcraft tanks<br/>in later tiers, you boost the output rate by using"
+                },
+                {
+                    "name": "Nano Forge Tier 1",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u78b3\u7eb3\u7c73\u8702\u7fa4.png",
+                    "x": 828.0,
+                    "y": 180.0,
+                    "tooltip": "There must a be a way to make a nano scale robots to<br/>work in a machine. Carbon ones can be made in an assembly<br/>line, but very inefficiently. There must be a better<br/>way.\n\nWhat about a Nano Forge, able to cut up blocks<br/>into nano-thin sheets and then creating the first nanite,<br/>which helps create thousands of them in mere seconds.\n\n[note]The<br/>Nano Forge is a big multiblock requiring lots of power<br/>over the course of a couple minutes. It is able to<br/>use TT energy hatches (including lasers). The controller<br/>must have a carbon nanite inside to make tier 1 recipes.[/note]\n\n[note]Despite<br/>what NEI might claim there are no minimum voltages<br/>for the Nano Forge recipes. If you want to do a recipe<br/>you just have to achieve the minimum EU/t required,<br/>no matter the voltage[/note].<br/>"
+                },
+                {
+                    "name": "Nano Forge Tier 2",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u5b50\u7eb3\u7c73\u8702\u7fa4.png",
+                    "x": 828.0,
+                    "y": 252.0,
+                    "tooltip": "Carbon Nanites are good first workers, but they don't<br/>have much in the way of working with more complex systems<br/>as they have a very basic nanite network. So a new<br/>more advanced nanite will be needed to produce complex<br/>nanites.\n\nThe neutronium nanite is an in-between of<br/>the two tiers able to produce tier 2 nanites, which<br/>have other uses.\n\n[note]When putting the neutronium<br/>nanite in the controller, you will need to wait for<br/>the structure check to happen again or break and replace<br/>the controller with a neutronium nanite inside. Allows<br/>the Nano Forge to make tier 2 nanites.[/note]"
+                },
+                {
+                    "name": "Nano Forge Tier 3",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8d85\u65f6\u7a7a\u91d1\u5c5e\u7eb3\u7c73\u8702\u7fa4.png",
+                    "x": 828.0,
+                    "y": 324.0,
+                    "tooltip": "Neutronium nanites are slow moving, but that allowed<br/>them to have a complex nanite network. If there was<br/>a material that could move itself it could allow for<br/>an even more complex nanite with great speeds... Thankfully<br/>with the DTPF fully functional we can make it, transcendent<br/>metal.\n\n[note]Same thing as the neutronium nanite,<br/>but this nanite allows for tier 3 nanites to be made<br/>in the nano forge.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lNaquadah Alloy Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7845\u5ca9\u5408\u91d1\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 144.0,
+                    "y": 492.0,
+                    "tooltip": "This one is optional now. But still very useful and recommended."
+                },
+                {
+                    "name": "\u00a76\u00a7lNaquadah Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7845\u5ca9\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 84.0,
+                    "y": 492.0,
+                    "tooltip": "To process more advanced materials like naquadah alloy<br/>you need more than 6300K. Upgrade your EBF to 7200K"
+                },
+                {
+                    "name": "\u00a76\u00a7lNeutron Accelerator",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/IV\u4e2d\u5b50\u52a0\u901f\u5668.png",
+                    "x": 648.0,
+                    "y": 480.0,
+                    "tooltip": "It is used to accelerate the NKE. You just need to<br/>connect a cable to it and it will keep consuming the<br/>energy.\n\n[note]PS: You can use a controller cover to"
+                },
+                {
+                    "name": "\u00a76\u00a7lNeutron Activator",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u5b50\u6d3b\u5316\u5668.png",
+                    "x": 684.0,
+                    "y": 432.0,
+                    "tooltip": "You will need machine to process the naquadah in future.\n\nThis<br/>machine is different from most multis. It needs to<br/>use [warn]Neutron Accelerator[/warn] this special hatch<br/>instead of energy hatch to keep it running.\n\nThe accelerator<br/>will increase its Neutron Kinetic Energy (NKE) and<br/>when the NKE is between the requested number which<br/>you can see in NEI, the machine will work and output<br/>the right products. However, if you turn on the Neutron<br/>Activator when NKE doesn't meet the requirement, it<br/>will still consume your input material but output trash.<br/>So be careful with the NKE when you run this machine.\n\nWhen<br/>all Neutron Accelerators aren't running, NKE will decrease<br/>72keV/s.\n\nNeutron Activator will explode when NKE is<br/>over 1200MeV.\n\n\u00a7dYou can enable batch mode with wire<br/>cutters.\u00a7r\n\n[note]The more height/speed casings you<br/>have, the more inefficient the eu->eV conversion becomes,<br/>so you then need more power. The maths is as follows:<br/>Multiply recipe time by 0.9 for each height above 4<br/>and multiply eV you get from your input power by 0.95<br/>for each height above 4.[/note]<br/>"
+                },
+                {
+                    "name": "Neutronium Compressor",
+                    "symbolSize": 62.400000000000006,
+                    "x": 300.0,
+                    "y": 432.0,
+                    "tooltip": "In order to compress infinity catalysts and singularities,<br/>you'll need the strongest compressor yet: the Neutronium<br/>Compressor. This multiblock channels and controls extreme<br/>amounts of pressure through carefully calibrated Active<br/>Neutronium Casings, but the sheer magnitude of pressure<br/>is too much to produce blocks or superdense plates,<br/>as any regular material inserted into the device will<br/>be compressed down to a singularity. More advanced<br/>singularities should be possible in theory, but you'll<br/>need something even stronger...\n\n[note]Note that singularity<br/>recipes require extreme amounts of items! Consider<br/>using Super Buses or ME Stocking Input Buses to fit<br/>everything in there.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lNeutron Sensor",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u5b50\u4f20\u611f\u5668.png",
+                    "x": 684.0,
+                    "y": 480.0,
+                    "tooltip": "The sensor will sends redstone signals according to<br/>the NKE of the Neutron Activator.\n\nIt works like a<br/>cover: enter the threshold value in eV, and it will<br/>emit a redstone signal when the NKE is at least as"
+                },
+                {
+                    "name": "\u00a76\u00a7lNichrome Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u954d\u94ec\u5408\u91d1\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 84.0,
+                    "y": 312.0,
+                    "tooltip": "To reach 3600K so you can process higher tier materials<br/>like tungsten, you need nichrome heating coils."
+                },
+                {
+                    "name": "\u00a76\u00a7lNobody Wants an Explosion...",
+                    "symbolSize": 62.400000000000006,
+                    "x": 252.0,
+                    "y": 24.0,
+                    "tooltip": "...right? So when building multiblocks, make sure you:\n\n1.<br/>Don't cross chunk boundaries with the multiblock.\n\n2.<br/>If possible, don't rely on resources coming from outside<br/>the chunk. Make sure you source your water locally.\n\nKeep<br/>in mind that electric machines don't like getting rain<br/>or snow on them. They'll start fires, and those fires<br/>have a chance of causing an explosion. This explosion<br/>will explode other machines, cascading until your whole<br/>base is a hole in the ground. This is one of the reason<br/>backups are a thing. Stay safe out there!\n\nIf worse<br/>comes to worst, there is logs/Explosion.log that tracks<br/>what caused an explosion. However, this file appears<br/>to reset on world load."
+                },
+                {
+                    "name": "No More (IC) Engraving",
+                    "symbolSize": 62.400000000000006,
+                    "x": 516.0,
+                    "y": 552.0,
+                    "tooltip": "Now that you've reached ZPM, you're going to have to<br/>resort to means other than mere laser engraving for<br/>your photolithography needs.\n\nOf course, we're going<br/>overkill right away, requiring a full-on particle accelerator<br/>setup to produce the ultra-coherent ultra-high-energy<br/>light used to etch more advanced ICs.\n\nTo begin with,<br/>you'll need a Source Chamber to produce electrons (at<br/>pitifully low energies, of course). Check out NEI for<br/>the available recipes, you'll want the one with the<br/>hand-drawn icon.\n\n"
+                },
+                {
+                    "name": "\u00a7e\u00a7d\u00a7c\u00a76\u00a7lObtaining Ender Pearls",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u672b\u5f71\u73cd\u73e0.png",
+                    "x": 108.0,
+                    "y": 12.0,
+                    "tooltip": "You can hunt endermen the Vanilla way to get a chance<br/>at Ender Pearls, you can purchase Endermen spawn eggs,<br/>or try your luck in the End. \n\nOr you can get cruel,<br/>and stuff one into a smeltery to melt it down into<br/>delicious Liquid Ender and cast pearls from it.\n\nYou<br/>monster.\n\nSome of the dungeons have Spawner of Enderman,<br/>so you can do whatever you want with it.\n\nTo prevent<br/>endermen from teleporting, make sure to cover the smeltery<br/>so they don't see the sky.\n\nIf you manage to put a<br/>regenerating endermen in there, tag it so it doesn't<br/>despawn, and make sure your smeltery is not in a claimed<br/>chunk on a server."
+                },
+                {
+                    "name": "\u00a76\u00a7lOne Fluid Tank to Store it All!!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/YOT\u50a8\u7f50.png",
+                    "x": 360.0,
+                    "y": 372.0,
+                    "tooltip": "If you ever thought that the standard super tanks or<br/>quantum tanks were still too small then the YOTTank<br/>is the next option.\n\nThe YOTTank compared to the TFFT<br/>might only be able to store one fluid instead of 25<br/>fluids. However it makes up for this downside by not<br/>having to share any of the fluid storage space with<br/>any other fluids. It also does not require any energy<br/>input or maintenance requirements.\n\nIf all you want<br/>to do is store a large amount of one fluid type then<br/>look no further then the YOTTank. It has a special<br/>ME input hatch for ae2 connections while having expandable<br/>storage blocks. The tank can be both upgraded with<br/>the fluid storage blocks and can be increased in height<br/>to hold any more fluid.\n\nSo if you want to store your<br/>fluid in style then look no further then the YOTTank.\n\n[note]If<br/>you're having issues searching for the fluid storage<br/>blocks for the YOTTank in NEI then search for: fluid<br/>cell block[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lOops",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u653e\u5c04\u6027\u5e9f\u6599.png",
+                    "x": 636.0,
+                    "y": 432.0,
+                    "tooltip": "If you failed to meet the NKE as NEI requested, you can recycle something useful in this place."
+                },
+                {
+                    "name": "PCB Factory",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/PCB\u5de5\u5382.png",
+                    "x": 828.0,
+                    "y": 36.0,
+                    "tooltip": "All those boards made in a chemical reactor. It's time<br/>to stop that, there must be a more efficient way to<br/>make them. After a couple days of research I have found<br/>one, a factory designed to print out circuit boards.\n\nThe<br/>PCB Factory is able to use a wide range of plastics<br/>to create circuit boards ready to be used. The printing<br/>mechanism overheats when it tries to overclock currently,<br/>so I will have to find a way to make that work later.<br/>Boards with neurons on them will also take a bit before<br/>they can be made, but it won't be hard to achieve.\n\n\u00a72Trace<br/>size: the trace size represents the lines between components,<br/>which are needed to transmit the electrical signals<br/>on the circuit. One can make it smaller to slow down<br/>the machine, but use less resources, or make it bigger<br/>to make it faster, but use more resources.\n\n\u00a71Formulas:\n-<br/>10000/(TraceSize/100) Production\n- RecipeDuration/TraceSize^2<br/>Time\n\n\u00a72Using the GUI, the player can go to the configuration<br/>menu. There they can change the trace size or add new<br/>parts to the multiblock. One can also change where<br/>they are placed around the multiblock.\u00a7r\n\n[note]Make<br/>sure to set the configuration you want before using<br/>the structure lib blueprint for autobuild.[/note]<br/><br/>"
+                },
+                {
+                    "name": "PCB Factory Tier 2",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5f3a\u5316\u5149\u523b\u6846\u67b6\u65b9\u5757.png",
+                    "x": 828.0,
+                    "y": 96.0,
+                    "tooltip": "With the Nano Forge built, we can upgrade our production<br/>of circuit boards for free, but the nanites need a<br/>container to hold them. The current casings aren't<br/>enough, we need to find an alternative casing.\n\nAfter<br/>some research, infinity as a frame and enriched holmium<br/>as the protection layer seems to work well. It can<br/>be allowed to let through nanites to go into the printer<br/>base so that extra material can be directly removed<br/>instead of trying to go slower.\n\n[note]Allows the player<br/>to use the tier 2 recipes with the use of a silver<br/>nanite in the input bus. This also unlocks parallels<br/>of the PCB Factory with said formula: Log2(x) parallels,<br/>where x is the amount of nanites in the input bus.[/note]<br/>"
+                },
+                {
+                    "name": "PCB Factory Tier 3",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9632\u8f90\u5c04\u5149\u523b\u6846\u67b6\u65b9\u5757.png",
+                    "x": 828.0,
+                    "y": 132.0,
+                    "tooltip": "Why use a small nozzle to print out the conductor on<br/>the board when one can just build it using nanites?<br/>Well the silver nanite isn't rigid enough for that<br/>so a new nanite will be needed... and so will new casings.<br/>Heard that celestial tungsten is a good candidate for<br/>a frame. Quantum can be used for the protection as<br/>these nanites will be forever flying around inside.\n\nThe<br/>structure will need to change as it needs to be a bit<br/>bigger and taller.\n\n[note]Works the same as the Tier<br/>2 in most cases, but allows the player to use even<br/>less resources by using a gold nanite.[/note]"
+                },
+                {
+                    "name": "Playing With the Big Boys, Chemically",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u57c3\u514b\u68ee\u7f8e\u5b5a\u5316\u5de5\u5382.png",
+                    "x": 516.0,
+                    "y": 192.0,
+                    "tooltip": "This facility will process certain chemical recipes<br/>you'll need later on, like Rocket Fuels. Keep in mind<br/>that recipes can only be made after meeting the required<br/>Chemical Plant tier.\n\nIt will need a minecart load<br/>of resources, so start mining!\n\nCatalysts are needed<br/>in some recipes, place them in the Catalyst Housing.<br/>They use durability, this includes ones that don't<br/>look like it.\n\n[note]You can make Silicon Carbide in<br/>the mixer, you don't need the ABS.[/note]\n\nValid solid<br/>casings: (Determines CP Tier for recipes)\n1 Strong<br/>Bronze Machine Casing\n2 Solid Steel Machine Casing\n3<br/>Sturdy Aluminium Machine Casing\n4 Clean Stainless Steel<br/>Machine Casing\n5 Stable Titanium Machine Casing\n6 Robust<br/>Tungstensteel Casing\n7 Vigorous Laurenium Machine Casing\n8<br/>Rugged Botmium Machine Casing\n\nValid machine casings:<br/>(Determines maximum hatch/bus tier)\nLV-UHV Machine<br/>Casing, UHV unlocks any hatch/bus.\n\nValid pipe casings:<br/>(+2 Parallels, -20% chance to consume catalyst durability<br/>per pipe casing starting with 2 parallels and 100%<br/>chance for the first one.)\nBronze\nSteel\nTitanium\nTungstensteel\n\nAll<br/>coils from Cupronickel to Eternal are valid. Each one<br/>increases speed by +50%, starting at 50% speed for<br/>Cupronickel.\n\n[note]Additionally: If you have at least<br/>Awakened Draconium Coils and Tungstensteel pipe casings,<br/>then no catalyst is consumed at all![/note]<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lPowderbarrels",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u706b\u836f\u6876.png",
+                    "x": 420.0,
+                    "y": 108.0,
+                    "tooltip": "Powderbarrels are pretty bad in the implosion compressor.<br/>They are good for prospecting though. Craft one stack."
+                },
+                {
+                    "name": "Precise Assembler",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7cbe\u5bc6\u81ea\u52a8\u7ec4\u88c5\u673aMT-3662.png",
+                    "x": 684.0,
+                    "y": 372.0,
+                    "tooltip": "Precise Assembler has two modes: Precise mode and Normal<br/>mode.\n\nPrecise mode is used to make some of the advanced<br/>components from Good Generator mod.\n\n[note]As name<br/>suggests your current casings lack precision to produce<br/>these advanced components. \nYou will need at least<br/>MK-1 casings for this mode to work.[/note]\n\nNormal<br/>mode works as multiblock version of Assembler.\n\n[note]You<br/>can't skip tiers with this. You need singleblock Assembler<br/>or GT++ multi to make your first Energy Hatch, then<br/>you can use it for Precise Assembler.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lRailcraft Steam Power",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u56fa\u6001\u71c3\u6599\u71c3\u70e7\u5ba4.png",
+                    "x": 360.0,
+                    "y": 12.0,
+                    "tooltip": "As an alternative way to make steam you can use the<br/>railcraft boilers. They require at least one firebox.\n\nMore<br/>than one size is possible: (1x1 which the quest gets<br/>you to make) 2x2 and 3x3.\n\nProvide water and coal to<br/>the firebox. Make sure you don't run out of water or...BOOM.\n\nEach<br/>boiler needs 1, 2 or 3 layers of tanks on top, equal<br/>to the size (1x1x1, 2x2x2, or 3x3x3) - see the quests<br/>linked below."
+                },
+                {
+                    "name": "\u00a76\u00a7lSievert for the Vat",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u653e\u5c04\u6027\u7ec6\u83cc\u6c61\u6ce5.png",
+                    "x": 636.0,
+                    "y": 12.0,
+                    "tooltip": "Some Vat recipes require a certain Sievert (radioactivity)<br/>value. So attach this Radio Hatch to your Vat to input<br/>radioactive material!\n\nThe Radio Hatch holds rods/long<br/>rods of radioactive material and uses them to produce<br/>Sievert. The input item determines the Sievert value<br/>and how long it lasts. Items stored in the hatch will<br/>be used continuously even if machine not active, so<br/>make sure you want to craft something before putting<br/>items in.\n\nYou can check the stats of an inputted item<br/>with a portable scanner. Higher tiers of hatch hold<br/>more, from 1kg (HV) to 6kg (UV). Rods are worth 1kg,<br/>while long rods are 2kg.\n\nSome recipes require [warn]exact[/warn]<br/>sievert, you can use the screwdriver to access the<br/>radiation shutter control to adjust how much sv is<br/>blocked from being sent to the vat. For example, you<br/>need 100sv to make SeaweedBroth, so you'd use Naquadah<br/>rods, and block off 30sv.\n\nRod Stats:\nMaterial-Sievert-Apprx.<br/>time until used up\nBismuth                 83sv   198s\nUranium<br/>235           92sv    80s\nUranium 238           92sv<br/>   80s\nPlutonium 239         94sv    66s\nPlutonium<br/>241         94sv    66s\nNaquadah             130sv<br/>  14.5s\nEnriched Naquadah 140sv   10.5s\nNaquadria <br/>          150sv     8s\n\nThere are more radioactive<br/>materials than these, but these are the main ones.<br/><br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lSmelt All the Things...",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u84b8\u6c7d\u7089.png",
+                    "x": 312.0,
+                    "y": 72.0,
+                    "tooltip": "Smelting up to nine items at once sound nice? With<br/>a bit of steel you can make a railcraft Steam Oven.<br/>2x2x2\n\nHint: All furnace recipes work just fine, but<br/>you cannot use it to make charcoal from wood."
+                },
+                {
+                    "name": "\u00a76\u00a7lSomething From Nothing pt 2",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65e0\u5c3d\u6cb9\u6c14\u6d41\u4f53\u94bb\u673a.png",
+                    "x": 360.0,
+                    "y": 312.0,
+                    "tooltip": "This multiblock works just as a normal drilling rig,<br/>but with the power of \u00a75\u00a7l\u00a7oTechnology \u00a7rit won't reduce<br/>the underground field size so the output will always"
+                },
+                {
+                    "name": "\u00a76\u00a7lSomething From Nothing",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u865a\u7a7a\u91c7\u77ff\u573a I.png",
+                    "x": 300.0,
+                    "y": 312.0,
+                    "tooltip": "Void Miners are basically the same thing as regular<br/>ones, except that they draw from the whole pool of<br/>ores for the dimension without there having to be any<br/>nearby. In addition, you can speed them up by supplying<br/>Neon, Krypton, Xenon, or Oganesson.\n\nYou can get Neon<br/>reasonably easily from Bartimaeusnek Ore from Ross<br/>128ba. Krypton and Xenon can be produced from centrifuging<br/>fuel rods. All three can be produced from the EV liquid<br/>air distillation method. Remember you need the Liquid<br/>Air Fluid Hatch to actually put in enough liquid air.<br/>If you want all the produced gasses from the first<br/>4 slots, you'll need to use the Giant Output Hatch.\n\nTo<br/>get Oganesson, you'll need mk3 fusion.\n\nAll four fluids<br/>can be replicated, so you'll probably end up doing<br/>that.\n\n[note]If you want the Deep Dark's ores, you<br/>HAVE to use a Void Miner.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lSteam is Never Enough",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5927\u578b\u94a2\u9505\u7089.png",
+                    "x": 456.0,
+                    "y": 72.0,
+                    "tooltip": "Now you can make Advanced Circuits, which means it's<br/>time to build a Large Steel Boiler. Each one of these<br/>produces 1000 EU/t in Steam, which means you will need<br/>several Steam Turbines to convert it all to power!<br/>Keep in mind that the MV ones are less efficient, so<br/>calculate your losses when building your setup."
+                },
+                {
+                    "name": "\u00a76\u00a7lSteel Multiblock Tanks",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94a2\u8d28\u84c4\u6c34\u5668\u58c1\u677f.png",
+                    "x": 192.0,
+                    "y": 84.0,
+                    "tooltip": "Do you want to have tanks that can hold double the<br/>amount of the iron ones? Go ahead and make a steel"
+                },
+                {
+                    "name": "\u00a76\u00a7lStill Not Enough Charcoal?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u70ed\u89e3\u7089.png",
+                    "x": 144.0,
+                    "y": 264.0,
+                    "tooltip": "This oven is the best way to get charcoal and creosote<br/>(x50 faster than Railcraft's coke oven) and other byproducts.<br/>You will need tons of bronze, iron and steel to build<br/>it, but it's worth it. Finally, it will be possible<br/>to dismantle the charcoal pit.\n\nWith Cupronickel coils<br/>the oven is a bit slower. Each coil tier speeds up<br/>the charcoal production."
+                },
+                {
+                    "name": "Synchrotron (No Relation to the Catalyst)",
+                    "symbolSize": 62.400000000000006,
+                    "x": 660.0,
+                    "y": 552.0,
+                    "tooltip": "To actually produce some light for photolithography,<br/>you'll need to accelerate your electrons in a Synchrotron.<br/>Like with the LINAC, providing it with coolant is necessary<br/>to keep it running.\n\nYou can increase the energy of<br/>the produced photons by increasing EU/t, or increasing<br/>the tier of all four Antenna Casings inside.\n\nTo improve<br/>focus, you can use a better coolant, and the output<br/>amount increases with both EU/t and antennae tier.\n\nYes,<br/>you need all four energy hatches."
+                },
+                {
+                    "name": "\u00a76\u00a7lTFFT",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/T.F.F.T.png",
+                    "x": 360.0,
+                    "y": 432.0,
+                    "tooltip": "The TFFT is very useful if you don't want to have a<br/>bunch of Super Tanks, it also has a modular structure<br/>so it can be up to x4.33 times bigger than numbers<br/>in this quest.\n\nWith the tier I storage field block,<br/>it consumes 27 EU/t but only has about 0.27x the storage<br/>capacity of a ST I per fluid.\n\nWith the tier V storage<br/>field block it consumes 1134 EU/t and has about 0.54x<br/>the storage capacity of a QT III per fluid.\n\nWith the<br/>tier X storage field block it consumes 0EU/t (only<br/>tier X uses 0) and has about x3.3 capacity of T7 YOTTank<br/>(divide by 25 to get per 1 fluid)\n\nYou can use the<br/>multi hatch to access all the fluids at once with an<br/>ME Fluid Storage Bus or Fluid Ender Conduit.\n\n[note]Remember<br/>to turn auto-voiding on if you need it.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lThermal Boiler - Lava you long time",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5730\u70ed\u9505\u7089.png",
+                    "x": 360.0,
+                    "y": 252.0,
+                    "tooltip": "If you want energy from Lava and the byproducts, the<br/>Thermal Boiler is the perfect solution. It processes<br/>Lava super fast for Steam, and with a Lava Filter will<br/>provide some centrifuged lava byproducts as well. A<br/>great source of Copper, Silver, Gold, Tin, Tantalum,<br/>and Tungstate, better outputs than regular lava processing<br/>in a Centrifuge.\n\nYou can get even better efficiency<br/>pairing it with a Large Heat Exchanger. The LHE will<br/>turn normal vanilla Lava into Pahoehoe Lava, which<br/>will provide Steam and byproducts in the Thermal Boiler.<br/>Win/Win/Win!"
+                },
+                {
+                    "name": "Thermosink Radiator",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65e0\u5c3d\u51b7\u5374\u673a\u68b0\u65b9\u5757.png",
+                    "x": 864.0,
+                    "y": 132.0,
+                    "tooltip": "With the control of spacetime you have achieved and<br/>its 0K temperature it would be possible to make an<br/>even better cooling unit. A casing able to keep its<br/>room temperature very low and nanites which can transfer<br/>heat effectively because of their small bodies. This<br/>doesn't quite work and some coolant is still needed,<br/>but water freezes at those temperatures so super coolant<br/>will be our choice.\n\n[note]The Thermosink Radiator<br/>allows for 4/4 OC making it possible to speed through<br/>recipes. It requires 10/s of super coolant in its hatch,<br/>it's in the same place as the Liquid Cooling Tower.[/note]\n\n[warn]This<br/>upgrade is incompatible with its lower tier predecessor.[/warn]<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lThe Water Dilemma",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u96c6\u6c34\u5668\u58c1\u677f.png",
+                    "x": 144.0,
+                    "y": 12.0,
+                    "tooltip": "Finite water is a problem. But fear not, there are<br/>solutions! I shall guide you to a steady supply of<br/>water. The Railcraft water siding tanks provides enough<br/>water to last the early game.\n\nThe humidity of a biome<br/>is very important and will increase the base fill rate.<br/>If it is raining, the tank will fill much quicker.<br/>One block of the water siding tank must see sky for<br/>the maximum output. The best part is that you don't<br/>need a pump to extract water. Tanks and pipes placed<br/>next to it will be autofilled by the water siding tank."
+                },
+                {
+                    "name": "\u00a76\u00a7lThe 'Water Problems' Are Solved",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u84c4\u6c34\u5e93.png",
+                    "x": 144.0,
+                    "y": 84.0,
+                    "tooltip": "After entering the HV age you've found a way of making<br/>a water reservoir which solves the finite water problem.<br/>Craft it with some fused quartz glass, HV pumps, and"
+                },
+                {
+                    "name": "Tier 2 Transforming",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e2d\u5b50\u5c4f\u853d\u6838\u5fc3\u65b9\u5757.png",
+                    "x": 756.0,
+                    "y": 264.0,
+                    "tooltip": "After a significant amount of progression, you will<br/>be able to build the tier 2 QFT by replacing 2 of its<br/>casings, the ones on the exterior shell, by the ones<br/>listed in this quest. When finished, the multi will<br/>be able to perform the monaline skip and a two out<br/>of three naqline skips. Amidst all the expensive materials,<br/>there is one that can only be crafted in a t1 QFT,<br/>so I hope you've got it going.\n\nThe first item - Hyper-Stable<br/>Self-Healing Adhesive. This adhesive is very effective<br/>at sticking things together, but it is also quantum-stable,<br/>which means that it cannot be altered or damaged by<br/>simple quantum fields. On top of that, it also has<br/>self-healing properties, which means that it can tolerate<br/>the increased energy flow of a tier 2, 3 or 4 QFT by<br/>repairing itself even when damaged, regardless of how<br/>that damage is applied."
+                },
+                {
+                    "name": "Tier 3 Focusing",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65e0\u5c3d\u5f3a\u5316\u5c4f\u853d\u6838\u5fc3\u65b9\u5757.png",
+                    "x": 756.0,
+                    "y": 300.0,
+                    "tooltip": "With access to even better materials, you can upgrade<br/>to a t3 QFT. In this tier, two new skips are available:<br/>the final naqline skip and the stem cell skip.\n\nThe<br/>second item - Superconductor Rare-Earth Composite.<br/>This contributes to promoting the flow of energy, instead<br/>of stabilizing the structure like the previous item.<br/>Given that damage can be automatically repaired, the<br/>focus now is to make it easier for the energy to flow<br/>from one component to the next and allow for more energy<br/>input into the multi. The existing superconductors<br/>can\u2019t handle quantum flow well, so this composite can<br/>be used instead to remove all resistance to flow across<br/>the outer shell of the structure, thanks to the unique<br/>composition of the transitions between the rare-earth<br/>elements present in the composite. The transition from<br/>one to the next is so gradual that the quantum flow<br/>has no obstacles or loose ends to escape from.<br/>"
+                },
+                {
+                    "name": "Tier 4 Transforming",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u65f6\u7a7a\u626d\u66f2\u6838\u5fc3\u65b9\u5757.png",
+                    "x": 756.0,
+                    "y": 336.0,
+                    "tooltip": "The final tier of the QFT, built on many stacks of<br/>Spacetime. When it's complete, you will have access<br/>to all the skips currently in the game, the new ones<br/>being the bio cell skip, the Kevlar skip and the Radox<br/>+ Xenoxene skip.\n\nThe third item - Black Body Naquadria<br/>Supersolid. Even through all the upgrades made beforehand,<br/>it\u2019s still not possible to reach the stage of chemical<br/>skips for the items that are used to build the first<br/>QFT, such as the bioware circuits. This is the theoretical<br/>limit of the multi, and reaching this limit needs a<br/>material obtained from the second half of the Naquadah<br/>line. This new Naquadria-related substance has the<br/>characteristics of a black body, a material that absorbs<br/>all radiation it receives and reflects none, and is<br/>a supersolid, which is to say, a solid that flows like<br/>a fluid that has zero viscosity. By applying these<br/>qualities together, through a single material, it\u2019s<br/>possible to guarantee easy and steady flow of quantum<br/>energy at any EU level, even in the MAX tier. With<br/>all these advances put together, the QFT is fully unlocked<br/>and can create components up to those made in the UHV<br/>tier."
+                },
+                {
+                    "name": "\u00a76\u00a7lTime to Drill for Oil!",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6cb9\u6c14\u6d41\u4f53\u94bb\u673a.png",
+                    "x": 300.0,
+                    "y": 132.0,
+                    "tooltip": "Pumps are nice but you're going to reach a point where<br/>you'll want MOOOOOOOOOOOOORE oil. This multiblock will<br/>help with that but you'll need to search for oil using<br/>a seismic prospector. You can find raw, light, medium,<br/>and heavy oil. There's also a chance to find natural<br/>gas.\n\nHigher tiers of power will drill faster. You<br/>need to upgrade the energy hatch corresponding to the<br/>power tier. \n\nLater you can upgrade the oil drilling<br/>rig so it extracts from more than one chunk at a time.\n\nYou<br/>need mining pipes in the controller. If you need more<br/>than 64, you can use an input bus.\n\nThese are GT machines,<br/>so remember to protect them (and their power sources!)<br/>from rain on any side. And set a waypoint with JourneyMaps<br/>so you don't forget where you placed it!\n\nSpace dims<br/>can also have fluids beneath bedrock. For info, check<br/>the Tips and Tricks tab."
+                },
+                {
+                    "name": "\u00a76\u00a7lTime to Drill For Ore!",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u91c7\u77ff\u573a.png",
+                    "x": 588.0,
+                    "y": 252.0,
+                    "tooltip": "Auto Miners are nice but you're going to reach a point<br/>where you will want MOOOOOOOOOOOOORE ores. This multiblock<br/>will help with that.  It will also pre-macerate your<br/>ores and give you a little bonus crushed ores as well.\n\nHigher<br/>tiers of power will drill faster. You need to upgrade<br/>the energy hatch corresponding to the power tier. You<br/>will also need an energy hatch, an input hatch, and<br/>an output bus - at least MV but you can choose.\n\nLater<br/>you can upgrade the ore drilling plant so it extracts<br/>from more than a 48 block radius. If you don't want<br/>to mine that far away, adjust the range with a screwdriver.<br/>Each tier of the controller also gives 1 bonus fortune<br/>for small ores starting at 4. At tier 3 you'll want<br/>to spread the wealth to multiple compressed chests!\n\nThe<br/>multiblock miners have been upgraded so that they will<br/>chunkload the area they dig in. They will NOT chunkload<br/>themselves however. They will dig \u00a7odown\u00a7r in the chunk<br/>they're in like normal, and then dig \u00a7oup\u00a7r one chunk<br/>at a time in other chunks within its range.\n\nYou need<br/>mining pipes in the controller and drilling fluid in<br/>the fluid hatch. You can also feed mining pipes into<br/>an input bus.\n\nYou'll need to make lots of Drilling<br/>Fluid. 64 is a tiny amount to get started with! Plan<br/>to make thousands of buckets - perhaps onsite, or pumped<br/>in via Long Distance Fluid Pipes.\n\nThese are GT machines,<br/>so remember to protect them (and their power sources!)<br/>from rain (and meteors!) on any side. And set a waypoint<br/>with JourneyMap so you don't forget where you placed<br/>it!<br/>"
+                },
+                {
+                    "name": "\u00a76\u00a7lTime to Get Some Steel",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7816\u9ad8\u7089.png",
+                    "x": 84.0,
+                    "y": 60.0,
+                    "tooltip": "You need steel? Uhh... fine. Let's get busy...\n\nThe<br/>Bricked Blast Furnace (BBF) can share walls with other<br/>ones, just like most GT multiblocks. How will this<br/>affect the air quality though...\n\nIf you are short<br/>on Stone Dust, you can get more by macerating cobblestone.\n\nIf<br/>you spawn near a biome with Hardened Clay you can macerate<br/>it to get the clay dust you need. You can also use<br/>brick blocks from Villages to get brick dust in the<br/>macerator.\n\nCrafting the Worktable from Forestry can<br/>make it easier as you can use all the buckets for crafting<br/>in one click."
+                },
+                {
+                    "name": "\u00a76\u00a7lTNT",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/TNT.png",
+                    "x": 396.0,
+                    "y": 180.0,
+                    "tooltip": "TNT is much more powerful than the powderbarrel but<br/>much harder to craft. There are LV and HV ways to craft.<br/>At LV you need heavy or light fuel to make some toluene<br/>which can be solidified to gelled toluene. Alternatively<br/>you can use sugar and plastic dust in a chemical reactor<br/>to make toluene more efficiently. Mix it with sulfuric<br/>acid to make TNT.\n\nThe HV petrol way requires an oil<br/>cracking unit to make all kinds of cracked fuel or<br/>cracked naphta and a distillation tower to extract<br/>toluene from that.\nThough you can also go the wood<br/>tar route in mid-MV."
+                },
+                {
+                    "name": "Too much Indium?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u827e\u8428\u7814\u78e8\u673a.png",
+                    "x": 600.0,
+                    "y": 432.0,
+                    "tooltip": "Milling process is an alternative way to produce Indium,<br/>designed for LuV and above. It does not void Aluminium<br/>and Galena for no reason, and you can extract Indium<br/>from Sphalerite efficiently. In exchange of machine<br/>cost and infrastructure needed to process."
+                },
+                {
+                    "name": "\u00a76\u00a7lTPV Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u949b\u94c2\u9492\u5408\u91d1\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 84.0,
+                    "y": 372.0,
+                    "tooltip": "To process more advanced materials like Tungstensteel,<br/>Enderium and Niobium-Titanium, you will need more than<br/>3600K. Time to upgrade your EBF... again."
+                },
+                {
+                    "name": "\u00a76\u00a7lTrinium Coil Upgrade",
+                    "symbolSize": 62.400000000000006,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u4e09\u5143\u91d1\u5c5e\u7ebf\u5708\u65b9\u5757.png",
+                    "x": 84.0,
+                    "y": 552.0,
+                    "tooltip": "To process more advanced materials like neutronium<br/>or fluxed electrum you need more than 8100K. Upgrade"
+                },
+                {
+                    "name": "Using that Algae",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u8910\u85fb\u751f\u7269\u8d28.png",
+                    "x": 600.0,
+                    "y": 180.0,
+                    "tooltip": "So you've created the Chemical Plant, and an Algae<br/>Farm, excellent! Time to make some use of it instead<br/>of letting it sit there collecting. There's quite a<br/>few recipes you can make with Algae, but we'll start<br/>with a more simple one. \n\nFor this you'll need some<br/>Brown Algae and some Green Algae. This means you need<br/>at minimum HV machine casings for the bottom of the<br/>Algae Farm. HV will produce up to 8 brown algae every<br/>35 seconds, but can at worst case produce 2 in 105<br/>seconds, while EV will produce at best 20 every 30<br/>seconds, and at worst 12 in 90 seconds.\n\nOnce you have<br/>some Green and Brown Algae, you'll have to put them<br/>in a tier 2 Chemical Plant (steel based) with some<br/>distilled water, and you'll get back Sulfuric Acid.<br/>Cheap to produce once you have it all set up, a bit<br/>expensive to get there though! There's another Sulfuric<br/>acid recipe you can use as well later on, but it'll<br/>cost higher tier Algae and a higher tier Chemical Plant."
+                },
+                {
+                    "name": "\u00a76\u00a7lUV Glass",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u9507\u5f3a\u5316\u787c\u73bb\u7483\u65b9\u5757.png",
+                    "x": 684.0,
+                    "y": 300.0,
+                    "tooltip": "The next tier of Borosilicate glass is Osmium (8).<br/>Make it to allow higher tier recipes in the Bacterial<br/>Vat, higher tier Energy Hatches in the MEBF, or better<br/>Capacitors in your LSC. Or just use it for machine"
+                },
+                {
+                    "name": "What Even is This?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u771f\u7a7a\u5e72\u71e5\u7089.png",
+                    "x": 564.0,
+                    "y": 432.0,
+                    "tooltip": "In addition to being a dehydrator multi, it's also<br/>a Vacuum Furnace, for which no singleblock exists.<br/>It's supposed to be used with the IsaMill Grinding<br/>Machine multi and the Flotation Cell Regulator multi<br/>for the purposes of ore milling, an advanced method<br/>of ore processing that needs a lot of infrastructure,<br/>but which gives many new outputs for each ore it supports.\n\n[note]This<br/>multi is LuV now![/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lWhy One Coke Oven When You Can Have Ten?",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u7126\u7089\u7816\u5757.png",
+                    "x": 312.0,
+                    "y": 12.0,
+                    "tooltip": "Your bricked blast furnace uses coal like hell and<br/>your steam boilers do too? Well it's time to make more<br/>coke ovens and automate them a bit. Wooden fluid pipes<br/>and tin item pipes will help you reach your goal. You<br/>can use either faucets with redstone clocks or LV pumps<br/>to empty the creosote. For the charcoal, hoppers are<br/>easy to get once you have an assembler.\n\nUnlike GregTech<br/>multiblocks, coke ovens must have 1 space separating<br/>each oven.\n\nSearch NEI for a more efficient way to<br/>make coke oven bricks.\n\nRemember that tin item pipes<br/>require a steel wrench to dismantle them. \n\nThe whole<br/>coke-oven process generates a lot of pollution, so<br/>consider putting it further away."
+                },
+                {
+                    "name": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared!!!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u6728\u9539.png",
+                    "x": 48.0,
+                    "y": -24.0,
+                    "tooltip": "It's time for something really big: A smeltery! There's<br/>a lot to craft, so better gather some resources...<br/>or you could go try complete this with the help of<br/>some unhappy NPC friends, but that would void your<br/>quest rewards.\n\n[note]Note: This quest is mutually<br/>exclusive with the other smeltery quest.[/note]"
+                },
+                {
+                    "name": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared... But They Are",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5b9e\u4f53\u63a2\u6d4b\u5668\uff1a\u6751\u6c11.png",
+                    "x": 96.0,
+                    "y": -24.0,
+                    "tooltip": "Building a smeltery from the ground up can be really<br/>tedious and time consuming. How about borrowing one<br/>from the locals? They will surely be happy to share<br/>it with an unfriendly adventurer that just dismantled<br/>their bricked railway station.\n\nThe villagers are so<br/>dumb that they spent all their seared bricks without<br/>adding a few key components like faucets or drains.<br/>You still need to craft some smeltery bricks yourselves...\n\nTotally<br/>not useful tip: if you hold off building this long<br/>enough, you will be able to break down seared brick<br/>blocks into seared brick items with a forge hammer<br/>or extractor.\n\n[note]Unfortunately, going down this<br/>path means we will not give you quest rewards, since<br/>you are already getting this important multiblock for<br/>free. Check the checkbox to signify your consent.[/note]<br/>"
+                },
+                {
+                    "name": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Now Prepared, Hopefully!",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u51b6\u70bc\u7089\u63a7\u5236\u5668.png",
+                    "x": 72.0,
+                    "y": 12.0,
+                    "tooltip": "No matter where you got this smeltery from, you have<br/>one now. Time for some casting!\n\nThe aluminium oreberries<br/>can be planted on cropsticks, and macerated to get<br/>small quantites of aluminium for molds if you can't<br/>find aluminium gravel.\n\nNote: The book says a 3x3 base,<br/>but you can make a smeltery with a smaller base. Taller/wider<br/>smelteries can do more items at one time, conserving<br/>fuel.\n\n[note]The smeltery does not double ores in GTNH.<br/>Later machines will help you there.[/note]"
+                },
+                {
+                    "name": "\u00a76\u00a7lYour New Friend",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u5de5\u5177\u76d2.png",
+                    "x": 84.0,
+                    "y": 120.0,
+                    "tooltip": "It's painful to carry all the tools in your inventory.<br/>You can put GT tools and soldering into IC2 Toolbox<br/>to save space for inventory.\n\nYou can also use it to<br/>do maintenance, without taking out tools. Just hold<br/>toolbox and right click the Maintenance Hatch. Now<br/>who needs ducttape? You. It is needed to to automate"
+                },
+                {
+                    "name": "\u00a76\u00a7lZPM Glass",
+                    "symbolSize": 31.200000000000003,
+                    "symbol": "image://2.7.0\u5168\u7269\u54c1\u56fe\u6807/2.7.0/\u94f1\u5f3a\u5316\u787c\u73bb\u7483\u65b9\u5757.png",
+                    "x": 684.0,
+                    "y": 252.0,
+                    "tooltip": "The next tier of Borosilicate glass is Iridium (7).<br/>Make it to allow higher tier recipes in the Bacterial<br/>Vat, higher tier Energy Hatches in the MEBF, or better<br/>Capacitors in your LSC. Or just use it for machine"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                "circle",
+                "arrow"
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u00a73\u00a7lBlastoff!",
+                    "target": "\u00a76\u00a7l2x Steel"
+                },
+                {
+                    "source": "\u00a76\u00a7lTime to Get Some Steel",
+                    "target": "\u00a76\u00a7l2x Steel"
+                },
+                {
+                    "source": "\u00a76\u00a7l2x Steel",
+                    "target": "\u00a76\u00a7l4x Steel"
+                },
+                {
+                    "source": "\u00a75\u00a7r\u00a75\u00a7lWelcome to Tier 1, LV",
+                    "target": "\u00a76\u00a76\u00a76\u00a7l\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7A\u00a7l\u00a7A\u00a76\u00a7lAir-Filter"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "\u00a76\u00a76\u00a76\u00a7l\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7A\u00a7l\u00a7A\u00a76\u00a7lDrone are not Drones!"
+                },
+                {
+                    "source": "No More (IC) Engraving",
+                    "target": "A Beginner's Guide to Particle Physics"
+                },
+                {
+                    "source": "\u00a76\u00a7lStainless Steel EBF processing",
+                    "target": "\u00a76\u00a7lAbsorption Filter"
+                },
+                {
+                    "source": "\u00a76\u00a76\u00a76\u00a7l\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7A\u00a7l\u00a7A\u00a76\u00a7lAir-Filter",
+                    "target": "\u00a76\u00a7lAbsorption Filter"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lAdvanced MB Construction"
+                },
+                {
+                    "source": "\u00a76\u00a7lAvengers, Assemble! 2",
+                    "target": "Algae Pond"
+                },
+                {
+                    "source": "\u00a7a\u00a7lTier 4 (EV)",
+                    "target": "\u00a76\u00a7lAn Industrial Mobfarm"
+                },
+                {
+                    "source": "\u00a75\u00a7lVroooooom...",
+                    "target": "\u00a76\u00a7lAn Industrial Mobfarm"
+                },
+                {
+                    "source": "\u00a79\u00a7lThe Creation of Life",
+                    "target": "\u00a76\u00a7lAn Industrial Mobfarm"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lA Not So Useful Scanner..."
+                },
+                {
+                    "source": "\u00a76\u00a7l4x Steel",
+                    "target": "\u00a77\u00a76\u00a7lAn Unexpected Bonus"
+                },
+                {
+                    "source": "\u00a7b\u00a7lIV Assembler",
+                    "target": "\u00a76\u00a7lAssembly Line"
+                },
+                {
+                    "source": "\u00a7b\u00a7lQuantumprocessor Mainframe",
+                    "target": "\u00a76\u00a7lAssembly Line"
+                },
+                {
+                    "source": "\u00a79\u00a7lWorkstations, Your First EV Circuit",
+                    "target": "\u00a76\u00a7lAt the End of..."
+                },
+                {
+                    "source": "\u00a76\u00a7lCleanroom",
+                    "target": "\u00a76\u00a7lAt the End of..."
+                },
+                {
+                    "source": "\u00a72\u00a7lMaking Bronze",
+                    "target": "\u00a76\u00a7lAutomation, Tier 1"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Now Prepared, Hopefully!",
+                    "target": "\u00a76\u00a7lAutomation, Tier 1"
+                },
+                {
+                    "source": "\u00a76\u00a7lAutomation, Tier 1",
+                    "target": "\u00a76\u00a7lAutomation, Tier 2"
+                },
+                {
+                    "source": "\u00a73\u00a7lTHE NETHER",
+                    "target": "\u00a76\u00a7lAutomation, Tier 2"
+                },
+                {
+                    "source": "\u00a76\u00a7lYou're Gonna Hate This in MV Too #6",
+                    "target": "\u00a76\u00a7lA Very Useful Scanner"
+                },
+                {
+                    "source": "\u00a76\u00a7lYou're Gonna Hate This in MV Too #5",
+                    "target": "\u00a76\u00a7lA Very Useful Scanner"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lA Very Useful Scanner"
+                },
+                {
+                    "source": "\u00a76\u00a7lElectrum Flux Coil Upgrade",
+                    "target": "\u00a76\u00a7lAwakened Draconium Coil Upgrade"
+                },
+                {
+                    "source": "\u00a79\u00a7lTier 3 (HV)",
+                    "target": "\u00a76\u00a7lBacterial Vat"
+                },
+                {
+                    "source": "\u00a79\u00a7lBio Lab",
+                    "target": "\u00a76\u00a7lBacterial Vat"
+                },
+                {
+                    "source": "\u00a76\u00a7lBacterial Vat",
+                    "target": "\u00a76\u00a7lBetter Glass Upgrade, EV Glass"
+                },
+                {
+                    "source": "\u00a76\u00a7lAnother Chemical Multiblock?",
+                    "target": "\u00a76\u00a7lBetter Glass Upgrade, EV Glass"
+                },
+                {
+                    "source": "\u00a76\u00a7lMega is Betta",
+                    "target": "\u00a76\u00a7lBetter Glass Upgrade, EV Glass"
+                },
+                {
+                    "source": "Take charge!",
+                    "target": "\u00a76\u00a7lBetter Glass Upgrade, EV Glass"
+                },
+                {
+                    "source": "\u00a75\u00a7lBattery Alloy",
+                    "target": "\u00a76\u00a7lBetter Than Duct Tape"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lBetter Than Duct Tape"
+                },
+                {
+                    "source": "PCB Factory",
+                    "target": "Bio Chamber"
+                },
+                {
+                    "source": "Chemical Pseudo-Altercations",
+                    "target": "Catalyzing Miracles"
+                },
+                {
+                    "source": "My Eyes Hurt! #4",
+                    "target": "Chemical Pseudo-Altercations"
+                },
+                {
+                    "source": "Galaxy in a Bottle...?",
+                    "target": "Chemical Pseudo-Altercations"
+                },
+                {
+                    "source": "Well This Looks... Shiny?",
+                    "target": "Chemical Pseudo-Altercations"
+                },
+                {
+                    "source": "\u00a79\u00a7lYou're Gonna Hate This 1-4 in HV",
+                    "target": "\u00a76\u00a7lCleanroom"
+                },
+                {
+                    "source": "Synchrotron (No Relation to the Catalyst)",
+                    "target": "Collision Course"
+                },
+                {
+                    "source": "\u00a76\u00a7lAssembly Line",
+                    "target": "\u00a76\u00a7l\u00a76\u00a7lComponent Assembly Line"
+                },
+                {
+                    "source": "Tier 8 (UV)",
+                    "target": "\u00a76\u00a7l\u00a76\u00a7lComponent Assembly Line"
+                },
+                {
+                    "source": "\u00a76\u00a7lAdvanced Circuits",
+                    "target": "\u00a76\u00a7lCompress All the Things"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "\u00a76\u00a7lCompress All the Things"
+                },
+                {
+                    "source": "\u00a76\u00a7lAssembly Line",
+                    "target": "\u00a76\u00a7lData Access Hatches"
+                },
+                {
+                    "source": "\u00a76\u00a7lThe Water Dilemma",
+                    "target": "\u00a76\u00a7lDigging Deep for Water"
+                },
+                {
+                    "source": "STEAM-POWERED BREAKTHROUGH",
+                    "target": "\u00a76\u00a7lDigging Deep for Water"
+                },
+                {
+                    "source": "\u00a76\u00a7lGetting Muddy With Monazite",
+                    "target": "\u00a76\u00a7lDissolution Tank"
+                },
+                {
+                    "source": "\u00a7a\u00a7lEV Assembler",
+                    "target": "\u00a76\u00a7lDissolution Tank"
+                },
+                {
+                    "source": "\u00a7c\u00a7lTier 6 (LuV)",
+                    "target": "Do I Really Need to Make This?"
+                },
+                {
+                    "source": "\u00a76\u00a7lTime to Drill For Ore!",
+                    "target": "Don't Lose That Multiblock Miner!"
+                },
+                {
+                    "source": "\u00a76\u00a7lCleanroom",
+                    "target": "\u00a76\u00a7lDon't Put a Finger in That Socket"
+                },
+                {
+                    "source": "\u00a76\u00a7lDraconic Evolution",
+                    "target": "Draconic Development"
+                },
+                {
+                    "source": "Ichorium",
+                    "target": "\u00a76\u00a7lDraconic Evolution"
+                },
+                {
+                    "source": "The Final Frontier?",
+                    "target": "\u00a76\u00a7lDraconic Evolution"
+                },
+                {
+                    "source": "Convocation of the Damned",
+                    "target": "\u00a76\u00a7lDraconic Evolution"
+                },
+                {
+                    "source": "The Power of Creation",
+                    "target": "\u00a76\u00a7lDraconic Evolution"
+                },
+                {
+                    "source": "\u00a76\u00a7lGlyceryl Trini...... What?",
+                    "target": "\u00a76\u00a7lDynamite"
+                },
+                {
+                    "source": "\u00a75\u00a7lGetting Ready for Tier 2, MV",
+                    "target": "\u00a76\u00a7lEBF Info"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lEBF Info"
+                },
+                {
+                    "source": "\u00a75\u00a7r\u00a75\u00a7lWelcome to Tier 1, LV",
+                    "target": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time"
+                },
+                {
+                    "source": "\u00a76\u00a7lTrinium Coil Upgrade",
+                    "target": "\u00a76\u00a7lElectrum Flux Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lHypogen Coil Upgrade",
+                    "target": "\u00a76\u00a7lEternal Coil Upgrade"
+                },
+                {
+                    "source": "Your First SpaceTime",
+                    "target": "\u00a76\u00a7lEternal Coil Upgrade"
+                },
+                {
+                    "source": "Well This Looks... Shiny?",
+                    "target": "\u00a76\u00a7lEternal Coil Upgrade"
+                },
+                {
+                    "source": "UIV Energy Hatch",
+                    "target": "\u00a76\u00a7lEternal Coil Upgrade"
+                },
+                {
+                    "source": "\u00a7a\u00a7lDimensional Goal: Mars",
+                    "target": "\u00a76\u00a7lEven More Steam? Are You Sure?"
+                },
+                {
+                    "source": "\u00a76\u00a7lAdvanced MB Construction",
+                    "target": "\u00a76\u00a7lExpert MB-Construction"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "\u00a76\u00a7lFaster Crops"
+                },
+                {
+                    "source": "Chemical Pseudo-Altercations",
+                    "target": "Focusing Science and Mystery"
+                },
+                {
+                    "source": "\u00a7b\u00a7lIV Assembler",
+                    "target": "\u00a76\u00a7lGetting Muddy With Monazite"
+                },
+                {
+                    "source": "\u00a76\u00a7lCompress All the Things",
+                    "target": "\u00a76\u00a7lGlyceryl Trini...... What?"
+                },
+                {
+                    "source": "\u00a75\u00a7lN Like Nitrogen... Hide, the Alphabet Strikes Again!",
+                    "target": "\u00a76\u00a7lGlyceryl Trini...... What?"
+                },
+                {
+                    "source": "\u00a75\u00a7lC9H8O4...NaCl...H2O...",
+                    "target": "\u00a76\u00a7lGlyceryl Trini...... What?"
+                },
+                {
+                    "source": "\u00a73\u00a7lA Very Important Alloy",
+                    "target": "\u00a76\u00a7lGrinding With Wind"
+                },
+                {
+                    "source": "\u00a72\u00a7lCircle Shapes Give Me Comfort",
+                    "target": "\u00a76\u00a7lGrinding With Wind"
+                },
+                {
+                    "source": "\u00a76\u00a7lAt the End of...",
+                    "target": "\u00a76\u00a7lHelium is Not Just for Balloons"
+                },
+                {
+                    "source": "Precise Assembler",
+                    "target": "\u00a76\u00a7lHigher Precision"
+                },
+                {
+                    "source": "\u00a76\u00a7lRailcraft Steam Power",
+                    "target": "\u00a76\u00a7lHigh-Pressure Boiler Tank"
+                },
+                {
+                    "source": "\u00a76\u00a7lLiquid-Fuelled Firebox",
+                    "target": "\u00a76\u00a7lHigh-Pressure Boiler Tank"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lHigh-Speed Charcoal"
+                },
+                {
+                    "source": "Faster Lutetium Excitement",
+                    "target": "\u00a76\u00a76\u00a76\u00a7lHigh Temperature Super Breeder"
+                },
+                {
+                    "source": "\u00a76\u00a7lAt the End of...",
+                    "target": "\u00a76\u00a7lHot Hot Hot!"
+                },
+                {
+                    "source": "\u00a76\u00a7lTPV Coil Upgrade",
+                    "target": "\u00a76\u00a7lHSS-G Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lHSS-G Coil Upgrade",
+                    "target": "\u00a76\u00a7lHSS-S Coil Upgrade"
+                },
+                {
+                    "source": "No More (IC) Engraving",
+                    "target": "Hundreds of Thousands of eV"
+                },
+                {
+                    "source": "\u00a76\u00a7lInfinity Coil Upgrade",
+                    "target": "\u00a76\u00a7lHypogen Coil Upgrade"
+                },
+                {
+                    "source": "Getting More Out of Your Hypogen",
+                    "target": "\u00a76\u00a7lHypogen Coil Upgrade"
+                },
+                {
+                    "source": "Infinity Infrastructure",
+                    "target": "\u00a76\u00a7lInfinity Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lAwakened Draconium Coil Upgrade",
+                    "target": "\u00a76\u00a7lInfinity Coil Upgrade"
+                },
+                {
+                    "source": "Harder, Better, Faster, Stronger... Pt 1 in UHV",
+                    "target": "\u00a76\u00a76\u00a76\u00a7lIntegrated Ore Factory - All in One!"
+                },
+                {
+                    "source": "Master of Circuits",
+                    "target": "\u00a76\u00a76\u00a76\u00a7lIntegrated Ore Factory - All in One!"
+                },
+                {
+                    "source": "\u00a76\u00a7lCompress All the Things",
+                    "target": "\u00a76\u00a7liTNT"
+                },
+                {
+                    "source": "\u00a75\u00a7lGood Circuits",
+                    "target": "\u00a76\u00a7lIt's Time to Get More Steam"
+                },
+                {
+                    "source": "\u00a76\u00a7lBetter Glass Upgrade, EV Glass",
+                    "target": "\u00a76\u00a7lIV Glass"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "\u00a76\u00a7lLess Power Loss"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lLess Power Loss"
+                },
+                {
+                    "source": "\u00a79\u00a7lTier 3 (HV)",
+                    "target": "\u00a76\u00a7lLet's Get Crackin!"
+                },
+                {
+                    "source": "\u00a76\u00a7lAdvanced Circuits",
+                    "target": "\u00a76\u00a7lLet's Get Crackin!"
+                },
+                {
+                    "source": "One Ingot, Infinite Power",
+                    "target": "Liquid Cooling Tower"
+                },
+                {
+                    "source": "PCB Factory",
+                    "target": "Liquid Cooling Tower"
+                },
+                {
+                    "source": "\u00a73\u00a7lBlastoff!",
+                    "target": "\u00a76\u00a7lLiquid-Fuelled Firebox"
+                },
+                {
+                    "source": "\u00a76\u00a7lRailcraft Steam Power",
+                    "target": "\u00a76\u00a7lLow-Pressure Boiler Tank"
+                },
+                {
+                    "source": "\u00a76\u00a7lLiquid-Fuelled Firebox",
+                    "target": "\u00a76\u00a7lLow-Pressure Boiler Tank"
+                },
+                {
+                    "source": "\u00a76\u00a7lIV Glass",
+                    "target": "\u00a76\u00a7lLuV Glass"
+                },
+                {
+                    "source": "\u00a76\u00a7lBacterial Vat",
+                    "target": "\u00a76\u00a7lMaking the Vat More Efficient!"
+                },
+                {
+                    "source": "\u00a79\u00a7lDimensional Goal: Moon",
+                    "target": "\u00a76\u00a7lMoooooore Steam"
+                },
+                {
+                    "source": "\u00a79\u00a7lTitanium, Finally",
+                    "target": "More Algae Uses"
+                },
+                {
+                    "source": "Algae Pond",
+                    "target": "More Algae Uses"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lMore Heat - Kanthal Coil Upgrade"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lMoron's Manual for Effective EBFing"
+                },
+                {
+                    "source": "\u00a72\u00a7lImportant Tools",
+                    "target": "\u00a76\u00a7lMultiblock Tanks... Railcraft Tanks"
+                },
+                {
+                    "source": "STERILIZE!, STERILIZE!",
+                    "target": "Nano Forge Tier 1"
+                },
+                {
+                    "source": "Quantum Anomaly",
+                    "target": "Nano Forge Tier 2"
+                },
+                {
+                    "source": "Nano Forge Tier 1",
+                    "target": "Nano Forge Tier 2"
+                },
+                {
+                    "source": "Nano Forge Tier 2",
+                    "target": "Nano Forge Tier 3"
+                },
+                {
+                    "source": "Haha, Spinny Ingot",
+                    "target": "Nano Forge Tier 3"
+                },
+                {
+                    "source": "\u00a76\u00a7lNaquadah Coil Upgrade",
+                    "target": "\u00a76\u00a7lNaquadah Alloy Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lHSS-G Coil Upgrade",
+                    "target": "\u00a76\u00a7lNaquadah Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lNeutron Activator",
+                    "target": "\u00a76\u00a7lNeutron Accelerator"
+                },
+                {
+                    "source": "Precise Assembler",
+                    "target": "\u00a76\u00a7lNeutron Activator"
+                },
+                {
+                    "source": "Neutrons From Space",
+                    "target": "Neutronium Compressor"
+                },
+                {
+                    "source": "Admit it, You Love This Pt 1 in UV",
+                    "target": "Neutronium Compressor"
+                },
+                {
+                    "source": "\u00a76\u00a7lNeutron Activator",
+                    "target": "\u00a76\u00a7lNeutron Sensor"
+                },
+                {
+                    "source": "\u00a76\u00a7lAt the End of...",
+                    "target": "\u00a76\u00a7lNichrome Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lMore Heat - Kanthal Coil Upgrade",
+                    "target": "\u00a76\u00a7lNichrome Coil Upgrade"
+                },
+                {
+                    "source": "\u00a71\u00a7lSO...TIRED...MUST...SLEEP...",
+                    "target": "\u00a76\u00a7lNobody Wants an Explosion..."
+                },
+                {
+                    "source": "ZPM Assembler",
+                    "target": "No More (IC) Engraving"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Now Prepared, Hopefully!",
+                    "target": "\u00a7e\u00a7d\u00a7c\u00a76\u00a7lObtaining Ender Pearls"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "\u00a76\u00a7lOne Fluid Tank to Store it All!!"
+                },
+                {
+                    "source": "\u00a76\u00a7lNeutron Activator",
+                    "target": "\u00a76\u00a7lOops"
+                },
+                {
+                    "source": "The Board that Keeps Life",
+                    "target": "PCB Factory"
+                },
+                {
+                    "source": "Wait, PBI wasn't the last plastic?",
+                    "target": "PCB Factory Tier 2"
+                },
+                {
+                    "source": "PCB Factory",
+                    "target": "PCB Factory Tier 2"
+                },
+                {
+                    "source": "Nano Forge Tier 3",
+                    "target": "PCB Factory Tier 3"
+                },
+                {
+                    "source": "PCB Factory Tier 2",
+                    "target": "PCB Factory Tier 3"
+                },
+                {
+                    "source": "Algae Pond",
+                    "target": "Playing With the Big Boys, Chemically"
+                },
+                {
+                    "source": "\u00a79\u00a7lPerforming Chemical Experiments at HV Level",
+                    "target": "Playing With the Big Boys, Chemically"
+                },
+                {
+                    "source": "\u00a76\u00a7lCompress All the Things",
+                    "target": "\u00a76\u00a7lPowderbarrels"
+                },
+                {
+                    "source": "\u00a7b\u00a7lASoC - Advanced System on a Chip",
+                    "target": "Precise Assembler"
+                },
+                {
+                    "source": "\u00a7b\u00a7lRhodium-Plated Palladium",
+                    "target": "Precise Assembler"
+                },
+                {
+                    "source": "\u00a7b\u00a7lOsmiridium",
+                    "target": "Precise Assembler"
+                },
+                {
+                    "source": "Insane Voltage Multiblocks",
+                    "target": "Precise Assembler"
+                },
+                {
+                    "source": "\u00a7b\u00a7lIV Energy Hatch",
+                    "target": "Precise Assembler"
+                },
+                {
+                    "source": "\u00a73\u00a7lSteam Alternatives",
+                    "target": "\u00a76\u00a7lRailcraft Steam Power"
+                },
+                {
+                    "source": "\u00a76\u00a7lBacterial Vat",
+                    "target": "\u00a76\u00a7lSievert for the Vat"
+                },
+                {
+                    "source": "\u00a7a\u00a7lReactor Fuels",
+                    "target": "\u00a76\u00a7lSievert for the Vat"
+                },
+                {
+                    "source": "\u00a73\u00a7lBlastoff!",
+                    "target": "\u00a76\u00a7lSmelt All the Things..."
+                },
+                {
+                    "source": "Master of Circuits",
+                    "target": "\u00a76\u00a7lSomething From Nothing pt 2"
+                },
+                {
+                    "source": "Harder, Better, Faster, Stronger... Pt 1 in UHV",
+                    "target": "\u00a76\u00a7lSomething From Nothing pt 2"
+                },
+                {
+                    "source": "Tier 7 (ZPM)",
+                    "target": "\u00a76\u00a7lSomething From Nothing"
+                },
+                {
+                    "source": "Making Tritanium",
+                    "target": "\u00a76\u00a7lSomething From Nothing"
+                },
+                {
+                    "source": "\u00a76\u00a7lAdvanced Circuits",
+                    "target": "\u00a76\u00a7lSteam is Never Enough"
+                },
+                {
+                    "source": "\u00a73\u00a7lBlastoff!",
+                    "target": "\u00a76\u00a7lSteel Multiblock Tanks"
+                },
+                {
+                    "source": "\u00a76\u00a7lMultiblock Tanks... Railcraft Tanks",
+                    "target": "\u00a76\u00a7lSteel Multiblock Tanks"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lStill Not Enough Charcoal?"
+                },
+                {
+                    "source": "\u00a75\u00a7lGood Circuits",
+                    "target": "\u00a76\u00a7lStill Not Enough Charcoal?"
+                },
+                {
+                    "source": "Hundreds of Thousands of eV",
+                    "target": "Synchrotron (No Relation to the Catalyst)"
+                },
+                {
+                    "source": "\u00a7b\u00a7lTier 5 (IV)",
+                    "target": "\u00a76\u00a7lTFFT"
+                },
+                {
+                    "source": "Extreme Voltage Multiblocks",
+                    "target": "\u00a76\u00a7lThermal Boiler - Lava you long time"
+                },
+                {
+                    "source": "Tier 12 (UMV)",
+                    "target": "Thermosink Radiator"
+                },
+                {
+                    "source": "Liquid Cooling Tower",
+                    "target": "Thermosink Radiator"
+                },
+                {
+                    "source": "\u00a72\u00a7lImportant Tools",
+                    "target": "\u00a76\u00a7lThe Water Dilemma"
+                },
+                {
+                    "source": "\u00a76\u00a7lThe Water Dilemma",
+                    "target": "\u00a76\u00a7lThe 'Water Problems' Are Solved"
+                },
+                {
+                    "source": "\u00a79\u00a7lYou're Gonna Hate This 1-4 in HV",
+                    "target": "\u00a76\u00a7lThe 'Water Problems' Are Solved"
+                },
+                {
+                    "source": "Focusing Science and Mystery",
+                    "target": "Tier 2 Transforming"
+                },
+                {
+                    "source": "Catalyzing Miracles",
+                    "target": "Tier 2 Transforming"
+                },
+                {
+                    "source": "Tier 2 Transforming",
+                    "target": "Tier 3 Focusing"
+                },
+                {
+                    "source": "Tier 3 Focusing",
+                    "target": "Tier 4 Transforming"
+                },
+                {
+                    "source": "\u00a76\u00a7lTier 2 (MV)",
+                    "target": "\u00a76\u00a7lTime to Drill for Oil!"
+                },
+                {
+                    "source": "\u00a7a\u00a7lTier 4 (EV)",
+                    "target": "\u00a76\u00a7lTime to Drill For Ore!"
+                },
+                {
+                    "source": "\u00a73\u00a7lCompressing Stuff",
+                    "target": "\u00a76\u00a7lTime to Get Some Steel"
+                },
+                {
+                    "source": "\u00a76\u00a7lCompress All the Things",
+                    "target": "\u00a76\u00a7lTNT"
+                },
+                {
+                    "source": "What Even is This?",
+                    "target": "Too much Indium?"
+                },
+                {
+                    "source": "\u00a7a\u00a7lEXTREME MIXING",
+                    "target": "\u00a76\u00a7lTPV Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lNichrome Coil Upgrade",
+                    "target": "\u00a76\u00a7lTPV Coil Upgrade"
+                },
+                {
+                    "source": "\u00a76\u00a7lNaquadah Coil Upgrade",
+                    "target": "\u00a76\u00a7lTrinium Coil Upgrade"
+                },
+                {
+                    "source": "Playing With the Big Boys, Chemically",
+                    "target": "Using that Algae"
+                },
+                {
+                    "source": "Algae Pond",
+                    "target": "Using that Algae"
+                },
+                {
+                    "source": "\u00a76\u00a7lZPM Glass",
+                    "target": "\u00a76\u00a7lUV Glass"
+                },
+                {
+                    "source": "\u00a7c\u00a7lTier 6 (LuV)",
+                    "target": "What Even is This?"
+                },
+                {
+                    "source": "\u00a75\u00a7lYou're Gonna Hate This #1",
+                    "target": "\u00a76\u00a7lWhy One Coke Oven When You Can Have Ten?"
+                },
+                {
+                    "source": "\u00a75\u00a7lYou're Gonna Hate This #2",
+                    "target": "\u00a76\u00a7lWhy One Coke Oven When You Can Have Ten?"
+                },
+                {
+                    "source": "\u00a72\u00a7lBasic Processing",
+                    "target": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared!!!"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared... But They Are",
+                    "target": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared!!!"
+                },
+                {
+                    "source": "\u00a72\u00a7lBasic Processing",
+                    "target": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared... But They Are"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared!!!",
+                    "target": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared... But They Are"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared!!!",
+                    "target": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Now Prepared, Hopefully!"
+                },
+                {
+                    "source": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Not Prepared... But They Are",
+                    "target": "\u00a7f\u00a7k\u00a7f\u00a7l\u00a76\u00a7lYou Are Now Prepared, Hopefully!"
+                },
+                {
+                    "source": "\u00a7r\u00a76\u00a7l\u00a75\u00a7l\u00a7o\u00a7l\u00a7r\u00a76\u00a7lEBF-Time",
+                    "target": "\u00a76\u00a7lYour New Friend"
+                },
+                {
+                    "source": "\u00a76\u00a7lLuV Glass",
+                    "target": "\u00a76\u00a7lZPM Glass"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    }
+};
+        chart_19fef01590a64a8c8e0cf0ebfc7af576.setOption(option_19fef01590a64a8c8e0cf0ebfc7af576);
+            window.addEventListener('resize', function(){
+                chart_19fef01590a64a8c8e0cf0ebfc7af576.resize();
+            })
+    </script>
+</body>
+</html>
+
