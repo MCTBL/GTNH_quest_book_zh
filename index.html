@@ -1,277 +1,280 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>GTNH quests book</title>
-		<style>
-			/* 设置整体布局为flex布局 */
-			.container {
-				display: flex;
-				height: 98vh;
-				/* 设置容器高度为视口高度 */
-			}
 
-			/* 导航栏样式 */
-			.sidebar {
-				width: 200px;
-				/* 设置导航栏宽度 */
-				background-color: #afa393;
-				/* 设置背景颜色 */
-				padding: 20px;
-				/* 设置内边距 */
-				overflow-y: auto;
-				/* 添加垂直滚动条 */
-				max-height: 100%;
-				/* 设置最大高度为容器高度 */
-			}
+<head>
+	<title>GTNH quests book</title>
+	<style>
+		/* 设置整体布局为flex布局 */
+		.container {
+			display: flex;
+			height: 98vh;
+			/* 设置容器高度为视口高度 */
+		}
 
-			.sidebar button {
-				font-size: 20px;
-			}
+		/* 导航栏样式 */
+		.sidebar {
+			width: 200px;
+			/* 设置导航栏宽度 */
+			background-color: #afa393;
+			/* 设置背景颜色 */
+			padding: 20px;
+			/* 设置内边距 */
+			overflow-y: auto;
+			/* 添加垂直滚动条 */
+			max-height: 100%;
+			/* 设置最大高度为容器高度 */
+		}
 
-			.sidebar ul {
-				list-style-type: none;
-				/* 移除列表项的默认样式 */
-				padding: 0;
-				/* 移除列表项的默认内边距 */
-			}
+		.sidebar button {
+			font-size: 20px;
+		}
 
-			.sidebar li {
-				margin-bottom: 10px;
-				/* 设置列表项之间的间距 */
-			}
+		.sidebar ul {
+			list-style-type: none;
+			/* 移除列表项的默认样式 */
+			padding: 0;
+			/* 移除列表项的默认内边距 */
+		}
 
-			/* 内容展示区域样式 */
-			.content {
-				flex-grow: 1;
-				/* 设置内容区域占据剩余空间 */
-				padding: 0px;
-				/* 设置内边距 */
-				background-color: #fff;
-				/* 设置背景颜色 */
-				overflow-y: auto;
-				/* 设置垂直滚动条 */
+		.sidebar li {
+			margin-bottom: 10px;
+			/* 设置列表项之间的间距 */
+		}
 
-				height: 100%;
+		/* 内容展示区域样式 */
+		.content {
+			flex-grow: 1;
+			/* 设置内容区域占据剩余空间 */
+			padding: 0px;
+			/* 设置内边距 */
+			background-color: #fff;
+			/* 设置背景颜色 */
+			overflow-y: auto;
+			/* 设置垂直滚动条 */
 
-				position: relative;
-			}
+			height: 100%;
 
-			#toggleSwitchDiv {
-				position: sticky;
-				bottom: 10px;
-				right: 10px;
-			}
+			position: relative;
+		}
 
-			/* 内容区域的iframe样式 */
-			.content iframe {
-				width: 100%;
-				/* 设置iframe宽度为内容区域的100% */
-				height: 100%;
-				/* 设置iframe高度为内容区域的100% */
-				border: none;
-				/* 移除iframe的边框 */
-			}
-		</style>
-	</head>
+		#toggleSwitchDiv {
+			position: sticky;
+			bottom: 10px;
+			right: 10px;
+		}
 
-	<body>
-		<div class="container">
-			<!-- 导航栏 -->
-			<div class="sidebar">
-				<ul>
-					<li>
-						<button id="AndSoItBegins.html">AndSoItBegins</button>
-					</li>
-					<li>
-						<button id="TipsandTricks.html">TipsandTricks</button>
-					</li>
-					<li>
-						<button id="Tier0StoneAge.html">Tier0StoneAge</button>
-					</li>
-					<li>
-						<button id="Tier05Steam.html">Tier05Steam</button>
-					</li>
-					<li>
-						<button id="Tier1LV.html">Tier1LV</button>
-					</li>
-					<li>
-						<button id="Tier2MV.html">Tier2MV</button>
-					</li>
-					<li>
-						<button id="Tier3HV.html">Tier3HV</button>
-					</li>
-					<li>
-						<button id="Tier4EV.html">Tier4EV</button>
-					</li>
-					<li>
-						<button id="Tier5IV.html">Tier5IV</button>
-					</li>
-					<li>
-						<button id="Tier6LuV.html">Tier6LuV</button>
-					</li>
-					<li>
-						<button id="Tier7ZPM.html">Tier7ZPM</button>
-					</li>
-					<li>
-						<button id="Tier8UV.html">Tier8UV</button>
-					</li>
-					<li>
-						<button id="Tier9UHV.html">Tier9UHV</button>
-					</li>
-					<li>
-						<button id="Tier10UEV.html">Tier10UEV</button>
-					</li>
-					<li>
-						<button id="Tier11UIV.html">Tier11UIV</button>
-					</li>
-					<li>
-						<button id="Tier12UMV.html">Tier12UMV</button>
-					</li>
-					<li>
-						<button id="EndgameGoals.html">EndgameGoals</button>
-					</li>
-					<li>
-						<button id="FishingFarmingCo.html">FishingFarmingCo</button>
-					</li>
-					<li>
-						<button id="GettingAround.html">GettingAround</button>
-					</li>
-					<li>
-						<button id="WithoutDying.html">WithoutDying</button>
-					</li>
-					<li>
-						<button id="BuildingBetterBa.html">BuildingBetterBa</button>
-					</li>
-					<li>
-						<button id="ForestryandMulti.html">ForestryandMulti</button>
-					</li>
-					<li>
-						<button id="MultiblockGoals.html">MultiblockGoals</button>
-					</li>
-					<li>
-						<button id="MassProcessing.html">MassProcessing</button>
-					</li>
-					<li>
-						<button id="HowtoGeneratePow.html">HowtoGeneratePow</button>
-					</li>
-					<li>
-						<button id="StoringandTransf.html">StoringandTransf</button>
-					</li>
-					<li>
-						<button id="WorkingwithOil.html">WorkingwithOil</button>
-					</li>
-					<li>
-						<button id="BiofortheMasses.html">BiofortheMasses</button>
-					</li>
-					<li>
-						<button id="PowerfulNuclearP.html">PowerfulNuclearP</button>
-					</li>
-					<li>
-						<button id="SpaceRace.html">SpaceRace</button>
-					</li>
-					<li>
-						<button id="BasicAutomation.html">BasicAutomation</button>
-					</li>
-					<li>
-						<button id="SFMandComputers.html">SFMandComputers</button>
-					</li>
-					<li>
-						<button id="HandleLogisticsw.html">HandleLogisticsw</button>
-					</li>
-					<li>
-						<button id="AppliedEnergisti.html">AppliedEnergisti</button>
-					</li>
-					<li>
-						<button id="HowtoBee.html">HowtoBee</button>
-					</li>
-					<li>
-						<button id="BeeBreeding.html">BeeBreeding</button>
-					</li>
-					<li>
-						<button id="HardcoreEnderExp.html">HardcoreEnderExp</button>
-					</li>
-					<li>
-						<button id="NoviceThaumaturg.html">NoviceThaumaturg</button>
-					</li>
-					<li>
-						<button id="AdeptThaumaturgy.html">AdeptThaumaturgy</button>
-					</li>
-					<li>
-						<button id="KaaamiHaaaamiHA.html">KaaamiHaaaamiHA</button>
-					</li>
-					<li>
-						<button id="FocusonWandFociE.html">FocusonWandFociE</button>
-					</li>
-					<li>
-						<button id="FlowerPower.html">FlowerPower</button>
-					</li>
-					<li>
-						<button id="LooktotheEdges.html">LooktotheEdges</button>
-					</li>
-					<li>
-						<button id="PayingtheHighest.html">PayingtheHighest</button>
-					</li>
-					<li>
-						<button id="KillAlltheThings.html">KillAlltheThings</button>
-					</li>
-					<li>
-						<button id="CoinsCoinsCoins.html">CoinsCoinsCoins</button>
-					</li>
-					<li>
-						<button id="RewardArea.html">RewardArea</button>
-					</li>
-				</ul>
-			</div>
+		/* 内容区域的iframe样式 */
+		.content iframe {
+			width: 100%;
+			/* 设置iframe宽度为内容区域的100% */
+			height: 95%;
+			/* 设置iframe高度为内容区域的100% */
+			border: none;
+			/* 移除iframe的边框 */
+		}
+	</style>
+</head>
 
-			<!-- 内容展示区域 -->
-			<div class="content">
-				<!-- 是否开启复制 -->
-				<div id="toggleSwitchDiv">
-					<label for="toggleSwitch">是否开启复制:</label>
-					<input type="checkbox" id="toggleSwitch" name="toggleSwitch" />
-				</div>
-				<iframe id="contentFrame" src="about:blank" width="100%" height="800"></iframe>
-			</div>
+<body>
+	<div class="container">
+		<!-- 导航栏 -->
+		<div class="sidebar">
+
+			<ul>
+				<li>
+					<button id="AndSoItBegins.html">AndSoItBegins</button>
+				</li>
+				<li>
+					<button id="TipsandTricks.html">TipsandTricks</button>
+				</li>
+				<li>
+					<button id="Tier0StoneAge.html">Tier0StoneAge</button>
+				</li>
+				<li>
+					<button id="Tier05Steam.html">Tier05Steam</button>
+				</li>
+				<li>
+					<button id="Tier1LV.html">Tier1LV</button>
+				</li>
+				<li>
+					<button id="Tier2MV.html">Tier2MV</button>
+				</li>
+				<li>
+					<button id="Tier3HV.html">Tier3HV</button>
+				</li>
+				<li>
+					<button id="Tier4EV.html">Tier4EV</button>
+				</li>
+				<li>
+					<button id="Tier5IV.html">Tier5IV</button>
+				</li>
+				<li>
+					<button id="Tier6LuV.html">Tier6LuV</button>
+				</li>
+				<li>
+					<button id="Tier7ZPM.html">Tier7ZPM</button>
+				</li>
+				<li>
+					<button id="Tier8UV.html">Tier8UV</button>
+				</li>
+				<li>
+					<button id="Tier9UHV.html">Tier9UHV</button>
+				</li>
+				<li>
+					<button id="Tier10UEV.html">Tier10UEV</button>
+				</li>
+				<li>
+					<button id="Tier11UIV.html">Tier11UIV</button>
+				</li>
+				<li>
+					<button id="Tier12UMV.html">Tier12UMV</button>
+				</li>
+				<li>
+					<button id="EndgameGoals.html">EndgameGoals</button>
+				</li>
+				<li>
+					<button id="FishingFarmingCo.html">FishingFarmingCo</button>
+				</li>
+				<li>
+					<button id="GettingAround.html">GettingAround</button>
+				</li>
+				<li>
+					<button id="WithoutDying.html">WithoutDying</button>
+				</li>
+				<li>
+					<button id="BuildingBetterBa.html">BuildingBetterBa</button>
+				</li>
+				<li>
+					<button id="ForestryandMulti.html">ForestryandMulti</button>
+				</li>
+				<li>
+					<button id="MultiblockGoals.html">MultiblockGoals</button>
+				</li>
+				<li>
+					<button id="MassProcessing.html">MassProcessing</button>
+				</li>
+				<li>
+					<button id="HowtoGeneratePow.html">HowtoGeneratePow</button>
+				</li>
+				<li>
+					<button id="StoringandTransf.html">StoringandTransf</button>
+				</li>
+				<li>
+					<button id="WorkingwithOil.html">WorkingwithOil</button>
+				</li>
+				<li>
+					<button id="BiofortheMasses.html">BiofortheMasses</button>
+				</li>
+				<li>
+					<button id="PowerfulNuclearP.html">PowerfulNuclearP</button>
+				</li>
+				<li>
+					<button id="SpaceRace.html">SpaceRace</button>
+				</li>
+				<li>
+					<button id="BasicAutomation.html">BasicAutomation</button>
+				</li>
+				<li>
+					<button id="SFMandComputers.html">SFMandComputers</button>
+				</li>
+				<li>
+					<button id="HandleLogisticsw.html">HandleLogisticsw</button>
+				</li>
+				<li>
+					<button id="AppliedEnergisti.html">AppliedEnergisti</button>
+				</li>
+				<li>
+					<button id="HowtoBee.html">HowtoBee</button>
+				</li>
+				<li>
+					<button id="BeeBreeding.html">BeeBreeding</button>
+				</li>
+				<li>
+					<button id="HardcoreEnderExp.html">HardcoreEnderExp</button>
+				</li>
+				<li>
+					<button id="NoviceThaumaturg.html">NoviceThaumaturg</button>
+				</li>
+				<li>
+					<button id="AdeptThaumaturgy.html">AdeptThaumaturgy</button>
+				</li>
+				<li>
+					<button id="KaaamiHaaaamiHA.html">KaaamiHaaaamiHA</button>
+				</li>
+				<li>
+					<button id="FocusonWandFociE.html">FocusonWandFociE</button>
+				</li>
+				<li>
+					<button id="FlowerPower.html">FlowerPower</button>
+				</li>
+				<li>
+					<button id="LooktotheEdges.html">LooktotheEdges</button>
+				</li>
+				<li>
+					<button id="PayingtheHighest.html">PayingtheHighest</button>
+				</li>
+				<li>
+					<button id="KillAlltheThings.html">KillAlltheThings</button>
+				</li>
+				<li>
+					<button id="CoinsCoinsCoins.html">CoinsCoinsCoins</button>
+				</li>
+				<li>
+					<button id="RewardArea.html">RewardArea</button>
+				</li>
+			</ul>
 		</div>
 
-		<script>
-			// JavaScript代码
+		<!-- 内容展示区域 -->
+		<div class="content">
+			<!-- 是否开启复制 -->
+			<div id="toggleSwitchDiv">
+				<label for="toggleSwitch">是否开启复制:</label>
+				<input type="checkbox" id="toggleSwitch" name="toggleSwitch" />
+			</div>
+			<iframe id="contentFrame" src="about:blank" width="100%" height="790"></iframe>
+		</div>
+	</div>
 
-			let localPath = localStorage.getItem("localPath");
+	<script>
+		// JavaScript代码
 
-			if (localPath) {
-				document.getElementById("contentFrame").src = localPath;
+		let localPath = localStorage.getItem("localPath");
+
+		if (localPath) {
+			document.getElementById("contentFrame").src = localPath;
+		} else {
+			localPath = "html/AndSoItBegins.html";
+		}
+
+		let contentFrame = document.getElementById("contentFrame");
+		const buttons = document.querySelectorAll(".sidebar button");
+
+		buttons.forEach((button) => {
+			button.addEventListener("click", function () {
+				contentFrame.src = "html/" + button.id;
+				localStorage.setItem("localPath", "html/" + button.id);
+			});
+		});
+
+		let iframe = document.getElementById("contentFrame");
+		let iframeWindow = iframe.contentWindow;
+		iframeWindow.openCopyNode = false;
+		let toggleSwitch = document.getElementById("toggleSwitch");
+		toggleSwitch.addEventListener("change", function () {
+			if (toggleSwitch.checked) {
+				iframeWindow.openCopyNode = true;
 			} else {
-				localPath = "html/AndSoItBegins.html";
+				iframeWindow.openCopyNode = false;
 			}
+		});
 
-			let contentFrame = document.getElementById("contentFrame");
-			const buttons = document.querySelectorAll(".sidebar button");
+		let version = "2.7.0";
+		console.log("%c" + "基于GTNH" + version, "color: #C52F21;font-size: large;");
+	</script>
 
-			buttons.forEach((button) => {
-				button.addEventListener("click", function () {
-					contentFrame.src = "html/" + button.id;
-					localStorage.setItem("localPath", "html/" + button.id);
-				});
-			});
+	<!-- <span>Make by mctbl</span> -->
+	<!-- <span>GTNH is like a Job</span> -->
+</body>
 
-			let iframe = document.getElementById("contentFrame");
-			let iframeWindow = iframe.contentWindow;
-			iframeWindow.openCopyNode = false;
-			let toggleSwitch = document.getElementById("toggleSwitch");
-			toggleSwitch.addEventListener("change", function () {
-				if (toggleSwitch.checked) {
-					iframeWindow.openCopyNode = true;
-				} else {
-					iframeWindow.openCopyNode = false;
-				}
-			});
-
-			let version = "2.7.0";
-			console.log("%c" + "基于GTNH" + version, "color: #C52F21;font-size: large;");
-		</script>
-
-		<!-- <span>Make by mctbl</span> -->
-		<!-- <span>GTNH is like a Job</span> -->
-	</body>
 </html>
