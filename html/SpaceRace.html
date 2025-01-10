@@ -7,11 +7,18 @@
 
 </head>
 <body >
-	<div id="556af43c6d5b4fe384c549d0958e76ec" class="chart-container" style="width:100%; height:900%; "></div>
+	<div id="this_chart" class="chart-container" style="width:100%; height:900%; "></div>
     <script>
-        var chart_556af43c6d5b4fe384c549d0958e76ec = echarts.init(
-            document.getElementById('556af43c6d5b4fe384c549d0958e76ec'), 'white', {renderer: 'canvas'});
-        var option_556af43c6d5b4fe384c549d0958e76ec = {
+        var chart_this_chart = echarts.init(
+            document.getElementById('this_chart'), 'white', {renderer: 'canvas'});
+            
+            chart_this_chart.on('click', function (params) {
+                    if (params.dataType === 'node') {
+                        navigator.clipboard.writeText(params.data.tooltip.replaceAll("<br/>", ""));
+                    }
+            });
+        
+        var option_this_chart = {
     "backgroundColor": "#f5f0d3",
     "animation": true,
     "animationThreshold": 2000,
@@ -2120,9 +2127,9 @@
         "order": "seriesAsc"
     }
 };
-        chart_556af43c6d5b4fe384c549d0958e76ec.setOption(option_556af43c6d5b4fe384c549d0958e76ec);
+        chart_this_chart.setOption(option_this_chart);
             window.addEventListener('resize', function(){
-                chart_556af43c6d5b4fe384c549d0958e76ec.resize();
+                chart_this_chart.resize();
             })
     </script>
 </body>
